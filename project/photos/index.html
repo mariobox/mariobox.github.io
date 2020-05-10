@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>JavaScript Photo Gallery</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="MSC Personal Site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mariobox">
+    <meta name="twitter:creator" content="@mariobox">
+    <meta name="twitter:title" content="Mario Sanchez Carrion">
+    <meta name="twitter:description" content="Mario Sanchez Carrion, a junior web developer based in Miami, Florida.">
+
+    <script src="https://kit.fontawesome.com/3fe16e504a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+		<div class="header"></div>
+		<a href="/">
+			<div class="avatar"></div>
+		</a>
+    <div class="centered">		
+	  <a href="/" class="logo"><h1>msc</h1></a>
+    <nav>
+			  <ul class="blocknav">
+					<li><a href="/">Home</a></li>        
+					<li><a href="/post">Posts</a></li>
+			    <li><a href="/project">Projects</a></li>        
+			    <li><a href="/note">Notes</a></li>
+          <li><a href="/photos">Photos</a></li>
+			  </ul>            
+  	</nav>
+    </div>			
+    <div class="container">
+
+
+
+<section id="main">
+  <h1 id="title">JavaScript Photo Gallery</h1>
+  <div>
+        <article id="content">
+           <p><strong>Made with</strong>: <i class="fab fa-js"></i>JavaScript</p>
+
+<p><strong>Project Summary</strong>:</p>
+
+<p>A pleasantly styled image gallery that renders dynamically when the web page is called.</p>
+
+<hr class="art" />
+
+<p>I wanted to post a few pictures from my trips and other activities here in the site. Looking around the web for ideas I settled on a simple square format for the pictures, with a subtle frame and a gray transparent rectangle for the description placed at the bottom of the photo:</p>
+
+<figure><img src="/img/UMBike.jpg" class="gallery medium" /><figcaption>University of Miami</figcaption></figure>
+
+<p>These are the style declarations for the photos:</p>
+
+<pre>
+<code>
+img.gallery {
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  margin-right: 2%;
+}
+
+.picbox {
+  display: inline-block; 
+  margin: 0.5em;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+
+}
+
+figcaption {
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: #fff;
+  background: rgba(19,43,102, .50);
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 33px;
+  margin-left: 5px;
+  padding: 0.6em;
+  box-sizing: border-box; 
+}
+</code>
+</pre>
+
+<p>Since I&rsquo;m using a mobile first approach, the style declarations above apply to small screens. For screen sizes 769px and up I created a media query slightly modifying the size of the pictures:</p>
+
+<pre>
+<code>
+@media (min-width: 769px) {
+  img.gallery.medium {
+  width: 300px;
+  }
+}  
+</code>
+</pre>
+
+<p>I placed the pictures in my <code>img</code> folder and then created a <a href="https://mariosanchez.org/pix.json">JSON file</a> with the url and description of each picture. Every time I want to add a picture to the gallery, I add a new member at the top of the object.</p>
+
+<p>Finally, I created the following <a href="https://mariosanchez.org/js/pix.js">JavaScript script</a> that renders the images in the gallery. The script uses the <code>fetch()</code> method to pull the information from the JSON file and then parses it to convert it into a JavaScript object (in this case an array). It then maps over the array and builds the HTML elements that hold the gallery and the pictures. Once the map function is done, the HTML is placed in the proper place in the photos HTML template via the <code>document.getElementById()</code> method.</p>
+
+<p>By using a small script we avoid having to hard code the HTML page every time we want to add a picture.</p>
+
+<p>To see the gallery in action click <a href="../photos">here</a>.</p>
+
+        </article>
+  </div>
+</section>
+
+
+<hr />
+<p class="centered">
+<span class="small">  
+  <a href="https://github.com/mariobox" title="Github"><i class="fab fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+  <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
+</span>
+</p>
+<p class="centered">
+  <span class="small">&copy; 2020 MSC | Powered by <a href="https://gohugo.io">Hugo</a></span>
+</p>
+</div>
+<script src="/js/pix.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Learning Basic Linux Terminal Commands</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="MSC Personal Site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mariobox">
+    <meta name="twitter:creator" content="@mariobox">
+    <meta name="twitter:title" content="Mario Sanchez Carrion">
+    <meta name="twitter:description" content="Mario Sanchez Carrion, a junior web developer based in Miami, Florida.">
+
+    <script src="https://kit.fontawesome.com/3fe16e504a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+		<div class="header"></div>
+		<a href="/">
+			<div class="avatar"></div>
+		</a>
+    <div class="centered">		
+	  <a href="/" class="logo"><h1>msc</h1></a>
+    <nav>
+			  <ul class="blocknav">
+					<li><a href="/">Home</a></li>        
+					<li><a href="/post">Posts</a></li>
+			    <li><a href="/project">Projects</a></li>        
+			    <li><a href="/note">Notes</a></li>
+          <li><a href="/photos">Photos</a></li>
+			  </ul>            
+  	</nav>
+    </div>			
+    <div class="container">
+
+
+
+<section id="main">
+  <h1 id="title">Learning Basic Linux Terminal Commands</h1>
+  <div>
+        <article id="content">
+           <p>In a previous post I explained <a href="/ubuntu/">how to install Ubuntu Linux</a> on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.</p>
+
+<p>To find your terminal click on the <em>Show Applications</em> icon and type the word &ldquo;terminal&rdquo; in the search box. Then, click on the terminal icon, similar to the one below:</p>
+
+<p><img src="/img/term.png" /></p>
+
+<p><strong>Tip:</strong> you may want to right-click on the terminal icon and choose &ldquo;Add To Favorites&rdquo;, to pin it to the task bar, since you&rsquo;re going to be using it often.</p>
+
+<p>Unlike a <abbr title="Graphical User Interface">GUI</abbr> like Windows or Ubuntu&rsquo;s Gnome shell, which let you open files by double-clicking on icons or execute commands by choosing from a menu of options, the terminal lets you interact with your computer by typing commands. When we refer to the  terminal we&rsquo;re really talking about a <a href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal emulator</a>. A terminal emulator is a graphical representation of a terminal. This means that you will be able to harness all the power of an actual terminal, with the added benefit of several useful features like Cut and Paste, Find, and the ability to customize colors and fonts. The terminal emulator that comes with Ubuntu is the <a href="https://en.wikipedia.org/wiki/GNOME_Terminal">GNOME terminal</a>.</p>
+
+<p>Besides a text editor, the terminal is where you, as a web developer, will spend most of your time, so in this post I am going to show you some basic Linux commands. There are thousands or Linux commands, but the ones that I will mention below are what I find myself using more than 90% of the time.</p>
+
+<p><strong>Note</strong>: You don&rsquo;t need to type the $ before the command (that&rsquo;s the default command line prompt):</p>
+
+<p><strong>List folders and files under the current folder:</strong></p>
+
+<pre><code>$ ls 
+</code></pre>
+
+<p><strong>List folders and files under the current folder (long format):</strong></p>
+
+<pre><code>$ ls -l
+</code></pre>
+
+<p><strong>List folders and files, including hidden ones</strong> (hidden files and folders are always preceded by a dot):</p>
+
+<pre><code>$ ls -a
+</code></pre>
+
+<p><strong>List folders and files combining the -l and the -a flags:</strong></p>
+
+<pre><code>$ ls -la
+</code></pre>
+
+<p><strong>Print working (current) directory:</strong></p>
+
+<pre><code>$ pwd
+</code></pre>
+
+<p><strong>Change directory to the documents folder</strong> (the documents folder must be under the current folder):</p>
+
+<pre><code>$ cd documents
+</code></pre>
+
+<p><strong>Move up one directory level</strong> (indicated by the two dots):</p>
+
+<pre><code>$ cd ..
+</code></pre>
+
+<p><strong>Output the full contents of the file to the console:</strong></p>
+
+<pre><code>$ cat hello.txt
+</code></pre>
+
+<p><strong>Open a file called hello.txt with the built-in Nano text editor</strong> (to save changes type Control X and say YES):</p>
+
+<pre><code>$ nano hello.txt
+</code></pre>
+
+<p><strong>Rename hello.txt as hi.txt:</strong></p>
+
+<pre><code>$ mv hello.txt hi.txt
+</code></pre>
+
+<p><strong>Move hi.txt to the /documents folder:</strong></p>
+
+<pre><code>$ mv hi.thx /documents
+</code></pre>
+
+<p><strong>Move hi.txt back to its original folder:</strong></p>
+
+<pre><code>$ mv /documents/hi.txt .
+</code></pre>
+
+<p><strong>Move hi.txt to the /documents folder and rename it hello.txt:</strong></p>
+
+<pre><code>$ mv hi.txt /documents/hello.txt
+</code></pre>
+
+<p><strong>Rename the documents folder as docs:</strong></p>
+
+<pre><code>$ mv documents docs
+</code></pre>
+
+<p><strong>Copy hello.txt as hi.txt leaving hello.txt in place:</strong></p>
+
+<pre><code>$ cp hello.txt hi.txt
+</code></pre>
+
+<p><strong>Copy a folder (with all its contents) into another folder. We need to use the -r (recursive) flag:</strong></p>
+
+<pre><code>$ cp -r documents docs
+</code></pre>
+
+<p><strong>Delete hello.txt:</strong></p>
+
+<pre><code>$ rm hello.txt
+</code></pre>
+
+<p><strong>Remove the docs folder and all its contents. We need to use the -r (recursive) flag:</strong></p>
+
+<pre><code>$ rm -r docs
+</code></pre>
+
+<p><strong>Create a folder called pictures:</strong></p>
+
+<pre><code>$ mkdir pictures
+</code></pre>
+
+<p><strong>Create nested folders. You need to use the -p flag:</strong></p>
+
+<pre><code>$ mkdir -p documents/pictures/2017
+</code></pre>
+
+<p><strong>Output the username of the user currently logged in:</strong></p>
+
+<pre><code>$ whoami
+</code></pre>
+
+<p><strong>See if a program is installed. It will give you the path to the program, if it is installed</strong> (for example, typing <em>which node</em> will probably give you: <em>usr/bin/node</em>):</p>
+
+<pre><code>$ which [NAME OF A PROGRAM]
+</code></pre>
+
+<p><strong>Look for server information of a website:</strong> (replace with a real domain name)</p>
+
+<pre><code>$ nslookup [DOMAIN NAME]
+</code></pre>
+
+<p><strong>Fetch the HTTP header of a website:</strong> (replace with a real URL)</p>
+
+<pre><code>$ curl -I [URL]
+</code></pre>
+
+<p><strong>Get registration information of a domain name:</strong> (replace with a real domain name)</p>
+
+<pre><code>$ whois [DOMAIN NAME]
+</code></pre>
+
+<p>If you want to dig deeper, just do a Google search for <a href="https://www.google.com/search?ei=dRa5XIf_E6-O5wL_lprIDg&amp;q=useful+linux+terminal+commands&amp;oq=useful+linux+terminal+commands&amp;gs_l=psy-ab.3..0.4052.7452..8574...5.0..0.128.1055.0j9......0....1..gws-wiz.......0i71j35i304i39j0i7i30j0i13j0i8i7i30j0i7i5i30j0i13i5i30j0i8i13i30.gmH5nuLkc9E">useful linux terminal commands</a> and you will find how powerful and versatile the terminal can be.</p>
+
+        </article>
+  </div>
+</section>
+
+
+<hr />
+<p class="centered">
+<span class="small">  
+  <a href="https://github.com/mariobox" title="Github"><i class="fab fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+  <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
+</span>
+</p>
+<p class="centered">
+  <span class="small">&copy; 2020 MSC | Powered by <a href="https://gohugo.io">Hugo</a></span>
+</p>
+</div>
+<script src="/js/pix.js"></script>
+</body>
+</html>
+
+

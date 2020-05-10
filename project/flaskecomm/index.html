@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>eCommerce App with Flask and SQLite</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="MSC Personal Site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mariobox">
+    <meta name="twitter:creator" content="@mariobox">
+    <meta name="twitter:title" content="Mario Sanchez Carrion">
+    <meta name="twitter:description" content="Mario Sanchez Carrion, a junior web developer based in Miami, Florida.">
+
+    <script src="https://kit.fontawesome.com/3fe16e504a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+		<div class="header"></div>
+		<a href="/">
+			<div class="avatar"></div>
+		</a>
+    <div class="centered">		
+	  <a href="/" class="logo"><h1>msc</h1></a>
+    <nav>
+			  <ul class="blocknav">
+					<li><a href="/">Home</a></li>        
+					<li><a href="/post">Posts</a></li>
+			    <li><a href="/project">Projects</a></li>        
+			    <li><a href="/note">Notes</a></li>
+          <li><a href="/photos">Photos</a></li>
+			  </ul>            
+  	</nav>
+    </div>			
+    <div class="container">
+
+
+
+<section id="main">
+  <h1 id="title">eCommerce App with Flask and SQLite</h1>
+  <div>
+        <article id="content">
+           <p><strong>Made with</strong>: <i class="fab fa-python"></i>Python</p>
+
+<p><strong>Project Summary</strong>:</p>
+
+<p>An eCommerce App built with Flask, Jinja, SQLite, jQuery and Bootstrap</p>
+
+<p><a href="https://github.com/mariobox/flask-ecomm">Source Files</a> <hr class="art" /></p>
+
+<p>This app was my CS50x final project.</p>
+
+<p>The app loads a gallery of soccer shirts that includes: image, description, price, and a small form to add item to cart. The shirt info is stored in a SQLite database and is displayed using Bootstrap&rsquo;s card class.</p>
+
+<p><img src="https://66.media.tumblr.com/186f34c7243200b24693260946874509/tumblr_pkaxbfmFxT1qz7ur9o1_1280.png" /></p>
+
+<p>The app includes a series of filters implemented using SQLite queries so you can see only shirts that match a certain filter: shirts by region, clubs vs. national teams, shirts on sale, etc.</p>
+
+<p><img src="https://66.media.tumblr.com/967710ad3afc4d4d42666525e7fa82b4/tumblr_pkaxbfmFxT1qz7ur9o3_1280.png" /></p>
+
+<p>If a user is not logged in and tries to add something to the shopping cart she will see a warning message (implemented with jQuery) asking her to log in.</p>
+
+<p>Once registered and logged in, the user can add shirts to the shopping cart. A link to the shopping cart can be found at the top right of the screen, showing the amount of items in the cart as well as the sub-total in dollars. Clicking the shopping cart link opens a Bootstrap modal window showing the shopping cart in more detail.</p>
+
+<p><img src="https://66.media.tumblr.com/9fa9dd37719e34daf368927164e07827/tumblr_pkaxbfmFxT1qz7ur9o4_1280.png" /></p>
+
+<p>If you want to make changes, like add one more shirt or remove a shirt, you can click on the Make Changes button and you will be taken to the full version of the shopping cart.</p>
+
+<p><img src="https://66.media.tumblr.com/9789a8543b36eccdf47235a676835c03/tumblr_pkaxbfmFxT1qz7ur9o5_r1_1280.png" /></p>
+
+<p>Once you check out, the idea is to be sent to a payment processor. However, that part is not implemented yet.</p>
+
+<p>If you want to see your purchase history, just click on the You Bought link and you will see all the shirts you have ever bought. You will also find a Buy Again link that will direct you to the product page in case you want to buy it again.</p>
+
+<p><img src="https://66.media.tumblr.com/9fd4c95ccd60cb229d97366b66098986/tumblr_pkaxbfmFxT1qz7ur9o2_1280.png" /></p>
+
+<p>Once you&rsquo;re finished, you can just log out.</p>
+
+<p>If you want to see the app in action, fork the repository to your own computer and perform the following commands from the command line in your project folder:</p>
+
+<p><code>export FLASK_APP=application.py</code><br />
+<code>flask run</code></p>
+
+<p>This assumes you have Python, Flask and SQLite installed in your computer, as well as a link to Bootstrap and the following modules necessary to run application.py installed:</p>
+
+<p><code>
+from cs50 import SQL</code><br />
+<code>from flask_session import Session</code><br />
+<code>from flask import Flask, render_template, redirect, request, session, jsonify</code><br />
+<code>from datetime import datetime</code></p>
+
+        </article>
+  </div>
+</section>
+
+
+<hr />
+<p class="centered">
+<span class="small">  
+  <a href="https://github.com/mariobox" title="Github"><i class="fab fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+  <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
+</span>
+</p>
+<p class="centered">
+  <span class="small">&copy; 2020 MSC | Powered by <a href="https://gohugo.io">Hugo</a></span>
+</p>
+</div>
+<script src="/js/pix.js"></script>
+</body>
+</html>
+
+

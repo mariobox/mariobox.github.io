@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>How This Site Is Made</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="MSC Personal Site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mariobox">
+    <meta name="twitter:creator" content="@mariobox">
+    <meta name="twitter:title" content="Mario Sanchez Carrion">
+    <meta name="twitter:description" content="Mario Sanchez Carrion, a junior web developer based in Miami, Florida.">
+
+    <script src="https://kit.fontawesome.com/3fe16e504a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+		<div class="header"></div>
+		<a href="/">
+			<div class="avatar"></div>
+		</a>
+    <div class="centered">		
+	  <a href="/" class="logo"><h1>msc</h1></a>
+    <nav>
+			  <ul class="blocknav">
+					<li><a href="/">Home</a></li>        
+					<li><a href="/post">Posts</a></li>
+			    <li><a href="/project">Projects</a></li>        
+			    <li><a href="/note">Notes</a></li>
+          <li><a href="/photos">Photos</a></li>
+			  </ul>            
+  	</nav>
+    </div>			
+    <div class="container">
+
+
+
+<section id="main">
+  <h1 id="title">How This Site Is Made</h1>
+  <div>
+        <article id="content">
+           <p>This site has gone through several iterations. First, I hand-coded it page by page using plain vanilla HTML and CSS, but that became a problem as my site grew. The problem with using that approach is that, for example, if you want to make changes to common areas like your navigation menu, you have to update every single page of your site by hand (not easy or fun).</p>
+
+<p>As I got more into coding I discovered static site generators, which are basically programs that create static sites in a more efficient way: they comb through one or more folders containing content files usually written in <a href="https://daringfireball.net/projects/markdown/">Markdown</a> (e.g. blog posts), convert them to HTML, and place them in a special folder that you can then deploy to the open web using any web hosting service.</p>
+
+<p>Static site generators are ideal for blogs or for small to medium sites where content doesn&rsquo;t change based on user input. A static site generator can be written in any programming language. Some of the most popular ones are built with Python, JavaScript, Ruby or Go.</p>
+
+<p>I am currently using a static site generator written in <a href="https://golang.org">Go</a> called <a href="https:gohugo.io">Hugo</a>. Go is an open source programming language started by Google, that makes it easy to build simple, reliable, and efficient software. Hugo is blazing fast and the setup process is pretty straightforward. It also appears to have a strong following and is updated frequently.</p>
+
+<p>Chosing a platform supported by a vibrant, active community is crucial if you don&rsquo;t want to deal with dependencies that become stale or conflicting with each other. That is what happened with my previous setup, a JavaScript-based blog engine called <a href="https://metalsmith.io">Metalsmith</a>. It worked great when I started with it about four years ago, but it had recently started to crash and some dependencies stopped working. Rather than fixing a broken site I decided to start from scratch with <a href="https:gohugo.io">Hugo</a>, and I couldn&rsquo;t be happier.</p>
+
+<p>As far as the look and feel of the site is concerned, I&rsquo;m using a custom style sheet that I hand-coded myself.</p>
+
+<p>For hosting, I use <a href="https://pages.github.com">Github Pages</a>: it&rsquo;s easy, reliable and free, and it comes with HTTPS and custom domain support. It&rsquo;s a great solution for static sites. With my previous setup, I was deploying my site on a Virtual Private Server at <a href="https://digitalocean.com">Digital Ocean</a>. I did it mainly to learn how to operate a VPS. After a while, however, it became evident that it was overkill for what I needed (just host a basic static site) so I went the Github route (saving $5 a month in the process).</p>
+
+        </article>
+  </div>
+</section>
+
+
+<hr />
+<p class="centered">
+<span class="small">  
+  <a href="https://github.com/mariobox" title="Github"><i class="fab fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+  <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
+</span>
+</p>
+<p class="centered">
+  <span class="small">&copy; 2020 MSC | Powered by <a href="https://gohugo.io">Hugo</a></span>
+</p>
+</div>
+<script src="/js/pix.js"></script>
+</body>
+</html>
+
+

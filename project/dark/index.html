@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>How To Implement a Dark Theme Switch for your Site</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="MSC Personal Site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mariobox">
+    <meta name="twitter:creator" content="@mariobox">
+    <meta name="twitter:title" content="Mario Sanchez Carrion">
+    <meta name="twitter:description" content="Mario Sanchez Carrion, a junior web developer based in Miami, Florida.">
+
+    <script src="https://kit.fontawesome.com/3fe16e504a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+		<div class="header"></div>
+		<a href="/">
+			<div class="avatar"></div>
+		</a>
+    <div class="centered">		
+	  <a href="/" class="logo"><h1>msc</h1></a>
+    <nav>
+			  <ul class="blocknav">
+					<li><a href="/">Home</a></li>        
+					<li><a href="/post">Posts</a></li>
+			    <li><a href="/project">Projects</a></li>        
+			    <li><a href="/note">Notes</a></li>
+          <li><a href="/photos">Photos</a></li>
+			  </ul>            
+  	</nav>
+    </div>			
+    <div class="container">
+
+
+
+<section id="main">
+  <h1 id="title">How To Implement a Dark Theme Switch for your Site</h1>
+  <div>
+        <article id="content">
+           
+
+<p><strong>Made with</strong>: <i class="fab fa-js"></i>JavaScript</p>
+
+<p><strong>Project Summary</strong>:</p>
+
+<p>Implement a dark theme for our site that we can activate at a click of a button.</p>
+
+<p><a href="https://github.com/mariobox/dark">Source Files</a> | <a href="https://mariobox.github.io/dark">Demo</a></p>
+
+<hr class="art" />
+
+<p>We will implement a dark theme selector for our site that visitors can activate by clicking on an icon. We will discuss what we have to do to the HTML, CSS and JavaScript files that make up our site to make that happen.</p>
+
+<h2 id="the-html">The HTML</h2>
+
+<pre><code>    &lt;!--DOCTYPE--&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://kit.fontawesome.com/3fe16e504a.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;title&gt;Dark Theme&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;p&gt;
+      &lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt; | 
+      &lt;a href=&quot;about.html&quot;&gt;About&lt;/a&gt; 
+      &lt;span id=&quot;toggle-switch&quot; title=&quot;Toggle Dark Theme&quot;&gt;&lt;i class=&quot;fas fa-moon&quot; id=&quot;toggle-switch&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;h1&gt;My Dark Mode Theme&lt;/h1&gt;
+    &lt;p&gt;This is a sample site to demo how to switch to dark mode.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<p>For this example, we will create three simple HTML pages: <code>index.html</code>, <code>about.html</code> and <code>contact.html</code>. The code above is the <code>index.html</code> page. At the top of each page, we will include a simple navigation menu next to which we will place a moon-shaped icon that users can click to turn on dark mode. Once in dark mode, the moon icon will switch to a sun icon, indicating that by clicking it the visitor can go back to the default light mode. Both the moon and the sun icons can be found in <a href="https://fontawesome.com">Fontawesome</a>.</p>
+
+<h2 id="the-css">The CSS</h2>
+
+<pre>
+<code>
+html {
+  --bck-color: #FFF;
+  --ft-color: #000
+  --link-color: blue;
+}
+
+html.dark {
+  --bck-color: #000;
+  --ft-color: #FFF;
+  --link-color: #DDD;
+}
+
+body {
+  background: var(--bck-color);
+  color: var(--ft-color);
+  max-width: 40em;
+  padding: 5% 3%;
+  margin: 0 auto;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: var(--link-color);
+}
+</code>
+</pre>
+
+<p>We will define some variables for the colors we want to use in our dark and light themes. To keep it simple, we will just focus on the background, the font and the link colors. We will define our variables in the <code>html</code> element and we&rsquo;ll then reference them in the <code>body</code> and <code>link</code> elements. We will also create a <code>dark</code> class for the <code>html</code> element that we will activate via JavaScript once a visitor clicks on the moon icon.</p>
+
+<h2 id="the-javascript">The JavaScript</h2>
+
+<pre>
+<code>
+const DARK_MODE = 'dark';
+const LIGHT_MODE = 'light';
+const THEME = 'mode';
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  applyTheme(); 
+  const toggleSwitch = document.getElementById('toggle-switch');
+  toggleSwitch.onclick = function() {
+    let currentMode = localStorage.getItem(THEME);
+    localStorage.setItem(
+      THEME, 
+      currentMode === DARK_MODE ? LIGHT_MODE : DARK_MODE
+    );
+    applyTheme();
+  }
+});
+
+function applyTheme() {
+  let html = document.documentElement; // this selects the html element
+  let currentMode = localStorage.getItem(THEME);
+  if (currentMode === DARK_MODE) {
+    html.classList.add(DARK_MODE);
+    document.getElementById('toggle-switch').innerHTML = '<i class="fas fa-sun"></i>';
+  } else {
+    html.classList.remove(DARK_MODE);
+    document.getElementById('toggle-switch').innerHTML = '<i class="fas fa-moon"></i>';
+  }
+}
+</code>
+</pre>
+
+<p>Here&rsquo;s where the real magic happens. Since ours is a static site, we can&rsquo;t rely on the server to store our mode preferences. We need to do it in the visitor&rsquo;s browser, and for that we will make use of the <code>localStorage</code> DOM property.</p>
+
+<p>Since the default mode is light, you&rsquo;ll get the site in light mode on your first visit. As soon as the page loads, an event listener on the <code>DOMContentLoaded</code> event triggers a callback function that checks the browser&rsquo;s <code>localStorage</code> property for any record of the site&rsquo;s mode. In our first visit there will be nothing stored there so the page will load in light mode.</p>
+
+<p>Upon clicking in the moon icon, the value of the <code>THEME</code> const will change to <code>dark</code> and the key value pair will be stored in <code>localStorage</code> via the <code>localStorage.setItem(THEME, ...)</code> method. At the same time, the class of our <code>html</code> element will be set to <code>dark</code> and the <code>innerHTML</code> of the <code>span</code> containing the moon icon html code will change to display a sun icon instead. Clicking on the sun icon will take the visitor back to light mode by following the same process. The changes between light and dark mode are implemented via the  <code>applyTheme()</code> function.</p>
+
+<p>Since the values stored in <code>localStorage</code> are presistent, as long as the visitor uses the same browser it will remember the chosen mode next time the site is visited. You can test this by navigating to the different pages of the site, or even closing and opening your browser. Here is a <a href="https://mariobox.github.io/dark">demo</a> where you can see this dark mode implementation in action.</p>
+
+        </article>
+  </div>
+</section>
+
+
+<hr />
+<p class="centered">
+<span class="small">  
+  <a href="https://github.com/mariobox" title="Github"><i class="fab fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+  <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
+</span>
+</p>
+<p class="centered">
+  <span class="small">&copy; 2020 MSC | Powered by <a href="https://gohugo.io">Hugo</a></span>
+</p>
+</div>
+<script src="/js/pix.js"></script>
+</body>
+</html>
+
+

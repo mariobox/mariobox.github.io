@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mario Sanchez Carrion | Personal Site</title>
+    <link>https://mariosanchez.org/</link>
+    <description>Recent content on Mario Sanchez Carrion | Personal Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How This Site Is Made</title>
+      <link>https://mariosanchez.org/post/site/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/site/</guid>
+      <description>This site has gone through several iterations. First, I hand-coded it page by page using plain vanilla HTML and CSS, but that became a problem as my site grew. The problem with using that approach is that, for example, if you want to make changes to common areas like your navigation menu, you have to update every single page of your site by hand (not easy or fun).
+As I got more into coding I discovered static site generators, which are basically programs that create static sites in a more efficient way: they comb through one or more folders containing content files usually written in Markdown (e.</description>
+    </item>
+    
+    <item>
+      <title>How To Implement a Dark Theme Switch for your Site</title>
+      <link>https://mariosanchez.org/project/dark/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/dark/</guid>
+      <description>Made with: JavaScript
+Project Summary:
+Implement a dark theme for our site that we can activate at a click of a button.
+Source Files | Demo
+We will implement a dark theme selector for our site that visitors can activate by clicking on an icon. We will discuss what we have to do to the HTML, CSS and JavaScript files that make up our site to make that happen.</description>
+    </item>
+    
+    <item>
+      <title>Foreign Exchange Mobile Web App</title>
+      <link>https://mariosanchez.org/project/fx/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/fx/</guid>
+      <description>Made with: JavaScript
+Project Summary:
+Mobile-friendly FX watcher.
+Source Files | Demo
+We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the YTD % devaluation (or revaluation) for each of the currencies.
+I decided to implement this project because I work in international marketing, and devaluation is always an important variable to follow when analyzing business results.</description>
+    </item>
+    
+    <item>
+      <title>Airlines</title>
+      <link>https://mariosanchez.org/project/airlines/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/airlines/</guid>
+      <description>Made with: Python
+Project Summary:
+Submit the name of an airline and get its 2-charachter IATA symbol
+Source Files
+With this simple app we can type the name (or part of the name) of an airline in the form, and when we hit submit we will get a list of airlines that match that input followed by its IATA symbol. For example, you can type &amp;ldquo;american&amp;rdquo; in the search box:</description>
+    </item>
+    
+    <item>
+      <title>How To Get Rich Without Getting Lucky</title>
+      <link>https://mariosanchez.org/note/rich/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/rich/</guid>
+      <description>This are my favorite highlights of Naval Ravikant&amp;rsquo;s epic post How To Get Rich Without Getting Lucky.
+Seek Wealth, Not Money or Status  Wealth is assets that earn while you sleep. The purpose of wealth is freedom; it’s nothing more than that. Money is how we transfer wealth. Money is social credits; it’s the ability to have credits and debits of other people’s time. Having wealth means not having to be any place you don’t want to be, or not having to do anything you don’t want to do.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Photo Gallery</title>
+      <link>https://mariosanchez.org/project/photos/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/photos/</guid>
+      <description>Made with: JavaScript
+Project Summary:
+A pleasantly styled image gallery that renders dynamically when the web page is called.
+I wanted to post a few pictures from my trips and other activities here in the site. Looking around the web for ideas I settled on a simple square format for the pictures, with a subtle frame and a gray transparent rectangle for the description placed at the bottom of the photo:</description>
+    </item>
+    
+    <item>
+      <title>The Millionaire Next Door</title>
+      <link>https://mariosanchez.org/note/mnd/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/mnd/</guid>
+      <description>These are my 11 key takeaways from &amp;ldquo;The Millionaire Next Door&amp;rdquo;, the 1996 classic book by Thomas J. Stanley and William D. Danko:
+ PAW (prodigious accumulator of wealth) is someone who has achieved high net worth. UAW (under accumulator of wealth) is someone with low or negative net worth. PAWs may have normal or even below average income. UAW may have high income. It&amp;rsquo;s not how much you make: it&amp;rsquo;s how much you keep.</description>
+    </item>
+    
+    <item>
+      <title>How To Enable HTTPS For Your Website</title>
+      <link>https://mariosanchez.org/post/https/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/https/</guid>
+      <description>I recently configured my web server to serve this site over HTTPS. In fact, if you look at the URL in the address bar of your browser, you should see a lock icon to the left of the URL:
+Wikipedia explains HTTPS as follows:
+ Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet.</description>
+    </item>
+    
+    <item>
+      <title>Learning Basic Linux Terminal Commands</title>
+      <link>https://mariosanchez.org/post/terminal/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/terminal/</guid>
+      <description>In a previous post I explained how to install Ubuntu Linux on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.
+To find your terminal click on the Show Applications icon and type the word &amp;ldquo;terminal&amp;rdquo; in the search box. Then, click on the terminal icon, similar to the one below:
+Tip: you may want to right-click on the terminal icon and choose &amp;ldquo;Add To Favorites&amp;rdquo;, to pin it to the task bar, since you&amp;rsquo;re going to be using it often.</description>
+    </item>
+    
+    <item>
+      <title>How To Install Ubuntu Linux on an Empty Hard Drive</title>
+      <link>https://mariosanchez.org/post/ubuntu/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/ubuntu/</guid>
+      <description>When the hard drive of my old Toshiba Satellite died suddenly I thought of getting rid of it, but when I learned that you could buy a refurbished hard drive on ebay for very little money (around $35) I ordered one and installed it.
+The clean, empty hard drive gave me the perfect excuse to install a Linux operating system, and to configure the old laptop to become the ideal web development environment.</description>
+    </item>
+    
+    <item>
+      <title>eCommerce App with Flask and SQLite</title>
+      <link>https://mariosanchez.org/project/flaskecomm/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/flaskecomm/</guid>
+      <description>Made with: Python
+Project Summary:
+An eCommerce App built with Flask, Jinja, SQLite, jQuery and Bootstrap
+Source Files This app was my CS50x final project.
+The app loads a gallery of soccer shirts that includes: image, description, price, and a small form to add item to cart. The shirt info is stored in a SQLite database and is displayed using Bootstrap&amp;rsquo;s card class.
+The app includes a series of filters implemented using SQLite queries so you can see only shirts that match a certain filter: shirts by region, clubs vs.</description>
+    </item>
+    
+    <item>
+      <title>Micro Blog Front End with React</title>
+      <link>https://mariosanchez.org/project/micro-blog/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/micro-blog/</guid>
+      <description>Made with:  ReactJS
+Project Summary:
+Micro-blog simulator made with ReactJS. Makes use of components and state. Includes a log-in form, an entry form for blog posts, and a list of posts in reverse chronological order.
+Source Files | Live DemoThis front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax.</description>
+    </item>
+    
+    <item>
+      <title>Moving My Site to a Digital Ocean VPS</title>
+      <link>https://mariosanchez.org/post/vps/</link>
+      <pubDate>Sun, 18 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/vps/</guid>
+      <description>I just moved my site to a Digital Ocean virtual private server (VPS) (referral link). I had been wanting to do it for a long time but it seemed complicated, and using Github Pages to host my site was both easy and convenient. In the end, my desire to learn how to operate a VPS won over the convenience of Github, and I decided to take the plunge.
+First, I created a simple Hello World!</description>
+    </item>
+    
+    <item>
+      <title>Real Estate Website with Bootstrap</title>
+      <link>https://mariosanchez.org/project/rei/</link>
+      <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/rei/</guid>
+      <description>Made with:   HTML, CSS and JavaScript
+Project Summary:
+Responsive company website for a real estate investments business.
+Source Files | Live DemoThe objective was to design a clean, efficient, and fully responsive website for a real estate investments business. It needed to clearly describe what the company did, and include easy to follow call-to-actions throughout the site.
+It was made using the Agency template for Bootstrap, a fully functional form by Formspree, and several jQuery plugins for smooth transitions and a carrousel of testimonials.</description>
+    </item>
+    
+    <item>
+      <title>The 6s Discipline</title>
+      <link>https://mariosanchez.org/post/6s/</link>
+      <pubDate>Tue, 09 May 2017 09:42:48 -0400</pubDate>
+      
+      <guid>https://mariosanchez.org/post/6s/</guid>
+      <description>A few weeks ago, the company moved us to a new office. When we walked into our shiny, new cubicles we found a single sheet of paper laid out on top of our recently installed, empty desks describing something called &amp;ldquo;The 6S Discipline&amp;rdquo;.
+It was a concise list of 6 bullet points that summarized a process to keep our work stations clean and organized. I later found out that the 6S concept comes from the Lean Manufacturing philosophy, the principles of which can also be applied to an office setting.</description>
+    </item>
+    
+    <item>
+      <title>Ego Is The Enemy</title>
+      <link>https://mariosanchez.org/note/ego/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/ego/</guid>
+      <description>Ego Is The Enemy, by Ryan Holiday, came highly recommended by Derek Sivers. It explores how remaining humble and embracing a learning mindset can lead to success. Here are my favorite highlights:
+&amp;ldquo;If ego is the voice that tells us we’re better than we really are, we can say ego inhibits true success by preventing a direct and honest connection to the world around us.&amp;rdquo;
+&amp;ldquo;If you start believing in your greatness, it is the death of your creativity.</description>
+    </item>
+    
+    <item>
+      <title>The Compound Effect</title>
+      <link>https://mariosanchez.org/note/compound/</link>
+      <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/compound/</guid>
+      <description>More than just a productivity book, The Compound Effect, by Darren Hardy, deals with the importance of developing good habits. It is easy to read and full of valuable insights and actionable steps.
+Here are my most important takeaways:
+Massive results take time Whether we are trying to build wealth, lose weight, learn a new language or any other worthwhile pursuit, success only comes after small, consistent actions performed over a long period of time.</description>
+    </item>
+    
+    <item>
+      <title>Talk Like TED</title>
+      <link>https://mariosanchez.org/note/talkliketed/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/talkliketed/</guid>
+      <description>A few weeks ago I was rehearsing a presentation, and one of my co-workers recorded it on video. What an eye opener! I was terrible&amp;hellip;
+After getting some honest feedback and a few tips, and going through the presentation for five or six more times, my delivery got better, to the point that I almost didn&amp;rsquo;t have to cringe when I watched it.
+As if fate had it, a few days later I was at a Fedex store and saw Talk Like Ted, by Carmine Gallo, sitting on the shelves.</description>
+    </item>
+    
+    <item>
+      <title>Creating Aliases in Linux Terminal</title>
+      <link>https://mariosanchez.org/post/alias/</link>
+      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/alias/</guid>
+      <description>If you use a Linux-style terminal you may find yourself typing the same commands over and over again. If this is the case, you may wish to use some shorthand that the terminal can understand. You can do that with Aliases.
+You start by going to your user directory and opening your .bashrc file. A .bashrc is a shell script that Bash runs whenever it is started interactively. You can put any command in that file that you could type at the command prompt.</description>
+    </item>
+    
+    <item>
+      <title>Git Cheat Sheet</title>
+      <link>https://mariosanchez.org/post/gcs/</link>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/gcs/</guid>
+      <description>I use Git to keep track of the changes I make to this site. I am not an expert so I won&amp;rsquo;t go into great depths here. The idea of this post is just to summarize for future reference the Git commands I use on a regular basis to keep this site up and running.
+Here we go:
+Tell Git your usename and email. You only need to do this once:</description>
+    </item>
+    
+    <item>
+      <title>A Guide to the Good Life</title>
+      <link>https://mariosanchez.org/note/stoic/</link>
+      <pubDate>Wed, 18 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/stoic/</guid>
+      <description>Finally managed to read &amp;ldquo;A Guide to the Good Life: The Ancient Art of Stoic Joy&amp;rdquo; by William B. Irvine. The book came highly recommended by Derek Sivers, an artist and writer that I respect and identify with due to our almost identical world views.
+I had only a vague idea of what stoicism was prior to reading the book, but based on my little knowledge I suspected that I have been practicing, albeit unknowingly, many of the tenets of this philosophy.</description>
+    </item>
+    
+    <item>
+      <title>Anything You Want</title>
+      <link>https://mariosanchez.org/note/eyw/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/eyw/</guid>
+      <description>Anything You Want by Derek Sivers is a powerful little book offering valuable uncommon sense advice on how to approach business in alignment with your values and beliefs. In about an hour reading time, Derek Sivers candidly tells us everything he learned from founding, operating and selling CD Baby, the business he stumbled upon when he decided to help fellow musicians sell their work on the Internet in the pre-Paypal, pre-iTunes days.</description>
+    </item>
+    
+    <item>
+      <title>My $100 Office</title>
+      <link>https://mariosanchez.org/post/100office/</link>
+      <pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/100office/</guid>
+      <description>I needed a quiet space at home where I could sit down and tweak the code of my site, and otherwise tinker with some web development tools I want to learn. Since my second bedroom had some empty space and a window with a nice view of the garden, it was the perfect place to try to fit a small workstation.
+I didn&amp;rsquo;t want to spend a lot of money but I still wanted my new writing setup to look good, so my logical first stop was Ikea&amp;rsquo;s website.</description>
+    </item>
+    
+    <item>
+      <title>Work The System</title>
+      <link>https://mariosanchez.org/note/systems/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/systems/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/wts.jpg&#34; width=&#34;100px&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Ground breaking book about the importance of implementing systems in your business and personal life. Well written, entertaining, rooted in a deeply personal story, the book deals not only with the why but also with the how of developing systems.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Some Unsolicited Money Tips</title>
+      <link>https://mariosanchez.org/post/money/</link>
+      <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/money/</guid>
+      <description>In this short post I will try to summarize what I would do to start building wealth if I were just starting out. Your circumstances may be different, so proceed with caution and don&amp;rsquo;t take this as gospel.
+Here we go:
+First, if your employer offers a 401K plan with a match, I would contribute up to the maximum amount matched. Some companies match your contribution dollar for dollar. Others match 50%.</description>
+    </item>
+    
+    <item>
+      <title>Sam&#39;s Rules for Building a Business</title>
+      <link>https://mariosanchez.org/post/sams/</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/sams/</guid>
+      <description>A few years ago, during a trip to Bentonville, Arkansas, I had the chance to visit Walmart’s first store (originally called Walton’s 5-10), and picked up a leaflet containing Sam Walton’s 10 rules for building a successful business. Pearls of wisdom, straight from the man who built the world’s most successful retailer out of nothing. Since I haven&amp;rsquo;t been able to find a link to it on the Internet, I am transcribing them below (all of them are great, but I especially like #7, #9 and #10):</description>
+    </item>
+    
+    <item>
+      <title>Rework</title>
+      <link>https://mariosanchez.org/note/rework/</link>
+      <pubDate>Mon, 03 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/note/rework/</guid>
+      <description>Rework by Jason Fried and David Heinemeier Hansson is one of the best business books I&amp;rsquo;ve ever read. The authors take every single piece of business conventional wisdom and shatters them to pieces.
+As the books back cover says: ASAP is poison, underdo the competition, meetings are toxic, fire the workaholics, pick a fight, planning is guessing. All counterintuitive advice, but the authors will show you with facts that following their advise can lead to success.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mariosanchez.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/about/</guid>
+      <description>This is an about page.</description>
+    </item>
+    
+    <item>
+      <title>Photo Gallery</title>
+      <link>https://mariosanchez.org/photos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/photos/</guid>
+      <description> Places I&amp;#39;ve been. Things that caught my eye. Like Instagram, but without Zuck snooping around &amp;#x263A;
+ </description>
+    </item>
+    
+  </channel>
+</rss>

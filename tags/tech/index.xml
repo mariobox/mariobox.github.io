@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Mario Sanchez Carrion | Personal Site</title>
+    <link>https://mariosanchez.org/tags/tech/</link>
+    <description>Recent content in Tech on Mario Sanchez Carrion | Personal Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How This Site Is Made</title>
+      <link>https://mariosanchez.org/post/site/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/site/</guid>
+      <description>This site has gone through several iterations. First, I hand-coded it page by page using plain vanilla HTML and CSS, but that became a problem as my site grew. The problem with using that approach is that, for example, if you want to make changes to common areas like your navigation menu, you have to update every single page of your site by hand (not easy or fun).
+As I got more into coding I discovered static site generators, which are basically programs that create static sites in a more efficient way: they comb through one or more folders containing content files usually written in Markdown (e.</description>
+    </item>
+    
+  </channel>
+</rss>

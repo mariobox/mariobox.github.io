@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Foreign Exchange Mobile Web App</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="MSC Personal Site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mariobox">
+    <meta name="twitter:creator" content="@mariobox">
+    <meta name="twitter:title" content="Mario Sanchez Carrion">
+    <meta name="twitter:description" content="Mario Sanchez Carrion, a junior web developer based in Miami, Florida.">
+
+    <script src="https://kit.fontawesome.com/3fe16e504a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+		<div class="header"></div>
+		<a href="/">
+			<div class="avatar"></div>
+		</a>
+    <div class="centered">		
+	  <a href="/" class="logo"><h1>msc</h1></a>
+    <nav>
+			  <ul class="blocknav">
+					<li><a href="/">Home</a></li>        
+					<li><a href="/post">Posts</a></li>
+			    <li><a href="/project">Projects</a></li>        
+			    <li><a href="/note">Notes</a></li>
+          <li><a href="/photos">Photos</a></li>
+			  </ul>            
+  	</nav>
+    </div>			
+    <div class="container">
+
+
+
+<section id="main">
+  <h1 id="title">Foreign Exchange Mobile Web App</h1>
+  <div>
+        <article id="content">
+           <p><strong>Made with</strong>: <i class="fab fa-js"></i>JavaScript</p>
+
+<p><strong>Project Summary</strong>:</p>
+
+<p>Mobile-friendly FX watcher.</p>
+
+<p><a href="https://github.com/mariobox/fx-watcher">Source Files</a> | <a href="https://mariobox.github.io/fx-watcher">Demo</a></p>
+
+<hr class="art" />
+
+<p>We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the YTD % devaluation (or revaluation) for each of the currencies.</p>
+
+<p>I decided to implement this project because I work in international marketing, and devaluation is always an important variable to follow when analyzing business results. I wanted a simple, fast way to browse through the most important currencies for my business, and I wanted it to look good on my phone.</p>
+
+<p>This is how the app will look when it&rsquo;s implemented:</p>
+
+<p><img src="/img/fx.PNG" class="gallery medium" /></p>
+
+<p>The HTML is fairly straightforward. Since we wanted a nice styling that worked well in mobile we decided to use of <a href="https://getbootstrap.com">Bootstrap</a>.</p>
+
+<p>The JavaScript is a little bit more challenging. We made use of the <code>fetch()</code> method to make two different AJAX calls to the <a href="https://worldtradingdata.com">API</a> that provides the exchange rate information. We have to make two different calls because one of them is for today&rsquo;s exchange rate, and the other one for the rate on December 31 of the previous year, since they are in two different end points. We need both rates in order to calculate the <abbr title="Year to Date">YTD</abbr> devaluation percentage.</p>
+
+<p>We also created two arrays, one containing the currencies we want and another one containing country flags that we use in our HTML to make it look nicer. Note that the currency symbols have to match exactly the way the API refers to each currency, or no information will be sent back from their server.</p>
+
+<p>Once we receive the information from the API we have to parse it to a float (since the info coming back from an API is always a string), and arrange the values in arrays so that we can iterate over them.</p>
+
+<p>Once we have the information, a <code>for</code> loop iterates over our flags, currencies and rate arrays and builds the HTML container that we will then pass to the div with the ID of <code>root</code> in our <code>index.html</code> file.</p>
+
+<p>All this will make more sense when you review the <a href="https://github.com/mariobox/fx-watcher">source files</a>.</p>
+
+        </article>
+  </div>
+</section>
+
+
+<hr />
+<p class="centered">
+<span class="small">  
+  <a href="https://github.com/mariobox" title="Github"><i class="fab fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+  <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
+</span>
+</p>
+<p class="centered">
+  <span class="small">&copy; 2020 MSC | Powered by <a href="https://gohugo.io">Hugo</a></span>
+</p>
+</div>
+<script src="/js/pix.js"></script>
+</body>
+</html>
+
+

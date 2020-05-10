@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Mario Sanchez Carrion | Personal Site</title>
+    <link>https://mariosanchez.org/project/</link>
+    <description>Recent content in Projects on Mario Sanchez Carrion | Personal Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mariosanchez.org/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How To Implement a Dark Theme Switch for your Site</title>
+      <link>https://mariosanchez.org/project/dark/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/dark/</guid>
+      <description>Made with: JavaScript
+Project Summary:
+Implement a dark theme for our site that we can activate at a click of a button.
+Source Files | Demo
+We will implement a dark theme selector for our site that visitors can activate by clicking on an icon. We will discuss what we have to do to the HTML, CSS and JavaScript files that make up our site to make that happen.</description>
+    </item>
+    
+    <item>
+      <title>Foreign Exchange Mobile Web App</title>
+      <link>https://mariosanchez.org/project/fx/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/fx/</guid>
+      <description>Made with: JavaScript
+Project Summary:
+Mobile-friendly FX watcher.
+Source Files | Demo
+We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the YTD % devaluation (or revaluation) for each of the currencies.
+I decided to implement this project because I work in international marketing, and devaluation is always an important variable to follow when analyzing business results.</description>
+    </item>
+    
+    <item>
+      <title>Airlines</title>
+      <link>https://mariosanchez.org/project/airlines/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/airlines/</guid>
+      <description>Made with: Python
+Project Summary:
+Submit the name of an airline and get its 2-charachter IATA symbol
+Source Files
+With this simple app we can type the name (or part of the name) of an airline in the form, and when we hit submit we will get a list of airlines that match that input followed by its IATA symbol. For example, you can type &amp;ldquo;american&amp;rdquo; in the search box:</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Photo Gallery</title>
+      <link>https://mariosanchez.org/project/photos/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/photos/</guid>
+      <description>Made with: JavaScript
+Project Summary:
+A pleasantly styled image gallery that renders dynamically when the web page is called.
+I wanted to post a few pictures from my trips and other activities here in the site. Looking around the web for ideas I settled on a simple square format for the pictures, with a subtle frame and a gray transparent rectangle for the description placed at the bottom of the photo:</description>
+    </item>
+    
+    <item>
+      <title>eCommerce App with Flask and SQLite</title>
+      <link>https://mariosanchez.org/project/flaskecomm/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/flaskecomm/</guid>
+      <description>Made with: Python
+Project Summary:
+An eCommerce App built with Flask, Jinja, SQLite, jQuery and Bootstrap
+Source Files This app was my CS50x final project.
+The app loads a gallery of soccer shirts that includes: image, description, price, and a small form to add item to cart. The shirt info is stored in a SQLite database and is displayed using Bootstrap&amp;rsquo;s card class.
+The app includes a series of filters implemented using SQLite queries so you can see only shirts that match a certain filter: shirts by region, clubs vs.</description>
+    </item>
+    
+    <item>
+      <title>Micro Blog Front End with React</title>
+      <link>https://mariosanchez.org/project/micro-blog/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/micro-blog/</guid>
+      <description>Made with:  ReactJS
+Project Summary:
+Micro-blog simulator made with ReactJS. Makes use of components and state. Includes a log-in form, an entry form for blog posts, and a list of posts in reverse chronological order.
+Source Files | Live DemoThis front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax.</description>
+    </item>
+    
+    <item>
+      <title>Real Estate Website with Bootstrap</title>
+      <link>https://mariosanchez.org/project/rei/</link>
+      <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/rei/</guid>
+      <description>Made with:   HTML, CSS and JavaScript
+Project Summary:
+Responsive company website for a real estate investments business.
+Source Files | Live DemoThe objective was to design a clean, efficient, and fully responsive website for a real estate investments business. It needed to clearly describe what the company did, and include easy to follow call-to-actions throughout the site.
+It was made using the Agency template for Bootstrap, a fully functional form by Formspree, and several jQuery plugins for smooth transitions and a carrousel of testimonials.</description>
+    </item>
+    
+  </channel>
+</rss>
