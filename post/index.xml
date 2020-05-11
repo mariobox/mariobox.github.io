@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Mario Sanchez Carrion | Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Turning and Old Laptop into a Chromebook</title>
+      <link>https://mariosanchez.org/post/chromebook/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/chromebook/</guid>
+      <description>If you have an old laptop gathering dust around your house, you may be able to give it a new lease of life by turning it into a blazing fast Chromebook.
+A Chromebook is a special kind of laptop that runs on Google&amp;rsquo;s Chromium OS. The secret to Chromebooks being so fast is the minimalist nature of the Chromium OS. It is optimized to do one and only one thing: work seamlessly with the Chrome browser and other Google services like Google Drive.</description>
+    </item>
     
     <item>
       <title>How This Site Is Made</title>
