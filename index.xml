@@ -330,12 +330,22 @@ As the books back cover says: ASAP is poison, underdo the competition, meetings 
     </item>
     
     <item>
+      <title>Now</title>
+      <link>https://www.mariosanchez.org/now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/now/</guid>
+      <description>Since March 12, a few days before the Safe-At-Home order was issued for South Florida, I&amp;rsquo;ve been mostly WFH (I&amp;rsquo;m lucky), riding my bike and making home-cooked meals. It&amp;rsquo;s been an interesting, even enjoyable time, considering the terrible situation we&amp;rsquo;re all facing every day.
+On the coding front, I&amp;rsquo;ve recently moved my site to a different platform: from Metalsmith to Hugo. I&amp;rsquo;m totally enjoying my new setup. Hugo is lightning fast, stable and user-friendly.</description>
+    </item>
+    
+    <item>
       <title>Photo Gallery</title>
       <link>https://www.mariosanchez.org/photos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/photos/</guid>
-      <description> Places I&amp;#39;ve been. Things that caught my eye. Like Instagram, but without Zuck snooping around &amp;#x263A;
+      <description> Places I&amp;#39;ve been. Things that caught my eye. Like Instagram, but without Zuck snooping around &amp;#x263A;. If you want to build a similar gallery for your site here&#39;s how to do it.
  </description>
     </item>
     
