@@ -64,6 +64,18 @@ I wanted to post a few pictures from my trips and other activities here in the s
     </item>
     
     <item>
+      <title>Progress Circle with JS and CSS</title>
+      <link>https://www.mariosanchez.org/project/progresscircle/</link>
+      <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/project/progresscircle/</guid>
+      <description>Made with: JavaScript JavaScript |  CSS
+Project Summary:
+JS app that creates an animated and stylish progress bar around a circle with the progress score written in the center.
+Source Files | Live DemoI started with progressbar.js by Kimmo Brunfeldt, which does most of the heavy lifting. You can add it your project by including a link near your closing body tag to the CDN repository where progressbar.js resides.</description>
+    </item>
+    
+    <item>
       <title>eCommerce App with Flask and SQLite</title>
       <link>https://www.mariosanchez.org/project/flaskecomm/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
@@ -100,6 +112,18 @@ Project Summary:
 Responsive company website for a real estate investments business.
 Source Files | Live DemoThe objective was to design a clean, efficient, and fully responsive website for a real estate investments business. It needed to clearly describe what the company did, and include easy to follow call-to-actions throughout the site.
 It was made using the Agency template for Bootstrap, a fully functional form by Formspree, and several jQuery plugins for smooth transitions and a carrousel of testimonials.</description>
+    </item>
+    
+    <item>
+      <title>Basic Calculator with JS and CSS</title>
+      <link>https://www.mariosanchez.org/project/calc/</link>
+      <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/project/calc/</guid>
+      <description>Made with: JavaScript JavaScript |  CSS
+Project Summary:
+Basic calculator to add, subtract, multiply and divide.
+Source Files | Live DemoProject involved creating the calculator interface with HTML and CSS and then adding fuctionality through event handlers and callback functions. It works fine, with some improvements yet to be made, like limiting the display to a certain number of digits so that they fit in the calculator window when the number is too large.</description>
     </item>
     
   </channel>
