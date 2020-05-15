@@ -126,5 +126,19 @@ Basic calculator to add, subtract, multiply and divide.
 Source Files | Live DemoProject involved creating the calculator interface with HTML and CSS and then adding fuctionality through event handlers and callback functions. It works fine, with some improvements yet to be made, like limiting the display to a certain number of digits so that they fit in the calculator window when the number is too large.</description>
     </item>
     
+    <item>
+      <title>Building a Single Page Application with AngularJS</title>
+      <link>https://www.mariosanchez.org/project/angular/</link>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/project/angular/</guid>
+      <description>Made with: Angular
+Project Summary:
+Create a barebones brochure site CPA using Angular
+Source Files | Demo
+A few weeks ago I came across the concept of SPA, or Single Page Application, and learned that they can be created with Angular.js, a JavaScript library supported by Google.
+Most definitions of SPA you can find online are very technical and full of jargon, so perhaps the best way a newbie web developer like me can understand it is with an example:</description>
+    </item>
+    
   </channel>
 </rss>

@@ -262,6 +262,20 @@ You start by going to your user directory and opening your .bashrc file. A .bash
     </item>
     
     <item>
+      <title>Building a Single Page Application with AngularJS</title>
+      <link>https://www.mariosanchez.org/project/angular/</link>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/project/angular/</guid>
+      <description>Made with: Angular
+Project Summary:
+Create a barebones brochure site CPA using Angular
+Source Files | Demo
+A few weeks ago I came across the concept of SPA, or Single Page Application, and learned that they can be created with Angular.js, a JavaScript library supported by Google.
+Most definitions of SPA you can find online are very technical and full of jargon, so perhaps the best way a newbie web developer like me can understand it is with an example:</description>
+    </item>
+    
+    <item>
       <title>Git Cheat Sheet</title>
       <link>https://www.mariosanchez.org/post/gcs/</link>
       <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>

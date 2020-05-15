@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Building a Single Page Application with AngularJS | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="Create a barebones brochure site SPA using Angular" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.mariosanchez.org/img/angularjs.png"/>
+
+<meta name="twitter:title" content="Building a Single Page Application with AngularJS"/>
+<meta name="twitter:description" content="Create a barebones brochure site SPA using Angular"/>
+
+
+    <script src="https://kit.fontawesome.com/3fe16e504a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+		<div class="header"></div>
+		<a href="/">
+			<div class="avatar"></div>
+		</a>
+    <div class="centered">		
+	  <a href="/" class="logo"><h1>msc</h1></a>
+    <nav>
+			  <ul class="blocknav">
+					<li><a href="/post">Posts</a></li>
+			    <li><a href="/project">Projects</a></li>        
+			    <li><a href="/note">Notes</a></li>
+          <li><a href="/photos">Photos</a></li>
+			  </ul>            
+  	</nav>
+    </div>			
+    <div class="container">
+
+
+
+<section id="main">
+  <h1 id="title">Building a Single Page Application with AngularJS</h1>
+  <div>
+        <article id="content">
+           <p><img src="/img/angularjs.png" class="gallery medium" /></p>
+
+<p><strong>Made with</strong>: <i class="fab fa-angular"></i>Angular</p>
+
+<p><strong>Project Summary</strong>:</p>
+
+<p>Create a barebones brochure site CPA using Angular</p>
+
+<p><a href="https://github.com/mariobox/angulartestsite">Source Files</a> | <a href="https://mariobox.github.io/angulartestsite">Demo</a></p>
+
+<hr class="art" />
+
+<p>A few weeks ago I came across the concept of <abbr title="Single Page Application">SPA</abbr>, or <a href="https://en.wikipedia.org/wiki/Single-page_application">Single Page Application</a>, and learned that they can be created with <a href="https://angularjs.org/">Angular.js</a>, a JavaScript library supported by Google.</p>
+
+<p>Most definitions of SPA you can find online are very technical and full of jargon, so perhaps the best way a newbie web developer like me can understand it is with an example:</p>
+
+<p>Suppose you have an <code>index.html</code> web page with three different sections:</p>
+
+<ul>
+<li>The header (where the navigation menu is)</li>
+<li>The content area, and</li>
+<li>The footer.</li>
+</ul>
+
+<p>The header and the footer remain the same all over the website, so the only thing that really changes when you go from the <code>index.html</code> page to, say, the <code>about.html</code> page is the actual page content.</p>
+
+<p>What a SPA does is to allow the header and the footer to stay right where they are, while it calls only the actual content of the <code>about.html</code> page and sticks it right between the header and the footer. No new page is loaded (that&rsquo;s where the &ldquo;Single Page&rdquo; part of Single Page Application comes from).</p>
+
+<p>The switch between the content of your <code>index.html</code> and your <code>about.html</code> page is done on the fly by the browser of the person viewing your site, by following the <strong>Angular.js</strong> directives embedded in the page code.</p>
+
+<p>I wanted to test building a SPA by creating a barebones, basic brochure site, using <strong>Angular.js</strong> to generate four page views: Home, About, Contact and Resume.</p>
+
+<p>I found an <a href="https://www.airpair.com/angularjs/building-angularjs-app-tutorial">excellent tutorial</a> online. After reading it carefully several times I started by creating the index template, which contains the Angular directives to make the site work, and which acts as a template for the whole site.</p>
+
+<p>I then created bare-bones html files for the other three pages of the site: About, Contact and Resume (nothing fancy, just a couple of <code>&lt;h1&gt;</code> tags and a paragraph).</p>
+
+<p>Finally, I tweaked the <strong>main.js</strong> file to refer to my four pages: <code>/home</code>, <code>/contact</code>, <code>/about</code>, and <code>/resume</code>, instead of all the different pages listed in the tutorial (which uses a bloated website template that I decided not to follow, for simplicity&rsquo;s sake. I also didn&rsquo;t use the Bootstrap style sheets suggested by the author, opting instead for a much simpler style sheet based on <a href="http://getskeleton.com">Skeleton</a>).</p>
+
+<p>The <strong>main.js</strong> file is where the real magic happens: it contains the Routes, which are basically the instructions that <strong>Angular.js</strong> gives the browser: &ldquo;if user clicks on <code>/about</code> do this; if user clicks on <code>/contact</code> do that&rdquo;.</p>
+
+<p>If you want to try it yourself I recommend that you read and follow the <a href="https://www.airpair.com/angularjs/building-angularjs-app-tutorial">tutorial</a>. The author is obviously a very capable programmer and can explain things much better than I can.</p>
+
+<p>You can also clone the site I created. Here is the Github repo: <a href="http://github.com/mariobox/angulartestsite/">http://github.com/mariobox/angulartestsite</a>.</p>
+
+<p>I have also created a <a href="http://mariobox.github.io/angulartestsite">Live Demo</a> so you can try it out on your browser.</p>
+
+        </article>
+  </div>
+</section>
+
+
+<hr />
+<p class="centered">
+<span class="small">  
+  <a href="https://github.com/mariobox" title="Github"><i class="fab fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+  <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
+</span>
+</p>
+<p class="centered">
+  <span class="small">&copy; 2020 MSC | Powered by <a href="https://gohugo.io">Hugo</a></span>
+</p>
+</div>
+<script src="/js/pix.js"></script>
+</body>
+</html>
+
+
