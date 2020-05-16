@@ -104,6 +104,18 @@ I wanted to post a few pictures from my trips and other activities here in the s
     </item>
     
     <item>
+      <title>Stock Info Dashboards with ReactJS</title>
+      <link>https://www.mariosanchez.org/project/stocksreact/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/project/stocksreact/</guid>
+      <description>Made with: React
+Project Summary:
+Web app to fetch stock info from an API and display it using React
+Source Files | Live DemoUpdate: As of May 9, 2020, the API I was using to fecth the stock info has gone out of business so the values you will get in the Demo are all null. The functionality of the app, though, remains correct. I will update as soon as I find another free API.</description>
+    </item>
+    
+    <item>
       <title>Progress Circle with JS and CSS</title>
       <link>https://www.mariosanchez.org/project/progresscircle/</link>
       <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
