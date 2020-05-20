@@ -6,10 +6,25 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Demo Site with Node and Express</title>
+      <link>https://www.mariosanchez.org/project/express/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/project/express/</guid>
+      <description>Made with:  Node and Express
+Project Summary:
+A simple site made with Node and Express, showing dynamic routes.
+Source Files | Live Demo
+Before we go to our example site, let&amp;rsquo;s talk about Express:
+Express is a web framework usually paired with Node. It is a light weight tool that makes it easy to build dynamic web applications.
+Since Express is made with JavaScript, you can install it directly from NPM.</description>
+    </item>
     
     <item>
       <title>Turning and Old Laptop into a Chromebook</title>
@@ -396,7 +411,7 @@ On the coding front, I&amp;rsquo;ve recently moved my site to a different platfo
       
       <guid>https://www.mariosanchez.org/photos/</guid>
       <description> Places I&amp;#39;ve been. Things that caught my eye. Like Instagram, but without Zuck snooping around &amp;#x263A;. If you want to build a similar gallery for your site here&#39;s how to do it.
- </description>
+  </description>
     </item>
     
   </channel>

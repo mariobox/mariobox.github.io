@@ -6,10 +6,25 @@
     <description>Recent content in Projects on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.mariosanchez.org/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Demo Site with Node and Express</title>
+      <link>https://www.mariosanchez.org/project/express/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/project/express/</guid>
+      <description>Made with:  Node and Express
+Project Summary:
+A simple site made with Node and Express, showing dynamic routes.
+Source Files | Live Demo
+Before we go to our example site, let&amp;rsquo;s talk about Express:
+Express is a web framework usually paired with Node. It is a light weight tool that makes it easy to build dynamic web applications.
+Since Express is made with JavaScript, you can install it directly from NPM.</description>
+    </item>
     
     <item>
       <title>How To Implement a Dark Theme Switch for your Site</title>
