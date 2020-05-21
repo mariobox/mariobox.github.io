@@ -20,6 +20,7 @@ I just moved my site to a Digital Ocean virtual private server (VPS) (referral l
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
@@ -84,13 +85,13 @@ I just moved my site to a Digital Ocean virtual private server (VPS) (referral l
 <ol>
 <li>If I haven&rsquo;t done it already, run <code>npm start</code> to generate the static site, which will load to folder <code>./public</code></li>
 <li>Move the files in <code>./public</code> to the VPS&rsquo;s <code>/var/www/mariosanchez.org/html</code>, which is the folder within the VPS where the website files will be hosted.
-For this, I created a bash file, located in the root directory of my project, that I named <code>deploy.sh</code>. This bash file syncs the contents of the <code>./public</code> folder with the contents of the <code>/var/www/mariosanchez.org/html</code> folder (thanks to <a href="https://www.neustadt.fr/parimal-satyal">Parimal Satyal</a> for this tip!):
-<pre><code>#!/bin/sh
-rsync -av -e ssh public/* myusername@my.ip.address:/var/www/mariosanchez.org/html</code></pre>
-<br />Obviously, <em>myusername</em> and <em>my.ip.address</em> need to be replaced by my actual VPS information.
-To run the bash script I just type <code>./deploy.sh</code>, which is the name of the bash script.</li>
-<li>Go to <code>mariosanchez.org</code> and see the changes live!</li>
+For this, I created a bash file, located in the root directory of my project, that I named <code>deploy.sh</code>. This bash file syncs the contents of the <code>./public</code> folder with the contents of the <code>/var/www/mariosanchez.org/html</code> folder (thanks to <a href="https://www.neustadt.fr/parimal-satyal">Parimal Satyal</a> for this tip!):</li>
 </ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span>rsync -av -e ssh public/* myusername@my.ip.address:/var/www/mariosanchez.org/html</code></pre></div>
+<p><br />Obviously, <em>myusername</em> and <em>my.ip.address</em> need to be replaced by my actual VPS information.
+To run the bash script I just type <code>./deploy.sh</code>, which is the name of the bash script.
+3. Go to <code>mariosanchez.org</code> and see the changes live!</p>
 
         </article>
   </div>

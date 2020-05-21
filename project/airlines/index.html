@@ -23,6 +23,7 @@ With this simple app we can type the name (or part of the name) of an airline in
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
@@ -79,15 +80,8 @@ With this simple app we can type the name (or part of the name) of an airline in
 <p>Finally, we display the list of results on a webpage, using Flask and a Jinja template.</p>
 
 <p>To run this code on your computer you first need to install and import the following dependencies at the top of your <code>application.py</code> file:</p>
-
-<pre>
-<code>
-import json
-
-from flask import Flask, redirect, render_template, request
-</code>
-</pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">import json
+from flask import Flask, redirect, render_template, request</code></pre></div>
 <p><a href="https://github.com/mariobox/airlines">Click here</a> for the source code.</p>
 
         </article>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
@@ -83,18 +84,13 @@
 <p>Once you&rsquo;re finished, you can just log out.</p>
 
 <p>If you want to see the app in action, fork the repository to your own computer and perform the following commands from the command line in your project folder:</p>
-
-<p><code>export FLASK_APP=application.py</code><br />
-<code>flask run</code></p>
-
-<p>This assumes you have Python, Flask and SQLite installed in your computer, as well as a link to Bootstrap and the following modules necessary to run application.py installed:</p>
-
-<p><code>
-from cs50 import SQL</code><br />
-<code>from flask_session import Session</code><br />
-<code>from flask import Flask, render_template, redirect, request, session, jsonify</code><br />
-<code>from datetime import datetime</code></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">export FLASK_APP=application.py
+flask run</code></pre></div>
+<p>This assumes you have Python, Flask and SQLite installed in your computer, as well as a link to Bootstrap and the following modules necessary to run <code>application.py</code> installed:</p>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">cs50</span> <span class="kn">import</span> <span class="n">SQL</span>
+<span class="kn">from</span> <span class="nn">flask_session</span> <span class="kn">import</span> <span class="n">Session</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">jsonify</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span></code></pre></div>
         </article>
   </div>
 </section>

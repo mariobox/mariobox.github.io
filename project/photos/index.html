@@ -22,6 +22,7 @@ I wanted to post a few pictures from my trips and other activities here in the s
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
@@ -62,54 +63,42 @@ I wanted to post a few pictures from my trips and other activities here in the s
 <figure><img src="/img/UMBike.jpg" class="gallery medium" /><figcaption>University of Miami</figcaption></figure>
 
 <p>These are the style declarations for the photos:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">img</span><span class="p">.</span><span class="nc">gallery</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="p">:</span> <span class="mi">2</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
 
-<pre>
-<code>
-img.gallery {
-  padding: 4px;
-  border: 1px solid #ccc;
-  margin-bottom: 1em;
-  margin-right: 2%;
-}
+<span class="p">.</span><span class="nc">picbox</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="o">-</span><span class="kc">block</span><span class="p">;</span> 
+  <span class="k">margin</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
 
-.picbox {
-  display: inline-block; 
-  margin: 0.5em;
-}
+<span class="nt">figure</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
 
-figure {
-  margin: 0;
-  position: relative;
+<span class="p">}</span>
 
-}
-
-figcaption {
-  font-size: 0.85em;
-  line-height: 1.5;
-  color: #fff;
-  background: rgba(19,43,102, .50);
-  bottom: 0;
-  position: absolute;
-  margin-bottom: 33px;
-  margin-left: 5px;
-  padding: 0.6em;
-  box-sizing: border-box; 
-}
-</code>
-</pre>
-
+<span class="nt">figcaption</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.85</span><span class="kt">em</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+  <span class="k">background</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">102</span><span class="p">,</span> <span class="mf">.50</span><span class="p">);</span>
+  <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">33</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mf">0.6</span><span class="kt">em</span><span class="p">;</span>
+  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span> 
+<span class="p">}</span></code></pre></div>
 <p>Since I&rsquo;m using a mobile first approach, the style declarations above apply to small screens. For screen sizes 769px and up I created a media query slightly modifying the size of the pictures:</p>
-
-<pre>
-<code>
-@media (min-width: 769px) {
-  img.gallery.medium {
-  width: 300px;
-  }
-}  
-</code>
-</pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">769px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">img</span><span class="p">.</span><span class="nc">gallery</span><span class="p">.</span><span class="nc">medium</span> <span class="p">{</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span> </code></pre></div>
 <p>I placed the pictures in my <code>img</code> folder and then created a <a href="https://mariosanchez.org/pix.json">JSON file</a> with the url and description of each picture. Every time I want to add a picture to the gallery, I add a new member at the top of the object.</p>
 
 <p>Finally, I created the following <a href="https://mariosanchez.org/js/pix.js">JavaScript script</a> that renders the images in the gallery. The script uses the <code>fetch()</code> method to pull the information from the JSON file and then parses it to convert it into a JavaScript object (in this case an array). It then maps over the array and builds the HTML elements that hold the gallery and the pictures. Once the map function is done, the HTML is placed in the proper place in the photos HTML template via the <code>document.getElementById()</code> method.</p>

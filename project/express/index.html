@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
@@ -67,21 +68,16 @@
 <p>Open your text editor and create a file called <code>app.js</code> (make sure that during your installation you set the <strong>entry point</strong> in your <code>package.json</code> as <code>app.js</code> instead of <code>index.js</code>).</p>
 
 <p>Then type the following:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">)</span>
+<span class="k">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="k">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="mi">3000</span>
 
-<pre>
-<code>
-const express = require('express')
-const app = express()
-const port = 3000
+<span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">))</span>
 
-app.get('/', (req, res) => res.send('Hello World!'))
-
-app.listen(port, () => 
-  console.log(`Example app listening at http://localhost:${port}`)
-  ) 
-</code>
-</pre>
-
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> 
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Example app listening at http://localhost:</span><span class="si">${</span><span class="nx">port</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+  <span class="p">)</span> 
+</code></pre></div>
 <p>The first two lines indicate that you want to import Express and that you will assign it to a variable called <code>app</code>.</p>
 
 <p>The port is where you will see your application at work: <a href="http://localhost:3000">http://localhost:3000</a></p>
@@ -96,89 +92,39 @@ app.listen(port, () =>
 
 <p>Then, navigate to <a href="http://localhost:3000">http://localhost:3000</a>, and you should see this in the browser:</p>
 
-<pre>
-<code>
-Hello World!
-</code>
-</pre>
+<p>Hello World!</p>
 
 <p>Now, let&rsquo;s say that instead of sending just text you want to send an HTML snippet, for example:</p>
-
-<pre>
-<code>
-...
-
-app.get('/', (req, res) => 
-  res.send('&lt;h1&gt;Hello World!&lt;/h1&gt;&lt;p&gt;This is my new website.&lt;/p&gt;')
-  )
-
-...
-</code>
-</pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> 
+  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span>
+    <span class="s1">&#39;&lt;h1&gt;Hello World!&lt;/h1&gt;&lt;p&gt;This is my new website.&lt;/p&gt;&#39;</span>
+    <span class="p">)</span>
+  <span class="p">)</span>
+</code></pre></div>
 <p>Save your work, run <code>node app.js</code> again and refresh your browser. You should see someting like this:</p>
 
-<pre>
-<code>
-<h1>Hello World!</h1>
-<p>This is my new website.</p>
-</code>
-</pre>
+<p><h1>Hello World!</h1>
+<p>This is my new website.</p></p>
 
 <p>Sending a bunch of loose HTML is not very common, though. Most of the time you would like to send a proper HTML document. You just have to place the previous code in an <code>index.html</code> file, save the file in the <code>views</code> folder (Express will find it) and use the <code>render</code> method instead of <code>send</code>:</p>
-
-<pre>
-<code>
-...
-
-app.get('/', (req, res) => res.render('index'))
-
-...
-
-</code>
-</pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">))</span>
+</code></pre></div>
 <p>The result will be the same as before:</p>
 
-<pre>
-<code>
-<h1>Hello World!</h1>
-<p>This is my new website.</p>
-</code>
-</pre>
+<p><h1>Hello World!</h1>
+<p>This is my new website.</p></p>
 
 <p>But you can go a step further, and ask Express to insert variables to your websites! Here is where the dynamic nature of Express starts to shine. You can use any templating engine, for example <a href="https://pugjs.org/api/getting-started.html">Pug</a>, and create an <code>index.pug</code> file that looks like this:</p>
-
-<pre>
-<code>
-block content
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">block content
     h1 Hello World!
-    p My name is ${name}!
-
-</code>
-</pre>
-
+    p My name is ${name}!</code></pre></div>
 <p>Then, just pass an object with the variable <strong>name</strong> with your render method, like this:</p>
-
-<pre>
-<code>
-...
-
-app.get('/', (req, res) => res.render('index', { name, 'Joe'}))
-
-...
-
-</code>
-</pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="p">,</span> <span class="s1">&#39;Joe&#39;</span><span class="p">}))</span>
+</code></pre></div>
 <p>And your website will display:</p>
 
-<pre>
-<code>
-<h1>Hello World!</h1>
-<p>My name is Joe!</p>
-</code>
-</pre>
+<p><h1>Hello World!</h1>
+<p>My name is Joe!</p></p>
 
 <p>There are many other things that you can do with Express, like grabbing parameters from the URL and passing them to your templates. We will see that in action in our demo site below.</p>
 

@@ -21,6 +21,7 @@ Tip: you may want to right-click on the terminal icon and choose &ldquo;Add To F
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
@@ -63,130 +64,55 @@ Tip: you may want to right-click on the terminal icon and choose &ldquo;Add To F
 <p><strong>Note</strong>: You don&rsquo;t need to type the $ before the command (that&rsquo;s the default command line prompt):</p>
 
 <p><strong>List folders and files under the current folder:</strong></p>
-
-<pre><code>$ ls 
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls </code></pre></div>
 <p><strong>List folders and files under the current folder (long format):</strong></p>
-
-<pre><code>$ ls -l
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -l</code></pre></div>
 <p><strong>List folders and files, including hidden ones</strong> (hidden files and folders are always preceded by a dot):</p>
-
-<pre><code>$ ls -a
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -a</code></pre></div>
 <p><strong>List folders and files combining the -l and the -a flags:</strong></p>
-
-<pre><code>$ ls -la
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -la</code></pre></div>
 <p><strong>Print working (current) directory:</strong></p>
-
-<pre><code>$ pwd
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pwd</code></pre></div>
 <p><strong>Change directory to the documents folder</strong> (the documents folder must be under the current folder):</p>
-
-<pre><code>$ cd documents
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd documents</code></pre></div>
 <p><strong>Move up one directory level</strong> (indicated by the two dots):</p>
-
-<pre><code>$ cd ..
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ..</code></pre></div>
 <p><strong>Output the full contents of the file to the console:</strong></p>
-
-<pre><code>$ cat hello.txt
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cat hello.txt</code></pre></div>
 <p><strong>Open a file called hello.txt with the built-in Nano text editor</strong> (to save changes type Control X and say YES):</p>
-
-<pre><code>$ nano hello.txt
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ nano hello.txt</code></pre></div>
 <p><strong>Rename hello.txt as hi.txt:</strong></p>
-
-<pre><code>$ mv hello.txt hi.txt
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hello.txt hi.txt</code></pre></div>
 <p><strong>Move hi.txt to the /documents folder:</strong></p>
-
-<pre><code>$ mv hi.thx /documents
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hi.thx /documents</code></pre></div>
 <p><strong>Move hi.txt back to its original folder:</strong></p>
-
-<pre><code>$ mv /documents/hi.txt .
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv /documents/hi.txt .</code></pre></div>
 <p><strong>Move hi.txt to the /documents folder and rename it hello.txt:</strong></p>
-
-<pre><code>$ mv hi.txt /documents/hello.txt
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hi.txt /documents/hello.txt</code></pre></div>
 <p><strong>Rename the documents folder as docs:</strong></p>
-
-<pre><code>$ mv documents docs
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv documents docs</code></pre></div>
 <p><strong>Copy hello.txt as hi.txt leaving hello.txt in place:</strong></p>
-
-<pre><code>$ cp hello.txt hi.txt
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp hello.txt hi.txt</code></pre></div>
 <p><strong>Copy a folder (with all its contents) into another folder. We need to use the -r (recursive) flag:</strong></p>
-
-<pre><code>$ cp -r documents docs
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp -r documents docs</code></pre></div>
 <p><strong>Delete hello.txt:</strong></p>
-
-<pre><code>$ rm hello.txt
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ rm hello.txt</code></pre></div>
 <p><strong>Remove the docs folder and all its contents. We need to use the -r (recursive) flag:</strong></p>
-
-<pre><code>$ rm -r docs
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ rm -r docs</code></pre></div>
 <p><strong>Create a folder called pictures:</strong></p>
-
-<pre><code>$ mkdir pictures
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir pictures</code></pre></div>
 <p><strong>Create nested folders. You need to use the -p flag:</strong></p>
-
-<pre><code>$ mkdir -p documents/pictures/2017
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir -p documents/pictures/2017</code></pre></div>
 <p><strong>Output the username of the user currently logged in:</strong></p>
-
-<pre><code>$ whoami
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ whoami</code></pre></div>
 <p><strong>See if a program is installed. It will give you the path to the program, if it is installed</strong> (for example, typing <em>which node</em> will probably give you: <em>usr/bin/node</em>):</p>
-
-<pre><code>$ which [NAME OF A PROGRAM]
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ which <span class="o">[</span>NAME OF A PROGRAM<span class="o">]</span></code></pre></div>
 <p><strong>Look for server information of a website:</strong> (replace with a real domain name)</p>
-
-<pre><code>$ nslookup [DOMAIN NAME]
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ nslookup <span class="o">[</span>DOMAIN NAME<span class="o">]</span></code></pre></div>
 <p><strong>Fetch the HTTP header of a website:</strong> (replace with a real URL)</p>
-
-<pre><code>$ curl -I [URL]
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -I <span class="o">[</span>URL<span class="o">]</span></code></pre></div>
 <p><strong>Get registration information of a domain name:</strong> (replace with a real domain name)</p>
-
-<pre><code>$ whois [DOMAIN NAME]
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ whois <span class="o">[</span>DOMAIN NAME<span class="o">]</span></code></pre></div>
 <p>If you want to dig deeper, just do a Google search for <a href="https://www.google.com/search?ei=dRa5XIf_E6-O5wL_lprIDg&amp;q=useful+linux+terminal+commands&amp;oq=useful+linux+terminal+commands&amp;gs_l=psy-ab.3..0.4052.7452..8574...5.0..0.128.1055.0j9......0....1..gws-wiz.......0i71j35i304i39j0i7i30j0i13j0i8i7i30j0i7i5i30j0i13i5i30j0i8i13i30.gmH5nuLkc9E">useful linux terminal commands</a> and you will find how powerful and versatile the terminal can be.</p>
 
         </article>
