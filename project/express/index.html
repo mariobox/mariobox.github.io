@@ -113,9 +113,9 @@
 <p>This is my new website.</p></p>
 
 <p>But you can go a step further, and ask Express to insert variables to your websites! Here is where the dynamic nature of Express starts to shine. You can use any templating engine, for example <a href="https://pugjs.org/api/getting-started.html">Pug</a>, and create an <code>index.pug</code> file that looks like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">block content
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">block content
     h1 Hello World!
-    p My name is ${name}!</code></pre></div>
+    p My name is <span class="si">${</span><span class="nv">name</span><span class="si">}</span>!</code></pre></div>
 <p>Then, just pass an object with the variable <strong>name</strong> with your render method, like this:</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="p">,</span> <span class="s1">&#39;Joe&#39;</span><span class="p">}))</span>
 </code></pre></div>
