@@ -59,46 +59,65 @@
         <article id="content">
            
 
-<p>This site has gone through several iterations. First, I hand-coded it page by page using plain vanilla HTML and CSS, but that became a problem very quickly. The main issue with hand-coding each page is that when you need to make changes to the site&rsquo;s common areas (for example the footer or the navigation menu) you have to update every single page (not very efficient or fun).</p>
+<h2 id="the-beginning">The Beginning</h2>
 
-<p>As I got more into coding I discovered static site generators, which are basically programs that create static sites in a more efficient way: they comb through one or more folders containing content files usually written in <a href="https://daringfireball.net/projects/markdown/">Markdown</a> (for example blog posts), convert them to HTML, and place them in a special folder that you can then deploy to the open web using any web hosting service.</p>
+<p>This site has gone through several iterations. First, I hand-coded it <strong>page by page</strong> using plain vanilla <strong><abbr title="Hypertext Markup Language">HTML</abbr></strong> and <strong><abbr title="Cascading Style Sheets">CSS</abbr></strong>, but that became a problem very quickly. The main issue with hand-coding each page is that when you need to make changes to common areas like the footer or the navigation menu you have to update every single page (not very efficient or fun).</p>
 
-<p>Static site generators are ideal for blogs or for small-to-medium sites where content doesn&rsquo;t change based on user input. A static site generator can be written in any programming language. Some of the most popular ones are JavaScript, Python, Ruby or Go.</p>
+<h2 id="static-site-generators">Static Site Generators</h2>
 
-<p>I am currently using a static site generator written in <a href="https://golang.org">Go</a> called <a href="https:gohugo.io">Hugo</a>. Go is an open-source programming language started by Google, that makes it easy to build simple, reliable, and efficient software. Hugo is blazing fast and the setup process is pretty straightforward. It also appears to have a strong following and it&rsquo;s updated frequently.</p>
+<p>As I got more into coding I discovered <strong>static site generators</strong>, which are basically programs that create <a href="https://techterms.com/definition/staticwebsite">static sites</a> in a more efficient way: they comb through one or more folders containing content files usually written in <a href="https://daringfireball.net/projects/markdown/">Markdown</a> (for example blog posts), convert them to HTML, and place them in a special folder that you can then deploy to the open web using any web hosting service.</p>
 
-<p>Chosing a platform supported by a vibrant, active community is crucial if you don&rsquo;t want to deal with dependencies that become stale or conflict with one another. That&rsquo;s what happened to my previous setup, a JavaScript-based blog engine called <a href="https://metalsmith.io">Metalsmith</a>. It worked great when I started with it about four years ago, but by being dependent on packages and modules created by many different people it had recently started to crash, and some dependencies stopped working. Rather than venturing deep into <a href="https://en.wikipedia.org/wiki/Dependency_hell">dependency-hell</a> to find out what was wrong, I decided to start from scratch with <a href="https:gohugo.io">Hugo</a>. I couldn&rsquo;t be happier I did.</p>
+<p>Static site generators are <strong>ideal for blogs or for small-to-medium sites</strong> where content doesn&rsquo;t change based on user input. A static site generator can be written in any programming language. Some of the most popular ones are JavaScript, Python, Ruby or Go.</p>
 
-<p>As far as the look and feel of the site is concerned, I&rsquo;m using a <a href="https://www.mariosanchez.org/css/minimal.css">custom style sheet</a> that I hand-coded myself.</p>
+<h2 id="enter-hugo">Enter Hugo</h2>
 
-<p>For hosting, I use <a href="https://pages.github.com">Github Pages</a>: it&rsquo;s easy, reliable and free, and it comes with HTTPS and custom domain support. Github Pages is a great solution for static sites. In my previous setup, I was deploying my site on a Virtual Private Server at <a href="https://digitalocean.com">Digital Ocean</a>. I did it mainly to learn how to operate a VPS, but after a while it became clear that it was overkill for what I needed (just a place to host a basic static site) so I went the Github route.</p>
+<p>I am currently using a static site generator written in <a href="https://golang.org">Go</a> called <a href="https:gohugo.io">Hugo</a>. Go is an <strong>open-source programming language</strong> started by Google, that makes it easy to build simple, reliable, and efficient software. Hugo is blazing fast and the setup process is pretty straightforward. It also appears to have a strong following and it&rsquo;s updated frequently.</p>
 
-<h3 id="hugo-site-setup-process">Hugo Site Setup Process</h3>
+<p>Chosing a platform supported by a vibrant, active community is crucial if you don&rsquo;t want to deal with dependencies that become stale or conflict with one another. That&rsquo;s what happened to my previous setup, a JavaScript-based blog engine called <a href="https://metalsmith.io">Metalsmith</a>. It worked great when I started with it about four years ago, but by being dependent on packages and modules created by many different people it had recently started to crash, and some dependencies stopped working.</p>
 
-<p>I started by downloading Hugo and running the <code>hugo new site mysite</code> command to create the basic scaffolding for the site. This command creates a folder in your computer called <code>mysite</code> and populates it with several folders, the most important of which are:</p>
+<p>Rather than venturing deep into <a href="https://en.wikipedia.org/wiki/Dependency_hell">dependency-hell</a> to find out what was wrong, I decided to start from scratch with <a href="https:gohugo.io">Hugo</a>. I couldn&rsquo;t be happier I did.</p>
+
+<h2 id="this-site-s-aims">This Site&rsquo;s Aims</h2>
+
+<p>The main aim for this site is to <strong>be as minimalistic as possible</strong>, with focus on clarity and speed. That&rsquo;s why I&rsquo;m using a <a href="https://www.mariosanchez.org/css/minimal.css">custom style sheet</a> that I hand-coded myself, instead of a bloated third-party template. Whenever an image is used, it is only because it adds value to the content.</p>
+
+<p>Another aim is to <strong>respect the visitor&rsquo;s privacy</strong>: this site doesn&rsquo;t run Google Analytics nor any other site stats tool. Also, it is served through secure <a href="/post/https/">HTTPS</a> (notice the <em>lock</em> icon next to the URL in the address bar):</p>
+
+<p><img src="/img/httpsms.jpg" /></p>
+
+<p>Finally, the HTML code has been <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmariosanchez.org%2F">validated</a> by <a href="https://w3.org">w3.org</a> for the best browser experience and load speed.</p>
+
+<h2 id="where-is-it-hosted">Where Is It Hosted?</h2>
+
+<p>I am currently hosting my site in <a href="https://pages.github.com">Github Pages</a>: it&rsquo;s easy, reliable and free, and it <strong>comes with HTTPS and custom domain support</strong>. Github Pages is a great solution for static sites and personal webites. In my previous setup, I was deploying my site on a <strong>virtual private server</strong> at <a href="https://digitalocean.com">Digital Ocean</a>. I did it mainly to learn how to operate a VPS, but after a while it became clear that it was overkill for what I needed (just a place to host a basic static site) so I went the Github route.</p>
+
+<h2 id="my-hugo-site-setup-process">My Hugo Site Setup Process</h2>
+
+<p>After installing <strong>Go</strong> and <strong>Hugo</strong> I created a new site scaffolding by going to my command line and typing:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site mysite</code></pre></div>
+<p>This command creates a folder in your computer called <code>mysite</code> and populates it with several other folders, the most important of which are:</p>
 
 <ul>
-<li><code>content</code> (self explanatory)</li>
-<li><code>layouts</code> which holds your different page templates, and</li>
-<li><code>static</code> which contains static assets such as images, style sheets and JavaScript files.</li>
+<li><code>content</code> which holds your <strong>content files</strong></li>
+<li><code>layouts</code> which holds your different <strong>page templates</strong>, and</li>
+<li><code>static</code> which holds <strong>static assets</strong> such as images, style sheets and JavaScript files.</li>
 </ul>
 
-<p>Under the <code>content</code> folder, I created three subfolders for the three types of content I wanted to display on my site:</p>
+<p>Under the <code>content</code> folder, I created two subfolders for the two types of content I wanted to display on my site:</p>
 
 <ul>
-<li><code>post</code>: Things I write</li>
+<li><code>post</code>: Things I write (blog posts, book reviews, etc.)</li>
 <li><code>project</code>: A portfolio of my coding projects</li>
-<li><code>notes</code>: Notes and highlights from books I read</li>
 </ul>
 
-<p>All content files are written in Markdown.</p>
+<p>All content files are written in <strong>Markdown</strong>.</p>
 
 <p>For templates, I just created three <code>_default</code> ones:</p>
 
 <ol>
 <li><code>single.html</code> to display single pages (same template for blog posts, projects and notes)</li>
-<li><code>list.html</code> to display a collection of posts, projects or notes. I chose to just display titles and dates.</li>
-<li><code>li.html</code> to display the title and date of each individual post, project or note.</li>
+<li><code>list.html</code> to display any collection of posts, projects, notes, etc. I chose to display just titles and dates.</li>
+<li><code>li.html</code> to display the title and date of each individual post or project.</li>
 </ol>
 
 <p>I also created an <code>index.html</code> file in the <code>layouts</code> folder, which contains the home page of the site.</p>
@@ -106,6 +125,10 @@
 <p>Finally, I created two <code>partials</code> templates: <code>header.html</code> and <code>footer.html</code> that are called from the other templates. These two templates contain information that is common to all pages of the site.</p>
 
 <p>That&rsquo;s basically it. To create the static site to be deployed, I just run the <code>hugo</code> command and the static files are placed in a <code>public</code> folder that I then deploy to Github Pages using <a href="/post/gcs">Git</a>.</p>
+
+<h2 id="closing-comments">Closing Comments</h2>
+
+<p>If you want to give Hugo a try and need more detailed instructions check out their site: <a href="https://gohugo.io">gohugo.io</a>. In the spirit of sharing, if you want to use the source code of this site feel free to fork the <a href="https://github.com/mariobox">Github repository</a>. Just add your own content and pictures.</p>
 
         </article>
   </div>

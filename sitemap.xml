@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.mariosanchez.org/post/site/</loc>
+    <lastmod>2020-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.mariosanchez.org/project/express/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
@@ -10,11 +15,6 @@
   <url>
     <loc>https://www.mariosanchez.org/post/chromebook/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mariosanchez.org/post/site/</loc>
-    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -178,7 +178,7 @@
   
   <url>
     <loc>https://www.mariosanchez.org/</loc>
-    <lastmod>2020-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -192,7 +192,7 @@
   
   <url>
     <loc>https://www.mariosanchez.org/post/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
