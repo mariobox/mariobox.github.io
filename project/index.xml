@@ -32,7 +32,7 @@ Since Express is made with JavaScript, you can install it directly from NPM.</de
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/dark/</guid>
-      <description>Made with: JavaScript
+      <description>Made with:  JavaScript
 Project Summary:
 Implement a dark theme for our site that we can activate at a click of a button.
 Source Files | Demo
