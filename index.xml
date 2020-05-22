@@ -6,10 +6,20 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Changelog</title>
+      <link>https://www.mariosanchez.org/post/changelog/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mariosanchez.org/post/changelog/</guid>
+      <description>All notable changes to this site will be documented in this file.
+Unreleased  Embed working demo in Ecommerce Site post.  Added  May 21, 2020 - Dark theme media query. May 21, 2020 - HTML language attribute. May 19, 2020 - Code syntax highlighting via Hugo&amp;rsquo;s built-in Chroma code highliter. May 13, 2020 - Twitter cards meta information.  Changed  May 21, 2020 - Removed Notes folder and integrated content into Posts.</description>
+    </item>
     
     <item>
       <title>How This Site Is Made</title>
