@@ -45,7 +45,7 @@ We will implement a dark theme selector for our site that visitors can activate 
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/fx/</guid>
-      <description>Made with: JavaScript
+      <description>Made with:  JavaScript
 Project Summary:
 Mobile-friendly FX watcher.
 Source Files | Demo
@@ -59,7 +59,7 @@ I decided to implement this project because I work in international marketing, a
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/airlines/</guid>
-      <description>Made with: Python
+      <description>Made with:  Python
 Project Summary:
 Submit the name of an airline and get its 2-charachter IATA symbol
 Source Files
@@ -72,7 +72,7 @@ With this simple app we can type the name (or part of the name) of an airline in
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/photos/</guid>
-      <description>Made with: JavaScript
+      <description>Made with:  JavaScript
 Project Summary:
 A pleasantly styled image gallery that renders dynamically when the web page is called.
 I wanted to post a few pictures from my trips and other activities here in the site. Looking around the web for ideas I settled on a simple square format for the pictures, with a subtle frame and a gray transparent rectangle for the description placed at the bottom of the photo:</description>
@@ -84,7 +84,7 @@ I wanted to post a few pictures from my trips and other activities here in the s
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/stocksreact/</guid>
-      <description>Made with: React
+      <description>Made with:  React
 Project Summary:
 Web app to fetch stock info from an API and display it using React
 Source Files | Live DemoUpdate: As of May 9, 2020, the API I was using to fecth the stock info has gone out of business so the values you will get in the Demo are all null. The functionality of the app, though, remains correct. I will update as soon as I find another free API.</description>
@@ -96,7 +96,7 @@ Source Files | Live DemoUpdate: As of May 9, 2020, the API I was using to fecth 
       <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/progresscircle/</guid>
-      <description>Made with: JavaScript JavaScript |  CSS
+      <description>Made with:  JavaScript |  CSS
 Project Summary:
 JS app that creates an animated and stylish progress bar around a circle with the progress score written in the center.
 Source Files | Live DemoI started with progressbar.js by Kimmo Brunfeldt, which does most of the heavy lifting. You can add it your project by including a link near your closing body tag to the CDN repository where progressbar.js resides.</description>
@@ -108,7 +108,7 @@ Source Files | Live DemoI started with progressbar.js by Kimmo Brunfeldt, which 
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/flaskecomm/</guid>
-      <description>Made with: Python
+      <description>Made with:  Python
 Project Summary:
 An eCommerce App built with Flask, Jinja, SQLite, jQuery and Bootstrap
 Source Files This app was my CS50x final project.
@@ -134,7 +134,7 @@ Source Files | Live DemoThis front end project is inspired in a minimal version 
       <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/rei/</guid>
-      <description>Made with:   HTML, CSS and JavaScript
+      <description>Made with:  HTML |  CSS |  JavaScript
 Project Summary:
 Responsive company website for a real estate investments business.
 Source Files | Live DemoThe objective was to design a clean, efficient, and fully responsive website for a real estate investments business. It needed to clearly describe what the company did, and include easy to follow call-to-actions throughout the site.
@@ -147,7 +147,7 @@ It was made using the Agency template for Bootstrap, a fully functional form by 
       <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/calc/</guid>
-      <description>Made with: JavaScript JavaScript |  CSS
+      <description>Made with:  JavaScript |  CSS
 Project Summary:
 Basic calculator to add, subtract, multiply and divide.
 Source Files | Live DemoProject involved creating the calculator interface with HTML and CSS and then adding fuctionality through event handlers and callback functions. It works fine, with some improvements yet to be made, like limiting the display to a certain number of digits so that they fit in the calculator window when the number is too large.</description>
@@ -159,7 +159,7 @@ Source Files | Live DemoProject involved creating the calculator interface with 
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/project/angular/</guid>
-      <description>Made with: Angular
+      <description>Made with:  Angular
 Project Summary:
 Create a barebones brochure site CPA using Angular
 Source Files | Demo
