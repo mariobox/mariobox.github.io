@@ -27,8 +27,8 @@ Unreleased  Embed working demo in Ecommerce Site post.  Added  May 21, 2020 - Da
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.mariosanchez.org/post/site/</guid>
-      <description>The Beginning This site has gone through several iterations. First, I hand-coded it page by page using plain vanilla HTML and CSS, but that became a problem very quickly. The main issue with hand-coding each page is that when you need to make changes to common areas like the footer or the navigation menu you have to update every single page (not very efficient or fun).
-Static Site Generators As I got more into coding I discovered static site generators, which are basically programs that create static sites in a more efficient way: they comb through one or more folders containing content files usually written in Markdown (for example blog posts), convert them to HTML, and place them in a special folder that you can then deploy to the open web using any web hosting service.</description>
+      <description>This page is a working document that explains why I created this site, how it is made, and what tools I am using. It was last updated May 22, 2020.
+Goals and Intentions Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. I do it by working on the site&amp;rsquo;s code and by posting write-ups about my other coding projects.</description>
     </item>
     
     <item>
