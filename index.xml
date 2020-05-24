@@ -91,9 +91,9 @@ I decided to implement this project because I work in international marketing, a
       <guid>https://www.mariosanchez.org/project/airlines/</guid>
       <description>Made with:  Python
 Project Summary:
-Submit the name of an airline and get its 2-charachter IATA symbol
+Submit the name (or part of a name) of an airline and get its name followed by its 2-charachter IATA symbol
 Source Files
-With this simple app we can type the name (or part of the name) of an airline in the form, and when we hit submit we will get a list of airlines that match that input followed by its IATA symbol. For example, you can type &amp;ldquo;american&amp;rdquo; in the search box:</description>
+With this simple app we can type the name (or part of the name) of an airline in a form, and upon Submit we get a list of airlines that match our input followed by its IATA symbol. For example, you can type &amp;ldquo;american&amp;rdquo; in the search box:</description>
     </item>
     
     <item>
