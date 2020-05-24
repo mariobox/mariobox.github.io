@@ -18,7 +18,7 @@
       
       <guid>https://www.mariosanchez.org/post/changelog/</guid>
       <description>All notable changes to this site will be documented in this file.
-Unreleased  Embed working demo in Ecommerce Site post.  Added  May 21, 2020 - Dark theme media query. May 21, 2020 - HTML language attribute. May 19, 2020 - Code syntax highlighting via Hugo&amp;rsquo;s built-in Chroma code highliter. May 13, 2020 - Twitter cards meta information.  Changed  May 21, 2020 - Removed Notes folder and integrated content into Posts.</description>
+Unreleased  Embed working demo in Ecommerce Site post. Apply breadcrumb navigation to individual posts and projects pages.  Added  May 21, 2020 - Dark theme media query. May 21, 2020 - HTML language attribute. May 19, 2020 - Code syntax highlighting via Hugo&amp;rsquo;s built-in Chroma code highliter. May 13, 2020 - Twitter cards meta information.  Changed  May 21, 2020 - Removed Notes folder and integrated content into Posts.</description>
     </item>
     
     <item>
