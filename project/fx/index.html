@@ -18,7 +18,6 @@ Source Files | Demo
 We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the YTD % devaluation (or revaluation) for each of the currencies.
 I decided to implement this project because I work in international marketing, and devaluation is always an important variable to follow when analyzing business results."/>
 
-
     
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
@@ -29,31 +28,35 @@ I decided to implement this project because I work in international marketing, a
   </head>
 
   <body>
-		<div class="header"></div>
-		<a href="/">
-			<div class="avatar"></div>
-		</a>
-    <div class="centered">		
-	  <a href="/" class="logo"><h1>msc</h1></a>
-    <nav>
-			  <ul class="blocknav">
-					<li>
-                <a href="/post/">
-                <span class="icon"> <i class="fas fa-pen fa-2x hd"></i></span><br />
-                <span> posts </span>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar"></div>
+    </a>
+    <div class="centered">
+      <a href="/" class="logo"><h1>msc</h1></a>
+      <nav>
+        <ul class="blocknav">
+          <li>
+            <a href="/post/">
+              <span class="icon"> <i class="fas fa-pen fa-2x hd"></i></span><br />
+              <span> posts </span>
             </a>
-            </li>
-			    <li><a href="/project/">
-                <span class="icon"> <i class="fas fa-laptop-code fa-2x hd"></i></span><br />
-                <span> projects </span>
-            </a></li>			    
-          <li><a href="/photos/">
-                <span class="icon"> <i class="far fa-images fa-2x hd"></i></span><br />
-                <span> photos </span>
-            </a></li>
-			  </ul>            
-  	</nav>
-    </div>			
+          </li>
+          <li>
+            <a href="/project/">
+              <span class="icon"> <i class="fas fa-laptop-code fa-2x hd"></i></span><br />
+              <span> projects </span>
+            </a>
+          </li>
+          <li>
+            <a href="/photos/">
+              <span class="icon"> <i class="far fa-images fa-2x hd"></i></span><br />
+              <span> photos </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="container">
 
 
@@ -128,24 +131,22 @@ I decided to implement this project because I work in international marketing, a
     <span class="p">}</span> 
 </code></pre></div>
 <p>Once we have that information, a <code>for</code> loop iterates over our <strong>flags</strong>, <strong>currencies</strong> and <strong>exchange</strong> rate arrays and builds the HTML container that we will then pass to the <code>&lt;div&gt;</code> with the ID of <code>root</code> in our <code>index.html</code> file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">l</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">exchanges</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">-</span> <span class="nx">exchangesly</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="nx">bkchangely</span> <span class="o">=</span> <span class="s2">&#34;#00CC00&#34;</span><span class="o">:</span> <span class="nx">bkchangely</span> <span class="o">=</span> <span class="s2">&#34;#FF0000&#34;</span><span class="p">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="k">for</span> <span class="o">(</span><span class="nb">let</span> <span class="nv">i</span> <span class="o">=</span> <span class="m">0</span><span class="p">;</span> i &lt; l<span class="p">;</span> i++<span class="o">)</span> <span class="o">{</span>
+    exchanges<span class="o">[</span>i<span class="o">]</span> - exchangesly<span class="o">[</span>i<span class="o">]</span> &lt; <span class="m">0</span> ? <span class="nv">bkchangely</span> <span class="o">=</span> <span class="s2">&#34;#00CC00&#34;</span>: <span class="nv">bkchangely</span> <span class="o">=</span> <span class="s2">&#34;#FF0000&#34;</span><span class="p">;</span>
     
-    <span class="nx">html</span> <span class="o">+=</span> <span class="sb">`
-</span><span class="sb">            &lt;tr&gt;
-</span><span class="sb">            &lt;th scope=&#34;row&#34;&gt;&lt;img src=&#34;</span><span class="si">${</span><span class="nx">flags</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="si">}</span><span class="sb">&#34; width=&#34;25px&#34;&lt;/th&gt;
-</span><span class="sb">            &lt;td&gt;&lt;strong&gt;</span><span class="si">${</span><span class="nx">currencies</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="si">}</span><span class="sb">&lt;/strong&gt;&lt;/td&gt;
-</span><span class="sb">            &lt;td&gt;&lt;strong&gt;</span><span class="si">${</span><span class="nx">exchanges</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="sb">&lt;/strong&gt;&lt;/td&gt;
-</span><span class="sb">            &lt;td&gt;&lt;p class=&#34;change&#34; style=&#34;background-color:</span><span class="si">${</span><span class="nx">bkchangely</span><span class="si">}</span><span class="sb">&#34;&gt;&lt;strong&gt;</span><span class="si">${</span><span class="p">(((</span><span class="nx">exchanges</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">-</span> <span class="nx">exchangesly</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span><span class="err">/exchanges[i])*100*(-1)).toFixed(2)}%&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;</span>
-            <span class="o">&lt;</span><span class="err">/tr&gt;`</span>
-<span class="si">}</span><span class="sb"> 
-</span><span class="sb">
-</span><span class="sb">// Build our table
-</span><span class="sb">html = `</span><span class="o">&lt;</span><span class="nx">table</span> <span class="k">class</span><span class="o">=</span><span class="s2">&#34;table table-dark&#34;</span><span class="o">&gt;&lt;</span><span class="nx">tbody</span><span class="o">&gt;</span><span class="nx">$</span><span class="p">{</span><span class="nx">html</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/tbody&gt;&lt;/table&gt;`;</span>
+    <span class="nv">html</span> <span class="o">+=</span> <span class="sb">`</span>&lt;tr&gt;
+              &lt;th <span class="nv">scope</span><span class="o">=</span><span class="s2">&#34;row&#34;</span>&gt;&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">flags</span><span class="p">[i]</span><span class="si">}</span><span class="s2">&#34;</span> <span class="nv">width</span><span class="o">=</span><span class="s2">&#34;25px&#34;</span>&lt;/th&gt;
+              &lt;td&gt;&lt;strong&gt;<span class="si">${</span><span class="nv">currencies</span><span class="p">[i]</span><span class="si">}</span>&lt;/strong&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;strong&gt;<span class="si">${</span><span class="nv">exchanges</span><span class="p">[i].toFixed(2)</span><span class="si">}</span>&lt;/strong&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">&#34;change&#34;</span> <span class="nv">style</span><span class="o">=</span><span class="s2">&#34;background-color:</span><span class="si">${</span><span class="nv">bkchangely</span><span class="si">}</span><span class="s2">&#34;</span>&gt;&lt;strong&gt;<span class="si">${</span><span class="p">(((exchanges[i] - exchangesly[i])/exchanges[i])*100*(-1)).toFixed(2)</span><span class="si">}</span>%&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;
+            &lt;/tr&gt;<span class="sb">`</span>
+<span class="o">}</span> 
 
-<span class="c1">// Display our table
-</span><span class="c1"></span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;root&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">html</span><span class="p">;</span>
-</code></pre></div>
+// Build our table
+<span class="nv">html</span> <span class="o">=</span> <span class="sb">`</span>&lt;table <span class="nv">class</span><span class="o">=</span><span class="s2">&#34;table table-dark&#34;</span>&gt;&lt;tbody&gt;<span class="si">${</span><span class="nv">html</span><span class="si">}</span>&lt;/tbody&gt;&lt;/table&gt;<span class="sb">`</span><span class="p">;</span>
+
+// Display our table
+document.getElementById<span class="o">(</span><span class="s2">&#34;root&#34;</span><span class="o">)</span>.innerHTML <span class="o">=</span> html<span class="p">;</span></code></pre></div>
 <p>Finally, we call our <code>fetchExchange()</code> function to set the program in motion and deliver our table to the browser.</p>
 
 <p>All this will make more sense when you review the full <a href="https://github.com/mariobox/fx-watcher">source files</a> available in Github.</p>

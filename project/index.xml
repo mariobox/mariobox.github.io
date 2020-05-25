@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Mario Sanchez Carrion</title>
-    <link>https://www.mariosanchez.org/project/</link>
+    <link>https://mariosanchez.org/project/</link>
     <description>Recent content in Projects on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.mariosanchez.org/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mariosanchez.org/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Demo Site with Node and Express</title>
-      <link>https://www.mariosanchez.org/project/express/</link>
+      <link>https://mariosanchez.org/project/express/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/express/</guid>
+      <guid>https://mariosanchez.org/project/express/</guid>
       <description>Made with:  Node and Express
 Project Summary:
 A simple site made with Node and Express, showing dynamic routes.
@@ -28,10 +28,10 @@ Since Express is made with JavaScript, you can install it directly from NPM.</de
     
     <item>
       <title>How To Implement a Dark Theme Switch for your Site</title>
-      <link>https://www.mariosanchez.org/project/dark/</link>
+      <link>https://mariosanchez.org/project/dark/</link>
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/dark/</guid>
+      <guid>https://mariosanchez.org/project/dark/</guid>
       <description>Made with:  JavaScript
 Project Summary:
 Implement a dark theme for our site that we can activate at a click of a button.
@@ -41,10 +41,10 @@ We will implement a dark theme selector for our site that visitors can activate 
     
     <item>
       <title>Foreign Exchange Mobile Web App</title>
-      <link>https://www.mariosanchez.org/project/fx/</link>
+      <link>https://mariosanchez.org/project/fx/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/fx/</guid>
+      <guid>https://mariosanchez.org/project/fx/</guid>
       <description>Made with:  JavaScript
 Project Summary:
 Mobile-friendly FX watcher.
@@ -55,10 +55,10 @@ I decided to implement this project because I work in international marketing, a
     
     <item>
       <title>Airlines</title>
-      <link>https://www.mariosanchez.org/project/airlines/</link>
+      <link>https://mariosanchez.org/project/airlines/</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/airlines/</guid>
+      <guid>https://mariosanchez.org/project/airlines/</guid>
       <description>Made with:  Python
 Project Summary:
 Submit the name (or part of a name) of an airline and get its name followed by its 2-charachter IATA symbol
@@ -68,10 +68,10 @@ With this simple app we can type the name (or part of the name) of an airline in
     
     <item>
       <title>JavaScript Photo Gallery</title>
-      <link>https://www.mariosanchez.org/project/photos/</link>
+      <link>https://mariosanchez.org/project/photos/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/photos/</guid>
+      <guid>https://mariosanchez.org/project/photos/</guid>
       <description>Made with:  JavaScript
 Project Summary:
 A pleasantly styled image gallery that renders dynamically when the web page is called.
@@ -80,10 +80,10 @@ I wanted to post a few pictures from my trips and other activities here in the s
     
     <item>
       <title>Stock Info Dashboards with ReactJS</title>
-      <link>https://www.mariosanchez.org/project/stocksreact/</link>
+      <link>https://mariosanchez.org/project/stocksreact/</link>
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/stocksreact/</guid>
+      <guid>https://mariosanchez.org/project/stocksreact/</guid>
       <description>Made with:  React
 Project Summary:
 Web app to fetch stock info from an API and display it using React
@@ -92,10 +92,10 @@ Source Files | Live DemoUpdate: As of May 9, 2020, the API I was using to fecth 
     
     <item>
       <title>Progress Circle with JS and CSS</title>
-      <link>https://www.mariosanchez.org/project/progresscircle/</link>
+      <link>https://mariosanchez.org/project/progresscircle/</link>
       <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/progresscircle/</guid>
+      <guid>https://mariosanchez.org/project/progresscircle/</guid>
       <description>Made with:  JavaScript |  CSS
 Project Summary:
 JS app that creates an animated and stylish progress bar around a circle with the progress score written in the center.
@@ -104,10 +104,10 @@ Source Files | Live DemoI started with progressbar.js by Kimmo Brunfeldt, which 
     
     <item>
       <title>eCommerce App with Flask and SQLite</title>
-      <link>https://www.mariosanchez.org/project/flaskecomm/</link>
+      <link>https://mariosanchez.org/project/flaskecomm/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/flaskecomm/</guid>
+      <guid>https://mariosanchez.org/project/flaskecomm/</guid>
       <description>Made with:  Python
 Project Summary:
 An eCommerce App built with Flask, Jinja, SQLite, jQuery and Bootstrap
@@ -118,10 +118,10 @@ The app includes a series of filters implemented using SQLite queries so you can
     
     <item>
       <title>Micro Blog Front End with React</title>
-      <link>https://www.mariosanchez.org/project/micro-blog/</link>
+      <link>https://mariosanchez.org/project/micro-blog/</link>
       <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/micro-blog/</guid>
+      <guid>https://mariosanchez.org/project/micro-blog/</guid>
       <description>Made with:  ReactJS
 Project Summary:
 Micro-blog simulator made with ReactJS. Makes use of components and state. Includes a log-in form, an entry form for blog posts, and a list of posts in reverse chronological order.
@@ -130,10 +130,10 @@ Source Files | Live DemoThis front end project is inspired in a minimal version 
     
     <item>
       <title>Real Estate Website with Bootstrap</title>
-      <link>https://www.mariosanchez.org/project/rei/</link>
+      <link>https://mariosanchez.org/project/rei/</link>
       <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/rei/</guid>
+      <guid>https://mariosanchez.org/project/rei/</guid>
       <description>Made with:  HTML |  CSS |  JavaScript
 Project Summary:
 Responsive company website for a real estate investments business.
@@ -143,10 +143,10 @@ It was made using the Agency template for Bootstrap, a fully functional form by 
     
     <item>
       <title>Basic Calculator with JS and CSS</title>
-      <link>https://www.mariosanchez.org/project/calc/</link>
+      <link>https://mariosanchez.org/project/calc/</link>
       <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/calc/</guid>
+      <guid>https://mariosanchez.org/project/calc/</guid>
       <description>Made with:  JavaScript |  CSS
 Project Summary:
 Basic calculator to add, subtract, multiply and divide.
@@ -155,10 +155,10 @@ Source Files | Live DemoProject involved creating the calculator interface with 
     
     <item>
       <title>Building a Single Page Application with AngularJS</title>
-      <link>https://www.mariosanchez.org/project/angular/</link>
+      <link>https://mariosanchez.org/project/angular/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mariosanchez.org/project/angular/</guid>
+      <guid>https://mariosanchez.org/project/angular/</guid>
       <description>Made with:  Angular
 Project Summary:
 Create a barebones brochure site CPA using Angular
