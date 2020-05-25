@@ -5,15 +5,13 @@
     <meta charset="utf-8">
     <title>Learning Basic Linux Terminal Commands | mariosanchez.org</title>
     <meta name="author" content="Mario Sanchez Carrion">
-    <meta name="description" content="" />
+    <meta name="description" content="The most common bash commands I use in web development" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.mariosanchez.org/img/msc.jpg"/>
 
 <meta name="twitter:title" content="Learning Basic Linux Terminal Commands"/>
-<meta name="twitter:description" content="In a previous post I explained how to install Ubuntu Linux on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.
-To find your terminal click on the Show Applications icon and type the word &ldquo;terminal&rdquo; in the search box. Then, click on the terminal icon, similar to the one below:
-Tip: you may want to right-click on the terminal icon and choose &ldquo;Add To Favorites&rdquo;, to pin it to the task bar, since you&rsquo;re going to be using it often."/>
+<meta name="twitter:description" content="The most common bash commands I use in web development"/>
 
     
 
@@ -57,12 +55,13 @@ Tip: you may want to right-click on the terminal icon and choose &ldquo;Add To F
     <div class="container">
 
 
-
+<p class="date">Apr 18, 2019</p>
 <section id="main">
   <h1 id="title">Learning Basic Linux Terminal Commands</h1>
+  <p class="description">The most common bash commands I use in web development</p>
   <div>
-        <article id="content">
-           <p>In a previous post I explained <a href="/ubuntu/">how to install Ubuntu Linux</a> on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.</p>
+    <article id="content">
+    <p>In a previous post I explained <a href="/ubuntu/">how to install Ubuntu Linux</a> on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.</p>
 
 <p>To find your terminal click on the <em>Show Applications</em> icon and type the word &ldquo;terminal&rdquo; in the search box. Then, click on the terminal icon, similar to the one below:</p>
 
@@ -76,59 +75,67 @@ Tip: you may want to right-click on the terminal icon and choose &ldquo;Add To F
 
 <p><strong>Note</strong>: You don&rsquo;t need to type the $ before the command (that&rsquo;s the default command line prompt):</p>
 
-<p><strong>List folders and files under the current folder:</strong></p>
+<p>List folders and files under the current folder:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls </code></pre></div>
-<p><strong>List folders and files under the current folder (long format):</strong></p>
+<p>List folders and files under the current folder-long format:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -l</code></pre></div>
-<p><strong>List folders and files, including hidden ones</strong> (hidden files and folders are always preceded by a dot):</p>
+<p>List folders and files, including hidden ones (hidden files and folders are always preceded by a dot):</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -a</code></pre></div>
-<p><strong>List folders and files combining the -l and the -a flags:</strong></p>
+<p>List folders and files combining the -l and the -a flags:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -la</code></pre></div>
-<p><strong>Print working (current) directory:</strong></p>
+<p>Print working (current) directory:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pwd</code></pre></div>
-<p><strong>Change directory to the documents folder</strong> (the documents folder must be under the current folder):</p>
+<p>Change directory to the <em>documents</em> folder (the <em>documents</em> folder must be under the current folder):</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd documents</code></pre></div>
-<p><strong>Move up one directory level</strong> (indicated by the two dots):</p>
+<p>Move up one directory level (indicated by the two dots):</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ..</code></pre></div>
-<p><strong>Output the full contents of the file to the console:</strong></p>
+<p>Move up two directory levels:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ../..</code></pre></div>
+<p>Move up to the HOME directory:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ~</code></pre></div>
+<p>Output the full contents of a file to the console:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cat hello.txt</code></pre></div>
-<p><strong>Open a file called hello.txt with the built-in Nano text editor</strong> (to save changes type Control X and say YES):</p>
+<p>Open a file called <em>hello.txt</em> with the built-in Nano text editor (to save changes type Control X and say YES):</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ nano hello.txt</code></pre></div>
-<p><strong>Rename hello.txt as hi.txt:</strong></p>
+<p>Rename <em>hello.txt</em> as <em>hi.txt</em>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hello.txt hi.txt</code></pre></div>
-<p><strong>Move hi.txt to the /documents folder:</strong></p>
+<p>Move <em>hi.txt</em> to the <em>/documents</em> folder:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hi.thx /documents</code></pre></div>
-<p><strong>Move hi.txt back to its original folder:</strong></p>
+<p>Move <em>hi.txt</em> back to its original folder:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv /documents/hi.txt .</code></pre></div>
-<p><strong>Move hi.txt to the /documents folder and rename it hello.txt:</strong></p>
+<p>Move <em>hi.txt</em> to the <em>/documents</em> folder and rename it <em>hello.txt</em>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hi.txt /documents/hello.txt</code></pre></div>
-<p><strong>Rename the documents folder as docs:</strong></p>
+<p>Rename the <em>documents</em> folder as <em>docs</em>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv documents docs</code></pre></div>
-<p><strong>Copy hello.txt as hi.txt leaving hello.txt in place:</strong></p>
+<p>Copy <em>hello.txt</em> as <em>hi.txt</em> leaving <em>hello.txt</em> in place:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp hello.txt hi.txt</code></pre></div>
-<p><strong>Copy a folder (with all its contents) into another folder. We need to use the -r (recursive) flag:</strong></p>
+<p>Copy a folder (with all its contents) into another folder. We need to use the -r (recursive) flag:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp -r documents docs</code></pre></div>
-<p><strong>Delete hello.txt:</strong></p>
+<p>Delete <em>hello.txt</em>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ rm hello.txt</code></pre></div>
-<p><strong>Remove the docs folder and all its contents. We need to use the -r (recursive) flag:</strong></p>
+<p>Remove the <em>docs</em> folder and all its contents. We need to use the -r (recursive) flag:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ rm -r docs</code></pre></div>
-<p><strong>Create a folder called pictures:</strong></p>
+<p>Create a folder called <em>pictures</em>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir pictures</code></pre></div>
-<p><strong>Create nested folders. You need to use the -p flag:</strong></p>
+<p>Create nested folders. You need to use the -p flag:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir -p documents/pictures/2017</code></pre></div>
-<p><strong>Output the username of the user currently logged in:</strong></p>
+<p>Output the username of the user currently logged in:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ whoami</code></pre></div>
-<p><strong>See if a program is installed. It will give you the path to the program, if it is installed</strong> (for example, typing <em>which node</em> will probably give you: <em>usr/bin/node</em>):</p>
+<p>See if a program is installed. It will give you the path to the program, if it is installed (for example, typing <em>which node</em> will probably give you: <em>usr/bin/node</em>):</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ which <span class="o">[</span>NAME OF A PROGRAM<span class="o">]</span></code></pre></div>
-<p><strong>Look for server information of a website:</strong> (replace with a real domain name)</p>
+<p>Check which version of a program you are running (let&rsquo;s use <em>node</em> as an example):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node -v</code></pre></div>
+<p>Look for server information of a website (replace with a real domain name):</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ nslookup <span class="o">[</span>DOMAIN NAME<span class="o">]</span></code></pre></div>
-<p><strong>Fetch the HTTP header of a website:</strong> (replace with a real URL)</p>
+<p>Look for the IP Address and response time for a domain:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ping <span class="o">[</span>DOMAIN NAME<span class="o">]</span></code></pre></div>
+<p>Fetch the HTTP headers of a website: (replace with a real URL)</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -I <span class="o">[</span>URL<span class="o">]</span></code></pre></div>
-<p><strong>Get registration information of a domain name:</strong> (replace with a real domain name)</p>
+<p>Get registration information of a domain name: (replace with a real domain name)</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ whois <span class="o">[</span>DOMAIN NAME<span class="o">]</span></code></pre></div>
 <p>If you want to dig deeper, just do a Google search for <a href="https://www.google.com/search?ei=dRa5XIf_E6-O5wL_lprIDg&amp;q=useful+linux+terminal+commands&amp;oq=useful+linux+terminal+commands&amp;gs_l=psy-ab.3..0.4052.7452..8574...5.0..0.128.1055.0j9......0....1..gws-wiz.......0i71j35i304i39j0i7i30j0i13j0i8i7i30j0i7i5i30j0i13i5i30j0i8i13i30.gmH5nuLkc9E">useful linux terminal commands</a> and you will find how powerful and versatile the terminal can be.</p>
 
-        </article>
+    </article>
   </div>
 </section>
 

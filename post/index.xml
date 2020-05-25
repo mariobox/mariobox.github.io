@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Changelog</title>
+      <link>https://mariosanchez.org/post/changelog/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/changelog/</guid>
+      <description>Unreleased  Embed working demo in Ecommerce Site post. Apply breadcrumb navigation to individual posts and projects pages.  Added  May 25, 2020 - Date and short description to all posts and projects pages. May 21, 2020 - Dark theme media query. May 21, 2020 - HTML language attribute. May 19, 2020 - Code syntax highlighting via Hugo&amp;rsquo;s built-in Chroma code highliter. May 13, 2020 - Twitter cards meta information.</description>
+    </item>
     
     <item>
       <title>On Writing Well</title>
@@ -21,23 +30,13 @@
     </item>
     
     <item>
-      <title>Changelog</title>
-      <link>https://mariosanchez.org/post/changelog/</link>
-      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/post/changelog/</guid>
-      <description>All notable changes to this site will be documented in this file.
-Unreleased  Embed working demo in Ecommerce Site post. Apply breadcrumb navigation to individual posts and projects pages.  Added  May 21, 2020 - Dark theme media query. May 21, 2020 - HTML language attribute. May 19, 2020 - Code syntax highlighting via Hugo&amp;rsquo;s built-in Chroma code highliter. May 13, 2020 - Twitter cards meta information.  Changed  May 21, 2020 - Removed Notes folder and integrated content into Posts.</description>
-    </item>
-    
-    <item>
       <title>How This Site Is Made</title>
       <link>https://mariosanchez.org/post/site/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/post/site/</guid>
-      <description>This page is a working document that explains why I created this site, how it is made, and what tools I am using. It was last updated May 22, 2020.
-Goals and Intentions Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. I do it by working on the site&amp;rsquo;s code and by posting write-ups about my other coding projects.</description>
+      <description>Goals and Intentions Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. I do it by working on the site code and by posting write-ups on my other coding projects.
+Intentions There are many ways to achieve a project&amp;rsquo;s goals. I believe that the best one should reflect the values of the creator. Every project needs to start with a declaration of intentions or guiding principles.</description>
     </item>
     
     <item>
@@ -56,7 +55,7 @@ A Chromebook is a special kind of laptop that runs on Google&amp;rsquo;s Chromiu
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/post/rich/</guid>
-      <description>This are my favorite highlights of Naval Ravikant&amp;rsquo;s epic post How To Get Rich Without Getting Lucky.
+      <description>Read Naval&amp;rsquo;s original post here.
 Seek Wealth, Not Money or Status  Wealth is assets that earn while you sleep. The purpose of wealth is freedom; it’s nothing more than that. Money is how we transfer wealth. Money is social credits; it’s the ability to have credits and debits of other people’s time. Having wealth means not having to be any place you don’t want to be, or not having to do anything you don’t want to do.</description>
     </item>
     
@@ -66,8 +65,7 @@ Seek Wealth, Not Money or Status  Wealth is assets that earn while you sleep. Th
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/post/mnd/</guid>
-      <description>These are my 11 key takeaways from &amp;ldquo;The Millionaire Next Door&amp;rdquo;, the 1996 classic book by Thomas J. Stanley and William D. Danko:
- PAW (prodigious accumulator of wealth) is someone who has achieved high net worth. UAW (under accumulator of wealth) is someone with low or negative net worth. PAWs may have normal or even below average income. UAW may have high income. It&amp;rsquo;s not how much you make: it&amp;rsquo;s how much you keep.</description>
+      <description>PAW (prodigious accumulator of wealth) is someone who has achieved high net worth. UAW (under accumulator of wealth) is someone with low or negative net worth. PAWs may have normal or even below average income. UAW may have high income. It&amp;rsquo;s not how much you make: it&amp;rsquo;s how much you keep. PAWs live below their means. PAWs have budgets and stick to them. Majority of PAWs own their own businesses.</description>
     </item>
     
     <item>
@@ -118,7 +116,7 @@ I just moved my site to a Digital Ocean virtual private server (VPS). I had been
       <pubDate>Tue, 09 May 2017 09:42:48 -0400</pubDate>
       
       <guid>https://mariosanchez.org/post/6s/</guid>
-      <description>A few weeks ago, the company moved us to a new office. When we walked into our shiny, new cubicles we found a single sheet of paper laid out on top of our recently installed, empty desks describing something called &amp;ldquo;The 6S Discipline&amp;rdquo;.
+      <description>A few weeks ago, the company moved us to a new office. When we walked into our shiny, new cubicles we found a single sheet of paper laid out on top of our recently installed, empty desks describing something called The 6S Discipline.
 It was a concise list of 6 bullet points that summarized a process to keep our work stations clean and organized. I later found out that the 6S concept comes from the Lean Manufacturing philosophy, the principles of which can also be applied to an office setting.</description>
     </item>
     
@@ -188,10 +186,10 @@ I had only a vague idea of what stoicism was prior to reading the book, but base
     
     <item>
       <title>Anything You Want</title>
-      <link>https://mariosanchez.org/post/eyw/</link>
+      <link>https://mariosanchez.org/post/ayw/</link>
       <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mariosanchez.org/post/eyw/</guid>
+      <guid>https://mariosanchez.org/post/ayw/</guid>
       <description>Anything You Want by Derek Sivers is a powerful little book offering valuable uncommon sense advice on how to approach business in alignment with your values and beliefs. In about an hour reading time, Derek Sivers candidly tells us everything he learned from founding, operating and selling CD Baby, the business he stumbled upon when he decided to help fellow musicians sell their work on the Internet in the pre-Paypal, pre-iTunes days.</description>
     </item>
     
@@ -211,11 +209,8 @@ I didn&amp;rsquo;t want to spend a lot of money but I still wanted my new writin
       <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/post/systems/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/wts.jpg&#34; width=&#34;100px&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Ground breaking book about the importance of implementing systems in your business and personal life. Well written, entertaining, rooted in a deeply personal story, the book deals not only with the why but also with the how of developing systems.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>I decided to read Work The System when it was highly recommended by two respected business thinkers that I follow online: Josh Kaufman and Sebastian Marshall. Also, because I&amp;rsquo;ve been very busy lately and a deep understanding of systems, standardization and automation will bring more control, less stress, and more time for value-adding activities like thinking, strategizing, and keeping healthy.
+The book didn&amp;rsquo;t disappoint, and left me with plenty of actionable steps.</description>
     </item>
     
     <item>

@@ -55,80 +55,77 @@
     <div class="container">
 
 
-
+<p class="date">May 21, 2020</p>
 <section id="main">
   <h1 id="title">How This Site Is Made</h1>
+  <p class="description">The tools I use and the process I follow to develop and deploy my personal site</p>
   <div>
-        <article id="content">
-           
-
-<p>This page is a working document that explains <strong>why</strong> I created this site, <strong>how</strong> it is made, and <strong>what</strong> tools I am using. It was last updated <em>May 22, 2020</em>.</p>
+    <article id="content">
+    
 
 <h2 id="goals-and-intentions">Goals and Intentions</h2>
 
 <h3 id="goals">Goals</h3>
 
-<p>The main aim of this site is to serve as a <strong>web development playground</strong> where I can <strong>practice and document</strong> what I learn. I do it by working on the site&rsquo;s code and by posting write-ups about my other <a href="/project/">coding projects</a>.</p>
+<p>The main aim of this site is to serve as a <strong>web development playground</strong> where I can <strong>practice and document</strong> what I learn. I do it by working on the site code and by posting write-ups on my other <a href="/project/">coding projects</a>.</p>
 
 <h3 id="intentions">Intentions</h3>
 
-<p>There are many ways to achieve a project&rsquo;s goals. I believe that the best way is one that reflects the <strong>identity of the creator</strong>. That&rsquo;s why I believe every project needs to start with a <strong>declaration of intentions or guiding principles</strong>. The guiding principles for this site are:</p>
+<p>There are many ways to achieve a project&rsquo;s goals. I believe that the best one should reflect the <strong>values of the creator</strong>. Every project needs to start with a <strong>declaration of intentions or guiding principles</strong>. The guiding principles for this site are:</p>
 
 <h4 id="1-minimalism">1. Minimalism:</h4>
 
-<p>Everything we put on the site must serve a purpose and support our goals. We must continuously remove what is no longer relevant (<em>less is more</em>). Both the <strong>code</strong> and the <strong>content</strong> should adhere to the <abbr title="Don't Repeat Yourself"><a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a></abbr> principle.</p>
+<p>Everything we put on the site must support our goals. We must often remove what is no longer relevant (<em>less is more</em>). Both the <strong>code</strong> and the <strong>content</strong> should follow the <abbr title="Don't Repeat Yourself"><a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a></abbr> principle.</p>
 
 <h4 id="2-form-follows-function">2. Form Follows Function:</h4>
 
-<p>First and foremost, the site must achieve its goal, so we will favor a design that emphasizes <strong>content over gratuitous graphics</strong>. We will use mostly text, ample white space, bullets, bold and highlighted text for <strong>readability</strong>, code blocks, and images only when they enhance the content.</p>
+<p>We will favor a design that emphasizes <strong>content over gratuitous graphics</strong>. We will use mostly text, ample white space, bullets, bold and highlighted text for <strong>readability</strong>, code blocks, and will use images only when they enhance the content.</p>
 
 <h4 id="3-privacy">3. Privacy:</h4>
 
-<p>Visitors&rsquo; <strong>right to privacy</strong> should be a primary concern. Visitors should be able to come and go as they please, without being tracked. The site must be 100% <strong>non-transactional</strong>, <strong>non-commercial</strong>, and must have <strong>no ulterior motive</strong> beyond documenting the author&rsquo;s web development journey in a way that benefits everybody.</p>
+<p>Visitors&rsquo; <strong>right to privacy</strong> is a primary concern. Visitors should be able to come and go as they please, without being tracked. The site must be <strong>non-transactional</strong>, <strong>non-commercial</strong>, and must have <strong>no ulterior motive</strong> beyond documenting the author&rsquo;s web development journey in a way that benefits everybody.</p>
 
 <h4 id="4-inspiration">4. Inspiration:</h4>
 
-<p>Our site must be developed using <strong>open-source</strong> tools and technologies. It must honor the <strong>original intent</strong> of the creators of the <abbr title="Worldwide Web">WWW</abbr>: to bring people and ideas together in a <strong>decentralized, open system</strong> where everybody can have <strong>their own web presence</strong>. Hopefully we will inspire others to learn how to design and deploy <strong>simple personal websites</strong> that reflect who they are, as an alternative to social media sites operated by tech giants, who gladly trade our privacy and wellbeing for profit.</p>
+<p>The site must be developed with <strong>open-source</strong> tools and technologies. It must honor the <strong>original intent</strong> of the creators of the <abbr title="Worldwide Web">WWW</abbr>: to bring people and ideas together in a <strong>decentralized, open system</strong>. Hopefully, we will inspire others to learn how to design and deploy <strong>simple personal websites</strong> that reflect who they are, as an alternative to social media platforms operated by tech giants, who gladly trade our privacy and wellbeing for profit.</p>
 
 <h4 id="5-life-long-learning">5. Life-Long Learning:</h4>
 
-<p>We are a <strong>work in progress</strong>. Websites are no different, they are always <strong>under construction</strong>. As we learn new skills we will apply them to make this site better.</p>
+<p>We are a <strong>work in progress</strong>. Websites are no different: they are always <strong>under construction</strong>. As I learn new skills I will use them to make this site better.</p>
 
 <h2 id="implementation">Implementation</h2>
 
 <h3 id="static-vs-dynamic">Static vs. Dynamic:</h3>
 
-<p>I decided to make my site <a href="(https://techterms.com/definition/staticwebsite)">static</a> instead of using a database-driven tool like Wordpress. This is the simplest, fastest and most secure set up. Static sites are <strong>ideal for blogs and small-to-medium sites</strong> where content doesn&rsquo;t change based on user input.</p>
+<p>I decided to make my site <a href="https://techterms.com/definition/staticwebsite">static</a> instead of using a database-driven tool like Wordpress. This is the simplest, fastest and most secure set up. Static sites are <strong>ideal for blogs and small-to-medium sites</strong> where content doesn&rsquo;t change based on user input.</p>
 
-<p>To create the site we use a <strong>static site generator</strong>, which is basically a program that combs through one or more folders containing content files usually written in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, converts them to HTML, and places them in a special folder that you can then deploy to the open web using any web hosting service.</p>
+<p>To create the site I use a <strong>static site generator</strong>, which is a program that combs through one or more folders containing content files usually written in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, converts them to HTML, and places them in a special folder that you can then deploy to the open web using any web hosting service.</p>
 
-<p>Static site generators can be written in any programming language. Some of the most popular ones are <strong>JavaScript</strong>, <strong>Python</strong>, <strong>Ruby</strong> and <strong>Go</strong>.</p>
+<p>Static site generators can be written in any programming language. The most popular ones are <strong>JavaScript</strong>, <strong>Python</strong>, <strong>Ruby</strong> and <strong>Go</strong>.</p>
 
 <h3 id="platform">Platform:</h3>
 
-<p>We decided to use <a href="https://gohugo.io">Hugo</a>, which prides itself of being the <strong>world&rsquo;s fastest framework</strong> for building websites (we vouch for that: our site usually compiles in less than 400ms). <strong>Hugo</strong> also has an active community supporting the project, so the likelihood of having to deal with stale dependencies in the future is virtually non-existent. Of all the platforms I&rsquo;ve used so far to create my websites, <strong>Hugo</strong> has been the best, fastest and most reliable.</p>
+<p>I decided to use <a href="https://gohugo.io">Hugo</a>, a static site generator written in <strong>Go</strong> that prides itself of being the <strong>world&rsquo;s fastest framework</strong> for building websites (I vouch for that: my site usually compiles in less than 400ms). <strong>Hugo</strong> enjoys active community support, so the likelihood of having to deal with stale dependencies in the future is very small. Of all the platforms I&rsquo;ve used so far, <strong>Hugo</strong> has been the fastest and most reliable.</p>
 
 <h3 id="look-and-feel">Look and Feel:</h3>
 
-<p>We purposedly chose not to use bloated third-party themes because they usually contain features and plug-ins that you don&rsquo;t need, which runs against our <strong>minimalist approach</strong>. Also, because we believe that a website should reflect the creator&rsquo;s own stylistic preferences. That&rsquo;s why I decided to create a hand coded <a href="/css/minimal.css">CSS style sheet</a> to control the look and feel of the site.</p>
+<p>I chose not to use third-party themes because most of them are bloated with useless features-which would run against my <strong>minimalist approach</strong>. Also, because I believe that a website should reflect the creator&rsquo;s style. That&rsquo;s why I use a hand-coded <a href="/css/minimal.css">CSS style sheet</a>.</p>
 
 <h3 id="no-analytics">No Analytics:</h3>
 
-<p>Since our aim is to respect our visitors&rsquo; privacy and remain non-commercial, this site <strong>doesn&rsquo;t run Google Analytics</strong> or any other tracking software. There are also <strong>no affiliate links</strong>. Links to the books I review point to the author&rsquo;s page or to <a href="https://www.indiebound.org/">Indiebound</a>, not to Amazon. This site is continuously monitored by the <abbr title="Electronic Frontier Foundation">EFF</abbr> <a href="https://privacybadger.org/">Privacy Badger</a> browser extension to verify no tracking tools are present.</p>
+<p>Since my aim is to respect visitors&rsquo; privacy and remain non-commercial, this site <strong>doesn&rsquo;t run Google Analytics</strong> or any other tracking software. There are also <strong>no affiliate links</strong>. Links to the books I review point to the author&rsquo;s page or to <a href="https://www.indiebound.org/">Indiebound</a>, not to Amazon. This site is continuously monitored by the <abbr title="Electronic Frontier Foundation">EFF</abbr> <a href="https://privacybadger.org/">Privacy Badger</a> browser extension to verify no tracking tools are present.</p>
 
 <p><img src="/img/privacy.jpg" class="gallery large" /></p>
 
 <h3 id="secure-https">Secure HTTPS:</h3>
 
-<p>We serve this site over <a href="/post/https/">HTTPS</a> (secure HTML) to ensure all traffic to-and-from this site is <strong>encrypted</strong>. You may notice the <strong>lock</strong> icon next to the URL in the address bar:</p>
+<p>The site is served over <a href="/post/https/">HTTPS</a> (secure HTML) to ensure all traffic is <strong>encrypted</strong>. You may notice the <strong>lock</strong> icon next to the URL in the address bar:</p>
 
 <p><img src="/img/httpsms.jpg" /></p>
 
 <h3 id="hosting">Hosting</h3>
 
-<p>I am currently hosting my site in <a href="https://pages.github.com">Github Pages</a>: it&rsquo;s easy, reliable and free, and it <strong>comes with HTTPS and custom domain support</strong>. Github Pages is a great solution for static sites and personal webites.</p>
-
-<p>In my previous setup, I was deploying my site on a <strong>virtual private server</strong> at <a href="https://digitalocean.com">Digital Ocean</a>. I did it mainly to learn how to operate a VPS, but after a while it became clear that it was overkill for what I needed (just a place to host a basic static site) so I went the Github route.</p>
+<p>The site is hosted in <a href="https://pages.github.com">Github Pages</a>: it&rsquo;s easy, reliable and free, and <strong>comes with HTTPS and custom domain support</strong>. Github Pages is a great solution for static sites and personal webites. Microsoft acquired Github in 2018. While I try to stay away from Big Tech solutions, I am making this exception because Microsoft is showing support for the open-source community. If this changes I will move my site to a <strong>virtual private server</strong> at <a href="https://digitalocean.com">Digital Ocean</a>, as I&rsquo;ve done in the <a href="/post/vps">past</a>.</p>
 
 <h2 id="my-hugo-site-setup-process">My Hugo Site Setup Process</h2>
 
@@ -163,7 +160,9 @@
 
 <p>Finally, I created two <code>partials</code> templates: <code>header.html</code> and <code>footer.html</code> that can be called from the other templates. These two templates contain information common to all pages of the site.</p>
 
-<p>That&rsquo;s basically it. To create the static site to be deployed I just run the <code>hugo</code> command, and the static files are placed in a <code>public</code> folder that I then deploy to <strong>Github Pages</strong> using <a href="/post/gcs">Git</a>.</p>
+<p>That&rsquo;s basically it.</p>
+
+<p>To create the static site to be deployed I just run the <code>hugo</code> command, and the static files are placed in a <code>public</code> folder that I then deploy to <strong>Github Pages</strong> using <a href="/post/gcs">Git</a>.</p>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -173,7 +172,7 @@
 
 <p>The site&rsquo;s <a href="https://github.com/mariobox">source files</a> are open-source. In the spirit of sharing, you may fork the <a href="https://github.com/mariobox">repository</a> and use the code for your site. Just add your own content and pictures.</p>
 
-        </article>
+    </article>
   </div>
 </section>
 
