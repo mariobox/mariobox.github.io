@@ -6,10 +6,20 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About This Site</title>
+      <link>https://mariosanchez.org/post/site/</link>
+      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/site/</guid>
+      <description>Goals and Intentions Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. I do it by working on the site code and by posting write-ups on my other coding projects.
+Intentions There are many ways to achieve a project&amp;rsquo;s goals. I believe that the best one should reflect the values of the creator. Every project needs to start with a declaration of intentions or guiding principles.</description>
+    </item>
     
     <item>
       <title>Changelog</title>
@@ -48,16 +58,6 @@ I also been fiddling with old hardware: I converted an old laptop into a Chromeb
       
       <guid>https://mariosanchez.org/post/writingwell/</guid>
       <description>I&amp;rsquo;ve been writing often on this site lately, so I decided to listen to the audio version of On Writing Well: The Classic Guide to Writing Nonfiction by William Zinsser. The book was highly recommended by Derek Sivers. More than a collection of grammatical rules and techniques, On Writing Well is a common sense guide on how to keep your writing concise and engaging. Here are the passages and concepts that resonated with me:</description>
-    </item>
-    
-    <item>
-      <title>How This Site Is Made</title>
-      <link>https://mariosanchez.org/post/site/</link>
-      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/post/site/</guid>
-      <description>Goals and Intentions Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. I do it by working on the site code and by posting write-ups on my other coding projects.
-Intentions There are many ways to achieve a project&amp;rsquo;s goals. I believe that the best one should reflect the values of the creator. Every project needs to start with a declaration of intentions or guiding principles.</description>
     </item>
     
     <item>
