@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <title>Donate Button with Paypal Integration | mariosanchez.org</title>
     <meta name="author" content="Mario Sanchez Carrion">
-    <meta name="description" content="A Donate button with Paypal integration through a NodeJS/Express server" />
+    <meta name="description" content="A Donate button with Paypal REST SDK integration through a NodeJS/Express server" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://mariosanchez.org/"/>
 
 <meta name="twitter:title" content="Donate Button with Paypal Integration"/>
-<meta name="twitter:description" content="A Donate button with Paypal integration through a NodeJS/Express server"/>
+<meta name="twitter:description" content="A Donate button with Paypal REST SDK integration through a NodeJS/Express server"/>
 
     
 
@@ -58,7 +58,7 @@
 <p class="date">May 30, 2020</p>
 <section id="main">
   <h1 id="title">Donate Button with Paypal Integration</h1>
-  <p class="description">A Donate button with Paypal integration through a NodeJS/Express server</p>
+  <p class="description">A Donate button with Paypal REST SDK integration through a NodeJS/Express server</p>
   <div>
     <article id="content">
     
@@ -71,9 +71,9 @@
 
 <p>I got the inspiration for this project from <a href="https://willem.com/blog/2020-03-25_designing-and-implementing-a-micro-payment-system/">this post</a> in Willem Middelkoop&rsquo;s blog. While Willem&rsquo;s post went through the basic process, it didn&rsquo;t provide detaied instructions on how to make this work on an actual server, or how to interact with the payment platform&rsquo;s API. That&rsquo;s when I went online and searched for tutorials and videos that might help me.</p>
 
-<p>Fortunately, I run across <a href="https://www.youtube.com/watch?v=7k03jobKGXM&amp;t=1299s">this video</a> by Brad Traversy that does a wonderful job of explaining how to tie a basic <strong>Node/Express</strong> server with <strong>Paypal</strong>. However, I wanted to go a step further and not only make the application to work in my own computer but also on a virtual private server accessible from the Internet. It just happens that Brad had already created <a href="https://www.youtube.com/watch?v=oykl1Ih9pMg&amp;t=370s">this other video</a> shows how to deploy a basic Node/Express app in a VPS, together with domain name mapping and HTTPS certification. The video comes with <a href="https://gist.github.com/bradtraversy/cd90d1ed3c462fe3bddd11bf8953a896">detailed written instructions</a>.</p>
+<p>Fortunately, I run across <a href="https://www.youtube.com/watch?v=7k03jobKGXM&amp;t=1299s">this video</a> by Brad Traversy that does a wonderful job of explaining how to tie a basic <strong>Node/Express</strong> server with <strong>Paypal</strong>. However, I wanted to go a step further and not only make the application to work in my own computer but also on a virtual private server accessible from the Internet. It just happens that Brad had already created <a href="https://www.youtube.com/watch?v=oykl1Ih9pMg&amp;t=370s">this other video</a> explaining how to deploy a basic Node/Express app in a VPS, together with domain name mapping and HTTPS certification. The video comes with <a href="https://gist.github.com/bradtraversy/cd90d1ed3c462fe3bddd11bf8953a896">detailed written instructions</a>.</p>
 
-<p>Rather than explain every single detail, which Brad can do better than me, I&rsquo;m going to lay out the basic steps I took:</p>
+<p>Rather than explain every single detail, I&rsquo;m going to lay out the basic steps I took and link to the appropriate resources:</p>
 
 <h2 id="1-build-a-basic-node-express-app">1. Build a basic Node/Express app</h2>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">)</span>
@@ -85,13 +85,13 @@
 
 <span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="s2">&#34;public&#34;</span><span class="p">));</span>
 
-<span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;donate&#39;</span><span class="p">))</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/donate&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;donate&#39;</span><span class="p">))</span>
 
 <span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Example app listening at http://localhost:</span><span class="si">${</span><span class="nx">port</span><span class="si">}</span><span class="sb">`</span><span class="p">))</span>
 </code></pre></div>
-<p><code>'donate'</code> is a route that points to a template in the <code>views</code> folder that will make our /donate page look like this in the browser:</p>
+<p><code>'/donate'</code> is a route that points to a template in the <code>views</code> folder that will make our /donate page look like this in the browser:</p>
 
-<div style="background-color: #FFF; color:#000; padding: 5%;">
+<div style="background-color: #FFF; color:#000; padding: 5%; border-radius: 6px;">
 <h1>Support Our Work</a></h1>
     <p>For the cost of a cup of coffee you could be supporting an open-source web development project!</p>
     <form>
@@ -103,19 +103,19 @@
 
 <h2 id="2-get-a-virtual-private-server-at-digital-ocean">2. Get a virtual private server at Digital Ocean</h2>
 
-<p>That&rsquo;s where our application is deployed. You will need to:</p>
+<p>The virtual private server is where our application will be deployed. You will need to:</p>
 
 <ul>
-<li>Sign up</li>
+<li>Sign up to Digital Ocean</li>
 <li>Create a Droplet (Digital Ocean&rsquo;s name for their virtual private servers)</li>
 <li>Make a note of your assigned I.P. address (you will need it later)</li>
 </ul>
 
-<p>It may be useful at this point to learn how log into a droplet via SSH (so you don&rsquo;t need to use a password), and to how create a new user with <strong>sudo</strong> privileges so that you don&rsquo;t have to log in as <strong>root</strong>. <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04">Follow this tutorial</a>.</p>
+<p>It may be useful at this point to learn how to log into a droplet via SSH (so you don&rsquo;t need to use a password), and to create a new user with <strong>sudo</strong> privileges so that you don&rsquo;t have to log in as <strong>root</strong>. <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04">Follow this tutorial</a>.</p>
 
 <h2 id="3-get-a-domain-name-and-point-it-to-your-digital-ocean-virtual-private-server">3. Get a domain name and point it to your Digital Ocean virtual private server</h2>
 
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars">Follow this tutorial</a>.</p>
+<p>You need to either register a domain name or use one that you may already have. Then, you need to configure it to point to your server. For this last part you can <a href="https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars">follow this tutorial</a>.</p>
 
 <h2 id="4-deploy-our-basic-express-app-in-our-virtual-private-server">4. Deploy our basic Express app in our virtual private server</h2>
 
@@ -123,7 +123,7 @@
 
 <h2 id="5-create-a-nginx-web-server-and-configure-it">5. Create a NGINX web server and configure it</h2>
 
-<p>The idea is to make our Express app visible not just through a port (e.g. <em>domain.com:3000</em>) but through a plain domain: <em>domain.com</em>. This process is known as setting up the NGINX server as a reverse proxy.</p>
+<p>The idea is to make our Express app visible not just through a port (e.g. <em>domain.com:3000</em>) but through a plain domain: <em>domain.com</em>. For that, we need to create a NGINX web server, and configure it so that our Node/Express app maps to the NGINX server. This process is known as setting up the NGINX server as a reverse proxy.</p>
 
 <h2 id="6-create-a-paypal-developer-account">6. Create a Paypal developer account</h2>
 
@@ -131,7 +131,7 @@
 
 <h2 id="7-add-routes-and-functionality-to-our-express-app">7. Add routes and functionality to our Express app</h2>
 
-<p>These allows our Donate button to become fully functional.</p>
+<p>This allows our Donate button to become fully functional.</p>
 
 <p>Steps <strong>1</strong> to <strong>5</strong> are covered in <a href="https://www.youtube.com/watch?v=oykl1Ih9pMg&amp;t=370s">this video</a> and its <a href="https://gist.github.com/bradtraversy/cd90d1ed3c462fe3bddd11bf8953a896">companion notes</a>.</p>
 
@@ -139,9 +139,9 @@
 
 <hr class="art" />
 
-<p>My demo is now finished and fully functional.</p>
+<p>My demo is now finished and fully functional, although it could still use some styling! :)</p>
 
-<p>If you want to try it out, click on the Donate button below and use these dummy credentials so you can go through the motions in Paypal&rsquo;s sandbox environment:</p>
+<p>If you want to try it out, click on the Donate button below and use these dummy credentials to go through the motions in Paypal&rsquo;s sandbox environment:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">Email: sb-akf271945802@personal.example.com
 
 Password: BmWWp#S4</code></pre></div>
