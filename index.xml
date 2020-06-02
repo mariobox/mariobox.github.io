@@ -6,10 +6,19 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Changelog</title>
+      <link>https://mariosanchez.org/post/changelog/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/changelog/</guid>
+      <description>Unreleased  Embed working demo in Ecommerce Site post. Apply breadcrumb navigation to individual posts and projects pages. Add category tags.  Added  2020-06-02 License links for content and code in footer. 2020-05-25 Date and short description to all posts and projects pages. 2020-05-21 Dark theme media query. 2020-05-21 HTML language attribute. 2020-05-19 Code syntax highlighting via Hugo&amp;rsquo;s built-in Chroma code highliter. 2020-05-13 Twitter cards meta information.  Changed  2020-05-25 Switched to dark theme.</description>
+    </item>
     
     <item>
       <title>Donate Button with Paypal Integration</title>
@@ -29,7 +38,7 @@ Support Our Work For the cost of a cup of coffee you could be supporting an open
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/post/site/</guid>
-      <description>Goals and Intentions Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. I do it by working on the site code and by posting write-ups on my other coding projects.
+      <description>Goals and Intentions Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. This site also advocates for open-source web development and supports the open-source community.
 Intentions There are many ways to achieve a project&amp;rsquo;s goals. I believe that the best one should reflect the values of the creator. Every project needs to start with a declaration of intentions or guiding principles.</description>
     </item>
     
@@ -41,15 +50,6 @@ Intentions There are many ways to achieve a project&amp;rsquo;s goals. I believe
       <guid>https://mariosanchez.org/uses/</guid>
       <description>When Wes Bos, a popular Canadian web developer and teacher, noticed that one of the most popular questions he routinely received from followers was what kind of software and hardware he used, he decided to create a /uses page. As more and more students and followers started doing the same, Wes created the uses.tech site, featuring profiles linking to the /uses pages of his community.
 I&amp;rsquo;ve joined the movement and created this /uses page.</description>
-    </item>
-    
-    <item>
-      <title>Changelog</title>
-      <link>https://mariosanchez.org/post/changelog/</link>
-      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/post/changelog/</guid>
-      <description>Unreleased  Embed working demo in Ecommerce Site post. Apply breadcrumb navigation to individual posts and projects pages. Add category tags.  Added  May 25, 2020 - Date and short description to all posts and projects pages. May 21, 2020 - Dark theme media query. May 21, 2020 - HTML language attribute. May 19, 2020 - Code syntax highlighting via Hugo&amp;rsquo;s built-in Chroma code highliter. May 13, 2020 - Twitter cards meta information.</description>
     </item>
     
     <item>
