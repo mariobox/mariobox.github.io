@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Web Development Journey</title>
+      <link>https://mariosanchez.org/post/webdev/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/webdev/</guid>
+      <description>I consider myself a self-taught junior web developer.
+I picked up web development as a serious hobby about five years ago, but my interest and curiority for the web go way back to the late 1990&amp;rsquo;s. Back then, being able to share your thoughts with the world instantly and at vitually no cost was (and still is) mind-boggling to me. That was the promise of the Internet and the WWW in their early days.</description>
+    </item>
     
     <item>
       <title>Changelog</title>
