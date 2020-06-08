@@ -20,7 +20,7 @@
       <description>Made with:  Node and Express
 Source Files | Live Demo
 I got the inspiration for this project from this post in Willem Middelkoop&amp;rsquo;s blog, and from the site buymeacoffee.com. Simply put, I wanted to create a Donate button that upon clicking set in motion the process of paying through Paypal and redirecting back to my site. Before any styling, it would look something like this:
-Support Our Work For the cost of a cup of coffee you could be supporting an open-source web development project!</description>
+While Willem&amp;rsquo;s post went through the basic process, it didn&amp;rsquo;t provide detaied instructions on how to make this work on an actual server, or how to interact with the payment platform&amp;rsquo;s API.</description>
     </item>
     
     <item>
