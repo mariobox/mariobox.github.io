@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mariosanchez.org/project/pizza/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mariosanchez.org/post/webdev/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
@@ -209,7 +214,7 @@
   
   <url>
     <loc>https://mariosanchez.org/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -221,7 +226,7 @@
   
   <url>
     <loc>https://mariosanchez.org/project/</loc>
-    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
