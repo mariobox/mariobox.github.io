@@ -6,10 +6,20 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Psychology of Money</title>
+      <link>https://mariosanchez.org/post/pom/</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/post/pom/</guid>
+      <description>The Psychology of Money, by Morgan Housel, is probably the first book I would read if I was starting over and trying to understand how to build wealth. It deals more with the mindsets conducive to acquiring and keeping money than personal finance tactics.
+Even for somebody like me, with more than 30 years saving and investing money, the book contained several insights that I hadn&amp;rsquo;t figured out yet, and gave me good pointers on how to fine-tune my investing strategies going forward.</description>
+    </item>
     
     <item>
       <title>Pizza Selector</title>
