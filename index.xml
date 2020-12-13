@@ -6,10 +6,21 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mailing List Form with Express and CSV</title>
+      <link>https://mariosanchez.org/project/csvlist/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/csvlist/</guid>
+      <description>Made with:  Node and Express
+Source Files | Live Demo
+This is a simple server-side application made with Node and Express. Instead of using a more advance data base, we used a super simple CSV file to store our data, and took advantage of the fs Node module and the neat-csv package to convert string information from our CSV database into an array of objects that we can then pass along to our success template made with Pug.</description>
+    </item>
     
     <item>
       <title>The Psychology of Money</title>
