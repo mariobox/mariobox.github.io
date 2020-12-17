@@ -6,10 +6,25 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Covid-19 Dashboard</title>
+      <link>https://mariosanchez.org/project/covid19/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/covid19/</guid>
+      <description>Made with:  Python
+Source Files
+This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.
+The application.py file contains our program logic.
+We start by importing the package that will provide us with the data:
+from covid import Covid
+The data comes in the form of a list of dictionaries (or if you&amp;rsquo;re more used to JS parlance, an array of objects).</description>
+    </item>
     
     <item>
       <title>Mailing List Form with Express and CSV</title>
