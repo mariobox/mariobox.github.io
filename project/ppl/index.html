@@ -104,41 +104,17 @@
 
 <p><strong>Note</strong>: if you&rsquo;re not familiar with how Express works you may want to head to <a href="https://expressjs.com">Expressjs.com</a> to familiarize yourself with that first.</p>
 
-<h2 id="2-get-a-virtual-private-server-at-digital-ocean">2. Get a virtual private server at Digital Ocean</h2>
-
-<p>The virtual private server is where our application will be deployed. You will need to:</p>
-
-<ul>
-<li>Sign up to Digital Ocean</li>
-<li>Create a Droplet (Digital Ocean&rsquo;s name for their virtual private servers)</li>
-<li>Make a note of your assigned I.P. address (you will need it later)</li>
-</ul>
-
-<p>It may be useful at this point to learn how to log into a droplet via SSH (so you don&rsquo;t need to use a password), and to create a new user with <strong>sudo</strong> privileges so that you don&rsquo;t have to log in as <strong>root</strong>. <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04">Follow this tutorial</a>.</p>
-
-<h2 id="3-get-a-domain-name-and-point-it-to-your-digital-ocean-virtual-private-server">3. Get a domain name and point it to your Digital Ocean virtual private server</h2>
-
-<p>You need to either register a domain name or use one that you may already have. Then, you need to configure it to point to your server. For this last part you can <a href="https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars">follow this tutorial</a>.</p>
-
-<h2 id="4-deploy-our-basic-express-app-in-our-virtual-private-server">4. Deploy our basic Express app in our virtual private server</h2>
-
-<p>You can either copy the files one by one, or push the app to a Github repository and then clone it in your VPS. You may also want to install a process manager like <a href="https://pm2.keymetrics.io/">PM2</a> so that your application runs all the time, even when you log out of your server.</p>
-
-<h2 id="5-create-a-nginx-web-server-and-configure-it">5. Create a NGINX web server and configure it</h2>
-
-<p>The idea is to make our Express app visible not just through a port (e.g. <em>domain.com:3000</em>) but through a plain domain: <em>domain.com</em>. For that, we need to create a NGINX web server, and configure it so that our Node/Express app maps to the NGINX server. This process is known as setting up the NGINX server as a reverse proxy.</p>
-
-<h2 id="6-create-a-paypal-developer-account">6. Create a Paypal developer account</h2>
+<h2 id="2-create-a-paypal-developer-account">2. Create a Paypal developer account</h2>
 
 <p>You need to sign up at <a href="https://developer.paypal.com">developer.paypal.com</a>. Paypal automatically generates a dummy business account and a dummy personal account that you can use for testing in their Sanbox environment.</p>
 
-<h2 id="7-add-routes-and-functionality-to-our-express-app">7. Add routes and functionality to our Express app</h2>
+<h2 id="3-add-routes-and-functionality-to-our-express-app">3. Add routes and functionality to our Express app</h2>
 
-<p>This allows our Donate button to become fully functional.</p>
+<p>This allows our Donate button to become fully functional. You can take a look at the routes in the <a href="https://github.com/mariobox/donate-paypal/blob/master/app.js">source code of app.js</a>.</p>
 
-<p>Steps <strong>1</strong> to <strong>5</strong> are covered in <a href="https://www.youtube.com/watch?v=oykl1Ih9pMg&amp;t=370s">this video</a> and its <a href="https://gist.github.com/bradtraversy/cd90d1ed3c462fe3bddd11bf8953a896">companion notes</a>.</p>
+<p>By running <code>nodejs app.js</code> in the command line, we can test this app in our own computer.</p>
 
-<p>Steps <strong>6</strong> and <strong>7</strong> are covered in <a href="https://www.youtube.com/watch?v=7k03jobKGXM&amp;t=1299s">this video</a>.</p>
+<p>The next challenge is to deploy the application in a virtual private server, but that&rsquo;s outside the scope of this post.</p>
 
     </article>
   </div>
