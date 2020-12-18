@@ -132,14 +132,15 @@
 <p>Next, the program takes a JSON file with all airline/symbol combinations and transforms it into a python list of objects:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="o">...</span>
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;airlines.json&#39;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>  <span class="c1"># turn json array of objects into an python list of objects</span>
+<span class="c1"># turn json array of objects into an python list </span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>  
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="o">...</span></code></pre></div>
 <p>Next, we iterate over all the airlines on the list, convert each airline&rsquo;s information into a tupple, and append those tupples to a new list. Each tupple will be in the form of (<em>Airline Symbol</em>, <em>Airline Name</em>):</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="c1"># create an empty list to store (airline symbol, airline name) tuples</span>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="c1"># create an empty list to store airline (symbol, name) tuples</span>
 <span class="n">symbol_airline</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="c1"># create each (airline symbol, airline name) tuple and append it to symbol_airline</span>
+<span class="c1"># create airline (symbol, name) tuples and append to symbol_airline</span>
 <span class="k">for</span> <span class="n">airline</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
   <span class="n">symbol_airline</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">tuple</span><span class="p">(</span><span class="n">airline</span><span class="o">.</span><span class="n">values</span><span class="p">())))</span></code></pre></div>
 <p>Finally, we&rsquo;re ready to process user input and display the results via routes.</p>
@@ -161,9 +162,14 @@
       <span class="k">if</span> <span class="n">user_input_lower</span> <span class="ow">in</span> <span class="n">airline_lower</span><span class="p">:</span>
         <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{airline[1]} ({airline[0]})&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">,</span> <span class="n">results</span><span class="o">=</span><span class="n">results</span><span class="p">)</span></code></pre></div>
-<p>To run this code on your computer you first need to install Python and Flask, and import the dependencies at the top of the <code>application.py</code> file, one again:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">request</span></code></pre></div>
+<p>To run this code on your computer you need to access the FLASK_APP enviroment variable by typing:</p>
+
+<p><code>export FLASK_APP=application.py</code></p>
+
+<p>from the command line, follwed by:</p>
+
+<p><code>flask run</code></p>
+
 <p><a href="https://github.com/mariobox/airlines">Click here</a> for the source code.</p>
 
     </article>
