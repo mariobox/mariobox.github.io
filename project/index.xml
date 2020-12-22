@@ -18,8 +18,7 @@
       
       <guid>https://mariosanchez.org/project/covid19/</guid>
       <description>Made with:  Python
-Source Files
-This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.
+Source Files This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.
 The application.py file contains our program logic.
 We start by importing the package that will provide us with the data:
 from covid import Covid
@@ -33,8 +32,9 @@ The data comes in the form of a list of dictionaries (or if you&amp;rsquo;re mor
       
       <guid>https://mariosanchez.org/project/csvlist/</guid>
       <description>Made with:  Node and Express
-Source Files | Live Demo
-This is a simple server-side application made with Node and Express. Instead of using a more advance data base, we used a super simple CSV file to store our data, and took advantage of the fs Node module and the neat-csv package to convert string information from our CSV database into an array of objects that we can then pass along to our success template made with Pug.</description>
+Source Files
+This is a simple server-side application made with Node and Express.
+Instead of using a more advance data base, we used a super simple CSV file to store our data, and took advantage of the fs Node module and the neat-csv package to convert string information from our CSV database into an array of objects that we can then pass along to our success template made with Pug.</description>
     </item>
     
     <item>
@@ -95,8 +95,8 @@ The HTML &amp;lt;!--DOCTYPE--&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; 
       <guid>https://mariosanchez.org/project/fx/</guid>
       <description>Made with:  JavaScript
 Source Files | Demo
-We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the YTD % devaluation (or revaluation) for each of the currencies.
-I decided to implement this project because I work in international marketing, and devaluation is always an important variable to follow when analyzing business results.</description>
+Update: The API I was using for this project is not in business any more, so the demo will not work. I am looking for a new API to adapt this project and make it work again.
+We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the YTD % devaluation (or revaluation) for each of the currencies.</description>
     </item>
     
     <item>

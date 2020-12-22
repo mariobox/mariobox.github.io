@@ -68,11 +68,11 @@
   <p class="description">Table of countries showing confirmed cases and deaths</p>
   <div>
     <article id="content">
-    <p><strong>Made with</strong>: <i class="fab fa-python"></i> Python</p>
+    <p><img src="/img/covid.png"></p>
 
-<p><a href="https://github.com/mariobox/covid-dashboard">Source Files</a></p>
+<p><strong>Made with</strong>: <i class="fab fa-python"></i> Python</p>
 
-<p><img src="/img/covid.png"></p>
+<p><a href="https://github.com/mariobox/covid-dashboard">Source Files</a> <hr class="art"></p>
 
 <p>This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.</p>
 
@@ -104,6 +104,14 @@
 <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
   <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">d</span><span class="p">)</span></code></pre></div>
 <p>The <code>index.html</code> page is a Jinja template enhanced with Bootstrap styling to make our table look nice.</p>
+
+<p>To run this code on your computer you need to access the FLASK_APP enviroment variable by typing:</p>
+
+<p><code>export FLASK_APP=application.py</code></p>
+
+<p>from the command line, followed by:</p>
+
+<p><code>flask run</code></p>
 
 <p>We could do other things with our app, like allowing users to sort by different criteria, display only a limited amount of data, or grab more information from other sources. For now, though, the app is done and it accomplishes what I set out to do.</p>
 
