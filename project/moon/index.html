@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Today&#39;s Moon Phase With JavaScript | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="Web app that shows you today&#39;s moon phase and percentage illumination" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://mariosanchez.org/"/>
+
+<meta name="twitter:title" content="Today&#39;s Moon Phase With JavaScript"/>
+<meta name="twitter:description" content="Web app that shows you today&#39;s moon phase and percentage illumination"/>
+
+    
+    <script src="/js/theme.js"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar"></div>
+    </a>
+    <div class="centered logo">
+      <a href="/">msc</a>
+    </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/post/">
+              <span class="icon"> <i class="fas fa-pen fa-2x hd"></i></span><br />
+              <span> posts </span>
+            </a>
+          </li>
+          <li>
+            <a href="/project/">
+              <span class="icon"> <i class="fas fa-laptop-code fa-2x hd"></i></span><br />
+              <span> projects </span>
+            </a>
+          </li>
+          <li>
+            <a href="/photos/">
+              <span class="icon"> <i class="far fa-images fa-2x hd"></i></span><br />
+              <span> photos </span>
+            </a>
+          </li>
+          <li>
+            <a style="cursor:pointer;">
+            <span class="icon" id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+            <span> theme </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+
+
+<p class="date">Feb 28, 2021</p>
+<section id="main">
+  <h1 id="title">Today&#39;s Moon Phase With JavaScript</h1>
+  <p class="description">Web app that shows you today&#39;s moon phase and percentage illumination</p>
+  <div>
+    <article id="content">
+    <p><strong>Made with</strong>: <i class="fab fa-js"></i> JavaScript</p>
+
+<p><a href="https://github.com/mariobox/moon-phases/">Source Files</a> | <a href="https://mariobox.github.io/moon-phases/">Live Demo</a></p>
+
+<hr class="art" />
+
+<p>I wanted a simple web page to show today&rsquo;s date, moon phase and percentage illumination, plus a nice picture of the moon.</p>
+
+<p><img src="/img/moon.jpg" class="gallery medium"></p>
+
+<p>My first step was to find an API that I could call to retrieve today&rsquo;s moon phase and illumination. After some research I found the <a href="https://farmsense.net">Farmsense</a> moon phase API. The API accepts a date as a parameter, formatted in milliseconds (<a href="https://currentmillis.com/">Unix Time</a>), but only takes the first ten digits.</p>
+
+<p>One problem with Unix time is that it&rsquo;s in <a href="https://www.timeanddate.com/time/aboututc.html">UTC-Coordinated Universal Time</a>. To change it to Eastern Standard Time I had to subtract five hours in milliseconds from the current UTC time. I then pass the first ten digits of that value to the API&rsquo;s end point url.</p>
+
+<p>Next, I made an AJAX call using the <code>fetch</code> API and transformed the response to JSON format to be able to use it.</p>
+
+<p>Then, it was just matter of pulling the info we wanted to display from the response, and asigning it to the appropriate <code>div</code> in the <code>index.html</code> file via <code>document.getElementById</code> statements.</p>
+
+<p>Since I wanted to show nice pictures of the moon instead of run-off-the-mill icons, I went to <a href="https://svs.gsfc.nasa.gov/Gallery/moonphase.html">NASA&rsquo;s website</a> and downloaded their moon pictures (which is allowed for educational purposes).</p>
+
+<p>To match the moon phase pulled from the Farmsense API to the right moon phase picture I used a simple <code>switch</code> statement.</p>
+
+<p>You can see the app in action here:</p>
+
+<iframe src="https://mariobox.github.io/moon-phases/" title="description" width=100% height="550px"></iframe>
+
+    </article>
+  </div>
+</section>
+
+<hr />
+<p class="centered">
+<span class="small">  
+  <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+  <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab ft fa-twitter fa-lg"></i></a>
+  <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+</span>
+</p>
+<p class="centered">
+  <span class="small">Content licensed under <a href="/cc010.txt">CC0-1.0</a> | Code licensed under <a href="/gpl-30.txt">GNU GPLv3</a></span>
+</p>
+</div>
+</body>
+</html>
+
+

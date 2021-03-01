@@ -6,10 +6,22 @@
     <description>Recent content in Projects on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Today&#39;s Moon Phase With JavaScript</title>
+      <link>https://mariosanchez.org/project/moon/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/moon/</guid>
+      <description>Made with:  JavaScript
+Source Files | Live Demo
+I wanted a simple web page to show today&amp;rsquo;s date, moon phase and percentage illumination, plus a nice picture of the moon.
+My first step was to find an API that I could call to retrieve today&amp;rsquo;s moon phase and illumination. After some research I found the Farmsense moon phase API. The API accepts a date as a parameter, formatted in milliseconds (Unix Time), but only takes the first ten digits.</description>
+    </item>
     
     <item>
       <title>Covid-19 Dashboard</title>
