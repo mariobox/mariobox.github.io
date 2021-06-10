@@ -69,83 +69,90 @@
   <div>
     <article id="content">
     <p>In a previous post I explained <a href="/ubuntu/">how to install Ubuntu Linux</a> on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.</p>
+
 <p>To find your terminal click on the <em>Show Applications</em> icon and type the word &ldquo;terminal&rdquo; in the search box. Then, click on the terminal icon, similar to the one below:</p>
-<p><!-- raw HTML omitted --></p>
+
+<p><img src="/img/term.png" /></p>
+
 <p><strong>Tip:</strong> you may want to right-click on the terminal icon and choose &ldquo;Add To Favorites&rdquo;, to pin it to the task bar, since you&rsquo;re going to be using it often.</p>
-<p>Unlike a <!-- raw HTML omitted -->GUI<!-- raw HTML omitted --> like Windows or Ubuntu&rsquo;s Gnome shell, which let you open files by double-clicking on icons or execute commands by choosing from a menu of options, the terminal lets you interact with your computer by typing commands. When we refer to the  terminal we&rsquo;re really talking about a <a href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal emulator</a>. A terminal emulator is a graphical representation of a terminal. This means that you will be able to harness all the power of an actual terminal, with the added benefit of several useful features like Cut and Paste, Find, and the ability to customize colors and fonts. The terminal emulator that comes with Ubuntu is the <a href="https://en.wikipedia.org/wiki/GNOME_Terminal">GNOME terminal</a>.</p>
+
+<p>Unlike a <abbr title="Graphical User Interface">GUI</abbr> like Windows or Ubuntu&rsquo;s Gnome shell, which let you open files by double-clicking on icons or execute commands by choosing from a menu of options, the terminal lets you interact with your computer by typing commands. When we refer to the  terminal we&rsquo;re really talking about a <a href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal emulator</a>. A terminal emulator is a graphical representation of a terminal. This means that you will be able to harness all the power of an actual terminal, with the added benefit of several useful features like Cut and Paste, Find, and the ability to customize colors and fonts. The terminal emulator that comes with Ubuntu is the <a href="https://en.wikipedia.org/wiki/GNOME_Terminal">GNOME terminal</a>.</p>
+
 <p>Besides a text editor, the terminal is where you, as a web developer, will spend most of your time, so in this post I am going to show you some basic Linux commands. There are thousands or Linux commands, but the ones that I will mention below are what I find myself using more than 90% of the time.</p>
+
 <p><strong>Note</strong>: You don&rsquo;t need to type the $ before the command (that&rsquo;s the default command line prompt):</p>
+
 <p>List folders and files under the current folder:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls 
-</code></pre></div><p>List folders and files under the current folder-long format:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -l
-</code></pre></div><p>List folders and files, including hidden ones (hidden files and folders are always preceded by a dot):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -a
-</code></pre></div><p>List folders and files combining the -l and the -a flags:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -la
-</code></pre></div><p>Print working (current) directory:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">pwd</span>
-</code></pre></div><p>Change directory to the <em>documents</em> folder (the <em>documents</em> folder must be under the current folder):</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd documents
-</code></pre></div><p>Move up one directory level (indicated by the two dots):</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ..
-</code></pre></div><p>Move up two directory levels:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ../..
-</code></pre></div><p>Move up to the HOME directory:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ~
-</code></pre></div><p>Output the full contents of a file to the console:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cat hello.txt
-</code></pre></div><p>Open a file called <em>hello.txt</em> with the built-in Nano text editor (to save changes type Control X and say YES):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ nano hello.txt
-</code></pre></div><p>Rename <em>hello.txt</em> as <em>hi.txt</em>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hello.txt hi.txt
-</code></pre></div><p>Move <em>hi.txt</em> to the <em>/documents</em> folder:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hi.thx /documents
-</code></pre></div><p>Move <em>hi.txt</em> back to its original folder:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv /documents/hi.txt .
-</code></pre></div><p>Move <em>hi.txt</em> to the <em>/documents</em> folder and rename it <em>hello.txt</em>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hi.txt /documents/hello.txt
-</code></pre></div><p>Rename the <em>documents</em> folder as <em>docs</em>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv documents docs
-</code></pre></div><p>Copy <em>hello.txt</em> as <em>hi.txt</em> leaving <em>hello.txt</em> in place:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp hello.txt hi.txt
-</code></pre></div><p>Copy a folder (with all its contents) into another folder. We need to use the -r (recursive) flag:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp -r documents docs
-</code></pre></div><p>Delete <em>hello.txt</em>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ rm hello.txt
-</code></pre></div><p>Remove the <em>docs</em> folder and all its contents. We need to use the -r (recursive) flag:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ rm -r docs
-</code></pre></div><p>Create a folder called <em>pictures</em>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir pictures
-</code></pre></div><p>Create nested folders. You need to use the -p flag:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir -p documents/pictures/2017
-</code></pre></div><p>Output the username of the user currently logged in:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ whoami
-</code></pre></div><p>See if a program is installed. It will give you the path to the program, if it is installed (for example, typing <em>which node</em> will probably give you: <em>usr/bin/node</em>):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ which <span class="o">[</span>NAME OF A PROGRAM<span class="o">]</span>
-</code></pre></div><p>Check which version of a program you are running (let&rsquo;s use <em>node</em> as an example):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node -v
-</code></pre></div><p>Look for server information of a website (replace with a real domain name):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ nslookup <span class="o">[</span>DOMAIN NAME<span class="o">]</span>
-</code></pre></div><p>Look for the IP Address and response time for a domain:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ping <span class="o">[</span>DOMAIN NAME<span class="o">]</span>
-</code></pre></div><p>Fetch the HTTP headers of a website: (replace with a real URL)</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -I <span class="o">[</span>URL<span class="o">]</span>
-</code></pre></div><p>Fetch the full HTML code of a web page:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl <span class="o">[</span>URL<span class="o">]</span>
-</code></pre></div><p>Send the HTML of a web page to an HTML file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl <span class="o">[</span>URL<span class="o">]</span> &gt; file.html
-</code></pre></div><p>Get registration information of a domain name: (replace with a real domain name)</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ whois <span class="o">[</span>DOMAIN NAME<span class="o">]</span>
-</code></pre></div><p>Get a file (in this case a pdf file from the web):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget https://domain.com/file.pdf
-</code></pre></div><p>Find a file (you can use the -iname flag to make it case insensitive):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ find <span class="o">[</span>APPROXIMATE PATH<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
-</code></pre></div><p>Get a tree structure of the current directory (you can use the -d flag to list only directories, not files):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree
-</code></pre></div><p>Get the id of the current user (including group id):</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ id
-</code></pre></div><p>If you want to dig deeper, just do a Google search for <a href="https://www.google.com/search?ei=dRa5XIf_E6-O5wL_lprIDg&amp;q=useful+linux+terminal+commands&amp;oq=useful+linux+terminal+commands&amp;gs_l=psy-ab.3..0.4052.7452..8574...5.0..0.128.1055.0j9......0....1..gws-wiz.......0i71j35i304i39j0i7i30j0i13j0i8i7i30j0i7i5i30j0i13i5i30j0i8i13i30.gmH5nuLkc9E">useful linux terminal commands</a> and you will find how powerful and versatile the terminal can be.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls </code></pre></div>
+<p>List folders and files under the current folder-long format:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -l</code></pre></div>
+<p>List folders and files, including hidden ones (hidden files and folders are always preceded by a dot):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -a</code></pre></div>
+<p>List folders and files combining the -l and the -a flags:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -la</code></pre></div>
+<p>Print working (current) directory:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pwd</code></pre></div>
+<p>Change directory to the <em>documents</em> folder (the <em>documents</em> folder must be under the current folder):</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd documents</code></pre></div>
+<p>Move up one directory level (indicated by the two dots):</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ..</code></pre></div>
+<p>Move up two directory levels:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ../..</code></pre></div>
+<p>Move up to the HOME directory:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ cd ~</code></pre></div>
+<p>Output the full contents of a file to the console:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cat hello.txt</code></pre></div>
+<p>Open a file called <em>hello.txt</em> with the built-in Nano text editor (to save changes type Control X and say YES):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ nano hello.txt</code></pre></div>
+<p>Rename <em>hello.txt</em> as <em>hi.txt</em>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hello.txt hi.txt</code></pre></div>
+<p>Move <em>hi.txt</em> to the <em>/documents</em> folder:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hi.thx /documents</code></pre></div>
+<p>Move <em>hi.txt</em> back to its original folder:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv /documents/hi.txt .</code></pre></div>
+<p>Move <em>hi.txt</em> to the <em>/documents</em> folder and rename it <em>hello.txt</em>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv hi.txt /documents/hello.txt</code></pre></div>
+<p>Rename the <em>documents</em> folder as <em>docs</em>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mv documents docs</code></pre></div>
+<p>Copy <em>hello.txt</em> as <em>hi.txt</em> leaving <em>hello.txt</em> in place:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp hello.txt hi.txt</code></pre></div>
+<p>Copy a folder (with all its contents) into another folder. We need to use the -r (recursive) flag:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp -r documents docs</code></pre></div>
+<p>Delete <em>hello.txt</em>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ rm hello.txt</code></pre></div>
+<p>Remove the <em>docs</em> folder and all its contents. We need to use the -r (recursive) flag:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ rm -r docs</code></pre></div>
+<p>Create a folder called <em>pictures</em>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir pictures</code></pre></div>
+<p>Create nested folders. You need to use the -p flag:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir -p documents/pictures/2017</code></pre></div>
+<p>Output the username of the user currently logged in:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ whoami</code></pre></div>
+<p>See if a program is installed. It will give you the path to the program, if it is installed (for example, typing <em>which node</em> will probably give you: <em>usr/bin/node</em>):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ which <span class="o">[</span>NAME OF A PROGRAM<span class="o">]</span></code></pre></div>
+<p>Check which version of a program you are running (let&rsquo;s use <em>node</em> as an example):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node -v</code></pre></div>
+<p>Look for server information of a website (replace with a real domain name):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ nslookup <span class="o">[</span>DOMAIN NAME<span class="o">]</span></code></pre></div>
+<p>Look for the IP Address and response time for a domain:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ping <span class="o">[</span>DOMAIN NAME<span class="o">]</span></code></pre></div>
+<p>Fetch the HTTP headers of a website: (replace with a real URL)</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -I <span class="o">[</span>URL<span class="o">]</span></code></pre></div>
+<p>Fetch the full HTML code of a web page:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl <span class="o">[</span>URL<span class="o">]</span></code></pre></div>
+<p>Send the HTML of a web page to an HTML file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl <span class="o">[</span>URL<span class="o">]</span> &gt; file.html</code></pre></div>
+<p>Get registration information of a domain name: (replace with a real domain name)</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ whois <span class="o">[</span>DOMAIN NAME<span class="o">]</span></code></pre></div>
+<p>Get a file (in this case a pdf file from the web):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget https://domain.com/file.pdf</code></pre></div>
+<p>Find a file (you can use the -iname flag to make it case insensitive):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ find <span class="o">[</span>APPROXIMATE PATH<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span></code></pre></div>
+<p>Get a tree structure of the current directory (you can use the -d flag to list only directories, not files):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree</code></pre></div>
+<p>Get the id of the current user (including group id):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ id</code></pre></div>
+<p>If you want to dig deeper, just do a Google search for <a href="https://www.google.com/search?ei=dRa5XIf_E6-O5wL_lprIDg&amp;q=useful+linux+terminal+commands&amp;oq=useful+linux+terminal+commands&amp;gs_l=psy-ab.3..0.4052.7452..8574...5.0..0.128.1055.0j9......0....1..gws-wiz.......0i71j35i304i39j0i7i30j0i13j0i8i7i30j0i7i5i30j0i13i5i30j0i8i13i30.gmH5nuLkc9E">useful linux terminal commands</a> and you will find how powerful and versatile the terminal can be.</p>
 
     </article>
   </div>
