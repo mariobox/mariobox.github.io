@@ -68,51 +68,34 @@
   <p class="description">Table of countries showing confirmed cases and deaths</p>
   <div>
     <article id="content">
-    <p><img src="/img/covid.png"></p>
-
-<p><strong>Made with</strong>: <i class="fab fa-python"></i> Python</p>
-
-<p><a href="https://github.com/mariobox/covid-dashboard">Source Files</a> <hr class="art"></p>
-
+    <!-- raw HTML omitted -->
+<p><strong>Made with</strong>: <!-- raw HTML omitted --><!-- raw HTML omitted --> Python</p>
+<p><a href="https://github.com/mariobox/covid-dashboard">Source Files</a> <!-- raw HTML omitted --></p>
 <p>This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.</p>
-
 <p>The <code>application.py</code> file contains our program logic.</p>
-
 <p>We start by importing the package that will provide us with the data:</p>
-
 <p><code>from covid import Covid</code></p>
-
 <p>The data comes in the form of a list of dictionaries (or if you&rsquo;re more used to JS parlance, an array of objects). You can learn more about this package <a href="https://pypi.org/project/covid/">here</a>.</p>
-
 <p>Then we need to import Flask, since we want our dashboard to be viewed on a webpage, not the console. Flask is a lightweight web framework that works with Python.</p>
-
 <p><code>from flask import Flask, redirect, render_template, request</code></p>
-
 <p>Next, we assign our Flask application to a variable:</p>
-
 <p><code>app = Flask(__name__)</code></p>
-
 <p>We then make a call to the covid package and sort our list of dictionaries so that the countries with the higher number of deaths are listed first (the data originally comes sorted by descending number of confirmed cases):</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">d</span> <span class="o">=</span> <span class="n">covid</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
-<span class="n">d</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;deaths&#39;</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></code></pre></div>
-<p>We then format the numeric fields we&rsquo;re interested in so that they display with a &ldquo;,&rdquo; delimiting thousands and millions, to make the data more readable:</p>
+<span class="n">d</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;deaths&#39;</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div><p>We then format the numeric fields we&rsquo;re interested in so that they display with a &ldquo;,&rdquo; delimiting thousands and millions, to make the data more readable:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
     <span class="n">country</span><span class="p">[</span><span class="s1">&#39;confirmed&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">format</span><span class="p">(</span><span class="n">country</span><span class="p">[</span><span class="s1">&#39;confirmed&#39;</span><span class="p">],</span> <span class="s2">&#34;,&#34;</span><span class="p">)</span>
-    <span class="n">country</span><span class="p">[</span><span class="s1">&#39;deaths&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">format</span><span class="p">(</span><span class="n">country</span><span class="p">[</span><span class="s1">&#39;deaths&#39;</span><span class="p">],</span> <span class="s2">&#34;,&#34;</span><span class="p">)</span></code></pre></div>
-<p>We&rsquo;re now ready to define our route for the home page of our web app. This route will render the <code>index.html</code> template (the only page of our web app). When we configure our route, we pass to the template a parameter <code>data=d</code> which contains our data. The <code>index.html</code> template will then use this data to build the web page that will be visible to the user:</p>
+    <span class="n">country</span><span class="p">[</span><span class="s1">&#39;deaths&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">format</span><span class="p">(</span><span class="n">country</span><span class="p">[</span><span class="s1">&#39;deaths&#39;</span><span class="p">],</span> <span class="s2">&#34;,&#34;</span><span class="p">)</span>
+</code></pre></div><p>We&rsquo;re now ready to define our route for the home page of our web app. This route will render the <code>index.html</code> template (the only page of our web app). When we configure our route, we pass to the template a parameter <code>data=d</code> which contains our data. The <code>index.html</code> template will then use this data to build the web page that will be visible to the user:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">d</span><span class="p">)</span></code></pre></div>
-<p>The <code>index.html</code> page is a Jinja template enhanced with Bootstrap styling to make our table look nice.</p>
-
+  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div><p>The <code>index.html</code> page is a Jinja template enhanced with Bootstrap styling to make our table look nice.</p>
 <p>To run this code on your computer you need to access the FLASK_APP enviroment variable by typing:</p>
-
 <p><code>export FLASK_APP=application.py</code></p>
-
 <p>from the command line, followed by:</p>
-
 <p><code>flask run</code></p>
-
 <p>We could do other things with our app, like allowing users to sort by different criteria, display only a limited amount of data, or grab more information from other sources. For now, though, the app is done and it accomplishes what I set out to do.</p>
 
     </article>
