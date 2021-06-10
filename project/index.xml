@@ -175,7 +175,8 @@ I used Progressbar&amp;rsquo;s circle as the base for my project (you can use ot
       
       <guid>https://mariosanchez.org/project/flaskecomm/</guid>
       <description>Made with:  Python
-Source Files This app was my CS50x final project.
+Source Files | Live Demo
+This app was my CS50x final project.
 The app loads a gallery of soccer shirts that includes: image, description, price, and a small form to add item to cart. The shirt info is stored in a SQLite database and is displayed using Bootstrap&amp;rsquo;s card class.
 The app includes a series of filters implemented using SQLite queries so you can see only shirts that match a certain filter: shirts by region, clubs vs.</description>
     </item>
