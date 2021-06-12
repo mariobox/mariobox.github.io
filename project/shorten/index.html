@@ -68,22 +68,28 @@
   <p class="description">Use Python to programmatically shorten a URL with Bitly</p>
   <div>
     <article id="content">
-    <p><strong>Made with</strong>: <!-- raw HTML omitted --><!-- raw HTML omitted --> Python</p>
-<p><a href="https://github.com/mariobox/url-shortener">Source Files</a> <!-- raw HTML omitted --></p>
-<p>This is a practice project in Python. We will create a Python program to shorten URLs using <a href="https://bitly.com">Bitly</a>&lsquo;s <a href="https://dev.bitly.com/">API</a>.</p>
+    <p><strong>Made with</strong>: <i class="fab fa-python"></i> Python</p>
+
+<p><a href="https://github.com/mariobox/url-shortener">Source Files</a> <hr class="art"></p>
+
+<p>This is a practice project in Python. We will create a Python program to shorten URLs using <a href="https://bitly.com">Bitly</a>&rsquo;s <a href="https://dev.bitly.com/">API</a>.</p>
+
 <p>Of course we can always shorten URLs directly from the Bitly page, but we don&rsquo;t want to do that. We want to be able to do it straight from our computer&rsquo;s command line, and to store each URL key value pair (long url, short url) in a CSV file in our computer.</p>
+
 <p>The basic process to shorten a URL, whether you&rsquo;re using Bitly&rsquo;s website or the command line, involves sending a POST request to the server, with some credentials in a header object, and some parameters (one of them being the long URL you want to shorten).</p>
+
 <p>If Bitly&rsquo;s server accepts your credentials and your post request was structured correctly, you should get back your shortened URL.</p>
+
 <p>We start by importing Python <code>requests</code> module:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">requests</span>
-</code></pre></div><p>Next, we ask the user to input the long URL:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">long_url</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Input long URL: &#34;</span><span class="p">)</span>
-</code></pre></div><p>We then create our <!-- raw HTML omitted -->headers<!-- raw HTML omitted --> object where we will pass our Authorization Token (to get your Authorization Token you need to get a Bitly account and go to your profile settings). Make sure you replace {TOKEN} with your own Bitly authorization token:</p>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">requests</span></code></pre></div>
+<p>Next, we ask the user to input the long URL:</p>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">long_url</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Input long URL: &#34;</span><span class="p">)</span></code></pre></div>
+<p>We then create our <code>headers</code> object where we will pass our Authorization Token (to get your Authorization Token you need to get a Bitly account and go to your profile settings). Make sure you replace {TOKEN} with your own Bitly authorization token:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="s1">&#39;Bearer {TOKEN}&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span>
-    <span class="p">}</span>
-</code></pre></div><p>Next, we create a GET request passing our headers object to the server in order to get our Group ID (<code>guid</code> in the code snippet below) which we will need for our POST request:</p>
+    <span class="p">}</span></code></pre></div>
+<p>Next, we create a GET request passing our headers object to the server in order to get our Group ID (<code>guid</code> in the code snippet below) which we will need for our POST request:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">groups_res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;https://api-ssl.bitly.com/v4/groups&#34;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">groups_res</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
     <span class="c1"># if response is OK, get the GUID</span>
@@ -91,22 +97,25 @@
     <span class="n">guid</span> <span class="o">=</span> <span class="n">groups_data</span><span class="p">[</span><span class="s1">&#39;guid&#39;</span><span class="p">]</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s2">&#34;[!] Cannot get GUID, exiting...&#34;</span><span class="p">)</span>
-    <span class="nb">exit</span><span class="p">()</span>
-</code></pre></div><p>Finally, we create our POST request, passing along our headers and our data parameters, which includes the long URL we want to shorten:</p>
+    <span class="nb">exit</span><span class="p">()</span></code></pre></div>
+<p>Finally, we create our POST request, passing along our headers and our data parameters, which includes the long URL we want to shorten:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&#34;long_url&#34;</span><span class="p">:</span> <span class="n">long_url</span><span class="p">,</span> <span class="s2">&#34;domain&#34;</span><span class="p">:</span> <span class="s2">&#34;bit.ly&#34;</span><span class="p">,</span> <span class="s2">&#34;group_guid&#34;</span><span class="p">:</span> <span class="n">guid</span> <span class="p">}</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://api-ssl.bitly.com/v4/shorten&#39;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
-</code></pre></div><p>If everything went well, we will get a response object from which we can extract our short URL:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">short_url</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;link&#39;</span><span class="p">)</span>
-</code></pre></div><p>We can then either instruct the program to print the short URL to the console:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;Your short link is: {response.json().get(&#39;link&#39;)}&#34;</span><span class="p">)</span>
-</code></pre></div><p>Or we can send the (long URL, short URL) key value pair to a CSV file if we want to store all our short URLs in one place:</p>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://api-ssl.bitly.com/v4/shorten&#39;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></code></pre></div>
+<p>If everything went well, we will get a response object from which we can extract our short URL:</p>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">short_url</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;link&#39;</span><span class="p">)</span></code></pre></div>
+<p>We can then either instruct the program to print the short URL to the console:</p>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;Your short link is: {response.json().get(&#39;link&#39;)}&#34;</span><span class="p">)</span></code></pre></div>
+<p>Or we can send the (long URL, short URL) key value pair to a CSV file if we want to store all our short URLs in one place:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;urls.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;{long_url},{short_url}</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">close</span>
-</code></pre></div><p>Check the <a href="https://github.com/mariobox/url-shortener">source code here</a>.</p>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span></code></pre></div>
+<p>Check the <a href="https://github.com/mariobox/url-shortener">source code here</a>.</p>
+
 <p>(In the source code you will see a small variation of this program, since I decided to store my Authorization Token in the <code>.bashrc</code> file as an environment variable.</p>
+
 <p>To get an environment variable in Python you need to import the <code>os</code> module and call the variable like this: <code>variable = os.environ['YOUR_VARIABLE_NAME']</code>.</p>
+
 <p>This comes in handy when you have sensitive information like passwords and API keys that you don&rsquo;t want others to see in case your source code is public.)</p>
 
     </article>

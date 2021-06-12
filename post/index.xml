@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mario Sanchez Carrion</title>
@@ -48,8 +48,7 @@ I picked up web development as a serious hobby about five years ago, but I&amp;r
       <guid>https://mariosanchez.org/post/site/</guid>
       <description>Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. This site also advocates for open-source web development and supports the open-source community.
 Intentions 1. Minimalism: The site will have a simple design made from scratch.
-2. Privacy: The site will be non-transactional, non-commercial, and will have no ulterior motive beyond documenting my development journey.
-3. Open Source: The site will be developed with open-source tools and technologies.</description>
+2. Privacy: The site will be non-transactional, non-commercial, and will have no ulterior motive beyond documenting my development journey.</description>
     </item>
     
     <item>
@@ -88,9 +87,9 @@ Seek Wealth, Not Money or Status  Wealth is assets that earn while you sleep. Th
       
       <guid>https://mariosanchez.org/post/mnd/</guid>
       <description>PAW (prodigious accumulator of wealth) is someone who has achieved high net worth. UAW (under accumulator of wealth) is someone with low or negative net worth. PAWs may have normal or even below average income. UAW may have high income. It&amp;rsquo;s not how much you make: it&amp;rsquo;s how much you keep.
-  PAWs live below their means.
-  PAWs have budgets and stick to them.
-  Majority of PAWs own their own businesses.</description>
+ PAWs live below their means.
+ PAWs have budgets and stick to them.
+ Majority of PAWs own their own businesses.</description>
     </item>
     
     <item>
@@ -101,7 +100,7 @@ Seek Wealth, Not Money or Status  Wealth is assets that earn while you sleep. Th
       <guid>https://mariosanchez.org/post/https/</guid>
       <description>I recently configured my web server to serve this site over HTTPS. In fact, if you look at the URL in the address bar of your browser, you should see a lock icon to the left of the URL:
 Wikipedia explains HTTPS as follows:
-HTTP is inherently not secure. This means that communication between a client (your browser) and a server (the website you want to visit) is not encrypted, which creates three kinds of problems:</description>
+ Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet.</description>
     </item>
     
     <item>
@@ -132,7 +131,7 @@ The clean, empty hard drive gave me the perfect excuse to install a Linux operat
       
       <guid>https://mariosanchez.org/post/vps/</guid>
       <description>Update: As of May 9, 2020 I am hosting my site in Github Pages.
-I just moved my site to a Digital Ocean virtual private server (VPS). I had been wanting to do it for a long time but it seemed complicated, and using Github Pages to host my site was both easy and convenient. In the end, my desire to learn how to operate a VPSwon over the convenience of Github, and I decided to take the plunge.</description>
+I just moved my site to a Digital Ocean virtual private server (VPS). I had been wanting to do it for a long time but it seemed complicated, and using Github Pages to host my site was both easy and convenient. In the end, my desire to learn how to operate a VPS won over the convenience of Github, and I decided to take the plunge.</description>
     </item>
     
     <item>
@@ -185,7 +184,7 @@ As if fate had it, a few days later I was at a Fedex store and saw Talk Like TED
       
       <guid>https://mariosanchez.org/post/alias/</guid>
       <description>If you use a Linux-style terminal you may find yourself typing the same commands over and over again. If this is the case, you may wish to use some shorthand that the terminal can understand. You can do that with Aliases.
-You start by going to your user directory and opening your .bashrcfile. A .bashrcis a shell script that Bash runs whenever it is started interactively. You can put any command in that file that you could type at the command prompt.</description>
+You start by going to your user directory and opening your .bashrc file. A .bashrc is a shell script that Bash runs whenever it is started interactively. You can put any command in that file that you could type at the command prompt.</description>
     </item>
     
     <item>

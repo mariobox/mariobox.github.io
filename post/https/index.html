@@ -68,29 +68,52 @@
   <p class="description">Serving your site through Secure HTTP</p>
   <div>
     <article id="content">
-    <p>I recently configured my web server to serve this site over <!-- raw HTML omitted -->HTTPS<!-- raw HTML omitted -->. In fact, if you look at the URL in the address bar of your browser, you should see a <em>lock</em> icon to the left of the URL:</p>
-<p><!-- raw HTML omitted --></p>
+    
+
+<p>I recently configured my web server to serve this site over <abbr title="Hypertext Tranfer Protocol Secure">HTTPS</abbr>. In fact, if you look at the URL in the address bar of your browser, you should see a <em>lock</em> icon to the left of the URL:</p>
+
+<p><img src="/img/httpsms.jpg" /></p>
+
 <p>Wikipedia explains HTTPS as follows:</p>
-<!-- raw HTML omitted -->
+
+<blockquote>
+Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet. In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS), or, formerly, its predecessor, Secure Sockets Layer (SSL). The protocol is therefore also often referred to as HTTP over TLS, or HTTP over SSL. 
+</blockquote>
+
 <p>HTTP is inherently not secure. This means that communication between a client (your browser) and a server (the website you want to visit) is not encrypted, which creates three kinds of problems:</p>
+
 <ol>
 <li><strong>Lack of privacy</strong>: anybody can intercept the information you are sending or receiving to or from the server.</li>
 <li><strong>Lack of information integrity</strong>: a malicious third party can inject code into the HTML of the pages you are receiving (for example unwanted ads or harmful code snippets).</li>
 <li><strong>Lack of authentication</strong>: you have no way of being 100% sure that the website you&rsquo;re receiving in fact comes from who you think it comes.</li>
 </ol>
+
 <p>HTTPS solves all three of those problems.</p>
+
 <p>To understand how HTTPS works in detail, this is an excellent article that explains it much better than I can:</p>
+
 <p><a href="https://web.archive.org/web/20190209054553/https://strongarm.io/blog/how-https-works/">How HTTPS Works</a></p>
+
 <p>Since HTTPS relies heavily on the concept of Public-Private Key Cryptography, you may want to start by reading this post:</p>
+
 <p><a href="https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/">Public Key Cryptography for Non-Geeks</a></p>
+
 <p>To implement HTTPS for your site, most web hosts nowadays offer the option to set it up with a simple click of a button. Others, like Digital Ocean, a popular cloud infrastructure provider for developers, require slightly more work.</p>
+
 <p>To enable HTTPS on Digital Ocean you need to install <a href="https://certbot.eff.org/about/">Certbot</a>, an automatic tool that fetches and deploys a <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">SSL/TLS</a> certificate on your webserver. Running Certbot will automatically configure your web server to start serving over HTTPS immediately.</p>
+
 <p>Certbot uses a <a href="https://en.wikipedia.org/wiki/HTTPS#Server_setup">certificate</a> issued by <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>, a free, automated, and open <a href="https://en.wikipedia.org/wiki/Certificate_authority">certificate authority (CA)</a>, run for the public’s benefit.</p>
+
 <p>For a step by step implementation of HTTPS in Digital Ocean you can follow this tutorial:</p>
+
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-with-nginx-server-blocks-on-ubuntu-16-04">How to Set Up Let&rsquo;s Encrypt With Nginx Server Blocks on Ubuntu 16-04</a>.</p>
+
 <p>It will work for a Nginx server on an Ubuntu VPS, but you can search D.O. for instructions in different configurations.</p>
+
 <p><strong>Note:</strong> If you decide to host your site in <a href="https://pages.github.com">Github Pages</a> or <a href="https://firebase.google.com">Firebase</a> you don&rsquo;t have to do anything: you get SSL by default.</p>
-<h3 id="related-">Related</h3>
+
+<h3 id="related">Related</h3>
+
 <p><a href="https://www.eff.org/encrypt-the-web">Why you should use HTTPS instead of plain HTTP</a></p>
 
     </article>
