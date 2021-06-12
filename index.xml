@@ -41,7 +41,7 @@ My first step was to find an API that I could call to retrieve today&amp;rsquo;s
       
       <guid>https://mariosanchez.org/project/covid19/</guid>
       <description>Made with: Python
-Source Files This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.
+Source Files | Live Demo This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.
 The application.py file contains our program logic.
 We start by importing the package that will provide us with the data:
 from covid import Covid
