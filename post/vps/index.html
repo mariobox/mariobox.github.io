@@ -69,7 +69,7 @@
   <div>
     <article id="content">
     <p><strong>Update:</strong> As of May 9, 2020 I am hosting my site in Github Pages.</p>
-<p>I just moved my site to a <a href="https://digitalocean.com">Digital Ocean virtual private server (VPS)</a>. I had been wanting to do it for a long time but it seemed complicated, and using Github Pages to host my site was both easy and convenient. In the end, my desire to learn how to operate a <!-- raw HTML omitted -->VPS<!-- raw HTML omitted --> won over the convenience of Github, and I decided to take the plunge.</p>
+<p>I just moved my site to a <a href="https://digitalocean.com">Digital Ocean virtual private server (VPS)</a>. I had been wanting to do it for a long time but it seemed complicated, and using Github Pages to host my site was both easy and convenient. In the end, my desire to learn how to operate a <abbr title="Virtual Private Server">VPS</abbr> won over the convenience of Github, and I decided to take the plunge.</p>
 <p>First, I created a simple <em>Hello World!</em> HTML page and, after some trial and error, was able to deploy it to a VPS using a domain name that I had lying around. Since that worked, the next logical step was to try to move my site. Moving my site was slightly more complicated because I&rsquo;m using a static site generator, which adds a few more steps and nuances to the process.</p>
 <p>In the end, it took some concentration, three or four hours of uninterrupted time, and heavy use of Google and Stack Overflow, but the move was successful and my site now resides in its own Digital Ocean virtual private server (or &ldquo;droplet&rdquo;, as DO likes to call their VPS&rsquo;s).</p>
 <p>Below are the series of steps I took:</p>
@@ -97,7 +97,7 @@ For this, I created a bash file, located in the root directory of my project, th
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
 </span><span class="cp"></span>rsync -av -e ssh public/* myusername@my.ip.address:/var/www/mariosanchez.org/html
-</code></pre></div><p><!-- raw HTML omitted -->Obviously, <em>myusername</em> and <em>my.ip.address</em> need to be replaced by my actual VPS information.
+</code></pre></div><p><br />Obviously, <em>myusername</em> and <em>my.ip.address</em> need to be replaced by my actual VPS information.
 To run the bash script I just type <code>./deploy.sh</code>, which is the name of the bash script.
 3. Go to <code>mariosanchez.org</code> and see the changes live!</p>
 

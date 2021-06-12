@@ -68,25 +68,25 @@
   <p class="description">Web app to fetch stock info from an API and display it using React</p>
   <div>
     <article id="content">
-    <p><strong>Made with</strong>: <!-- raw HTML omitted --><!-- raw HTML omitted --> React</p>
-<p><a href="https://github.com/mariobox/stocks-react">Source Files</a> | <a href="http://mariobox.github.io/stocks-react">Live Demo</a><!-- raw HTML omitted --></p>
+    <p><strong>Made with</strong>: <i class="fab fa-react"></i> React</p>
+<p><a href="https://github.com/mariobox/stocks-react">Source Files</a> | <a href="http://mariobox.github.io/stocks-react">Live Demo</a><hr class="art" /></p>
 <p><strong>Update</strong>: As of May 9, 2020, the API I was using to fecth the stock info has gone out of business so the values you will get in the <a href="http://mariobox.github.io/stocks-react">Demo</a> are all null. The functionality of the app, though, remains correct. I will update as soon as I find another free API.</p>
 <h2 id="objective">Objective</h2>
 <p>To build a stock info app using React.</p>
 <h2 id="what-we-wanted-to-accomplish">What we wanted to accomplish</h2>
 <p>We wanted a simple form that let us input stock symbols. Upon submission, we wanted a page listing the names of those companies, hyperlinked to a specific company page where we could look at some financials.</p>
 <p>Fig. 1: Input a few symbols and send the form:</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="/img/rs3.png" /></p>
 <p>Fig 2: List of companies whose symbols we submitted</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="/img/rs2.png" /></p>
 <p>Fig 3: Financials for each company</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="/img/rs1.png" width=546px; /></p>
 <h2 id="how-we-went-about-it">How we went about it</h2>
-<p>We used React to render our HTML pages. We used a third party API for the stock info. We used the <!-- raw HTML omitted -->fetch()<!-- raw HTML omitted --> method to get the info from the API. We then used React routes and hooks to render the pages dynamically, using the parameters in the search query.</p>
+<p>We used React to render our HTML pages. We used a third party API for the stock info. We used the <code>fetch()</code> method to get the info from the API. We then used React routes and hooks to render the pages dynamically, using the parameters in the search query.</p>
 <h2 id="what-did-we-learn">What did we learn</h2>
-<p>We used <!-- raw HTML omitted -->URLSearchParams(window.location.search)<!-- raw HTML omitted --> to grab the query string parameter values.</p>
-<p>We passed those values to our API endpoint using <!-- raw HTML omitted -->fetch()<!-- raw HTML omitted -->and then parsed the response with the <!-- raw HTML omitted -->json()<!-- raw HTML omitted --> method.</p>
-<p>Once we received the info, we used React&rsquo;s new <!-- raw HTML omitted -->useState<!-- raw HTML omitted --> and <!-- raw HTML omitted -->useEffect<!-- raw HTML omitted --> functions to update our components and state. To make sure that the React components didn&rsquo;t render before the info from the API arrived, we used the <!-- raw HTML omitted -->async<!-- raw HTML omitted --> and <!-- raw HTML omitted -->await<!-- raw HTML omitted --> flags.</p>
+<p>We used <code>URLSearchParams(window.location.search)</code> to grab the query string parameter values.</p>
+<p>We passed those values to our API endpoint using <code>fetch()</code>and then parsed the response with the <code>json()</code> method.</p>
+<p>Once we received the info, we used React&rsquo;s new <code>useState</code> and <code>useEffect</code> functions to update our components and state. To make sure that the React components didn&rsquo;t render before the info from the API arrived, we used the <code>async</code> and <code>await</code> flags.</p>
 <p>Both the list of company names and the individual stock pages are generated dynamically, using the parameters in the query string.</p>
 
     </article>

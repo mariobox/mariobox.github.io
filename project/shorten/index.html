@@ -68,8 +68,8 @@
   <p class="description">Use Python to programmatically shorten a URL with Bitly</p>
   <div>
     <article id="content">
-    <p><strong>Made with</strong>: <!-- raw HTML omitted --><!-- raw HTML omitted --> Python</p>
-<p><a href="https://github.com/mariobox/url-shortener">Source Files</a> <!-- raw HTML omitted --></p>
+    <p><strong>Made with</strong>: <i class="fab fa-python"></i> Python</p>
+<p><a href="https://github.com/mariobox/url-shortener">Source Files</a> <hr class="art"></p>
 <p>This is a practice project in Python. We will create a Python program to shorten URLs using <a href="https://bitly.com">Bitly</a>&lsquo;s <a href="https://dev.bitly.com/">API</a>.</p>
 <p>Of course we can always shorten URLs directly from the Bitly page, but we don&rsquo;t want to do that. We want to be able to do it straight from our computer&rsquo;s command line, and to store each URL key value pair (long url, short url) in a CSV file in our computer.</p>
 <p>The basic process to shorten a URL, whether you&rsquo;re using Bitly&rsquo;s website or the command line, involves sending a POST request to the server, with some credentials in a header object, and some parameters (one of them being the long URL you want to shorten).</p>
@@ -78,7 +78,7 @@
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">requests</span>
 </code></pre></div><p>Next, we ask the user to input the long URL:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">long_url</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Input long URL: &#34;</span><span class="p">)</span>
-</code></pre></div><p>We then create our <!-- raw HTML omitted -->headers<!-- raw HTML omitted --> object where we will pass our Authorization Token (to get your Authorization Token you need to get a Bitly account and go to your profile settings). Make sure you replace {TOKEN} with your own Bitly authorization token:</p>
+</code></pre></div><p>We then create our <code>headers</code> object where we will pass our Authorization Token (to get your Authorization Token you need to get a Bitly account and go to your profile settings). Make sure you replace {TOKEN} with your own Bitly authorization token:</p>
 <div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="s1">&#39;Bearer {TOKEN}&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span>

@@ -68,14 +68,14 @@
   <p class="description">Mobile-friendly FX watcher</p>
   <div>
     <article id="content">
-    <p><strong>Made with</strong>: <!-- raw HTML omitted --><!-- raw HTML omitted --> JavaScript</p>
+    <p><strong>Made with</strong>: <i class="fab fa-js"></i> JavaScript</p>
 <p><a href="https://github.com/mariobox/fx-watcher">Source Files</a> | <a href="https://mariobox.github.io/fx-watcher">Demo</a></p>
 <p><strong>Update</strong>: The API I was using for this project is not in business any more, so the demo will not work. I am looking for a new API to adapt this project and make it work again.</p>
-<!-- raw HTML omitted -->
+<hr class="art" />
 <p>We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the <strong>YTD % devaluation</strong> (or revaluation) for each of the currencies.</p>
 <p>I decided to implement this project because I work in international marketing, and devaluation is always an important variable to follow when analyzing business results. I wanted a simple, fast way to browse through the most important currencies for my business, and I wanted it to look good on my phone.</p>
 <p>This is how the app looks on my phone:</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="/img/fx.PNG" class="gallery medium" /></p>
 <p>The <strong>HTML</strong> is fairly straightforward. Since we wanted a nice styling that worked well in mobile we decided to use of <a href="https://getbootstrap.com">Bootstrap</a>, by including it in the <code>&lt;head&gt;</code> of our home page:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">...
 
@@ -90,7 +90,7 @@
 
 ...
 
-</code></pre></div><p>The JavaScript is a little bit more challenging. We used the <code>fetch()</code> method to get info from an external <a href="https://worldtradingdata.com">API</a> that provides the exchange rate information. We need two different API calls: one for today&rsquo;s exchange rate, and another one for the rate on December 31 of the previous year. We need <em>both</em> rates in order to calculate the <!-- raw HTML omitted -->YTD<!-- raw HTML omitted --> devaluation percentage:</p>
+</code></pre></div><p>The JavaScript is a little bit more challenging. We used the <code>fetch()</code> method to get info from an external <a href="https://worldtradingdata.com">API</a> that provides the exchange rate information. We need two different API calls: one for today&rsquo;s exchange rate, and another one for the rate on December 31 of the previous year. We need <em>both</em> rates in order to calculate the <abbr title="Year to Date">YTD</abbr> devaluation percentage:</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">url1</span> <span class="o">=</span> 
     <span class="sb">`https://api.worldtradingdata.com/api/v1/forex?base=USD&amp;api_token=onH6cZpUDVXChT9cbQ6jHuCkgoWPjCmBNRz0Sy5hs4icLbqds5ta1VF0pDpl`</span><span class="p">;</span>
 
