@@ -68,20 +68,12 @@
   <p class="description">Summary of the process to set up a virtual private server at Digital Ocean, and deploy a website</p>
   <div>
     <article id="content">
-    
-
-<p><strong>Update:</strong> As of May 9, 2020 I am hosting my site in Github Pages.</p>
-
-<p>I just moved my site to a <a href="https://digitalocean.com">Digital Ocean virtual private server (VPS)</a>. I had been wanting to do it for a long time but it seemed complicated, and using Github Pages to host my site was both easy and convenient. In the end, my desire to learn how to operate a <abbr title="Virtual Private Server">VPS</abbr> won over the convenience of Github, and I decided to take the plunge.</p>
-
+    <p><strong>Update:</strong> As of May 9, 2020 I am hosting my site in Github Pages.</p>
+<p>I just moved my site to a <a href="https://digitalocean.com">Digital Ocean virtual private server (VPS)</a>. I had been wanting to do it for a long time but it seemed complicated, and using Github Pages to host my site was both easy and convenient. In the end, my desire to learn how to operate a <!-- raw HTML omitted -->VPS<!-- raw HTML omitted --> won over the convenience of Github, and I decided to take the plunge.</p>
 <p>First, I created a simple <em>Hello World!</em> HTML page and, after some trial and error, was able to deploy it to a VPS using a domain name that I had lying around. Since that worked, the next logical step was to try to move my site. Moving my site was slightly more complicated because I&rsquo;m using a static site generator, which adds a few more steps and nuances to the process.</p>
-
 <p>In the end, it took some concentration, three or four hours of uninterrupted time, and heavy use of Google and Stack Overflow, but the move was successful and my site now resides in its own Digital Ocean virtual private server (or &ldquo;droplet&rdquo;, as DO likes to call their VPS&rsquo;s).</p>
-
 <p>Below are the series of steps I took:</p>
-
 <h3 id="setting-up-the-vps">Setting Up the VPS</h3>
-
 <ol>
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server">Create a new Digital Ocean VPS</a>.</li>
 <li>SSH into the VPS and create a new user.</li>
@@ -91,25 +83,21 @@
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-14-04-lts">Install a NGINX web server</a>. Pretty straight forward.</li>
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-14-04-lts">Create server blocks and configure one for my site</a>. Server blocks let you host multiple sites on the same server. I also did this part slightly differently than explained in the article: I left the default server location intact, so that when I type the I.P. of my VPS in the browser&rsquo;s address bar it still shows the standard NGINX welcome message. Basically, this means that I set up my site like the <em>test.com</em> example site in the article.</li>
 </ol>
-
 <h3 id="updating-my-site">Updating my site</h3>
-
 <ol>
 <li>Open my site&rsquo;s folder in my local computer and make some changes.</li>
 <li>Type <code>npm start</code> in the command line, open the browser and navigate to <code>localhost:8082</code> to see the site.</li>
 <li>If everything looks good, it&rsquo;s time to git commit the changes and push them to the site&rsquo;s remote repository in Github. This is easy: <code>git add .</code> to add the files to the staging area, <code>git commit -m &quot;short message&quot;</code> to commit the changes, and <code>git push origin master</code> to upload the changes to the remote repository.</li>
 </ol>
-
 <h3 id="uploading-my-site-to-the-vps">Uploading my site to the VPS</h3>
-
 <ol>
 <li>If I haven&rsquo;t done it already, run <code>npm start</code> to generate the static site, which will load to folder <code>./public</code></li>
 <li>Move the files in <code>./public</code> to the VPS&rsquo;s <code>/var/www/mariosanchez.org/html</code>, which is the folder within the VPS where the website files will be hosted.
 For this, I created a bash file, located in the root directory of my project, that I named <code>deploy.sh</code>. This bash file syncs the contents of the <code>./public</code> folder with the contents of the <code>/var/www/mariosanchez.org/html</code> folder (thanks to <a href="https://www.neustadt.fr/parimal-satyal">Parimal Satyal</a> for this tip!):</li>
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
-</span><span class="cp"></span>rsync -av -e ssh public/* myusername@my.ip.address:/var/www/mariosanchez.org/html</code></pre></div>
-<p><br />Obviously, <em>myusername</em> and <em>my.ip.address</em> need to be replaced by my actual VPS information.
+</span><span class="cp"></span>rsync -av -e ssh public/* myusername@my.ip.address:/var/www/mariosanchez.org/html
+</code></pre></div><p><!-- raw HTML omitted -->Obviously, <em>myusername</em> and <em>my.ip.address</em> need to be replaced by my actual VPS information.
 To run the bash script I just type <code>./deploy.sh</code>, which is the name of the bash script.
 3. Go to <code>mariosanchez.org</code> and see the changes live!</p>
 

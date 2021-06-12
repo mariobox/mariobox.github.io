@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Mario Sanchez Carrion</title>
@@ -17,8 +17,8 @@
       <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/shorten/</guid>
-      <description>Made with:  Python
-Source Files This is a practice project in Python. We will create a Python program to shorten URLs using Bitly&amp;rsquo;s API.
+      <description>Made with: Python
+Source Files This is a practice project in Python. We will create a Python program to shorten URLs using Bitly&amp;lsquo;s API.
 Of course we can always shorten URLs directly from the Bitly page, but we don&amp;rsquo;t want to do that. We want to be able to do it straight from our computer&amp;rsquo;s command line, and to store each URL key value pair (long url, short url) in a CSV file in our computer.</description>
     </item>
     
@@ -28,7 +28,7 @@ Of course we can always shorten URLs directly from the Bitly page, but we don&am
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/moon/</guid>
-      <description>Made with:  JavaScript
+      <description>Made with: JavaScript
 Source Files | Live Demo
 I wanted a simple web page to show today&amp;rsquo;s date, moon phase and percentage illumination, plus a nice picture of the moon.
 My first step was to find an API that I could call to retrieve today&amp;rsquo;s moon phase and illumination. After some research I found the Farmsense moon phase API. The API accepts a date as a parameter, formatted in milliseconds (Unix Time), but only takes the first ten digits.</description>
@@ -40,13 +40,8 @@ My first step was to find an API that I could call to retrieve today&amp;rsquo;s
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/covid19/</guid>
-<<<<<<< HEAD
       <description>Made with: Python
 Source Files | Live Demo This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.
-=======
-      <description>Made with:  Python
-Source Files This is a practice project in Python using the Covid package, which lets us retrieve up-to-date information about Covid-19 from John Hopkins API.
->>>>>>> 708c21dc1e16dc541eda998caf43b5feec5ca7c5
 The application.py file contains our program logic.
 We start by importing the package that will provide us with the data:
 from covid import Covid
@@ -59,7 +54,7 @@ The data comes in the form of a list of dictionaries (or if you&amp;rsquo;re mor
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/csvlist/</guid>
-      <description>Made with:  Node and Express
+      <description>Made with: Node and Express
 Source Files
 This is a simple server-side application made with Node and Express.
 Instead of using a more advance data base, we used a super simple CSV file to store our data, and took advantage of the fs Node module and the neat-csv package to convert string information from our CSV database into an array of objects that we can then pass along to our success template made with Pug.</description>
@@ -71,11 +66,11 @@ Instead of using a more advance data base, we used a super simple CSV file to st
       <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/pizza/</guid>
-      <description>Made with:  JavaScript
+      <description>Made with: JavaScript
 Source Files | Live Demo
 JavaScript program to choose only the pizzas with the ingredientes you want.
 Select the ingredients you don&amp;rsquo;t want from a list of options and hit the submit button. The program will only show you pizzas with ingredients you want.
-The script uses a plain vanilla XMLHttpRequest to bring the pizza information from a JSON file. They iterates over all pizzas and all ingredients in a pizza setting the property &amp;ldquo;wanted&amp;rdquo; to false if the pizza contains any ingrediente selected in the not-wanted list.</description>
+The script uses a plain vanilla XMLHttpRequestto bring the pizza information from a JSON file. They iterates over all pizzas and all ingredients in a pizza setting the property &amp;ldquo;wanted&amp;rdquo; to false if the pizza contains any ingrediente selected in the not-wanted list.</description>
     </item>
     
     <item>
@@ -84,7 +79,7 @@ The script uses a plain vanilla XMLHttpRequest to bring the pizza information fr
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/ppl/</guid>
-      <description>Made with:  Node and Express
+      <description>Made with: Node and Express
 Source Files
 I got the inspiration for this project from this post in Willem Middelkoop&amp;rsquo;s blog, and from the site buymeacoffee.com. Simply put, I wanted to create a Donate button that upon clicking set in motion the process of paying through Paypal and redirecting back to my site. Before any styling, it would look something like this:
 While Willem&amp;rsquo;s post went through the basic process, it didn&amp;rsquo;t provide detaied instructions on how to make this work on an actual server, or how to interact with the payment platform&amp;rsquo;s API.</description>
@@ -96,7 +91,7 @@ While Willem&amp;rsquo;s post went through the basic process, it didn&amp;rsquo;
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/express/</guid>
-      <description>Made with:  Node and Express
+      <description>Made with: Node and Express
 Source Files | Live Demo
 Before we go to our example site, let&amp;rsquo;s talk about Express:
 Express is a web framework usually paired with Node. It is a light weight tool that makes it easy to build dynamic web applications.
@@ -109,7 +104,7 @@ Since Express is made with JavaScript, you can install it directly from NPM. Onc
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/dark/</guid>
-      <description>Made with:  JavaScript
+      <description>Made with: JavaScript
 Source Files | Demo
 We will implement a dark theme selector for our site that visitors can activate by clicking on an icon. We will discuss what we have to do to the HTML, CSS and JavaScript files that make up our site to make that happen.
 The HTML &amp;lt;!--DOCTYPE--&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;script src=&amp;#34;script.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;https://kit.fontawesome.com/3fe16e504a.js&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;style.css&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Dark Theme&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;#34;contact.</description>
@@ -121,7 +116,7 @@ The HTML &amp;lt;!--DOCTYPE--&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; 
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/fx/</guid>
-      <description>Made with:  JavaScript
+      <description>Made with: JavaScript
 Source Files | Demo
 Update: The API I was using for this project is not in business any more, so the demo will not work. I am looking for a new API to adapt this project and make it work again.
 We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the YTD % devaluation (or revaluation) for each of the currencies.</description>
@@ -133,10 +128,10 @@ We will create a mobile web app that will display the current exchange of a bask
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/airlines/</guid>
-      <description>Made with:  Python
+      <description>Made with: Python
 Source Files
-With this simple app we can type the name (or part of the name) of an airline in a form, and upon Submit we get a list of airlines that match our input followed by its IATA symbol. For example, you can type &amp;ldquo;american&amp;rdquo; in the search box:
-If you then click Submit; the result will be a list of all the airlines that have &amp;ldquo;american&amp;rdquo; in their name, followed by their IATA symbol in parentheses:</description>
+With this simple app we can type the name (or part of the name) of an airline in a form, and upon Submit we get a list of airlines that match our input followed by its IATA symbol. For example, you can type “american” in the search box:
+If you then click Submit; the result will be a list of all the airlines that have “american” in their name, followed by their IATA symbol in parentheses:</description>
     </item>
     
     <item>
@@ -145,9 +140,9 @@ If you then click Submit; the result will be a list of all the airlines that hav
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/photos/</guid>
-      <description>Made with:  JavaScript
+      <description>Made with: JavaScript
 I wanted to post a few pictures from my trips and other activities here in the site. Looking around the web for ideas I settled on a simple square format for the pictures, with a subtle frame and a gray transparent rectangle for the description placed at the bottom of the photo:
-University of Miami These are the style declarations for the photos:
+These are the style declarations for the photos:
 img.gallery { padding: 4px; border: 1px solid #ccc; margin-bottom: 1em; margin-right: 2%; } .</description>
     </item>
     
@@ -157,9 +152,10 @@ img.gallery { padding: 4px; border: 1px solid #ccc; margin-bottom: 1em; margin-r
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/stocksreact/</guid>
-      <description>Made with:  React
+      <description>Made with: React
 Source Files | Live DemoUpdate: As of May 9, 2020, the API I was using to fecth the stock info has gone out of business so the values you will get in the Demo are all null. The functionality of the app, though, remains correct. I will update as soon as I find another free API.
-Objective To build a stock info app using React.</description>
+Objective To build a stock info app using React.
+What we wanted to accomplish We wanted a simple form that let us input stock symbols.</description>
     </item>
     
     <item>
@@ -168,7 +164,7 @@ Objective To build a stock info app using React.</description>
       <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/progresscircle/</guid>
-      <description>Made with:  JavaScript |  CSS
+      <description>Made with: JavaScript | CSS
 Source Files | Live DemoI started with progressbar.js by Kimmo Brunfeldt, which does most of the heavy lifting. You can add it your project by including a link near your closing body tag to the CDN repository where progressbar.js resides.
 I used Progressbar&amp;rsquo;s circle as the base for my project (you can use other geometrical shapes), which is intended to create an animated score dashboard to display at the end of a quiz.</description>
     </item>
@@ -179,7 +175,7 @@ I used Progressbar&amp;rsquo;s circle as the base for my project (you can use ot
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/flaskecomm/</guid>
-      <description>Made with:  Python
+      <description>Made with: Python
 Source Files | Live Demo
 This app was my CS50x final project.
 The app loads a gallery of soccer shirts that includes: image, description, price, and a small form to add item to cart. The shirt info is stored in a SQLite database and is displayed using Bootstrap&amp;rsquo;s card class.
@@ -192,10 +188,10 @@ The app includes a series of filters implemented using SQLite queries so you can
       <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/micro-blog/</guid>
-      <description>Made with:  ReactJS
-Source Files | Live DemoThis front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax. We use the create-react-app application for all the scaffolding and heavy lifting so that we can focus on the code.
+      <description>Made with: ReactJS
+Source Files | Live DemoThis front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax. We use the create-react-appapplication for all the scaffolding and heavy lifting so that we can focus on the code.
 Our app has six components:
- Our main App.js A Greeting.</description>
+ Our main App.js A Greeting.jscomponent, that displays a Login.</description>
     </item>
     
     <item>
@@ -204,7 +200,7 @@ Our app has six components:
       <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/rei/</guid>
-      <description>Made with:  HTML |  CSS |  JavaScript
+      <description>Made with: HTML | CSS | JavaScript
 Source Files | Live DemoThe objective was to design a clean, efficient, and fully responsive website for a real estate investments business. It needed to clearly describe what the company did, and include easy to follow call-to-actions throughout the site.
 It was made using the Agency template for Bootstrap, a fully functional form by Formspree, and several jQuery plugins for smooth transitions and a carrousel of testimonials.</description>
     </item>
@@ -215,7 +211,7 @@ It was made using the Agency template for Bootstrap, a fully functional form by 
       <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/calc/</guid>
-      <description>Made with:  HTML |  CSS  JavaScript
+      <description>Made with: HTML | CSS JavaScript
 Source Files | Live DemoProject involved creating the calculator interface with HTML and CSS and then adding fuctionality through event handlers and callback functions. It works fine, with some improvements yet to be made, like limiting the display to a certain number of digits so that they fit in the calculator window when the number is too large.
 You can try it out here:</description>
     </item>
@@ -226,7 +222,7 @@ You can try it out here:</description>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/project/angular/</guid>
-      <description>Made with:  Angular
+      <description>Made with: Angular
 Source Files | Demo
 A few weeks ago I came across the concept of SPA, or Single Page Application, and learned that they can be created with Angular.js, a JavaScript library supported by Google.
 Most definitions of SPA you can find online are very technical and full of jargon, so perhaps the best way a newbie web developer like me can understand it is with an example:</description>
