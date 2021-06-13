@@ -6,10 +6,20 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Uses</title>
+      <link>https://mariosanchez.org/uses/</link>
+      <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/uses/</guid>
+      <description>I&amp;rsquo;ve joined the uses.tech community and created this /uses page to list the tools I&amp;rsquo;m currently using for web development.
+  Computer: I recently purchased an HP Pavilion x360 with a 14&amp;rdquo; display. It has an Intel Core i5-1035G1 Processor, 8GB SDRAM, and 256 SSD. I love this laptop. I don&amp;rsquo;t mind the smaller screen since my intention is to maximize portability (while at home, I do most of my web development work in a large monitor anyway).</description>
+    </item>
     
     <item>
       <title>URL Shortener with Python</title>
@@ -90,7 +100,8 @@ The script uses a plain vanilla XMLHttpRequest to bring the pizza information fr
       
       <guid>https://mariosanchez.org/post/webdev/</guid>
       <description>I consider myself a self-taught junior web developer.
-I picked up web development as a serious hobby about five years ago, but I&amp;rsquo;ve been fascinated by th world wide web since the mid 1990&amp;rsquo;s. Back then, being able to share your thoughts with the world instantly and at virtually no cost was (and still is) mind-boggling to me. That was the promise of the Internet and the WWW in their early days.</description>
+I picked up web development as a serious hobby about five years ago, but I&amp;rsquo;ve been fascinated by the world wide web since the mid 1990&amp;rsquo;s. Back then, being able to share your thoughts with the world instantly and at virtually no cost was (and still is) mind-boggling to me.
+The classic sound of a dial-up modem, and the black and white text-based screen that followed it, had magic qualities that I still vividly remember up to this day.</description>
     </item>
     
     <item>
@@ -127,22 +138,14 @@ Intentions 1. Minimalism: The site will have a simple design made from scratch.
     </item>
     
     <item>
-      <title>Uses</title>
-      <link>https://mariosanchez.org/uses/</link>
-      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/uses/</guid>
-      <description>I&amp;rsquo;ve joined the uses.tech community and created this /uses page to list the tools I&amp;rsquo;m currently using for web development.
-  Computer: Toshiba Satellite C55. 4Gb of RAM. Intel Celeron N2830 dual core processor. It&amp;rsquo;s a little underpowered, but it was cheap (~$250). I bought it a few years ago when I was just beginning to code and it still does the trick, so I haven&amp;rsquo;t replaced it. If you want to know what kind of computer you need this article has very good tips.</description>
-    </item>
-    
-    <item>
       <title>Now</title>
       <link>https://mariosanchez.org/now/</link>
       <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/now/</guid>
-      <description>I am currently reviewing some basic web development concepts watching CS50 videos again, and working on a few simple projects involving Node and Python.
+      <description>I am currently taking courses toward the Google IT Support Certificate at Coursera.
+So far it&amp;rsquo;s been a great introduction to concepts like Networking, Operating Systems and Systems Administration.
+I&amp;rsquo;m also planning on revamping this site to make it more user friendly and better show what I&amp;rsquo;ve been doing in the web development front.
 
 Thanks to the great Derek Sivers for inspiring this page.</description>
     </item>
