@@ -80,9 +80,8 @@ The script uses a plain vanilla XMLHttpRequest to bring the pizza information fr
       
       <guid>https://mariosanchez.org/project/ppl/</guid>
       <description>Made with:  Node and Express
-Source Files
-I got the inspiration for this project from this post in Willem Middelkoop&amp;rsquo;s blog, and from the site buymeacoffee.com. Simply put, I wanted to create a Donate button that upon clicking set in motion the process of paying through Paypal and redirecting back to my site. Before any styling, it would look something like this:
-While Willem&amp;rsquo;s post went through the basic process, it didn&amp;rsquo;t provide detaied instructions on how to make this work on an actual server, or how to interact with the payment platform&amp;rsquo;s API.</description>
+Source Files | Live Demo
+I got the inspiration for this project from this post in Willem Middelkoop&amp;rsquo;s blog. While Willem&amp;rsquo;s post went through the basic process, it didn&amp;rsquo;t provide detaied instructions on how to make this work on an actual server, or how to interact with the payment platform&amp;rsquo;s API. That&amp;rsquo;s when I went online and searched for tutorials and videos that might help me.</description>
     </item>
     
     <item>
