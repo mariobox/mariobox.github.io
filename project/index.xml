@@ -20,7 +20,9 @@
       <description>Made with:  Python
 Source Files
 This project is part of the CS50W Web Applications with Python and JavaScript online course.
-It doesen&amp;rsquo;t use models, just views and templates, to build a wiki page. The program reads through a folder with entries written in Markdown, converts them to HTML and sends them to Django templates to display the pages. You can edit and delete posts, and also use a built-in Search function.</description>
+It doesn&amp;rsquo;t use models, just views and templates, to build a wiki page. The program reads through a folder filled with entries written in Markdown, converts them to HTML and sends the HTML to Django templates.
+The specs call for:
+ A home page that lists the titles of all the entries and links to each individual entry page Search functionality Random page generator The ability to edit entries  Here is a short video of the final product:</description>
     </item>
     
     <item>
