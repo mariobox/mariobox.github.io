@@ -6,10 +6,21 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Now</title>
+      <link>https://mariosanchez.org/now/</link>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/now/</guid>
+      <description>I am currently focused on learning server side programming and databases, and have just completed the Django For Everybody certification at Coursera.
+
+Thanks to the great Derek Sivers for inspiring this page.</description>
+    </item>
     
     <item>
       <title>Photo Gallery</title>
@@ -158,19 +169,6 @@ I got the inspiration for this project from this post in Willem Middelkoop&amp;r
 Intentions 1. Minimalism: The site will have a simple design made from scratch.
 2. Privacy: The site will be non-transactional, non-commercial, and will have no ulterior motive beyond documenting my development journey.
 3. Open Source: The site will be developed with open-source tools and technologies.</description>
-    </item>
-    
-    <item>
-      <title>Now</title>
-      <link>https://mariosanchez.org/now/</link>
-      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/now/</guid>
-      <description>I am currently taking courses toward the Google IT Support Certificate at Coursera.
-So far it&amp;rsquo;s been a great introduction to concepts like Networking, Operating Systems and Systems Administration.
-I&amp;rsquo;m also planning on revamping this site to make it more user friendly and better show what I&amp;rsquo;ve been doing in the web development front.
-
-Thanks to the great Derek Sivers for inspiring this page.</description>
     </item>
     
     <item>
