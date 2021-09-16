@@ -65,61 +65,53 @@
   <div>
     <article id="content">
     <h3 id="goals">Goals</h3>
-<p>The main aim of this site is to serve as a <strong>web development playground</strong> where I can <strong>practice and document</strong> what I learn. This site also advocates for open-source web development and supports the open-source community.</p>
-<h3 id="intentions">Intentions</h3>
-<h4 id="1-minimalism">1. Minimalism:</h4>
-<p>The site will have a simple design made from scratch.</p>
-<h4 id="2-privacy">2. Privacy:</h4>
-<p>The site will be <strong>non-transactional</strong>, <strong>non-commercial</strong>, and will have <strong>no ulterior motive</strong> beyond documenting my development journey.</p>
-<h4 id="3-open-source">3. Open Source:</h4>
-<p>The site will be developed with <strong>open-source</strong> tools and technologies. It will honor the original intent of the creators of the <abbr title="Worldwide Web">WWW</abbr>: to bring people and ideas together through a free, decentralized and open system.</p>
-<h4 id="4-work-in-progress">4. Work-In-Progress:</h4>
-<p>As I learn new things every day, this site will be <strong>under construction</strong>.</p>
+<p>The goal of this site is to serve as a web development playground where I can practice and document what I learn.</p>
+<h3 id="specs">Specs</h3>
+<ol>
+<li>
+<p>Simple, minimalistic design made from scratch.</p>
+</li>
+<li>
+<p>Non-transactional and non-commercial.</p>
+</li>
+<li>
+<p>Work-In-Progress: the site will be in continuous improvement.</p>
+</li>
+<li>
+<p>Static (HTML, CSS and JS)</p>
+</li>
+</ol>
 <h3 id="implementation-details">Implementation Details</h3>
-<h4 id="1-static-vs-dynamic">1. Static vs. Dynamic:</h4>
-<p>I decided to make the site <a href="https://techterms.com/definition/staticwebsite">static</a> instead of using a database-driven tool like Wordpress. This is the simplest, fastest and most secure set up. Static sites are <strong>ideal for blogs and small-to-medium sites</strong> where content doesn&rsquo;t change based on user input.</p>
-<p>To create the site I use a <strong>static site generator</strong>, which is a program that combs through one or more folders containing content files usually written in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, converts them to HTML, and places them in a special folder that you can then deploy to the open web using any web hosting service.</p>
-<h4 id="2-platform">2. Platform:</h4>
-<p>I decided to use <a href="https://gohugo.io">Hugo</a>, a static site generator written in <strong>Go</strong> that prides itself of being the <strong>world&rsquo;s fastest framework</strong> for building websites. <strong>Hugo</strong> enjoys active community support, so the likelihood of having to deal with stale dependencies in the future is very small. Of all the platforms I&rsquo;ve used so far, <strong>Hugo</strong> has been the fastest and most reliable.</p>
-<h4 id="3-look-and-feel">3. Look and Feel:</h4>
-<p>I chose not to use third-party themes because most of them are bloated with useless features-which would run against our minimalist approach. I use a hand-coded <a href="/css/minimal.css">CSS style sheet</a> optimized for speed, that provides a look and feel similar to a text editor from the early days of computing.</p>
-<h4 id="4-no-analytics">4. No Analytics:</h4>
-<p>This site <strong>doesn&rsquo;t run Google Analytics</strong> or any other tracking software. There are also <strong>no affiliate links</strong>. Links to the books I review point to the author&rsquo;s page or to <a href="https://www.indiebound.org/">Indiebound</a>, not to Amazon. This site is continuously monitored by the <abbr title="Electronic Frontier Foundation">EFF</abbr> <a href="https://privacybadger.org/">Privacy Badger</a> browser extension to verify no tracking tools are present.</p>
-<p><img src="/img/privacy.jpg" class="gallery large" /></p>
-<h4 id="5-secure-https">5. Secure HTTPS:</h4>
-<p>The site is served over <a href="/post/https/">HTTPS</a> (secure HTML) to ensure all traffic is <strong>encrypted</strong>. You may notice the <strong>lock</strong> icon next to the URL in the address bar:</p>
-<p><img src="/img/httpsms.jpg" /></p>
-<h4 id="6-hosting">6. Hosting</h4>
-<p>The site is hosted in <a href="https://pages.github.com">Github Pages</a>: it&rsquo;s easy, reliable and free, and <strong>comes with HTTPS and custom domain support</strong>. Github Pages is a great solution for static sites and personal webites. As you may know, Microsoft acquired Github in 2018. While I try to stay away from Big Tech solutions, I am making this exception because Microsoft is showing support for the open-source community. If this changes I will move my site to a <strong>virtual private server</strong> at <a href="https://digitalocean.com">Digital Ocean</a>, as I&rsquo;ve done in the <a href="/post/vps">past</a>.</p>
-<h3 id="my-hugo-site-setup-process">My Hugo Site Setup Process</h3>
-<p>After installing <strong>Go</strong> and <strong>Hugo</strong> I created the skeleton for a new site by going to my command line and typing:</p>
+<p>This site is built with <a href="https://gohugo.io">Hugo</a>, a static site generator written in <strong>Go</strong> that prides itself of being the <em>world&rsquo;s fastest framework</em> for building websites. <strong>Hugo</strong> enjoys active community support. We don&rsquo;t run Google Analytics nor any other tracking software.</p>
+<h4 id="hugo-setup-process">Hugo Setup Process</h4>
+<p>After installing <strong>Go</strong> and <strong>Hugo</strong> you can create a skeleton for a new site by going to your command line and typing:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site mysite
 </code></pre></div><p>This command creates a folder in your computer called <code>mysite</code> and populates it with several other folders, the most important of which are:</p>
 <ul>
-<li><code>content</code> which holds your <strong>content files</strong></li>
-<li><code>layouts</code> which holds your different <strong>page templates</strong>, and</li>
-<li><code>static</code> which holds <strong>static assets</strong> such as images, style sheets and JavaScript files.</li>
+<li><code>content</code> which holds your content files</li>
+<li><code>layouts</code> which holds your different page templates, and</li>
+<li><code>static</code> which holds static assets such as images, style sheets and JavaScript files.</li>
 </ul>
-<p>Under the <code>content</code> folder, I created two subfolders for the two types of content I wanted to display on my site:</p>
+<p>Under the <code>content</code> folder, you can create subfolders for the different types of content you want to create, in my case:</p>
 <ul>
 <li><code>post</code>: Things I write (blog posts, book reviews, etc.)</li>
 <li><code>project</code>: A portfolio of my coding projects</li>
 </ul>
 <p>All content files are written in <strong>Markdown</strong>.</p>
-<p>To control the layout I created three <code>_default</code> templates inside the <code>layouts</code> folder:</p>
+<p>To control the layout you can create <code>_default</code> templates inside the <code>layouts</code> folder. I created these three:</p>
 <ol>
 <li><code>single.html</code> to display single pages (same template for blog posts, projects and notes)</li>
 <li><code>list.html</code> to display any collection of posts, projects, notes, etc. I chose to display just titles and dates.</li>
 <li><code>li.html</code> to display the title and date of each individual post or project.</li>
 </ol>
-<p>Also in the <code>layouts</code> folder I created an <code>index.html</code> file, which contains the code for the home page of the site.</p>
-<p>Finally, I created two <code>partials</code> templates: <code>header.html</code> and <code>footer.html</code> that can be called from the other templates. These two templates contain information common to all pages of the site.</p>
-<p>That&rsquo;s basically it.</p>
-<p>When I&rsquo;m adding content to the site, I run <code>hugo server</code> to open a development server in <code>localhost:1313</code> where I can see all my changes in real time. Once I&rsquo;m finished editing I simply run the command <code>hugo</code>, and  the static files are created and placed in a <code>public</code> folder that I can then deploy to <strong>Github Pages</strong> using <a href="/post/gcs">Git</a>.</p>
-<h3 id="changelog">Changelog</h3>
-<p>As of May 10, 2020, I am documenting all significant changes to this site in a <a href="/post/changelog/">changelog</a>.</p>
+<p>Also in the <code>layouts</code> folder you need to create <code>index.html</code> file, which contains the code for the home page of the site. You will need to write that file in HTML.</p>
+<p>Finally, you can create <code>partials</code> templates for the common areas of the site, like <code>header.html</code> and <code>footer.html</code>.</p>
+<h4 id="hugo-development-flow">Hugo Development Flow</h4>
+<p>To add content to your site, run the command <code>hugo server</code> on the command line to open a development server in <code>localhost:1313</code> where you can see all your changes in real time. Once you&rsquo;re finished editing you can run the command <code>hugo</code>, and the static files will created and placed in a <code>public</code> folder that you can then deploy to the open web.</p>
+<h4 id="hosting">Hosting</h4>
+<p>You can host your site anywhere you want. This site is now hosted in <a href="https://pages.github.com">Github Pages</a>: it&rsquo;s easy, reliable and free, and comes with HTTPS and custom domain support. Github Pages is a great solution for static sites and personal webites. I&rsquo;ve also hosted it in a <a href="https://digitalocean.com">Digital Ocean</a> virtual private server, but I find Github enough for what I need right now.</p>
 <h3 id="closing-comments">Closing Comments</h3>
-<p>The site&rsquo;s <a href="https://github.com/mariobox">source files</a> are open-source. In the spirit of sharing, you may fork the <a href="https://github.com/mariobox">repository</a> and use the code for your site. Just add your own content and pictures.</p>
+<p>The site&rsquo;s <a href="https://github.com/mariobox/mariosanchez.org">source files</a> are open-source. In the spirit of sharing, you may fork the <a href="https://github.com/mariobox/mariosanchez.org">repository</a> and use the code for your site. Just add your own content and pictures.</p>
 
     </article>
   </div>
@@ -133,8 +125,8 @@
   <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
 </span>
 </p>
-<p class="centered">
-  <span class="small">Content licensed under <a href="/cc010.txt">CC0-1.0</a> | Code licensed under <a href="/gpl-30.txt">GNU GPLv3</a></span>
+<p class="centered small">
+  Content licensed under <a href="/cc010.txt">CC0-1.0</a><br />Code licensed under <a href="/gpl-30.txt">GNU GPLv3</a>
 </p>
 </div>
 </body>

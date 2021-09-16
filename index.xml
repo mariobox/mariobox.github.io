@@ -17,7 +17,7 @@
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/now/</guid>
-      <description>I am currently focused on learning server side programming and databases, and have just completed the Django For Everybody certification at Coursera. I am now working on several Django practice projects, and working on improving this site.
+      <description>I am currently focused on learning server side programming and databases, and have just completed the Django For Everybody certification at Coursera. I am now working on several Django practice projects, and on improving this site.
 Thanks to the great Derek Sivers for inspiring this page.</description>
     </item>
     
@@ -27,7 +27,7 @@ Thanks to the great Derek Sivers for inspiring this page.</description>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/photos/</guid>
-      <description> Places I&amp;#39;ve been. Things that caught my eye. Like Instagram, but without Zuck snooping around &amp;#x263A;. If you want to build a similar gallery for your site here&#39;s how to do it.
+      <description> Places I&amp;#39;ve been and things that caught my eye. All pictures taken with my phone. The picture gallery is made with JavaScript and some CSS. If you want to build a similar gallery for your site here&#39;s how to do it.
   </description>
     </item>
     
@@ -133,9 +133,8 @@ The script uses a plain vanilla XMLHttpRequest to bring the pizza information fr
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/post/webdev/</guid>
-      <description>I consider myself a self-taught junior web developer.
-I picked up web development as a serious hobby about five years ago, but I&amp;rsquo;ve been fascinated by the world wide web since the mid 1990&amp;rsquo;s. Back then, being able to share your thoughts with the world instantly and at virtually no cost was (and still is) mind-boggling to me.
-The classic sound of a dial-up modem, and the black and white text-based screen that followed it, had magic qualities that I still vividly remember up to this day.</description>
+      <description>I am a self-taught amateur web developer. I picked up web development as a serious hobby about five years ago, but I&amp;rsquo;ve been fascinated by the World Wide Web since the mid 1990&amp;rsquo;s.
+Back then, this newfound ability to share your thoughts with the world instantly (and at virtually no cost) blew my mind. If you were around back then you may probably remember the excitement of hearing the sound of a dial-up modem, and accessing the black and green text-based screen that usually followed it.</description>
     </item>
     
     <item>
@@ -164,10 +163,12 @@ I got the inspiration for this project from this post in Willem Middelkoop&amp;r
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/post/site/</guid>
-      <description>Goals The main aim of this site is to serve as a web development playground where I can practice and document what I learn. This site also advocates for open-source web development and supports the open-source community.
-Intentions 1. Minimalism: The site will have a simple design made from scratch.
-2. Privacy: The site will be non-transactional, non-commercial, and will have no ulterior motive beyond documenting my development journey.
-3. Open Source: The site will be developed with open-source tools and technologies.</description>
+      <description>Goals The goal of this site is to serve as a web development playground where I can practice and document what I learn.
+Specs   Simple, minimalistic design made from scratch.
+  Non-transactional and non-commercial.
+  Work-In-Progress: the site will be in continuous improvement.
+  Static (HTML, CSS and JS)
+  Implementation Details This site is built with Hugo, a static site generator written in Go that prides itself of being the world&amp;rsquo;s fastest framework for building websites.</description>
     </item>
     
     <item>
