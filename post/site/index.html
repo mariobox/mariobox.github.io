@@ -58,11 +58,9 @@
     <div class="container">
 
 
-<p class="date">May 29, 2020</p>
-<section id="main">
-  <h1 id="title">About This Site</h1>
-  <p class="description">Why I developed this site, what tools I use, and the process I follow</p>
-  <div>
+<main id="main">
+  <h1>About This Site</h1>
+  <p class="description">Why I developed this site, what tools I use, and the process I follow</p>  
     <article id="content">
     <h3 id="goals">Goals</h3>
 <p>The goal of this site is to serve as a web development playground where I can practice and document what I learn.</p>
@@ -72,50 +70,53 @@
 <p>Simple, minimalistic design made from scratch.</p>
 </li>
 <li>
-<p>Non-transactional and non-commercial.</p>
+<p>Non-transactional, non-commercial and no Google Analytics or similar.</p>
 </li>
 <li>
-<p>Work-In-Progress: the site will be in continuous improvement.</p>
+<p>Responsive: must look good on a mobile phone.</p>
 </li>
 <li>
-<p>Static (HTML, CSS and JS)</p>
+<p>Work-In-Progress: the site will be under continuous improvement.</p>
+</li>
+<li>
+<p>Static (HTML, CSS and JS).</p>
 </li>
 </ol>
 <h3 id="implementation-details">Implementation Details</h3>
-<p>This site is built with <a href="https://gohugo.io">Hugo</a>, a static site generator written in <strong>Go</strong> that prides itself of being the <em>world&rsquo;s fastest framework</em> for building websites. <strong>Hugo</strong> enjoys active community support. We don&rsquo;t run Google Analytics nor any other tracking software.</p>
+<p>This site is built with <a href="https://gohugo.io">Hugo</a>, a static site generator written in <strong>Go</strong> that prides itself of being the <em>world&rsquo;s fastest framework</em> for building websites. <strong>Hugo</strong> enjoys active community support.</p>
 <h4 id="hugo-setup-process">Hugo Setup Process</h4>
 <p>After installing <strong>Go</strong> and <strong>Hugo</strong> you can create a skeleton for a new site by going to your command line and typing:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site mysite
 </code></pre></div><p>This command creates a folder in your computer called <code>mysite</code> and populates it with several other folders, the most important of which are:</p>
 <ul>
-<li><code>content</code> which holds your content files</li>
-<li><code>layouts</code> which holds your different page templates, and</li>
-<li><code>static</code> which holds static assets such as images, style sheets and JavaScript files.</li>
+<li><code>/content</code> which holds your content files</li>
+<li><code>/layouts</code> which holds your different page templates, and</li>
+<li><code>/static</code> which holds static assets such as images, style sheets and JavaScript files.</li>
 </ul>
-<p>Under the <code>content</code> folder, you can create subfolders for the different types of content you want to create, in my case:</p>
+<p>Under the <code>/content</code> folder, you can create subfolders for the different types of content you want to create, in my case:</p>
 <ul>
-<li><code>post</code>: Things I write (blog posts, book reviews, etc.)</li>
-<li><code>project</code>: A portfolio of my coding projects</li>
+<li><code>/post</code>: Things I write (blog posts, book reviews, etc.)</li>
+<li><code>/project</code>: A portfolio of my coding projects</li>
 </ul>
 <p>All content files are written in <strong>Markdown</strong>.</p>
-<p>To control the layout you can create <code>_default</code> templates inside the <code>layouts</code> folder. I created these three:</p>
+<p>To control the layout you can create <code>/_default</code> templates inside the <code>/layouts</code> folder. I created these three:</p>
 <ol>
 <li><code>single.html</code> to display single pages (same template for blog posts, projects and notes)</li>
 <li><code>list.html</code> to display any collection of posts, projects, notes, etc. I chose to display just titles and dates.</li>
 <li><code>li.html</code> to display the title and date of each individual post or project.</li>
 </ol>
-<p>Also in the <code>layouts</code> folder you need to create <code>index.html</code> file, which contains the code for the home page of the site. You will need to write that file in HTML.</p>
-<p>Finally, you can create <code>partials</code> templates for the common areas of the site, like <code>header.html</code> and <code>footer.html</code>.</p>
+<p>Also in the <code>/layouts</code> folder you need to create <code>index.html</code> file, which contains the code for the home page of the site. You will need to write that file in HTML.</p>
+<p>Finally, you can create <code>/partials</code> templates for the common areas of the site, like <code>header.html</code> and <code>footer.html</code>.</p>
 <h4 id="hugo-development-flow">Hugo Development Flow</h4>
 <p>To add content to your site, run the command <code>hugo server</code> on the command line to open a development server in <code>localhost:1313</code> where you can see all your changes in real time. Once you&rsquo;re finished editing you can run the command <code>hugo</code>, and the static files will created and placed in a <code>public</code> folder that you can then deploy to the open web.</p>
 <h4 id="hosting">Hosting</h4>
-<p>You can host your site anywhere you want. This site is now hosted in <a href="https://pages.github.com">Github Pages</a>: it&rsquo;s easy, reliable and free, and comes with HTTPS and custom domain support. Github Pages is a great solution for static sites and personal webites. I&rsquo;ve also hosted it in a <a href="https://digitalocean.com">Digital Ocean</a> virtual private server, but I find Github enough for what I need right now.</p>
+<p>You can host your site anywhere you want. This site is now hosted in <a href="https://pages.github.com">Github Pages</a>. Github Pages is reliable and free, and comes with HTTPS and custom domain support, which makes it a great solution for static sites and personal webites. I&rsquo;ve also hosted the site in a <a href="https://digitalocean.com">Digital Ocean</a> virtual private server, but I find Github Pages enough for what I need right now.</p>
 <h3 id="closing-comments">Closing Comments</h3>
 <p>The site&rsquo;s <a href="https://github.com/mariobox/mariosanchez.org">source files</a> are open-source. In the spirit of sharing, you may fork the <a href="https://github.com/mariobox/mariosanchez.org">repository</a> and use the code for your site. Just add your own content and pictures.</p>
 
-    </article>
-  </div>
-</section>
+    </article>  
+</main>
+<p class="date">Last updated: May 29, 2020</p>
 
 <br /><br />
 <p class="centered">

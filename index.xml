@@ -17,7 +17,7 @@
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/now/</guid>
-      <description>I am currently focused on learning server side programming and databases, and have just completed the Django For Everybody certification at Coursera. I am now working on several Django practice projects, and on improving this site.
+      <description>I am currently focused on learning server side programming and databases, and have just completed the Django For Everybody certification at Coursera. I am now working on several Django practice projects and on improving this site.
 Thanks to the great Derek Sivers for inspiring this page.</description>
     </item>
     
@@ -52,7 +52,7 @@ The specs call for:
       
       <guid>https://mariosanchez.org/uses/</guid>
       <description>I&amp;rsquo;ve joined the uses.tech community and created this page to list the tools I&amp;rsquo;m currently using for web development.
-  Computer: I recently purchased an HP Pavilion x360 with a 14&amp;rdquo; display. It has an Intel Core i5-1035G1 Processor, 8GB SDRAM, and 256 SSD. I love this laptop. I don&amp;rsquo;t mind the smaller screen since my intention is to maximize portability (while at home, I do most of my web development work in a large monitor anyway).</description>
+  Computer: I recently purchased an HP Pavilion x360 with a 14&amp;rdquo; display. It has an Intel Core i5-1035G1 Processor, 8GB SDRAM, and 256 SSD. This is a great laptop for the price. I don&amp;rsquo;t mind the smaller screen since my intention is to maximize portability (while at home, I do most of my web development work in a large monitor anyway).</description>
     </item>
     
     <item>
@@ -165,9 +165,10 @@ I got the inspiration for this project from this post in Willem Middelkoop&amp;r
       <guid>https://mariosanchez.org/post/site/</guid>
       <description>Goals The goal of this site is to serve as a web development playground where I can practice and document what I learn.
 Specs   Simple, minimalistic design made from scratch.
-  Non-transactional and non-commercial.
-  Work-In-Progress: the site will be in continuous improvement.
-  Static (HTML, CSS and JS)
+  Non-transactional, non-commercial and no Google Analytics or similar.
+  Responsive: must look good on a mobile phone.
+  Work-In-Progress: the site will be under continuous improvement.
+  Static (HTML, CSS and JS).
   Implementation Details This site is built with Hugo, a static site generator written in Go that prides itself of being the world&amp;rsquo;s fastest framework for building websites.</description>
     </item>
     
@@ -348,9 +349,9 @@ The app includes a series of filters implemented using SQLite queries so you can
       
       <guid>https://mariosanchez.org/project/micro-blog/</guid>
       <description>Made with:  ReactJS
-Source Files | Live DemoThis front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax. We use the create-react-app application for all the scaffolding and heavy lifting so that we can focus on the code.
-Our app has six components:
- Our main App.js A Greeting.</description>
+Source Files | Live DemoThis front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax.
+We start by running Create React App, which provides the scaffolding for our site and performs all the lifting so that we can focus on the code.
+Our app has six components:</description>
     </item>
     
     <item>

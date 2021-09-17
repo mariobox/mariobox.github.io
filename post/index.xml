@@ -48,9 +48,10 @@ Back then, this newfound ability to share your thoughts with the world instantly
       <guid>https://mariosanchez.org/post/site/</guid>
       <description>Goals The goal of this site is to serve as a web development playground where I can practice and document what I learn.
 Specs   Simple, minimalistic design made from scratch.
-  Non-transactional and non-commercial.
-  Work-In-Progress: the site will be in continuous improvement.
-  Static (HTML, CSS and JS)
+  Non-transactional, non-commercial and no Google Analytics or similar.
+  Responsive: must look good on a mobile phone.
+  Work-In-Progress: the site will be under continuous improvement.
+  Static (HTML, CSS and JS).
   Implementation Details This site is built with Hugo, a static site generator written in Go that prides itself of being the world&amp;rsquo;s fastest framework for building websites.</description>
     </item>
     
