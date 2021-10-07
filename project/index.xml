@@ -6,10 +6,23 @@
     <description>Recent content in Projects on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Oct 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Auction Site with Django</title>
+      <link>https://mariosanchez.org/project/commerce/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/project/commerce/</guid>
+      <description>Made with:  Python
+Source Files | Live Demo
+This app was my implementation of CS50W&amp;lsquo;s Project 2, which involves Django, SQL, Models and Migrations.
+Here are the specs:
+  Models: Your application should have at least three models in addition to the User model: one for auction listings, one for bids, and one for comments made on auction listings. It’s up to you to decide what fields each model should have, and what the types of those fields should be.</description>
+    </item>
     
     <item>
       <title>Wikipedia Clone with Django</title>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Auction Site with Django | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="My implementation of Commerce, CS50W Project 2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="/js/theme.js"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar">
+        <a style="cursor:pointer;">
+        <span class="icon" id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+        </a>
+      </div>
+    </a>
+    <div class="centered logo">
+      <a href="/">msc</a>
+    </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/post/">posts</a>
+          </li>
+          <li>
+            <a href="/project/">projects</a>
+          </li>
+          <li>
+            <a href="/photos/">photos</a>
+          </li>
+          <li>
+            <a href="/uses/">uses</a>
+          </li>
+          <li>
+            <a href="/now">now</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+
+
+<main id="main">
+  <h1>Auction Site with Django</h1>
+  <p class="description">My implementation of Commerce, CS50W Project 2</p>  
+    <article id="content">
+    <p><strong>Made with</strong>: <i class="fab fa-python"></i> Python</p>
+<p><a href="https://github.com/mariobox/flask-ecomm">Source Files</a> | <a href="http://mariosanchezcarrion.com:8000">Live Demo</a></p>
+<p>This app was my implementation of <a href="https://cs50.harvard.edu/web/2020/projects/2/commerce/">CS50W</a>&lsquo;s Project 2, which involves Django, SQL, Models and Migrations.</p>
+<p><img src="/img/commerce.jpg" /></p>
+<p>Here are the specs:</p>
+<ul>
+<li>
+<p><strong>Models</strong>: Your application should have at least three models in addition to the User model: one for auction listings, one for bids, and one for comments made on auction listings. It’s up to you to decide what fields each model should have, and what the types of those fields should be. You may have additional models if you would like.</p>
+</li>
+<li>
+<p><strong>Create Listing</strong>: Users should be able to visit a page to create a new listing. They should be able to specify a title for the listing, a text-based description, and what the starting bid should be. Users should also optionally be able to provide a URL for an image for the listing and/or a category (e.g. Fashion, Toys, Electronics, Home, etc.).</p>
+</li>
+<li>
+<p><strong>Active Listings Page</strong>: The default route of your web application should let users view all of the currently active auction listings. For each active listing, this page should display (at minimum) the title, description, current price, and photo (if one exists for the listing).</p>
+</li>
+<li>
+<p><strong>Listing Page</strong>: Clicking on a listing should take users to a page specific to that listing. On that page, users should be able to view all details about the listing, including the current price for the listing.</p>
+<ul>
+<li>If the user is signed in, the user should be able to add the item to their “Watchlist.” If the item is already on the watchlist, the user should be able to remove it.</li>
+<li>If the user is signed in, the user should be able to bid on the item. The bid must be at least as large as the starting bid, and must be greater than any other bids that have been placed (if any). If the bid doesn’t meet those criteria, the user should be presented with an error.</li>
+<li>If the user is signed in and is the one who created the listing, the user should have the ability to “close” the auction from this page, which makes the highest bidder the winner of the auction and makes the listing no longer active.</li>
+<li>If a user is signed in on a closed listing page, and the user has won that auction, the page should say so.</li>
+<li>Users who are signed in should be able to add comments to the listing page. The listing page should display all comments that have been made on the listing.</li>
+</ul>
+</li>
+<li>
+<p><strong>Watchlist</strong>: Users who are signed in should be able to visit a Watchlist page, which should display all of the listings that a user has added to their watchlist. Clicking on any of those listings should take the user to that listing’s page.</p>
+</li>
+<li>
+<p><strong>Categories</strong>: Users should be able to visit a page that displays a list of all listing categories. Clicking on the name of any category should take the user to a page that displays all of the active listings in that category.</p>
+</li>
+<li>
+<p><strong>Django Admin Interface</strong>: Via the Django admin interface, a site administrator should be able to view, add, edit, and delete any listings, comments, and bids made on the site.</p>
+</li>
+</ul>
+<p>I&rsquo;m very proud of the way the project ended up working and looking. This was by far the hardest project I&rsquo;ve attempted and I&rsquo;m glad it is now working as expected.</p>
+<p>If you want to learn more about this project here are some links:</p>
+<ul>
+<li><a href="https://github.com/mariobox/cs50w-commerce">Source Code</a></li>
+<li><a href="http://mariosanchezcarrion.com:8000">Working Demo</a></li>
+<li><a href="https://youtu.be/8TZa5IB4Q-g">Youtube Video</a> of the site in action</li>
+</ul>
+
+    </article>  
+</main>
+<p class="date">Last updated: Oct 6, 2021</p>
+
+<br /><br />
+  <p class="centered">
+  <span class="small">  
+    <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+    <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab ft fa-twitter fa-lg"></i></a>
+    <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+  </span>
+  </p>
+  <p class="centered small">
+    Content licensed under <a href="/cc010.txt">CC0-1.0</a><br />Code licensed under <a href="/gpl-30.txt">GNU GPLv3</a>
+  </p>
+</div>
+</body>
+</html>
+
+
