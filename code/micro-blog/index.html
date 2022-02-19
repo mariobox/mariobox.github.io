@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Micro Blog Front End with React | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="Twitter-inspired micro blog simulator made with ReactJS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="/js/theme.js"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar">
+        <a style="cursor:pointer;">
+        <span class="icon" id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+        </a>
+      </div>
+    </a>
+    <div class="centered logo">
+      <a href="/">msc</a>
+    </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/posts/">posts</a>
+          </li>
+          <li>
+            <a href="/coding/">coding</a>
+          </li>
+          <li>
+            <a href="/booknotes/">booknotes</a>
+          </li>
+          <li>
+            <a href="/photos/">photos</a>
+          </li>
+          <li>
+            <a href="/now">now</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+
+
+<main id="main">
+  <h1>Micro Blog Front End with React</h1>
+  <p class="description">Twitter-inspired micro blog simulator made with ReactJS</p>  
+    <article id="content">
+    <img src="/img/micro-blog.png" class="profile">
+<p><strong>Made with</strong>: <i class="fab fa-react"></i> ReactJS</p>
+<p><a href="https://github.com/mariobox/react-micro-blog">Source Files</a> | <a href="https://mariobox.github.io/react-micro-blog">Live Demo</a><hr class="art" /></p>
+<p>This front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax.</p>
+<p>We start by running <a href="https://create-react-app.dev/">Create React App</a>, which provides the scaffolding for our site and performs all the lifting so that we can focus on the code.</p>
+<p>Our app has six components:</p>
+<ul>
+<li><code>App.js</code>: our main component</li>
+<li><code>Greeting.js</code></li>
+<li><code>Login.js</code> (if the user is not logged in)</li>
+<li><code>Profile.js</code> (if the user is logged in).</li>
+<li><code>AddPost.js</code> to manage the post input field, and</li>
+<li><code>Post.js</code> which lists the posts in reverse chronological order.</li>
+</ul>
+<p>State is concentrated in the main <code>App.js</code>, and then passed down to the other components via props.</p>
+<p>There are three state properties:</p>
+<ul>
+<li><code>posts</code>: an object with a list of all posts</li>
+<li><code>user</code>: the information of the user who is logged-in at any given moment</li>
+<li><code>isLoggedIn</code>: a boolean indicating if somebody is logged in or not</li>
+</ul>
+<p>The <code>isLoggedIn</code> boolean tells the <code>Greeting.js</code> component what to display via conditional rendering: if false, display a log-in form <code>Login.js</code>. If true, display the current user&rsquo;s profile <code>Profile.js</code>.</p>
+<p>Once logged in, users can write posts and they will immediately appear as the first post of the list.</p>
+<p>Check the app in action <a href="https://mariobox.github.io/react-micro-blog">here</a>.</p>
+
+    </article>  
+</main>
+<p class="date">Last updated: Jan 23, 2018</p>
+
+<br /><br />
+  <p class="centered">
+  <span class="small">  
+    <a href="https://www.linkedin.com/in/mariobox/" title="Linkedin"><i class="fab ft fa-linkedin fa-lg"></i></a>
+    <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+    <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab ft fa-twitter fa-lg"></i></a>
+    <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+  </span>
+  </p>
+  <p class="centered small">
+    &copy; 2022 Mario Sanchez Carrion
+  </p>
+</div>
+</body>
+</html>
+
+

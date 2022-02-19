@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Mailing List Form with Express and CSV | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="Mailing list sign-up form with Node, Express and CSV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="/js/theme.js"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar">
+        <a style="cursor:pointer;">
+        <span class="icon" id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+        </a>
+      </div>
+    </a>
+    <div class="centered logo">
+      <a href="/">msc</a>
+    </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/posts/">posts</a>
+          </li>
+          <li>
+            <a href="/coding/">coding</a>
+          </li>
+          <li>
+            <a href="/booknotes/">booknotes</a>
+          </li>
+          <li>
+            <a href="/photos/">photos</a>
+          </li>
+          <li>
+            <a href="/now">now</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+
+
+<main id="main">
+  <h1>Mailing List Form with Express and CSV</h1>
+  <p class="description">Mailing list sign-up form with Node, Express and CSV</p>  
+    <article id="content">
+    <p><strong>Made with</strong>: <i class="fab fa-node"></i> Node and Express</p>
+<p><a href="https://github.com/mariobox/add-to-mailing-list">Source Files</a></p>
+<hr class="art" />
+<p>This is a simple server-side application made with Node and Express.</p>
+<img src="/img/csvlist.png">
+<p>Instead of using a more advance data base, we used a super simple CSV file to store our data, and took advantage of the <code>fs</code> Node module and the <code>neat-csv</code> package to convert string information from our CSV database into an array of objects that we can then pass along to our <code>success</code> template made with Pug. The <code>success</code> page displays all the entries of our CSV file.</p>
+<p>To try it in your computer you can clone the <a href="https://github.com/mariobox/add-to-mailing-list">repository</a> and then type <code>nodejs app.js</code> from the command line.</p>
+
+    </article>  
+</main>
+<p class="date">Last updated: Dec 13, 2020</p>
+
+<br /><br />
+  <p class="centered">
+  <span class="small">  
+    <a href="https://www.linkedin.com/in/mariobox/" title="Linkedin"><i class="fab ft fa-linkedin fa-lg"></i></a>
+    <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+    <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab ft fa-twitter fa-lg"></i></a>
+    <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+  </span>
+  </p>
+  <p class="centered small">
+    &copy; 2022 Mario Sanchez Carrion
+  </p>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Covid-19 Dashboard | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="Table of countries showing confirmed cases and deaths" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="/js/theme.js"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar">
+        <a style="cursor:pointer;">
+        <span class="icon" id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+        </a>
+      </div>
+    </a>
+    <div class="centered logo">
+      <a href="/">msc</a>
+    </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/posts/">posts</a>
+          </li>
+          <li>
+            <a href="/coding/">coding</a>
+          </li>
+          <li>
+            <a href="/booknotes/">booknotes</a>
+          </li>
+          <li>
+            <a href="/photos/">photos</a>
+          </li>
+          <li>
+            <a href="/now">now</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+
+
+<main id="main">
+  <h1>Covid-19 Dashboard</h1>
+  <p class="description">Table of countries showing confirmed cases and deaths</p>  
+    <article id="content">
+    <img src="/img/covid.png">
+<p><strong>Made with</strong>: <i class="fab fa-python"></i> Python</p>
+<p><a href="https://github.com/mariobox/covid-dashboard">Source Files</a> | <a href="http://mariosanchezcarrion.com:1313">Live Demo</a> <hr class="art"></p>
+<p>This is a practice project in Python using the Covid package, which lets us retrieve information about Covid-19 from John Hopkins API.</p>
+<p>The <code>application.py</code> file contains our program logic.</p>
+<p>We start by importing the package that will provide us with the data:</p>
+<p><code>from covid import Covid</code></p>
+<p>The data comes in the form of a list of dictionaries (or if you&rsquo;re more used to JS parlance, an array of objects). You can learn more about this package <a href="https://pypi.org/project/covid/">here</a>.</p>
+<p>Then we need to import Flask, since we want our dashboard to be viewed on a webpage, not the console. Flask is a lightweight web framework that works with Python.</p>
+<p><code>from flask import Flask, redirect, render_template, request</code></p>
+<p>Next, we assign our Flask application to a variable:</p>
+<p><code>app = Flask(__name__)</code></p>
+<p>We then make a call to the covid package and sort our list of dictionaries so that the countries with the higher number of deaths are listed first (the data originally comes sorted by descending number of confirmed cases):</p>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">d</span> <span class="o">=</span> <span class="n">covid</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="n">d</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;deaths&#39;</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div><p>We then format the numeric fields we&rsquo;re interested in so that they display with a &ldquo;,&rdquo; delimiting thousands and millions, to make the data more readable:</p>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+    <span class="n">country</span><span class="p">[</span><span class="s1">&#39;confirmed&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">format</span><span class="p">(</span><span class="n">country</span><span class="p">[</span><span class="s1">&#39;confirmed&#39;</span><span class="p">],</span> <span class="s2">&#34;,&#34;</span><span class="p">)</span>
+    <span class="n">country</span><span class="p">[</span><span class="s1">&#39;deaths&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">format</span><span class="p">(</span><span class="n">country</span><span class="p">[</span><span class="s1">&#39;deaths&#39;</span><span class="p">],</span> <span class="s2">&#34;,&#34;</span><span class="p">)</span>
+</code></pre></div><p>We&rsquo;re now ready to define our route for the home page of our web app. This route will render the <code>index.html</code> template (the only page of our web app). When we configure our route, we pass to the template a parameter <code>data=d</code> which contains our data. The <code>index.html</code> template will then use this data to build the web page that will be visible to the user:</p>
+<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div><p>The <code>index.html</code> page is a Jinja template enhanced with Bootstrap styling to make our table look nice.</p>
+<p>To run this code on your computer you need to access the FLASK_APP enviroment variable by typing:</p>
+<p><code>export FLASK_APP=application.py</code></p>
+<p>from the command line, followed by:</p>
+<p><code>flask run</code></p>
+<p>We could do other things with our app, like allowing users to sort by different criteria, display only a limited amount of data, or grab more information from other sources. For now, though, the app is done and it accomplishes what I set out to do.</p>
+
+    </article>  
+</main>
+<p class="date">Last updated: Dec 17, 2020</p>
+
+<br /><br />
+  <p class="centered">
+  <span class="small">  
+    <a href="https://www.linkedin.com/in/mariobox/" title="Linkedin"><i class="fab ft fa-linkedin fa-lg"></i></a>
+    <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+    <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab ft fa-twitter fa-lg"></i></a>
+    <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+  </span>
+  </p>
+  <p class="centered small">
+    &copy; 2022 Mario Sanchez Carrion
+  </p>
+</div>
+</body>
+</html>
+
+

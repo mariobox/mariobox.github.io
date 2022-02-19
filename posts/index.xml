@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mario Sanchez Carrion</title>
+    <link>https://mariosanchez.org/posts/</link>
+    <description>Recent content in Posts on Mario Sanchez Carrion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mariosanchez.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Web Development Journey</title>
+      <link>https://mariosanchez.org/posts/webdev/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/webdev/</guid>
+      <description>I am a self-taught amateur web developer. I picked up web development as a serious hobby about five years ago, but I&amp;rsquo;ve been fascinated by the World Wide Web since the mid 1990&amp;rsquo;s.
+Back then, this newfound ability to share your thoughts with the world instantly (and at virtually no cost) blew my mind. If you were around back then you may probably remember the excitement of hearing the sound of a dial-up modem, and accessing the black and green text-based screen that usually followed it.</description>
+    </item>
+    
+    <item>
+      <title>Turning and Old Laptop into a Chromebook</title>
+      <link>https://mariosanchez.org/posts/chromebook/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/chromebook/</guid>
+      <description>If you have an old laptop gathering dust around your house, you may be able to give it a new lease of life by turning it into a blazing fast Chromebook.
+A Chromebook is a special kind of laptop that runs on Google&amp;rsquo;s Chromium OS. The secret to Chromebooks being so fast is the minimalist nature of the Chromium OS. It is optimized to do one and only one thing: work seamlessly with the Chrome browser and other Google services like Google Drive.</description>
+    </item>
+    
+    <item>
+      <title>How To Get Rich Without Getting Lucky</title>
+      <link>https://mariosanchez.org/posts/rich/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/rich/</guid>
+      <description>Read Naval&amp;rsquo;s original post here.
+Seek Wealth, Not Money or Status  Wealth is assets that earn while you sleep. The purpose of wealth is freedom; it’s nothing more than that. Money is how we transfer wealth. Money is social credits; it’s the ability to have credits and debits of other people’s time. Having wealth means not having to be any place you don’t want to be, or not having to do anything you don’t want to do.</description>
+    </item>
+    
+    <item>
+      <title>Learning Basic Linux Terminal Commands</title>
+      <link>https://mariosanchez.org/posts/terminal/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/terminal/</guid>
+      <description>In a previous post I explained how to install Ubuntu Linux on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.
+To find your terminal click on the Show Applications icon and type the word &amp;ldquo;terminal&amp;rdquo; in the search box. Then, click on the terminal icon, similar to the one below:
+Tip: you may want to right-click on the terminal icon and choose &amp;ldquo;Add To Favorites&amp;rdquo;, to pin it to the task bar, since you&amp;rsquo;re going to be using it often.</description>
+    </item>
+    
+    <item>
+      <title>How To Install Ubuntu Linux on an Empty Hard Drive</title>
+      <link>https://mariosanchez.org/posts/ubuntu/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/ubuntu/</guid>
+      <description>When the hard drive of my old Toshiba Satellite died suddenly I thought of getting rid of it, but when I learned that you could buy a refurbished hard drive on ebay for very little money (around $35) I ordered one and installed it.
+The clean, empty hard drive gave me the perfect excuse to install a Linux operating system, and to configure the old laptop to become the ideal web development environment.</description>
+    </item>
+    
+    <item>
+      <title>The 6s Discipline</title>
+      <link>https://mariosanchez.org/posts/6s/</link>
+      <pubDate>Tue, 09 May 2017 09:42:48 -0400</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/6s/</guid>
+      <description>A few weeks ago, the company moved us to a new office. When we walked into our shiny, new cubicles we found a single sheet of paper laid out on top of our recently installed, empty desks describing something called The 6S Discipline.
+It was a concise list of 6 bullet points that summarized a process to keep our work stations clean and organized. I later found out that the 6S concept comes from the Lean Manufacturing philosophy, the principles of which can also be applied to an office setting.</description>
+    </item>
+    
+    <item>
+      <title>Creating Aliases in Linux Terminal</title>
+      <link>https://mariosanchez.org/posts/alias/</link>
+      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/alias/</guid>
+      <description>If you use a Linux-style terminal you may find yourself typing the same commands over and over again. If this is the case, you may wish to use some shorthand that the terminal can understand. You can do that with Aliases.
+You start by going to your user directory and opening your .bashrc file. A .bashrc is a shell script that Bash runs whenever it is started interactively. You can put any command in that file that you could type at the command prompt.</description>
+    </item>
+    
+    <item>
+      <title>Git Cheat Sheet</title>
+      <link>https://mariosanchez.org/posts/gcs/</link>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/gcs/</guid>
+      <description>I use Git to keep track of the changes I make to this site. I am not an expert so I won&amp;rsquo;t go into great depths here. The idea of this post is just to summarize for future reference the Git commands I use on a regular basis to keep this site up and running.
+Here we go:
+Tell Git your usename and email. You only need to do this once:</description>
+    </item>
+    
+    <item>
+      <title>My $100 Office</title>
+      <link>https://mariosanchez.org/posts/100office/</link>
+      <pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/100office/</guid>
+      <description>I needed a quiet space at home where I could sit down and tweak the code of my site, and otherwise tinker with some web development tools I want to learn. Since my second bedroom had some empty space and a window with a nice view of the garden, it was the perfect place to try to fit a small workstation.
+I didn&amp;rsquo;t want to spend a lot of money but I still wanted my new writing setup to look good, so my logical first stop was Ikea&amp;rsquo;s website.</description>
+    </item>
+    
+    <item>
+      <title>Some Unsolicited Money Tips</title>
+      <link>https://mariosanchez.org/posts/money/</link>
+      <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/money/</guid>
+      <description>In this short post I will try to summarize what I would do to start building wealth if I were just starting out. Your circumstances may be different, so proceed with caution and don&amp;rsquo;t take this as gospel.
+Here we go:
+First, if your employer offers a 401K plan with a match, I would contribute up to the maximum amount matched. Some companies match your contribution dollar for dollar. Others match 50%.</description>
+    </item>
+    
+    <item>
+      <title>Sam&#39;s Rules for Building a Business</title>
+      <link>https://mariosanchez.org/posts/sams/</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/sams/</guid>
+      <description>A few years ago, during a trip to Bentonville, Arkansas, I had the chance to visit Walmart’s first store (originally called Walton’s 5-10), and picked up a leaflet containing Sam Walton’s 10 rules for building a successful business. Pearls of wisdom, straight from the man who built the world’s most successful retailer out of nothing. Since I haven&amp;rsquo;t been able to find a link to it on the Internet, I am transcribing them below (all of them are great, but I especially like #7, #9 and #10):</description>
+    </item>
+    
+  </channel>
+</rss>

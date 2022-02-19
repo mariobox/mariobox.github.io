@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Today&#39;s Moon Phase With JavaScript | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="Web app that shows you today&#39;s moon phase and percentage illumination" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="/js/theme.js"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar">
+        <a style="cursor:pointer;">
+        <span class="icon" id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+        </a>
+      </div>
+    </a>
+    <div class="centered logo">
+      <a href="/">msc</a>
+    </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/posts/">posts</a>
+          </li>
+          <li>
+            <a href="/coding/">coding</a>
+          </li>
+          <li>
+            <a href="/booknotes/">booknotes</a>
+          </li>
+          <li>
+            <a href="/photos/">photos</a>
+          </li>
+          <li>
+            <a href="/now">now</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+
+
+<main id="main">
+  <h1>Today&#39;s Moon Phase With JavaScript</h1>
+  <p class="description">Web app that shows you today&#39;s moon phase and percentage illumination</p>  
+    <article id="content">
+    <p><strong>Made with</strong>: <i class="fab fa-js"></i> JavaScript</p>
+<p><a href="https://github.com/mariobox/moon-phases/">Source Files</a> | <a href="https://mariobox.github.io/moon-phases/">Live Demo</a></p>
+<hr class="art" />
+<p>I wanted a simple web page to show today&rsquo;s date, moon phase and percentage illumination, plus a nice picture of the moon.</p>
+<img src="/img/moon.jpg" class="gallery medium">
+<p>My first step was to find an API that I could call to retrieve today&rsquo;s moon phase and illumination. After some research I found the <a href="https://farmsense.net">Farmsense</a> moon phase API. The API accepts a date as a parameter, formatted in milliseconds (<a href="https://currentmillis.com/">Unix Time</a>), but only takes the first ten digits.</p>
+<p>One problem with Unix time is that it&rsquo;s in <a href="https://www.timeanddate.com/time/aboututc.html">UTC-Coordinated Universal Time</a>. To change it to Eastern Standard Time I had to subtract five hours in milliseconds from the current UTC time. I then pass the first ten digits of that value to the API&rsquo;s end point url.</p>
+<p>Next, I made an AJAX call using the <code>fetch</code> API and transformed the response to JSON format to be able to use it.</p>
+<p>Then, it was just matter of pulling the info we wanted to display from the response, and asigning it to the appropriate <code>div</code> in the <code>index.html</code> file via <code>document.getElementById</code> statements.</p>
+<p>Since I wanted to show nice pictures of the moon instead of run-off-the-mill icons, I went to <a href="https://svs.gsfc.nasa.gov/Gallery/moonphase.html">NASA&rsquo;s website</a> and downloaded their moon pictures (which is allowed for educational purposes).</p>
+<p>To match the moon phase pulled from the Farmsense API to the right moon phase picture I used a simple <code>switch</code> statement.</p>
+<p>You can see the app in action here:</p>
+<iframe src="https://mariobox.github.io/moon-phases/" title="description" width=100% height="550px"></iframe>
+    </article>  
+</main>
+<p class="date">Last updated: Feb 28, 2021</p>
+
+<br /><br />
+  <p class="centered">
+  <span class="small">  
+    <a href="https://www.linkedin.com/in/mariobox/" title="Linkedin"><i class="fab ft fa-linkedin fa-lg"></i></a>
+    <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+    <a href="https://twitter.com/mariobox" title="Twitter"><i class="fab ft fa-twitter fa-lg"></i></a>
+    <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+  </span>
+  </p>
+  <p class="centered small">
+    &copy; 2022 Mario Sanchez Carrion
+  </p>
+</div>
+</body>
+</html>
+
+
