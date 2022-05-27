@@ -33,13 +33,17 @@ My main areas of interest are:
     </item>
     
     <item>
-      <title>Coding</title>
+      <title>Code</title>
       <link>https://mariosanchez.org/coding/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/coding/</guid>
-      <description>I am learning and applying HTML, CSS, JavaScript, Python, as well as some of the most popular libraries and web development frameworks: ReactJS, NodeJS, Flask and Django, to solve different web development and data analysis problems.
-To those just starting to learn how to code I would recommend Harvard&amp;rsquo;s CS50 - An introduction to the intellectual enterprises of computer science and the art of programming. It is a very challenging course, but it will give you a rock-solid foundation to keep learning more advanced topics.</description>
+      <description>I am learning and developing practice projects in HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. I am also beginning to get familiar with Numpy and Pandas for Data Analysis.
+Projects &amp;#128295; Here are some of my recent projects:
+ Auction Site With Django
+ Moon Phase With JavaScript
+ ECommerce Front End with Flask
+ Twitter Clone with React</description>
     </item>
     
     <item>
@@ -79,13 +83,13 @@ The specs call for:
     </item>
     
     <item>
-      <title>Uses</title>
+      <title>Tech Stack</title>
       <link>https://mariosanchez.org/uses/</link>
       <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/uses/</guid>
-      <description>I&amp;rsquo;ve joined the uses.tech community and created this page to list the tools I&amp;rsquo;m currently using for web development.
-  Computer: I recently purchased an HP Pavilion x360 with a 14&amp;rdquo; display. It has an Intel Core i5-1035G1 Processor, 8GB SDRAM, and 256 SSD. This is a great laptop for the price. I don&amp;rsquo;t mind the smaller screen since my intention is to maximize portability (while at home, I do most of my web development work in a large monitor anyway).</description>
+      <description>Computer: I recently purchased an HP Pavilion x360 with a 14&amp;rdquo; display. It has an Intel Core i5-1035G1 Processor, 8GB SDRAM, and 256 SSD. This is a great laptop for the price. I don&amp;rsquo;t mind the smaller screen since my intention is to maximize portability (while at home, I do most of my web development work in a large monitor anyway).
+  Operating System: Ubuntu 20.04 LTS. Some of the most significant developments in the world of programming and web development are easily accessible from the Linux command line.</description>
     </item>
     
     <item>
