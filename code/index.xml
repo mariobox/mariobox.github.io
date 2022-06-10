@@ -6,10 +6,22 @@
     <description>Recent content in Code on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jun 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/code/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pynt: A Static Site Generator Made with Python</title>
+      <link>https://mariosanchez.org/code/pynt/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/code/pynt/</guid>
+      <description>Made with:  Python
+Source Files | Live Demo
+ Description: Pynt is a pint-sized static site generator with basic blog capabilities written in Python in less than 100 lines of code. It doesn&amp;rsquo;t use any web framework, just pure Python functionality.
+Why A few years back I became familiar with static site generators (there are many of them). I tried several: Jekyll, Metalsmith, Hugo, etc. I was always fascinated by the way they worked and how a user could create a working static website with minimal effort at a click of a button.</description>
+    </item>
     
     <item>
       <title>Auction Site with Django</title>

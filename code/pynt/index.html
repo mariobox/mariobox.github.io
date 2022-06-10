@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Pynt: A Static Site Generator Made with Python | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="My CS50P Final Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="/js/theme.js"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar">
+        <a style="cursor:pointer;">
+        <span class="icon" id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+        </a>
+      </div>
+    </a>
+    <div class="centered logo">
+      <a href="/"><img src="/img/mario-pix-dk.png" width="150" /></a>
+    </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/coding/">code</a>
+          </li>
+          <li>
+            <a href="/uses/">stack</a>
+          </li>
+          <li>
+            <a href="/photos/">photos</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+
+
+<main id="main">
+  <h1>Pynt: A Static Site Generator Made with Python</h1>
+  <p class="description">My CS50P Final Project</p>  
+    <article id="content">
+    <p><strong>Made with</strong>: <i class="fab fa-python"></i> Python</p>
+<p><a href="https://github.com/mariobox/pynt-ssg">Source Files</a> | <a href="https://mariosanchez.org/pynt-ssg/html/">Live Demo</a></p>
+<hr />
+<h2 id="img-srcimgpynt-grpng"><img src="/img/pynt-gr.png"></h2>
+<h2 id="description">Description:</h2>
+<p>Pynt is a pint-sized static site generator with basic blog capabilities written in Python in less than 100 lines of code. It doesn&rsquo;t use any web framework, just pure Python functionality.</p>
+<h2 id="why">Why</h2>
+<p>A few years back I became familiar with static site generators (there are <a href="https://staticsitegenerators.net/">many of them</a>). I tried several: Jekyll, Metalsmith, Hugo, etc. I was always fascinated by the way they worked and how a user could create a working static website with minimal effort at a click of a button. I always wondered if one day I would be able to write one, so I took the opportunity of CS50P&rsquo;s final project to build one.</p>
+<h2 id="summary">Summary</h2>
+<p>Pynt takes the Markdown located in the <code>md</code> directory and converts them to HTML. The generated HTML files are placed in an <code>html</code> folder that can then be deployed to the web.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>a. Pynt opens each Markdown file and convert the contents to HTML</p>
+<p>b. Pynt saves the HTML files in the <code>html</code> directory</p>
+<p>c. Pynt generates a blog posts list page that displays links to all posts, organized in reverse chronological order (newer post first). By default, this is the home page of our site.</p>
+<h2 id="content-types">Content Types</h2>
+<p>The program accomodates two types of content: blog posts and pages. Blog posts are entries that contain a date. Pages, on the other hand, don&rsquo;t contain a date, since they are static in nature (e.g. About and Contact pages).  The program is smart enough to differentiate between blog posts and pages when it&rsquo;s time to generate the blog posts list page: it filters out pages and only parses blog posts.</p>
+<h2 id="views">Views</h2>
+<p>Since we are not using a web framework, the HTML files are built using string concatenation. We have defined four global variables at the top of the file that represent the common areas in all pages in the site: <code>header</code>, <code>nav</code> and <code>footer</code>.</p>
+<p>In the process, we use regular expressions to extract information like dates and titles from the Markdown files, so that we can then use them for tasks like sorting blog posts and retrieving post and page titles.</p>
+<p>Pynt uses the <a href="https://getbootstrap.com">Bootstrap</a> framework for styling.</p>
+<h2 id="functions">Functions</h2>
+<p>We have separated our main function from several other auxiliary functions that in turn return a value to main. The functions we declared, in order of invocation, are:</p>
+<h3 id="extract_md_content"><code>extract_md_content</code></h3>
+<p>Takes a file name as argument, opens a Markdown file, reads the content of the file and sends it to the <code>validate_docs</code> function for date format validation. If the validation comes back OK the function converts the list of lines into a string by using the <code>join()</code> method and returns it to <code>main</code>.</p>
+<h3 id="create_html-file"><code>create_html-file</code></h3>
+<p>This function takes the string returned by the <code>extract_md_content</code> function and with the help of the <code>markdown2</code> module that we have previously imported converts it to HTML. Then, the function writes the HTML into files located in the <code>html</code> directory. These files can later be deployed to any web server on the Internet for the site to be live.</p>
+<h3 id="build_post_links"><code>build_post_links</code></h3>
+<p>This function creates the blog post links to be displayed in the post list page. For this, it opens each Markdown file and selects only those that are posts (i.e. those that have a date as part of the content). If so, it then uses regular expressions to extract the title of the post, and together with the file name and date create the actual HTML link to the post page and return the HTML string to <code>main</code>. We repeat the operation for all blog posts.</p>
+<h3 id="build_index_page"><code>build_index_page</code></h3>
+<p>After the <code>main</code> function has sorted all the links in reverse chronological order (extracting the date via regular expressions) it will pass the HTML string with all the links to <code>build_index_page</code>. Here, the function will concatenate the header, the list of links, and the footer to create the HTML for the lists page.</p>
+<h3 id="validate_docs"><code>validate_docs</code></h3>
+<p>Helper function invoqued by <code>extract_md_content</code>, with the purpose of determining if the document is either a page or a post.</p>
+<h3 id="validate_date"><code>validate_date</code></h3>
+<p>Helper function invoqued by <code>validate_docs</code> to check that the date included with the post is in a valid format: YYYY-MM-DD</p>
+<h3 id="run_server"><code>run_server()</code></h3>
+<p>Function created to open up a web server on <code>localhost:8000</code> to be able to see our website during development</p>
+<h2 id="modules">Modules</h2>
+<p>We imported a few modules and libraries to help us implement the site:</p>
+<h3 id="markdown2"><code>markdown2</code></h3>
+<p>To help us convert markdown files into HTML</p>
+<h3 id="re"><code>re</code></h3>
+<p>For regular expressions capabilities</p>
+<h3 id="os"><code>os</code></h3>
+<p>Used to call the <code>os.listdir()</code> function to generate a list of markdown files</p>
+<h3 id="validator-collection"><code>validator-collection</code></h3>
+<p>To validate our dates</p>
+<h3 id="http-server-and-socketserver"><code>http-server</code> and <code>socketserver</code></h3>
+<p>To open a web server for development</p>
+<h2 id="img-srcimgpynt_sspng"><img src="/img/pynt_ss.png"></h2>
+<h2 id="usage">Usage</h2>
+<p>This is the process a user would follow to add a new blog post or create a new page for the site:</p>
+<ol>
+<li>
+<p>Open a markdown file from the <code>md</code> directory, preferrably and old post or page, to use as a template.</p>
+</li>
+<li>
+<p>If the user wants to write a post, type the word &ldquo;post&rdquo; in the first line of the file. If the user wants to write a page, type the word &ldquo;page&rdquo;.</p>
+</li>
+<li>
+<p>If writing a post, include a date in the second line, following this exact format: YYYY-MM-DD. If writing a page, don&rsquo;t need to type a date</p>
+</li>
+<li>
+<p>Write the blog post content starting with the title followed by the body of the post. Use Markdown to write posts and pages</p>
+</li>
+<li>
+<p>Once finished, save the file (make sure that you saved it with a .md extension and in the <code>md</code> directory)</p>
+</li>
+<li>
+<p>Open the project folder on the command line and type: <code>python3 project.py</code> and hit Enter</p>
+</li>
+<li>
+<p>Follow the link displayed in the terminal, and if everything went right the site should be visible in the browser window.</p>
+</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<p>Take all the HTML files in the <code>html</code> folder and upload them to any web server, like Heroku or Github Pages</p>
+<h2 id="video-demo">Video Demo</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iSyWYh9aZYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>  
+</main>
+<p class="date">Last updated: Jun 10, 2022</p>
+
+<br /><br />
+  <p class="centered">
+  <span class="small">  
+    <a href="https://www.linkedin.com/in/mariobox/" title="Linkedin"><i class="fab ft fa-linkedin fa-lg"></i></a>
+    <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+    <a href="https://instagram.com/_mario.codes" title="Github"><i class="fab ft fa-instagram fa-lg"></i></a>
+    <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+  </span>
+  </p>
+  <p class="centered small">
+    &copy; 2022 Mario Sanchez Carrion
+  </p>
+</div>
+</body>
+</html>
+
+

@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Pynt: A Static Site Generator Made with Python</title>
+      <link>https://mariosanchez.org/code/pynt/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/code/pynt/</guid>
+      <description>Made with:  Python
+Source Files | Live Demo
+ Description: Pynt is a pint-sized static site generator with basic blog capabilities written in Python in less than 100 lines of code. It doesn&amp;rsquo;t use any web framework, just pure Python functionality.
+Why A few years back I became familiar with static site generators (there are many of them). I tried several: Jekyll, Metalsmith, Hugo, etc. I was always fascinated by the way they worked and how a user could create a working static website with minimal effort at a click of a button.</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://mariosanchez.org/tutor/</link>
       <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
@@ -49,12 +61,11 @@ My main areas of interest are:
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/coding/</guid>
-      <description>I am learning and developing practice projects in HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. I am also beginning to get familiar with Numpy and Pandas for Data Analysis.
-Projects &amp;#128295; Here are some of my recent projects:
+      <description>🔧 These are some of my programming projects. They have been developed with HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. Some of them are personal projects and others are final projects of courses and certifications.
+ Pynt: Static Site Generator with Python
  Auction Site With Django
  Moon Phase With JavaScript
- ECommerce Front End with Flask
- Twitter Clone with React</description>
+ ECommerce Front End with Flask and SQL</description>
     </item>
     
     <item>
