@@ -6,10 +6,23 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Code</title>
+      <link>https://mariosanchez.org/coding/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/coding/</guid>
+      <description>🔧 These are some of my programming projects. They have been developed with HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. Some of them are personal projects and others are final projects of courses and certifications.
+ Pynt: Static Site Generator with Python
+ Auction Site With Django
+ Moon Phase With JavaScript
+ ECommerce Front End with Flask and SQL</description>
+    </item>
     
     <item>
       <title>Pynt: A Static Site Generator Made with Python</title>
@@ -53,19 +66,6 @@ I am also helping students with SAT and GMAT math preparation.</description>
       <description>My name is Mario Sanchez Carrion and this is my personal website. I am currently evaluating new opportunities after 25+ years in product development, marketing, brand strategy and sales.
 My main areas of interest are:
  Product development and sourcing Education Personal Finance Programming and Web Development  Please feel free to contact me at: mario (at) mariosanchez (dot) org, or join my LinkdeIn network.</description>
-    </item>
-    
-    <item>
-      <title>Code</title>
-      <link>https://mariosanchez.org/coding/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/coding/</guid>
-      <description>🔧 These are some of my programming projects. They have been developed with HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. Some of them are personal projects and others are final projects of courses and certifications.
- Pynt: Static Site Generator with Python
- Auction Site With Django
- Moon Phase With JavaScript
- ECommerce Front End with Flask and SQL</description>
     </item>
     
     <item>
