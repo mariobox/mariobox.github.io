@@ -6,10 +6,21 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jul 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>🙋🏻‍♂️About Me</title>
+      <link>https://mariosanchez.org/about/</link>
+      <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/about/</guid>
+      <description>My name is Mario Sanchez Carrion and this is my personal website.
+I recently retired from the corporate world, after 30+ years in marketing and international business, and I&amp;rsquo;m currently experimenting with location independence, living in different cities for periods that go from several weeks to several months.
+I am also pursuing my passion for coding by following a daily coding routine, learning as many languages and technologies as possible, and completing projects and certifications.</description>
+    </item>
     
     <item>
       <title>💻Code</title>
@@ -59,17 +70,6 @@ I am also helping students with SAT and GMAT math preparation.</description>
     </item>
     
     <item>
-      <title>About Me</title>
-      <link>https://mariosanchez.org/about/</link>
-      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/about/</guid>
-      <description>My name is Mario Sanchez Carrion and this is my personal website. I am currently evaluating new opportunities after 25+ years in product development, marketing, brand strategy and sales.
-My main areas of interest are:
- Product development and sourcing Education Personal Finance Programming and Web Development  Please feel free to contact me at: mario (at) mariosanchez (dot) org, or join my LinkdeIn network.</description>
-    </item>
-    
-    <item>
       <title>Auction Site with Django</title>
       <link>https://mariosanchez.org/code/commerce/</link>
       <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
@@ -78,7 +78,7 @@ My main areas of interest are:
       <description>Made with:  Python
 Source Files | Live Demo
 This app was my implementation of CS50W&amp;lsquo;s Project 2, which involves Django, SQL, Models and Migrations.
-Here are the specs:
+ Here are the specs:
   Models: Your application should have at least three models in addition to the User model: one for auction listings, one for bids, and one for comments made on auction listings. It’s up to you to decide what fields each model should have, and what the types of those fields should be.</description>
     </item>
     

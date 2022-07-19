@@ -32,7 +32,7 @@ Why A few years back I became familiar with static site generators (there are ma
       <description>Made with:  Python
 Source Files | Live Demo
 This app was my implementation of CS50W&amp;lsquo;s Project 2, which involves Django, SQL, Models and Migrations.
-Here are the specs:
+ Here are the specs:
   Models: Your application should have at least three models in addition to the User model: one for auction listings, one for bids, and one for comments made on auction listings. It’s up to you to decide what fields each model should have, and what the types of those fields should be.</description>
     </item>
     
