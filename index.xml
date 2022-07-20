@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>🙋🏻‍♂️About Me</title>
+      <title>About Me</title>
       <link>https://mariosanchez.org/about/</link>
       <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -23,7 +23,7 @@ I am also pursuing my passion for coding by following a daily coding routine, le
     </item>
     
     <item>
-      <title>💻Code</title>
+      <title>Code</title>
       <link>https://mariosanchez.org/coding/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -83,6 +83,16 @@ This app was my implementation of CS50W&amp;lsquo;s Project 2, which involves Dj
     </item>
     
     <item>
+      <title>Photo Gallery</title>
+      <link>https://mariosanchez.org/photos/</link>
+      <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/photos/</guid>
+      <description>I have been experimenting with location independence since 2020, staying for periods of several weeks to several months in different places. I usually take pictures of the places I go and post a few of them here.
+All pictures were taken by me using my phone. The picture gallery is made with JavaScript and some CSS. If you want to build a similar gallery for your site here&#39;s how to do it.</description>
+    </item>
+    
+    <item>
       <title>Wikipedia Clone with Django</title>
       <link>https://mariosanchez.org/code/wiki/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
@@ -97,17 +107,7 @@ The specs call for:
     </item>
     
     <item>
-      <title>📸Photo Gallery</title>
-      <link>https://mariosanchez.org/photos/</link>
-      <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/photos/</guid>
-      <description>I have been experimenting with location independence since 2020, staying for periods of several weeks to several months in different places. I usually take pictures of the places I go and post a few of them here.
-All pictures were taken by me using my phone. The picture gallery is made with JavaScript and some CSS. If you want to build a similar gallery for your site here&#39;s how to do it.</description>
-    </item>
-    
-    <item>
-      <title>💾Tech Stack</title>
+      <title>Tech Stack</title>
       <link>https://mariosanchez.org/uses/</link>
       <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
       
