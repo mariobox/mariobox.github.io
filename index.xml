@@ -23,17 +23,16 @@ I am also pursuing my passion for coding by following a daily coding habit, and 
     </item>
     
     <item>
-      <title>Code</title>
+      <title>Coding</title>
       <link>https://mariosanchez.org/coding/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/coding/</guid>
       <description>These are some of my programming projects. They have been developed with HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. Some of them are personal projects and others are final projects of courses and certifications.
- Pynt: Static Site Generator with Python
+💻 Projects  Pynt: Static Site Generator with Python
  Auction Site With Django
  Moon Phase With JavaScript
- Dark Theme Switch with JavaScript
- ECommerce Front End with Flask and SQL</description>
+ Dark Theme Switch with JavaScript</description>
     </item>
     
     <item>

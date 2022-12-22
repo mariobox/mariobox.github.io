@@ -1,24 +1,76 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on Mario Sanchez Carrion | Personal Site</title>
+    <title>tech on Mario Sanchez Carrion</title>
     <link>https://mariosanchez.org/tags/tech/</link>
-    <description>Recent content in Tech on Mario Sanchez Carrion | Personal Site</description>
+    <description>Recent content in tech on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>How This Site Is Made</title>
-      <link>https://mariosanchez.org/post/site/</link>
-      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      <title>My Web Development Journey</title>
+      <link>https://mariosanchez.org/posts/webdev/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mariosanchez.org/post/site/</guid>
-      <description>This site has gone through several iterations. First, I hand-coded it page by page using plain vanilla HTML and CSS, but that became a problem as my site grew. The problem with using that approach is that, for example, if you want to make changes to common areas like your navigation menu, you have to update every single page of your site by hand (not easy or fun).
-As I got more into coding I discovered static site generators, which are basically programs that create static sites in a more efficient way: they comb through one or more folders containing content files usually written in Markdown (e.</description>
+      <guid>https://mariosanchez.org/posts/webdev/</guid>
+      <description>I am a self-taught amateur web developer. I picked up web development as a serious hobby about five years ago, but I&amp;rsquo;ve been fascinated by the World Wide Web since the mid 1990&amp;rsquo;s.
+Back then, this newfound ability to share your thoughts with the world instantly (and at virtually no cost) blew my mind. If you were around back then you may probably remember the excitement of hearing the sound of a dial-up modem, and accessing the black and green text-based screen that usually followed it.</description>
+    </item>
+    
+    <item>
+      <title>Turning and Old Laptop into a Chromebook</title>
+      <link>https://mariosanchez.org/posts/chromebook/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/chromebook/</guid>
+      <description>If you have an old laptop gathering dust around your house, you may be able to give it a new lease of life by turning it into a blazing fast Chromebook.
+A Chromebook is a special kind of laptop that runs on Google&amp;rsquo;s Chromium OS. The secret to Chromebooks being so fast is the minimalist nature of the Chromium OS. It is optimized to do one and only one thing: work seamlessly with the Chrome browser and other Google services like Google Drive.</description>
+    </item>
+    
+    <item>
+      <title>Learning Basic Linux Terminal Commands</title>
+      <link>https://mariosanchez.org/posts/terminal/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/terminal/</guid>
+      <description>In a previous post I explained how to install Ubuntu Linux on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.
+To find your terminal click on the Show Applications icon and type the word &amp;ldquo;terminal&amp;rdquo; in the search box. Then, click on the terminal icon, similar to the one below:
+Tip: you may want to right-click on the terminal icon and choose &amp;ldquo;Add To Favorites&amp;rdquo;, to pin it to the task bar, since you&amp;rsquo;re going to be using it often.</description>
+    </item>
+    
+    <item>
+      <title>How To Install Ubuntu Linux on an Empty Hard Drive</title>
+      <link>https://mariosanchez.org/posts/ubuntu/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/ubuntu/</guid>
+      <description>When the hard drive of my old Toshiba Satellite died suddenly I thought of getting rid of it, but when I learned that you could buy a refurbished hard drive on ebay for very little money (around $35) I ordered one and installed it.
+The clean, empty hard drive gave me the perfect excuse to install a Linux operating system, and to configure the old laptop to become the ideal web development environment.</description>
+    </item>
+    
+    <item>
+      <title>Creating Aliases in Linux Terminal</title>
+      <link>https://mariosanchez.org/posts/alias/</link>
+      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/alias/</guid>
+      <description>If you use a Linux-style terminal you may find yourself typing the same commands over and over again. If this is the case, you may wish to use some shorthand that the terminal can understand. You can do that with Aliases.
+You start by going to your user directory and opening your .bashrc file. A .bashrc is a shell script that Bash runs whenever it is started interactively. You can put any command in that file that you could type at the command prompt.</description>
+    </item>
+    
+    <item>
+      <title>Git Cheat Sheet</title>
+      <link>https://mariosanchez.org/posts/gcs/</link>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/gcs/</guid>
+      <description>I use Git to keep track of the changes I make to this site. I am not an expert so I won&amp;rsquo;t go into great depths here. The idea of this post is just to summarize for future reference the Git commands I use on a regular basis to keep this site up and running.
+Here we go:
+Tell Git your usename and email. You only need to do this once:</description>
     </item>
     
   </channel>
