@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Reboot</title>
+      <link>https://mariosanchez.org/posts/reboot/</link>
+      <pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/reboot/</guid>
+      <description>I&amp;rsquo;ve decided to start blogging again.
+The &amp;ldquo;social&amp;rdquo; web has become a toxic and unhospitable place. Although I quit Facebook years ago, I was still using Twitter. Even before Elon took over, Twitter was already a wasteland with the nuance and civility of a South American soccer stadium, where the extreme left and the extreme right hurl quips and insults to each other 24 hours a day, while everybody else is ignored.</description>
+    </item>
+    
+    <item>
       <title>About Me</title>
       <link>https://mariosanchez.org/about/</link>
       <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
@@ -189,16 +199,6 @@ The script uses a plain vanilla XMLHttpRequest to bring the pizza information fr
     </item>
     
     <item>
-      <title>My Web Development Journey</title>
-      <link>https://mariosanchez.org/posts/webdev/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/webdev/</guid>
-      <description>I am a self-taught amateur web developer. I picked up web development as a serious hobby about five years ago, but I&amp;rsquo;ve been fascinated by the World Wide Web since the mid 1990&amp;rsquo;s.
-Back then, this newfound ability to share your thoughts with the world instantly (and at virtually no cost) blew my mind. If you were around back then you may probably remember the excitement of hearing the sound of a dial-up modem, and accessing the black and green text-based screen that usually followed it.</description>
-    </item>
-    
-    <item>
       <title>Donate Button with Paypal Integration</title>
       <link>https://mariosanchez.org/code/ppl/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
@@ -229,16 +229,6 @@ Source Files | Live Demo
 Before we go to our example site, let&amp;rsquo;s talk about Express:
 Express is a web framework usually paired with Node. It is a light weight tool that makes it easy to build dynamic web applications.
 Since Express is made with JavaScript, you can install it directly from NPM. Once you install it, you can build your first Express aplication: a simple Hello World!</description>
-    </item>
-    
-    <item>
-      <title>Turning and Old Laptop into a Chromebook</title>
-      <link>https://mariosanchez.org/posts/chromebook/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/chromebook/</guid>
-      <description>If you have an old laptop gathering dust around your house, you may be able to give it a new lease of life by turning it into a blazing fast Chromebook.
-A Chromebook is a special kind of laptop that runs on Google&amp;rsquo;s Chromium OS. The secret to Chromebooks being so fast is the minimalist nature of the Chromium OS. It is optimized to do one and only one thing: work seamlessly with the Chrome browser and other Google services like Google Drive.</description>
     </item>
     
     <item>
@@ -278,16 +268,6 @@ If you then click Submit; the result will be a list of all the airlines that hav
     </item>
     
     <item>
-      <title>How To Get Rich Without Getting Lucky</title>
-      <link>https://mariosanchez.org/posts/rich/</link>
-      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/rich/</guid>
-      <description>Read Naval&amp;rsquo;s original post here.
-Seek Wealth, Not Money or Status  Wealth is assets that earn while you sleep. The purpose of wealth is freedom; it’s nothing more than that. Money is how we transfer wealth. Money is social credits; it’s the ability to have credits and debits of other people’s time. Having wealth means not having to be any place you don’t want to be, or not having to do anything you don’t want to do.</description>
-    </item>
-    
-    <item>
       <title>JavaScript Photo Gallery</title>
       <link>https://mariosanchez.org/code/photos/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
@@ -308,7 +288,7 @@ img.gallery { padding: 4px; border: 1px solid #ccc; margin-bottom: 1em; margin-r
       <description>PAW (prodigious accumulator of wealth) is someone who has achieved high net worth. UAW (under accumulator of wealth) is someone with low or negative net worth. PAWs may have normal or even below average income. UAW may have high income. It&amp;rsquo;s not how much you make: it&amp;rsquo;s how much you keep.
   PAWs live below their means.
   PAWs have budgets and stick to them.
-  Majority of PAWs own their own businesses.</description>
+  The majority of PAWs own their own businesses.</description>
     </item>
     
     <item>
@@ -332,27 +312,6 @@ What we wanted to accomplish We wanted a simple form that let us input stock sym
       <description>Made with:  JavaScript |  CSS
 Source Files | Live DemoI started with progressbar.js by Kimmo Brunfeldt, which does most of the heavy lifting. You can add it your project by including a link near your closing body tag to the CDN repository where progressbar.js resides.
 I used Progressbar&amp;rsquo;s circle as the base for my project (you can use other geometrical shapes), which is intended to create an animated score dashboard to display at the end of a quiz.</description>
-    </item>
-    
-    <item>
-      <title>Learning Basic Linux Terminal Commands</title>
-      <link>https://mariosanchez.org/posts/terminal/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/terminal/</guid>
-      <description>In a previous post I explained how to install Ubuntu Linux on an empty hard drive. Now that you have Linux in your machine, the next logical step is to learn how to operate the terminal.
-To find your terminal click on the Show Applications icon and type the word &amp;ldquo;terminal&amp;rdquo; in the search box. Then, click on the terminal icon, similar to the one below:
-Tip: you may want to right-click on the terminal icon and choose &amp;ldquo;Add To Favorites&amp;rdquo;, to pin it to the task bar, since you&amp;rsquo;re going to be using it often.</description>
-    </item>
-    
-    <item>
-      <title>How To Install Ubuntu Linux on an Empty Hard Drive</title>
-      <link>https://mariosanchez.org/posts/ubuntu/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/ubuntu/</guid>
-      <description>When the hard drive of my old Toshiba Satellite died suddenly I thought of getting rid of it, but when I learned that you could buy a refurbished hard drive on ebay for very little money (around $35) I ordered one and installed it.
-The clean, empty hard drive gave me the perfect excuse to install a Linux operating system, and to configure the old laptop to become the ideal web development environment.</description>
     </item>
     
     <item>
@@ -389,16 +348,6 @@ Our app has six components:</description>
       <description>Made with:  HTML |  CSS |  JavaScript
 Source Files | Live DemoThe objective was to design a clean, efficient, and fully responsive website for a real estate investments business. It needed to clearly describe what the company did, and include easy to follow call-to-actions throughout the site.
 It was made using the Agency template for Bootstrap, a fully functional form by Formspree, and several jQuery plugins for smooth transitions and a carrousel of testimonials.</description>
-    </item>
-    
-    <item>
-      <title>The 6s Discipline</title>
-      <link>https://mariosanchez.org/posts/6s/</link>
-      <pubDate>Tue, 09 May 2017 09:42:48 -0400</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/6s/</guid>
-      <description>A few weeks ago, the company moved us to a new office. When we walked into our shiny, new cubicles we found a single sheet of paper laid out on top of our recently installed, empty desks describing something called The 6S Discipline.
-It was a concise list of 6 bullet points that summarized a process to keep our work stations clean and organized. I later found out that the 6S concept comes from the Lean Manufacturing philosophy, the principles of which can also be applied to an office setting.</description>
     </item>
     
     <item>
@@ -446,16 +395,6 @@ As if fate had it, a few days later I was at a Fedex store and saw Talk Like TED
     </item>
     
     <item>
-      <title>Creating Aliases in Linux Terminal</title>
-      <link>https://mariosanchez.org/posts/alias/</link>
-      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/alias/</guid>
-      <description>If you use a Linux-style terminal you may find yourself typing the same commands over and over again. If this is the case, you may wish to use some shorthand that the terminal can understand. You can do that with Aliases.
-You start by going to your user directory and opening your .bashrc file. A .bashrc is a shell script that Bash runs whenever it is started interactively. You can put any command in that file that you could type at the command prompt.</description>
-    </item>
-    
-    <item>
       <title>Building a Single Page Application with AngularJS</title>
       <link>https://mariosanchez.org/code/angular/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
@@ -465,17 +404,6 @@ You start by going to your user directory and opening your .bashrc file. A .bash
 Source Files | Demo
 A few weeks ago I came across the concept of SPA, or Single Page Application, and learned that they can be created with Angular.js, a JavaScript library supported by Google.
 Most definitions of SPA you can find online are very technical and full of jargon, so perhaps the best way a newbie web developer like me can understand it is with an example:</description>
-    </item>
-    
-    <item>
-      <title>Git Cheat Sheet</title>
-      <link>https://mariosanchez.org/posts/gcs/</link>
-      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/gcs/</guid>
-      <description>I use Git to keep track of the changes I make to this site. I am not an expert so I won&amp;rsquo;t go into great depths here. The idea of this post is just to summarize for future reference the Git commands I use on a regular basis to keep this site up and running.
-Here we go:
-Tell Git your usename and email. You only need to do this once:</description>
     </item>
     
     <item>
@@ -498,16 +426,6 @@ I had only a vague idea of what stoicism was prior to reading the book, but base
     </item>
     
     <item>
-      <title>My $100 Office</title>
-      <link>https://mariosanchez.org/posts/100office/</link>
-      <pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/100office/</guid>
-      <description>I needed a quiet space at home where I could sit down and tweak the code of my site, and otherwise tinker with some web development tools I want to learn. Since my second bedroom had some empty space and a window with a nice view of the garden, it was the perfect place to try to fit a small workstation.
-I didn&amp;rsquo;t want to spend a lot of money but I still wanted my new writing setup to look good, so my logical first stop was Ikea&amp;rsquo;s website.</description>
-    </item>
-    
-    <item>
       <title>Work The System</title>
       <link>https://mariosanchez.org/booknotes/systems/</link>
       <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
@@ -518,17 +436,6 @@ The book didn&amp;rsquo;t disappoint, and left me with plenty of actionable step
     </item>
     
     <item>
-      <title>Some Unsolicited Money Tips</title>
-      <link>https://mariosanchez.org/posts/money/</link>
-      <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/money/</guid>
-      <description>In this short post I will try to summarize what I would do to start building wealth if I were just starting out. Your circumstances may be different, so proceed with caution and don&amp;rsquo;t take this as gospel.
-Here we go:
-First, if your employer offers a 401K plan with a match, I would contribute up to the maximum amount matched. Some companies match your contribution dollar for dollar. Others match 50%.</description>
-    </item>
-    
-    <item>
       <title>Ikigai</title>
       <link>https://mariosanchez.org/booknotes/ikigai/</link>
       <pubDate>Mon, 20 Oct 2014 00:00:00 +0000</pubDate>
@@ -536,15 +443,6 @@ First, if your employer offers a 401K plan with a match, I would contribute up t
       <guid>https://mariosanchez.org/booknotes/ikigai/</guid>
       <description>Sebastian Marshall put together this book in a week (mostly from blog content) as a dare to an old-school publisher who had offered to publish it but had been dragging the project for months. As a result, some passages may sound repetitive and there are several grammatical and spelling errors, but don&amp;rsquo;t get fooled: there is gold on those pages if you just can see beyond that.
 Highlights &amp;ldquo;Walk the center path with other people&amp;rsquo;s objectives.</description>
-    </item>
-    
-    <item>
-      <title>Sam&#39;s Rules for Building a Business</title>
-      <link>https://mariosanchez.org/posts/sams/</link>
-      <pubDate>Tue, 03 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/sams/</guid>
-      <description>A few years ago, during a trip to Bentonville, Arkansas, I had the chance to visit Walmart’s first store (originally called Walton’s 5-10), and picked up a leaflet containing Sam Walton’s 10 rules for building a successful business. Pearls of wisdom, straight from the man who built the world’s most successful retailer out of nothing. Since I haven&amp;rsquo;t been able to find a link to it on the Internet, I am transcribing them below (all of them are great, but I especially like #7, #9 and #10):</description>
     </item>
     
     <item>

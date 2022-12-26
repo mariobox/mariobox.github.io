@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mariosanchez.org/tags/digital-self-reliance/</loc>
+    <lastmod>2022-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/posts/</loc>
+    <lastmod>2022-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/posts/reboot/</loc>
+    <lastmod>2022-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/tags/</loc>
+    <lastmod>2022-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mariosanchez.org/about/</loc>
     <lastmod>2022-07-19T00:00:00+00:00</lastmod>
   </url>
@@ -93,26 +113,6 @@
   </url>
   
   <url>
-    <loc>https://mariosanchez.org/posts/webdev/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/posts/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/tags/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/tags/tech/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mariosanchez.org/code/ppl/</loc>
     <lastmod>2020-05-30T00:00:00+00:00</lastmod>
   </url>
@@ -125,11 +125,6 @@
   <url>
     <loc>https://mariosanchez.org/code/express/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/posts/chromebook/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -148,17 +143,7 @@
   </url>
   
   <url>
-    <loc>https://mariosanchez.org/posts/rich/</loc>
-    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mariosanchez.org/code/photos/</loc>
-    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/tags/money/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -178,16 +163,6 @@
   </url>
   
   <url>
-    <loc>https://mariosanchez.org/posts/terminal/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/posts/ubuntu/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mariosanchez.org/code/flaskecomm/</loc>
     <lastmod>2018-12-25T00:00:00+00:00</lastmod>
   </url>
@@ -200,16 +175,6 @@
   <url>
     <loc>https://mariosanchez.org/code/rei/</loc>
     <lastmod>2017-06-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/tags/productivity/</loc>
-    <lastmod>2017-05-09T09:42:48-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/posts/6s/</loc>
-    <lastmod>2017-05-09T09:42:48-04:00</lastmod>
   </url>
   
   <url>
@@ -233,18 +198,8 @@
   </url>
   
   <url>
-    <loc>https://mariosanchez.org/posts/alias/</loc>
-    <lastmod>2016-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mariosanchez.org/code/angular/</loc>
     <lastmod>2016-08-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/posts/gcs/</loc>
-    <lastmod>2016-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -258,33 +213,13 @@
   </url>
   
   <url>
-    <loc>https://mariosanchez.org/posts/100office/</loc>
-    <lastmod>2015-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mariosanchez.org/booknotes/systems/</loc>
     <lastmod>2015-09-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mariosanchez.org/posts/money/</loc>
-    <lastmod>2015-02-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mariosanchez.org/booknotes/ikigai/</loc>
     <lastmod>2014-10-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/tags/business/</loc>
-    <lastmod>2013-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/posts/sams/</loc>
-    <lastmod>2013-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
