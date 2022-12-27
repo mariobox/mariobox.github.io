@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Why I&#39;m Learning to Use Vim | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="The simplest solution is usually the best one" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="/js/theme.js"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar">
+        <a style="cursor:pointer;">
+        <span class="icon" id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+        </a>
+      </div>
+    </a>
+    <div class="centered logo">
+      <a href="/"><img src="/img/mario-pix-dk.png" width="150" /></a>
+    </div>
+      <nav>
+        <ul>
+	  <li>
+ 	    <a href="/">home</a>
+          <li>
+            <a href="/posts/">blog</a>
+          </li>
+          <li>
+            <a href="/coding/">coding</a>
+          </li>
+          <li>
+            <a href="/uses/">stack</a>
+          </li>
+          <li>
+            <a href="/photos/">photos</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+
+
+<main id="main">
+  <h1>Why I&#39;m Learning to Use Vim</h1>
+  <p class="description">The simplest solution is usually the best one</p>  
+    <article id="content">
+    <p>The world is becoming a very complicated place.</p>
+<p>The rush to make everything bigger and better is creating unnecessarily complicated products. Product managers build feature after feature into products (<a href="https://en.wikipedia.org/wiki/Feature_creep">feature creep</a>) until something that started simple and did something limited extremely well, morphs into a bloated monstrosity that aims to please everybody (or an entirely new user base) leaving the core user base frustrated and yearning for the simplicity of the original product.</p>
+<p>Take the following pictures of the dashboard of the Ford Bronco, the first one of the 1975 model, and the second one of 2022.</p>
+<figure>
+<img src="/img/bronco75.png" alt="picture of 1975 bronco" class="gallery" />
+<figcaption class="small">Dashboard of 1975 Ford Bronco</figcaption>
+</figure>
+<br />
+<figure>
+<img src="/img/bronco22.png" alt="picture of 2022 bronco" class="gallery" />
+<figcaption class="small">Dashboard of 2022 Ford Bronco</figcaption>
+</figure>
+<p>The only thing these two vehicles have in common is the name, and perhaps some subtle exterior design cues.</p>
+<p>I think I wouldn&rsquo;t be lying if I said that drivers back in 1975 found more enjoyment in their Bronco than drivers of the 2022 model, which, if the demographics of drivers of similar vehicles is any indication, will mostly be relegated to hauling groceries and picking up the kids from school.</p>
+<p>Ford is now designing with a different user base in mind, and those who appreciated the basic qualities and ruggedness of the early Bronco will have to settle for something different.</p>
+<p>But I&rsquo;m not here to talk about cars but about <strong>text editors</strong>.</p>
+<h2 id="my-use-case-for-a-text-editor">My Use Case for a Text Editor</h2>
+<p>I use a text editor for coding and writing on my website. These two applications don&rsquo;t require any fancy formatting: code can&rsquo;t be written in anything other than a plain text editor, and I write my articles and blog posts in <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> (which is a variation of plain text that can easily be converted into fully formatted HTML for publication on the web).</p>
+<p>I had been using <strong>Microsoft Visual Studio Code</strong> (or simply MS VS Code), which is a great text editor, but as any software made by a large corporation it can be bloated and slow. Also, as I hinted in my <a href="/posts/reboot/">first post</a>, I am trying to wean myself away from technology developed by large corporations, and opting instead for open source alternatives. The time was right to give <strong>Vim</strong> a try.</p>
+<h2 id="vim-vs-vs-code">Vim vs. VS Code</h2>
+<p><a href="https://www.vim.org/">Vim</a> is an old but powerful text editor that comes with your Linux installation. You can access it directly from the command line and toggle back and forth from Vim to the command line and viceversa.</p>
+<p>Since Vim was developed before the mouse was invented, and before you could have several windows open on your screen at the same time, you have to use different key bindings to navigate and edit your document. In fact, what makes Vim so popular among experienced programmers is that your hands never have to leave the keyboard.</p>
+<p>The drawback is that you have to learn the key bindings and alternate between three different <a href="https://linuxhandbook.com/vim-modes/">modes</a> (Normal, Visual and Insert). I won&rsquo;t be talking about the specifics of Vim here, since it is outside the scope of this article, but I will link to a few good resources at the bottom of this post.</p>
+<p><strong>VS Code</strong>, on the other hand, is a modern <strong>IDE</strong> (Integrated Development Environment). Your screen is usually divided in three parts: folders, document and terminal. Since it works as a <strong>GUI</strong> (Graphical User Interfase) you can use your mouse and a bunch of menu commands to make your life easier.</p>
+<figure>
+<img src="/img/vim.png" alt="screenshot of Vim text editor" width="640px" class="gallery" />
+<figcaption class="small">Vim Text Editor</figcaption>
+</figure>
+<br />
+<figure>
+<img src="/img/vscode.png" alt="screenshot of VS Code text editor" width="640px" class="gallery" />
+<figcaption class="small">VS Code Text Editor</figcaption>
+</figure>
+<p>The main difference, though, is the amount of <strong>RAM</strong> they use. If you want to edit a code file, or write an article in plain text, just having VS Code open will consume <strong>343.5MB</strong> of RAM. On the other hand, Vim will only use <strong>3.8MB</strong> (both tested in my own computer). This means that VS Code uses <strong>90 times</strong> (!) more memory than Vim to work on a plain text file.</p>
+<h2 id="what-about-microsoft-word">What About Microsoft Word?</h2>
+<p>You can&rsquo;t use <strong>Microsoft Word</strong> for coding, since it is not a plain text editor. However, it is worth comparing <strong>MS Word vs. Vim</strong> for my second use case: writing articles and blog posts in plain text.</p>
+<p>The amount of RAM you need to keep a copy of MS Word open is a <a href="https://bit.ly/3FYIeHx">hotly contested topic</a>. It seems that it depends on what hardware you are using and what version of MS Word you are running, In any case, I&rsquo;ve seen figures that fluctuate between <strong>250MB</strong> and <strong>several Gigabytes</strong> (!), totally insane for working with a simple text file.</p>
+<p>If you use MS Word because you need to format your text, remember that you can always write in Markdown on a simple plain text editor, and then easily transform your files to HTML to publish your articles on the web.</p>
+<h2 id="in-summary">In Summary</h2>
+<p>I am still learning Vim and forcing myself to write my posts with it instead of VS Code. Even if the learning curve is steep, I find that by learning two or three new commands every day I am getting much better. I am finally beginning to understand why those experienced coders rave so much about Vim.</p>
+<h2 id="resources">Resources</h2>
+<p><a href="https://www.linuxfoundation.org/blog/blog/classic-sysadmin-vim-101-a-beginners-guide-to-vim">Vim 101: A Beginners Guide To Vim</a>: By the Linux Foundation</p>
+<p><a href="https://sive.rs/plaintext">Write Plain Text Files</a>: By Derek Sivers</p>
+
+    </article>  
+</main>
+<p class="date">Last updated: Dec 27, 2022</p>
+<p><a href="/tags/tech">tech</a></p>
+
+<hr />
+
+<form action="https://tinyletter.com/mariosanchez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/mariosanchez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">If you enjoyed my content please consider joining my private email list:</label></p><p><input type="text" placeholder="you@example.com" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Join" /><p class="small"><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p></form>
+
+<br />
+<br />
+  <p class="centered">
+    <span class="small list">  
+      <a href="https://www.linkedin.com/in/mariobox/" title="Linkedin"><i class="fab ft fa-linkedin fa-lg"></i></a>
+      <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+      <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+    </span>
+  </p>
+  <p class="centered small">
+    &copy; 2022 Mario Sanchez Carrion
+  </p>
+  
+</div>
+</body>
+</html>
+
+

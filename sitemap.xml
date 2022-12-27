@@ -4,21 +4,26 @@
   
   <url>
     <loc>https://mariosanchez.org/posts/</loc>
-    <lastmod>2022-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/posts/reboot/</loc>
-    <lastmod>2022-12-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mariosanchez.org/tags/</loc>
-    <lastmod>2022-12-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mariosanchez.org/tags/tech/</loc>
+    <lastmod>2022-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/posts/vim/</loc>
+    <lastmod>2022-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/posts/reboot/</loc>
     <lastmod>2022-12-25T00:00:00+00:00</lastmod>
   </url>
   
