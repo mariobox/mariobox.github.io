@@ -6,19 +6,57 @@
     <description>Recent content in tech on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Dec 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 27 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I&#39;m Learning to Use Vim</title>
       <link>https://mariosanchez.org/posts/vim/</link>
       <pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/posts/vim/</guid>
-      <description>The world is becoming a very complicated place.
-The rush to make everything bigger and better is creating unnecessarily complicated products. Product managers build feature after feature into products (feature creep) until something that started simple and did something limited extremely well, morphs into a bloated monstrosity that aims to please everybody (or an entirely new user base) leaving the core user base frustrated and yearning for the simplicity of the original product.</description>
+      <description>&lt;p&gt;The world is becoming a very complicated place.&lt;/p&gt;
+&lt;p&gt;The rush to make everything bigger and better is creating unnecessarily complicated products. Product managers build feature after feature into products (&lt;a href=&#34;https://en.wikipedia.org/wiki/Feature_creep&#34;&gt;feature creep&lt;/a&gt;) until something that started simple and did something limited extremely well, morphs into a bloated monstrosity that aims to please everybody (or an entirely new user base) leaving the core user base frustrated and yearning for the simplicity of the original product.&lt;/p&gt;
+&lt;p&gt;Take the following pictures of the dashboard of the Ford Bronco, the first one of the 1975 model, and the second one of 2022.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/bronco75.png&#34; alt=&#34;picture of 1975 bronco&#34; class=&#34;gallery&#34; /&gt;
+&lt;figcaption class=&#34;small&#34;&gt;Dashboard of 1975 Ford Bronco&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br /&gt;
+&lt;figure&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/bronco22.png&#34; alt=&#34;picture of 2022 bronco&#34; class=&#34;gallery&#34; /&gt;
+&lt;figcaption class=&#34;small&#34;&gt;Dashboard of 2022 Ford Bronco&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The only thing these two vehicles have in common is the name, and perhaps some subtle exterior design cues.&lt;/p&gt;
+&lt;p&gt;I think I wouldn&amp;rsquo;t be lying if I said that drivers back in 1975 found more enjoyment in their Bronco than drivers of the 2022 model, which, if the demographics of drivers of similar vehicles is any indication, will mostly be relegated to hauling groceries and picking up the kids from school.&lt;/p&gt;
+&lt;p&gt;Ford is now designing with a different user base in mind, and those who appreciated the basic qualities and ruggedness of the early Bronco will have to settle for something different.&lt;/p&gt;
+&lt;p&gt;But I&amp;rsquo;m not here to talk about cars but about &lt;strong&gt;text editors&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;my-use-case-for-a-text-editor&#34;&gt;My Use Case for a Text Editor&lt;/h2&gt;
+&lt;p&gt;I use a text editor for coding and writing on my website. These two applications don&amp;rsquo;t require any fancy formatting: code can&amp;rsquo;t be written in anything other than a plain text editor, and I write my articles and blog posts in &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;Markdown&lt;/a&gt; (which is a variation of plain text that can easily be converted into fully formatted HTML for publication on the web).&lt;/p&gt;
+&lt;p&gt;I had been using &lt;strong&gt;Microsoft Visual Studio Code&lt;/strong&gt; (or simply MS VS Code), which is a great text editor, but as any software made by a large corporation it can be bloated and slow. Also, as I hinted in my &lt;a href=&#34;https://mariosanchez.org/posts/reboot/&#34;&gt;first post&lt;/a&gt;, I am trying to wean myself away from technology developed by large corporations, and opting instead for open source alternatives. The time was right to give &lt;strong&gt;Vim&lt;/strong&gt; a try.&lt;/p&gt;
+&lt;h2 id=&#34;vim-vs-vs-code&#34;&gt;Vim vs. VS Code&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.vim.org/&#34;&gt;Vim&lt;/a&gt; is an old but powerful text editor that comes with your Linux installation. You can access it directly from the command line and toggle back and forth from Vim to the command line and viceversa.&lt;/p&gt;
+&lt;p&gt;Since Vim was developed before the mouse was invented, and before you could have several windows open on your screen at the same time, you have to use different key bindings to navigate and edit your document. In fact, what makes Vim so popular among experienced programmers is that your hands never have to leave the keyboard.&lt;/p&gt;
+&lt;p&gt;The drawback is that you have to learn the key bindings and alternate between three different &lt;a href=&#34;https://linuxhandbook.com/vim-modes/&#34;&gt;modes&lt;/a&gt; (Normal, Visual and Insert). I won&amp;rsquo;t be talking about the specifics of Vim here, since it is outside the scope of this article, but I will link to a few good resources at the bottom of this post.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VS Code&lt;/strong&gt;, on the other hand, is a modern &lt;strong&gt;IDE&lt;/strong&gt; (Integrated Development Environment). Your screen is usually divided in three parts: folders, document and terminal. Since it works as a &lt;strong&gt;GUI&lt;/strong&gt; (Graphical User Interfase) you can use your mouse and a bunch of menu commands to make your life easier.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/vim.png&#34; alt=&#34;screenshot of Vim text editor&#34; width=&#34;640px&#34; class=&#34;gallery&#34; /&gt;
+&lt;figcaption class=&#34;small&#34;&gt;Vim Text Editor&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br /&gt;
+&lt;figure&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/vscode.png&#34; alt=&#34;screenshot of VS Code text editor&#34; width=&#34;640px&#34; class=&#34;gallery&#34; /&gt;
+&lt;figcaption class=&#34;small&#34;&gt;VS Code Text Editor&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The main difference, though, is the amount of &lt;strong&gt;RAM&lt;/strong&gt; they use. If you want to edit a code file, or write an article in plain text, just having VS Code open will consume &lt;strong&gt;343.5MB&lt;/strong&gt; of RAM. On the other hand, Vim will only use &lt;strong&gt;3.8MB&lt;/strong&gt; (both tested in my own computer). This means that VS Code uses &lt;strong&gt;90 times&lt;/strong&gt; (!) more memory than Vim to work on a plain text file.&lt;/p&gt;
+&lt;h2 id=&#34;what-about-microsoft-word&#34;&gt;What About Microsoft Word?&lt;/h2&gt;
+&lt;p&gt;You can&amp;rsquo;t use &lt;strong&gt;Microsoft Word&lt;/strong&gt; for coding, since it is not a plain text editor. However, it is worth comparing &lt;strong&gt;MS Word vs. Vim&lt;/strong&gt; for my second use case: writing articles and blog posts in plain text.&lt;/p&gt;
+&lt;p&gt;The amount of RAM you need to keep a copy of MS Word open is a &lt;a href=&#34;https://bit.ly/3FYIeHx&#34;&gt;hotly contested topic&lt;/a&gt;. It seems that it depends on what hardware you are using and what version of MS Word you are running, In any case, I&amp;rsquo;ve seen figures that fluctuate between &lt;strong&gt;250MB&lt;/strong&gt; and &lt;strong&gt;several Gigabytes&lt;/strong&gt; (!), totally insane for working with a simple text file.&lt;/p&gt;
+&lt;p&gt;If you use MS Word because you need to format your text, remember that you can always write in Markdown on a simple plain text editor, and then easily transform your files to HTML to publish your articles on the web.&lt;/p&gt;
+&lt;h2 id=&#34;in-summary&#34;&gt;In Summary&lt;/h2&gt;
+&lt;p&gt;I am still learning Vim and forcing myself to write my posts with it instead of VS Code. Even if the learning curve is steep, I find that by learning two or three new commands every day I am getting much better. I am finally beginning to understand why those experienced coders rave so much about Vim.&lt;/p&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linuxfoundation.org/blog/blog/classic-sysadmin-vim-101-a-beginners-guide-to-vim&#34;&gt;Vim 101: A Beginners Guide To Vim&lt;/a&gt;: By the Linux Foundation&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sive.rs/plaintext&#34;&gt;Write Plain Text Files&lt;/a&gt;: By Derek Sivers&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -27,8 +65,10 @@ The rush to make everything bigger and better is creating unnecessarily complica
       <pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/posts/reboot/</guid>
-      <description>I&amp;rsquo;ve decided to start blogging again.
-The &amp;ldquo;social&amp;rdquo; web has become a toxic and unhospitable place. Although I quit Facebook years ago, I was still using Twitter. Even before Elon took over, Twitter was already a wasteland with the nuance and civility of a South American soccer stadium, where the extreme left and the extreme right hurl quips and insults to each other 24 hours a day, while everybody else is ignored.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve decided to start blogging again.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;social&amp;rdquo; web has become a toxic and unhospitable place. Although I quit Facebook years ago, I was still using Twitter. Even before Elon took over, Twitter was already a wasteland with the nuance and civility of a South American soccer stadium, where the extreme left and the extreme right hurl quips and insults to each other 24 hours a day, while everybody else is ignored. Why would somebody want to spend time in such a place?&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s time to bring back the pre-Web 2.0 idea of running our own website: a place where we can share our thoughts without fear of censorship or surveillance, a digital home made of text files that we can take with us wherever we want, mold it to our liking, and let it evolve with us. Let the reboot begin!&lt;/p&gt;
+</description>
     </item>
     
   </channel>
