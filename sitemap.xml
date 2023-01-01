@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mariosanchez.org/tags/money/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mariosanchez.org/posts/</loc>
-    <lastmod>2022-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mariosanchez.org/tags/</loc>
-    <lastmod>2022-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/posts/debt/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
