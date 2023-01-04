@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mariosanchez.org/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mariosanchez.org/tags/money/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -14,6 +19,11 @@
   
   <url>
     <loc>https://mariosanchez.org/tags/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/uses/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -39,11 +49,6 @@
   
   <url>
     <loc>https://mariosanchez.org/about/</loc>
-    <lastmod>2022-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/</loc>
     <lastmod>2022-07-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -85,11 +90,6 @@
   <url>
     <loc>https://mariosanchez.org/code/wiki/</loc>
     <lastmod>2021-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/uses/</loc>
-    <lastmod>2021-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>

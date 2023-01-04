@@ -6,7 +6,44 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech Stack</title>
+      <link>https://mariosanchez.org/uses/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/uses/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Computer&lt;/strong&gt;: HP Pavilion x360 with a 14&amp;rdquo; display. It has an Intel Core i5-1035G1 Processor, 8GB SDRAM, and 256 SSD. This is a great laptop for the price. I don&amp;rsquo;t mind the smaller screen since my intention is to maximize portability (while at home, I do most of my web development work in a large monitor anyway).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Operating System&lt;/strong&gt;: &lt;a href=&#34;https://www.ubuntu.com/download/desktop&#34;&gt;Ubuntu 20.04 LTS&lt;/a&gt;. Some of the most significant developments in the world of programming and web development are easily accessible from the Linux command line. Microsoft recognizes this and recently introduced WSL2 (Windows Sub-System for Linux 2). This feature offers you a full Ubuntu Linux kernel from within Windows, which you can open just like any regular app. WSL2 is not just a translation layer, but a full Linux environment complete with its own filesystem. Basically, I am now running Ubuntu Linux from within Windows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Static Site Generator&lt;/strong&gt;: &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, by far the fastest and most reliable website engine I&amp;rsquo;ve ever used.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Responsive Framework&lt;/strong&gt;: &lt;a href=&#34;https://mariosanchez.org/css/minimal.css&#34;&gt;minimal.css&lt;/a&gt;. I created my own style sheet from scratch instead of using Bootstrap, since I don&amp;rsquo;t need 99% of the functionality. I recently updated my style sheet to give users the option to &lt;a href=&#34;https://mariosanchez.org/code/dark/&#34;&gt;toggle between a light and a dark theme&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Version Control&lt;/strong&gt;: &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt; and &lt;a href=&#34;https://github.com/mariobox&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Text Editor&lt;/strong&gt;: &lt;a href=&#34;https://vim.org&#34;&gt;Vim&lt;/a&gt;. I had been using &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;Visual Studio Code&lt;/a&gt;, which is a great text editor, but I&amp;rsquo;m now using (and still learning) Vim, due to a personal choice to move away from tools made by large corporations and embracing open source alternatives. The learning curve is steep, but like with anything worthwhile practice makes perfect.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: I alternate between &lt;a href=&#34;https://digitalocean&#34;&gt;Digital Ocean&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;. I am currently using Github Pages, but I&amp;rsquo;m also operating a VPS for some project demos that require back end functionality.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SSL/TLS Certificate&lt;/strong&gt;: &lt;a href=&#34;https://letsencrypt.org&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;. That lets me serve this site through &lt;a href=&#34;../https/&#34;&gt;HTTPS&lt;/a&gt;. With &lt;a href=&#34;https://pages.github.com&#34;&gt;Github Pages&lt;/a&gt; you now get SSL by default.
+&lt;br /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;https://wesbos.com/uses&#34;&gt;Wes Bos&lt;/a&gt; for inspiring this page.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>The Debt Ceiling Connundrum</title>
       <link>https://mariosanchez.org/posts/debt/</link>
@@ -376,43 +413,6 @@ By kicking the can, our elected officials are not only not solving the problem: 
 &lt;/ul&gt;
 &lt;p&gt;Here is a short video of the final product:&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WpccTnF1qcA&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
-    </item>
-    
-    <item>
-      <title>Tech Stack</title>
-      <link>https://mariosanchez.org/uses/</link>
-      <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/uses/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Computer&lt;/strong&gt;: I recently purchased an HP Pavilion x360 with a 14&amp;rdquo; display. It has an Intel Core i5-1035G1 Processor, 8GB SDRAM, and 256 SSD. This is a great laptop for the price. I don&amp;rsquo;t mind the smaller screen since my intention is to maximize portability (while at home, I do most of my web development work in a large monitor anyway).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Operating System&lt;/strong&gt;: &lt;a href=&#34;https://www.ubuntu.com/download/desktop&#34;&gt;Ubuntu 20.04 LTS&lt;/a&gt;. Some of the most significant developments in the world of programming and web development are easily accessible from the Linux command line. Microsoft recognizes this and recently introduced WSL2 (Windows Sub-System for Linux 2). This feature offers you a full Ubuntu Linux kernel from within Windows, which you can open just like any regular app. WSL2 is not just a translation layer, but a full Linux environment complete with its own filesystem. Basically, I am now running Ubuntu Linux from within Windows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Static Site Generator&lt;/strong&gt;: &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, by far the fastest and most reliable website engine I&amp;rsquo;ve ever used.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Responsive Framework&lt;/strong&gt;: &lt;a href=&#34;https://mariosanchez.org/css/minimal.css&#34;&gt;minimal.css&lt;/a&gt;. I created my own style sheet from scratch instead of using Bootstrap, since I don&amp;rsquo;t need 99% of the functionality. I recently updated my style sheet to give users the option to &lt;a href=&#34;https://mariosanchez.org/code/dark/&#34;&gt;toggle between a light and a dark theme&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Version Control&lt;/strong&gt;: &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt; and &lt;a href=&#34;https://github.com/mariobox&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Text Editor&lt;/strong&gt;: &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;Visual Studio Code&lt;/a&gt;. The choice of text editor is one of the most fiercely debated topics among programmers. I haven&amp;rsquo;t yet met anybody who doesn&amp;rsquo;t like &lt;a href=&#34;https://sublimetext.com&#34;&gt;Sublime Text&lt;/a&gt; or &lt;a href=&#34;https://atom.io&#34;&gt;Atom&lt;/a&gt;, although Visual Studio Code is becoming the gold standard. I know that hard-core developers wouldn&amp;rsquo;t be caught dead using something other than &lt;a href=&#34;https://vim.org&#34;&gt;Vim&lt;/a&gt;, but I find Vim&amp;rsquo;s learning curve too steep, especially compared with more modern development environments.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: I alternate between &lt;a href=&#34;https://digitalocean&#34;&gt;Digital Ocean&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;. I am currently using Github Pages, but I&amp;rsquo;m also operating a VPS for some project demos that require back end functionality.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;SSL/TLS Certificate&lt;/strong&gt;: &lt;a href=&#34;https://letsencrypt.org&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;. That lets me serve this site through &lt;a href=&#34;../https/&#34;&gt;HTTPS&lt;/a&gt;. With &lt;a href=&#34;https://pages.github.com&#34;&gt;Github Pages&lt;/a&gt; you now get SSL by default.
-&lt;br /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Thanks to &lt;a href=&#34;https://wesbos.com/uses&#34;&gt;Wes Bos&lt;/a&gt; for inspiring this page.&lt;/p&gt;
-</description>
     </item>
     
     <item>
