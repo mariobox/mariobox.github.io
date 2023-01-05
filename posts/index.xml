@@ -6,7 +6,64 @@
     <description>Recent content in Posts on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RSS: Everything Old is New Again</title>
+      <link>https://mariosanchez.org/posts/rss/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/rss/</guid>
+      <description>&lt;p&gt;I recently wrote about &lt;a href=&#34;https://mariosanchez.org/posts/vim/&#34;&gt;Vim&lt;/a&gt;, a powerful old-school text editor.
+Today, I want to talk about another old but extremely useful technology: &lt;abbr title=&#34;Really Simple Syndication&#34;&gt;RSS&lt;/abbr&gt;, and why it&amp;rsquo;s making a comeback.&lt;/p&gt;
+&lt;p&gt;RSS stands for &lt;strong&gt;Really Simple Syndication&lt;/strong&gt;, and many websites still use it to publish updates to their content.
+RSS feeds allow users to subscribe to a website&amp;rsquo;s updates and receive notifications when new content is published.
+RSS feeds can be accessed using an RSS reader or aggegator, which lets users view and manage all their subscriptions in one place.&lt;/p&gt;
+&lt;p&gt;The popularity of RSS feeds peaked about 15 years ago, and has declined in recent years due to the rise of social media.
+Social media feeds work pretty much like RSS feed readers in the sense that users can follow the sites they want, and read all their updates in one place.
+An important difference, though, is that social media introduced two features not present in RSS readers:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The ability to post comments&lt;/li&gt;
+&lt;li&gt;A proprietary algorithm that heavily influences what you see on your feed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These two features are partially responsible not only for the rise of social media, but also for the stress fractures that we begin to see today:
+since algorithms optimize for the profitability of the platform, and profitability is tied to &amp;ldquo;engagement&amp;rdquo;, they are designed to make you stick around as much as possible (some would say that they are designed to make you addicted to the platform).
+They do so by making you angry or by feeding you content that reinforces your biases.
+Social media platforms also censor information, sometimes in &lt;a href=&#34;https://www.thefp.com/p/how-twitter-rigged-the-covid-debate&#34;&gt;collusion&lt;/a&gt; with the state.&lt;/p&gt;
+&lt;p&gt;When you ponder the state of social media today, it comes as no surprise that more people are deciding to give RSS a try.
+RSS offers a much quieter reading experience, allowing you to enjoy content on your own terms.&lt;/p&gt;
+&lt;h2 id=&#34;how-does-rss-work&#34;&gt;How does RSS work?&lt;/h2&gt;
+&lt;p&gt;An RSS feed is basically a text file written in a format called XML (very similar to HTML).
+The content management systems that power websites generate this file automatically, and update it every time new content is added.&lt;/p&gt;
+&lt;p&gt;Users grab the feed&amp;rsquo;s URL and add it to an RSS reader, a program that regularly crawls the site and displays any new content in an easy-to-read interface similar to a web page (although there are a few text-only RSS readers as well).&lt;/p&gt;
+&lt;p&gt;In the past, media sites would prominently display an &lt;a href=&#34;https://duckduckgo.com/?q=rss+icon&amp;amp;t=h_&amp;amp;ia=web&#34;&gt;RSS icon&lt;/a&gt; that linked to their feed&amp;rsquo;s URL.
+These days, however, it is much more common to find their social media icons instead.
+That doesn&amp;rsquo;t mean that their RSS feed doesn&amp;rsquo;t exist, though.
+You just have to look harder.
+Usually, you can find it by typing an URL such as these in your browser:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;somesite.com/feed&lt;/li&gt;
+&lt;li&gt;somesite.com/feed.xml&lt;/li&gt;
+&lt;li&gt;somesite.com/index.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you find it, it probably looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/xml.jpg&#34; alt=&#34;image of an XML page&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Just for fun, follow this link: &lt;a href=&#34;https://mariosanchez.org/posts/index.xml&#34;&gt;https://mariosanchez.org/posts/index.xml&lt;/a&gt;.
+That&amp;rsquo;s the RSS feed for this site.
+In fact, try grabbing a few feeds from different sites and you&amp;rsquo;ll be ready for your next step: adding those feeds to an RSS reader.&lt;/p&gt;
+&lt;h2 id=&#34;rss-readers&#34;&gt;RSS Readers&lt;/h2&gt;
+&lt;p&gt;As far as RSS readers go you have many options.
+Three popular ones are &lt;a href=&#34;&#34;&gt;Feedly&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;Inoreader&lt;/a&gt; and &lt;a href=&#34;&#34;&gt;Newsblur&lt;/a&gt;, but there are &lt;a href=&#34;https://indieweb.org/feed_reader&#34;&gt;many others&lt;/a&gt;.
+Most of them offer a free tier that you can sign up for if you want to give RSS a try. Just add all the feeds you want to follow,
+and the RSS reader will display their updated content in a neatly organized dashboard that you can customize to your liking.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/inoreader.png&#34; alt=&#34;inoreader screen shot&#34; /&gt;
+&lt;span class=&#34;small date&#34;&gt;Inoreader Screen Shot&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.businessinsider.com/guides/tech/what-is-rss-feed&#34;&gt;What is an RSS Feed&lt;/a&gt;: A good primer on RSS. ~Business Insider&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://indieweb.org/feed_reader&#34;&gt;RSS Reader List&lt;/a&gt;: Comprehensive list of different RSS Readers. ~Indieweb&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.vice.com/en/article/a3mm4z/the-rise-and-demise-of-rss&#34;&gt;The Rise and Demise of RSS&lt;/a&gt; A detailed account of the history of RSS. ~Vice&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>The Debt Ceiling Connundrum</title>
       <link>https://mariosanchez.org/posts/debt/</link>
