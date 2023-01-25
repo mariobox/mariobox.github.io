@@ -6,7 +6,36 @@
     <description>Recent content in Posts on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick Thoughts on AI</title>
+      <link>https://mariosanchez.org/posts/ai/</link>
+      <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/posts/ai/</guid>
+      <description>&lt;p&gt;A few weeks ago I asked &lt;a href=&#34;https://openai.com/blog/chatgpt/&#34;&gt;ChatGPT&lt;/a&gt; to write a 500-word article about the different types of batteries used in power tools. Since I&amp;rsquo;m very familiar with the topic, I was curious to see how ChatGPT would do. In a matter of seconds, ChatGPT generated a surprisingly good article, accurate and very well written (and not one word longer than 500).&lt;/p&gt;
+&lt;p&gt;My first thought was: those poor chaps writing website copy and search engine fodder at Fiverr for 10 dollars a piece better find another line of work. However, the implications of this technology go beyond just low level copywriters. Higly paid professionals, like computer programmers or doctors, are also in the path of this disruptive technology. It&amp;rsquo;s not hard to imagine a near future in which you can ask an AI to write a program in Python to tell you when to sell a certain stock, or to use an AI trained with the knowledge and experience of every doctor who ever lived to diagnose an illness based on a list of symptoms.&lt;/p&gt;
+&lt;p&gt;All this begs the question:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;if getting answers to common questions is becoming a commodity of near-zero cost, what will become valuable?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Perhaps the best answer I&amp;rsquo;ve found comes from &lt;strong&gt;Kevin Kelly&lt;/strong&gt; in his profetic book &lt;a href=&#34;https://kk.org/books/the-inevitable&#34;&gt;The Inevitable&lt;/a&gt;, written in 2016. &lt;strong&gt;KK&lt;/strong&gt; says: &lt;em&gt;&amp;ldquo;When answers are free or easy, what becomes valuable are good questions&amp;rdquo;&lt;/em&gt;. He goes on to define what a good question is:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A good question&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is not concerned with a correct answer.&lt;/li&gt;
+&lt;li&gt;Cannot be answered immediately.&lt;/li&gt;
+&lt;li&gt;Challenges existing answers.&lt;/li&gt;
+&lt;li&gt;Is one you badly want answered once you hear it, but had no inkling you cared before it was asked.&lt;/li&gt;
+&lt;li&gt;Creates a new territory of thinking.&lt;/li&gt;
+&lt;li&gt;Reframes its own answers.&lt;/li&gt;
+&lt;li&gt;Is a seed for innovation in science, technology, art, politics and business.&lt;/li&gt;
+&lt;li&gt;Is a probe, a what-if scenario.&lt;/li&gt;
+&lt;li&gt;Skirts on the edges of what is known and not known, neither silly nor obvious.&lt;/li&gt;
+&lt;li&gt;Cannot be predicted.&lt;/li&gt;
+&lt;li&gt;Generates many other good questions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, &lt;strong&gt;KK&lt;/strong&gt; concludes, asking good questions will be the sign of an educated mind. It will also be the last job a machine will learn how to do, and ultimately what humans are here for.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>My Three Words for 2023</title>
       <link>https://mariosanchez.org/posts/3words/</link>
