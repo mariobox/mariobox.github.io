@@ -6,7 +6,65 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://mariosanchez.org/about/</link>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/about/</guid>
+      <description>&lt;div class=&#34;picbox&#34;&gt;&lt;figure&gt;&lt;img src=&#34;https://mariosanchez.org/img/ire3.jpg&#34; class=&#34;gallery medium&#34;&gt;&lt;/figure&gt;&lt;/div&gt;
+&lt;p&gt;My name is &lt;strong&gt;Mario Sanchez Carrion&lt;/strong&gt; and I&amp;rsquo;m a full stack junior developer.&lt;/p&gt;
+&lt;p&gt;Since retiring from the &lt;a href=&#34;https://linkedin.com/in/mariobox&#34;&gt;corporate world&lt;/a&gt; in 2022 I&amp;rsquo;ve been experimenting with location independence, maintaining a base in Miami, FL, but living in different cities for several weeks to several months. The cities where I feel most at home are Paris (FR), Raleigh, NC and Lima (PE). I have posted a few pictures &lt;a href=&#34;https://mariosanchez.org/photos&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I am constantly striving to learn more about computing and programming, and have completed several &lt;a href=&#34;https://mariosanchez.org/coding#certifications&#34;&gt;certifications&lt;/a&gt;, mainly from the &lt;a href=&#34;https://www.edx.org/cs50&#34;&gt;CS50&lt;/a&gt; suite of courses (offered online by Harvard University) and &lt;a href=&#34;https://freecodecamp.org&#34;&gt;freeCodeCamp&lt;/a&gt;. I also engage in a daily coding practice, to better remember what I learn and to discover new learning opportunities.&lt;/p&gt;
+&lt;p&gt;I have developed &lt;a href=&#34;https://mariosanchez.org/code&#34;&gt;projects&lt;/a&gt; in both the front end and the back end, using HTML, CSS, JavaScript, Python and SQL. I have also deployed web applications to servers on the cloud, among them Digital Ocean and Heroku (where I keep live demos of my projects). I maintain a list of my certifications and projects in my &lt;a href=&#34;https://mariosanchez.org/coding&#34;&gt;coding page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Aside from my coding activities, I am available for &lt;a href=&#34;https://mariosanchez.org/tutor&#34;&gt;tutoring&lt;/a&gt; in Math and SAT/ACT test preparation. I am also open to business opportunities that match my values and fit my location-independent lifestyle.&lt;/p&gt;
+&lt;p&gt;You can contact me by email at mario (at) mariosanchez (dot) org, or find me in &lt;a href=&#34;https://linkedin.com/in/mariobox&#34;&gt;LinkedIn&lt;/a&gt; or &lt;a href=&#34;https://github.com/mariobox&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Coding</title>
+      <link>https://mariosanchez.org/coding/</link>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/coding/</guid>
+      <description>&lt;p&gt;These are some of my programming projects. They have been developed with HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. Some of them are personal projects and others are final projects of courses and certifications.&lt;/p&gt;
+&lt;h2&gt;💻 Projects&lt;/h2&gt;
+    &lt;p class=&#34;list&#34;&gt;
+      &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/bottle-sql/&#34;&gt;RSVP App with Bottle and SQLite&lt;/a&gt;&lt;br /&gt;
+      &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/pynt/&#34;&gt;Pynt: Static Site Generator with Python&lt;/a&gt;&lt;br /&gt;
+      &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/commerce/&#34;&gt;Auction Site With Django&lt;/a&gt;&lt;br /&gt;
+      &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/moon/&#34;&gt;Moon Phase With JavaScript&lt;/a&gt;&lt;br /&gt;
+      &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/dark/&#34;&gt;Dark Theme Switch with JavaScript&lt;/a&gt;&lt;br /&gt;
+      &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/flaskecomm/&#34;&gt;ECommerce Front End with Flask and SQL&lt;/a&gt;&lt;br /&gt;
+      &lt;i class=&#34;fab fa-react&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/micro-blog/&#34;&gt;Twitter Clone with React&lt;/a&gt;&lt;br /&gt; 
+      &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/rei/&#34;&gt;Bootstrap Real Estate Website&lt;/a&gt;&lt;br /&gt;
+      &lt;/p&gt;
+&lt;h2 id=&#34;certifications&#34;&gt;🎓 Certifications&lt;/h2&gt;
+&lt;p class=&#34;list&#34;&gt;
+  &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/f66eedcb-f7d7-4d59-93e1-3170943b6108.pdf?size=letter&#34;&gt;CS50SQL Introduction to Databases with SQL&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fa-solid fa-gear&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/foundational-c-sharp-with-microsoft&#34;&gt;Foundational C# with Microsoft&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/relational-database-v8&#34;&gt;Relational Databases and SQL&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/javascript-algorithms-and-data-structures&#34;&gt;JavaScript Algorithms and Data Structures&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fa-solid fa-gear&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://coursera.org/share/0168b3865fa7c7107114726e339d71a6&#34;&gt;Django Certification - U of Michigan&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;far fa-chart-bar&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://freecodecamp.org/certification/mariobox/data-analysis-with-python-v7&#34;&gt;Data Analysis with Python&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/scientific-computing-with-python-v7&#34;&gt;Scientific Computing with Python&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/bc8a572e-b437-4d8a-afc3-6494a43d071a&#34;&gt;CS50P Introduction to Programming in Python&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;far fa-lightbulb&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/abafad49-e763-4717-bd13-b476b8ca9e68.pdf?size=letter&#34;&gt;CS50X Introduction to Computer Science&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://drive.google.com/file/d/19JRfNwXkCyZfpyccF2Ol1QaXqsk4jXeA/view?usp=sharing&#34;&gt;WebDev - Front End Web Development&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.coursera.org/account/accomplishments/specialization/certificate/FCRCG62QHYBN&#34;&gt;Google IT Support&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h2&gt;Github&lt;/h2&gt;
+&lt;p&gt;
+  You can find repositories of these and other projects in &lt;a href=&#34;https://github.com/mariobox/&#34;&gt;Github&lt;/a&gt;.
+&lt;/P&gt;
+&lt;h2&gt;Stack&lt;/h2&gt;
+&lt;p&gt;
+  If you&#39;re curious about what tools I&#39;m using for development visit my &lt;a href=&#34;https://mariosanchez.org/uses/&#34;&gt;Uses&lt;/a&gt; page.
+&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>RSVP App with Bottle and SQLite</title>
       <link>https://mariosanchez.org/code/bottle-sql/</link>
@@ -50,7 +108,7 @@
       
       <guid>https://mariosanchez.org/posts/coding1123/</guid>
       <description>&lt;p&gt;For the last two weeks I have been focusing on practice projects. I had been spending most of my time in online coding courses, but I noticed that I was forgetting what I learned because I didn&amp;rsquo;t practice.&lt;/p&gt;
-&lt;p&gt;I have recently completed four practice projects, encompassing Python, JavaScript and SQL. I am summarizing the projects below, and including a link to their &lt;a href=&#34;https://github.com/mariobox?tab=repositories&#34;&gt;Github repositories&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;I have recently completed several practice projects, encompassing Python, JavaScript and SQL. I am summarizing the projects below, and including a link to their Github repositories:&lt;/p&gt;
 &lt;h2 id=&#34;quiz-app&#34;&gt;Quiz App&lt;/h2&gt;
 &lt;p&gt;Console app that prompts the user for answers to different questions. It tallies the total correct answers vs. total answers submitted, and displays the final score once the quiz is over. It is implemented with Python object oriented programming.
 &lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/python-oop-quiz&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -60,15 +118,13 @@
 &lt;h2 id=&#34;rgb-to-hex-converter&#34;&gt;RGB to Hex Converter&lt;/h2&gt;
 &lt;p&gt;Web app that displays the hex value for a provided RGB value. For example, a RGB value of &lt;code&gt;RGB(234,58,100)&lt;/code&gt; will give you a hex value of &lt;code&gt;#EA3A64&lt;/code&gt;.
 The app is developed in JavaScript, using different DOM manipulation and event listening functions.
-&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/rgb-to-hex&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/rgb-to-hex&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;http://mariosanchez.org/rgb-to-hex/&#34;&gt;Live Demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;web-scraping-for-database-analysis&#34;&gt;Web Scraping for Database Analysis&lt;/h2&gt;
 &lt;p&gt;Console app that uses Python&amp;rsquo;s web scraping package &lt;a href=&#34;https://beautiful-soup-4.readthedocs.io/en/latest/&#34;&gt;BeautifulSoup&lt;/a&gt; to extract information from a soccer database site, and then cleans and formats the data so that in can be imported into a &lt;code&gt;SQLite&lt;/code&gt; database where we can perform analysis by running different queries. It uses Python regular expressions and string manipulation functions to clean up the data.
 &lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/bs4-and-sql&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;web-app-with-bottle-and-sqlite&#34;&gt;Web App with Bottle and SQLite&lt;/h2&gt;
 &lt;p&gt;Web app that combines Python-based web framework &lt;a href=&#34;https://bottlepy.org&#34;&gt;Bottle&lt;/a&gt; with SQLite. The app lets users register for a party, submitting their name, how many people will come with them, and what they will bring. The HTML form includes a text field, a drop-down menu and radio buttons. The app connects to SQLite so that we can update and retrieve information from the database.
 &lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/bottle-sql&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://mysterious-temple-24688-9fdd99ca6559.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s Next&lt;/h2&gt;
-&lt;p&gt;In the next few days I&amp;rsquo;ll begin exploring some web programming in Python with frameworks like &lt;a href=&#34;https://bottlepy.org/docs/dev/&#34;&gt;Bottle&lt;/a&gt; and &lt;a href=&#34;https://flask.palletsprojects.com/en/3.0.x/&#34;&gt;Flask&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -327,58 +383,6 @@ By kicking the can, our elected officials are not only not solving the problem: 
     </item>
     
     <item>
-      <title>About Me</title>
-      <link>https://mariosanchez.org/about/</link>
-      <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/about/</guid>
-      <description>&lt;div class=&#34;picbox&#34;&gt;&lt;figure&gt;&lt;img src=&#34;https://mariosanchez.org/img/ire3.jpg&#34; class=&#34;gallery medium&#34;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;p&gt;My name is &lt;strong&gt;Mario Sanchez Carrion&lt;/strong&gt; and this is my personal website.&lt;/p&gt;
-&lt;p&gt;I recently retired from the corporate world, after 30+ years in marketing and international business, and I&amp;rsquo;m currently experimenting with location independence, living in different cities for periods that go from several weeks to several months.&lt;/p&gt;
-&lt;p&gt;I am also pursuing my passion for coding by following a daily coding habit, and completing &lt;a href=&#34;https://mariosanchez.org/coding/&#34;&gt;projects&lt;/a&gt; and &lt;a href=&#34;https://mariosanchez.org/#certifications&#34;&gt;certifications&lt;/a&gt;. I am mostly pursuing data analysis through Python&amp;rsquo;s libraries (Pandas, Numpy, Matplotlib, Seaborn and others) and SQL. I&amp;rsquo;m also interested in back end web development.&lt;/p&gt;
-&lt;p&gt;Aside from coding I am tutoring in Math and SAT/ACT test preparation, and evaluating business opportunities that match my values and fit my new location-independent lifestyle.&lt;/p&gt;
-&lt;p&gt;You can contact me by email at mario (at) mariosanchez (dot) org, or following the social media icons at the footer of this page.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Coding</title>
-      <link>https://mariosanchez.org/coding/</link>
-      <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/coding/</guid>
-      <description>&lt;p&gt;These are some of my programming projects. They have been developed with HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. Some of them are personal projects and others are final projects of courses and certifications.&lt;/p&gt;
-&lt;h2&gt;💻 Projects&lt;/h2&gt;
-    &lt;p class=&#34;list&#34;&gt;
-      &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/bottle-sql/&#34;&gt;RSVP App with Bottle and SQLite&lt;/a&gt;&lt;br /&gt;
-      &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/pynt/&#34;&gt;Pynt: Static Site Generator with Python&lt;/a&gt;&lt;br /&gt;
-      &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/commerce/&#34;&gt;Auction Site With Django&lt;/a&gt;&lt;br /&gt;
-      &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/moon/&#34;&gt;Moon Phase With JavaScript&lt;/a&gt;&lt;br /&gt;
-      &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/dark/&#34;&gt;Dark Theme Switch with JavaScript&lt;/a&gt;&lt;br /&gt;
-      &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/flaskecomm/&#34;&gt;ECommerce Front End with Flask and SQL&lt;/a&gt;&lt;br /&gt;
-      &lt;i class=&#34;fab fa-react&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/micro-blog/&#34;&gt;Twitter Clone with React&lt;/a&gt;&lt;br /&gt; 
-      &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/rei/&#34;&gt;Bootstrap Real Estate Website&lt;/a&gt;&lt;br /&gt;
-      &lt;/p&gt;
-&lt;h2 id=&#34;certifications&#34;&gt;🎓 Certifications&lt;/h2&gt;
-&lt;p class=&#34;list&#34;&gt;
-  &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/f66eedcb-f7d7-4d59-93e1-3170943b6108.pdf?size=letter&#34;&gt;CS50SQL Introduction to Databases with SQL&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;fa-solid fa-gear&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/foundational-c-sharp-with-microsoft&#34;&gt;Foundational C# with Microsoft&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/relational-database-v8&#34;&gt;Relational Databases and SQL&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/javascript-algorithms-and-data-structures&#34;&gt;JavaScript Algorithms and Data Structures&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;far fa-chart-bar&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://freecodecamp.org/certification/mariobox/data-analysis-with-python-v7&#34;&gt;Data Analysis with Python&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/scientific-computing-with-python-v7&#34;&gt;Scientific Computing with Python&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/bc8a572e-b437-4d8a-afc3-6494a43d071a&#34;&gt;CS50P Introduction to Programming in Python&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;far fa-lightbulb&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/abafad49-e763-4717-bd13-b476b8ca9e68.pdf?size=letter&#34;&gt;CS50X Introduction to Computer Science&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://drive.google.com/file/d/19JRfNwXkCyZfpyccF2Ol1QaXqsk4jXeA/view?usp=sharing&#34;&gt;WebDev - Front End Web Development&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.coursera.org/account/accomplishments/specialization/certificate/FCRCG62QHYBN&#34;&gt;Google IT Support&lt;/a&gt;&lt;br /&gt;
-&lt;/p&gt;
-&lt;h2&gt;Github&lt;/h2&gt;
-&lt;p&gt;
-  You can find repositories of these and other projects in &lt;a href=&#34;https://github.com/mariobox/&#34;&gt;Github&lt;/a&gt;.
-&lt;/P&gt;</description>
-    </item>
-    
-    <item>
       <title>Pynt: A Static Site Generator Made with Python</title>
       <link>https://mariosanchez.org/code/pynt/</link>
       <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
@@ -571,7 +575,7 @@ By kicking the can, our elected officials are not only not solving the problem: 
       
       <guid>https://mariosanchez.org/photos/</guid>
       <description>&lt;div&gt;
-    &lt;p&gt;I have been experimenting with location independence since 2020, staying for periods of several weeks to several months in different places. I usually take pictures of the places I go and post a few of them here.&lt;/p&gt;    
+    &lt;p&gt;I have been experimenting with location independence since 2022, staying for periods of several weeks to several months in different places. I usually take pictures of the places I go and post a few of them here.&lt;/p&gt;    
     &lt;p&gt;All pictures were taken by me using my phone. The picture gallery is made with JavaScript and some CSS. If you want to build a similar gallery for your site here&#39;s &lt;a href=&#34;https://mariosanchez.org/project/photos/&#34;&gt;how to do it&lt;/a&gt;.&lt;/p&gt;
     &lt;br /&gt;
     &lt;p id=&#34;pix&#34;&gt;&lt;/p&gt;
