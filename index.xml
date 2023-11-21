@@ -1468,7 +1468,7 @@ document.getElementById&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span clas
       
       <guid>https://mariosanchez.org/code/flaskecomm/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/flask-ecomm&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;http://mariosanchezcarrion.com:5000&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/flask-ecomm&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://murmuring-sea-57778-80e8191256cd.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;This app was my &lt;a href=&#34;https://www.edx.org/course/cs50s-introduction-to-computer-science&#34;&gt;CS50x&lt;/a&gt; final project.&lt;/p&gt;
 &lt;p&gt;The app loads a gallery of soccer shirts that includes: image, description, price, and a small form to add item to cart. The shirt info is stored in a SQLite database and is displayed using Bootstrap&amp;rsquo;s card class.&lt;/p&gt;
