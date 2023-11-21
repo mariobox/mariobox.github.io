@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>RSVP App with Bottle and SQLite | mariosanchez.org</title>
+    <meta name="author" content="Mario Sanchez Carrion">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="/js/theme.js"></script>
+    <script src="https://kit.fontawesome.com/8a184157fa.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/minimal.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <a href="/">
+      <div class="avatar">
+        <a style="cursor:pointer;">
+        <span id="toggle-switch"> <i class="fas fa-sun fa-2x hd"></i></span><br />
+        </a>
+      </div>
+    </a>
+    <div class="centered logo">
+      <a href="/"><img src="/img/mario-pix-dk.png" width="150" /></a>
+    </div>
+      <nav>
+        <ul>
+	  <li>
+ 	    <a href="/">home</a>
+          <li>
+            <a href="/posts/">blog</a>
+          </li>
+          <li>
+            <a href="/coding/">coding</a>
+          </li>
+          <li>
+            <a href="/uses/">stack</a>
+          </li>
+          <li>
+            <a href="/photos/">photos</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+
+
+<main id="main">
+  <h1>RSVP App with Bottle and SQLite</h1>
+  <p class="description"></p>  
+  <hr />
+    <article id="content">
+    <p><strong>Made with</strong>: <i class="fab fa-python"></i> Python and <i class="fa-solid fa-database"></i> SQLite</p>
+<p><a href="https://github.com/mariobox/bottle-sql">Source Files</a> | <a href="https://mysterious-temple-24688-9fdd99ca6559.herokuapp.com/">Live Demo</a> <hr class="art"></p>
+<p>This is a simple web application that let&rsquo;s users rsvp for a party, indicating their name, number of people coming with them, and what will they bring.</p>
+<p>The app implements routes using the <a href="https://bottlepy.org">Bottle</a> web framework, following the <a href="https://www.geeksforgeeks.org/mvc-design-pattern/#">MVC design pattern</a>.</p>
+<h2 id="routes">Routes</h2>
+<ol>
+<li>
+<p><code>/</code> (or index route): This route renders the entry point to the app, and presents the user with a web form to fill in their information. All fields are required. If any field is not completed, the app will re-route the user to the same page to try again. If all input has been entered and is valid, the user will be directed to a confirmation page where a message will indicate that their rsvp was successful.</p>
+</li>
+<li>
+<p><code>/registered</code>: This route uses the HTTP <code>POST</code> method (as indicated in the route decorator). It captures information from the user via Bottle&rsquo;s <code>request</code> object, loads that information to our database, and sends the information to the <code>registered.tpl</code> template to display a message signaling the user&rsquo;s successful rsvp for the event (e.g. &lsquo;Mario party of 4 will bring beer&rsquo;)</p>
+</li>
+<li>
+<p><code>/going</code> (list of people attending): This route displays a list of the people who have rsvp&rsquo;ed, together with the number of people coming with them and what will they bring</p>
+</li>
+<li>
+<p><code>/&lt;food&gt;</code>: This is a dynamic route that displays an unordered list of people who have commited to bringing the particular food listed in the URL. The way Bottle works allows this part of the URL to be passed as an argument to the function and then to the templates. This route shares a template with the <code>/going</code> route.</p>
+</li>
+</ol>
+<h2 id="database">Database</h2>
+<p>The app uses a SQLite database to store the information. The database is accessed from the app via connections, as needed. The two main operations are: add a user to the database (<code>INSERT</code>), and retrieve (<code>SELECT</code>) users for display in the attendees list, or list of attendees bringing a particular food. Before the database can be used it needs to be created (in this case <code>rsvp.db</code>) and initialized with a table (which we named <code>reserved</code>). To create our database and our table, we run the following command once: <code>python3 create_db.py</code> prior to running our app.</p>
+<h2 id="templates">Templates</h2>
+<p>The app uses Bottle&rsquo;s default Simple Template Engine. The <code>header</code> and the <code>footer</code> are stored in their own templates, which can be called by any other template. That way, if there are any changes to the header or footer we only have to change those pages instead of every page of our site.</p>
+<p>The <code>index.tpl</code> displays the main page of our application, containing an HTML form to capture information from the user. The form implements three types of input: text input, drop down menu and radio buttons. We capture information and send it to the app via Bottle&rsquo;s <code>request</code> object.</p>
+<p>The <code>registered.tpl</code> displays a confirmation message after users successfully rsvp for the event.</p>
+<p>The <code>going.tpl</code> template shows an implementation of a python <code>for</code> loop and <code>if</code> statements, to generate the <code>&lt;li&gt;</code> elements on a list of attendees. <code>for</code> loops, as well as <code>while</code> loops and <code>if-else</code> statements, need to be preceded by <code>%</code> and closed with <code>% end</code> in order to work. <strong>Important note</strong>: you don&rsquo;t need to use curly brackets around the variables in loops and conditional statements, only in the HTML.</p>
+<p>Note that we are using the <code>going.tpl</code> template for two different views: the attendee list, and the different food specific pages listing the people bringing that food. We implemented this using <code>if-else</code> conditions that evaluate the length of the arguments passed to the template: if length is 3, we can assume we need to display the list of attendees. If we only pass the name of the person and the food type, we can asume we need to display the contents of the food specific view. Notice also that we print a specific message when nobody is bringing a particular food (e.g. &ldquo;So far, nobody is bringing salad :&quot;).</p>
+
+    </article>  
+</main>
+<p class="small upper light">Last updated: Nov 20, 2023</p>
+<p><a href="/tags/"></a></p>
+
+<hr />
+
+<form action="https://tinyletter.com/mariosanchez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/mariosanchez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">If you enjoyed my content please consider joining my private email list:</label></p><p><input type="text" placeholder="you@example.com" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Join" /><p class="small"><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p></form>
+
+<br />
+<br />
+  <p class="centered">
+    <span class="social">  
+      <a href="https://mariosanchez.org/posts/index.xml" title="RSS"><i class="fa ft fa-rss" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/mariobox/" title="Linkedin"><i class="fab ft fa-linkedin fa-lg"></i></a>
+      <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+      <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+    </span>
+  </p>
+  <p class="centered small">
+    &copy; 2023 Mario Sanchez Carrion
+  </p>
+  
+</div>
+</body>
+</html>
+
+

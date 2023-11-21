@@ -6,7 +6,43 @@
     <description>Recent content in Code on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RSVP App with Bottle and SQLite</title>
+      <link>https://mariosanchez.org/code/bottle-sql/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/code/bottle-sql/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python and &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; SQLite&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/bottle-sql&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mysterious-temple-24688-9fdd99ca6559.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt; &lt;hr class=&#34;art&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is a simple web application that let&amp;rsquo;s users rsvp for a party, indicating their name, number of people coming with them, and what will they bring.&lt;/p&gt;
+&lt;p&gt;The app implements routes using the &lt;a href=&#34;https://bottlepy.org&#34;&gt;Bottle&lt;/a&gt; web framework, following the &lt;a href=&#34;https://www.geeksforgeeks.org/mvc-design-pattern/#&#34;&gt;MVC design pattern&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;routes&#34;&gt;Routes&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/&lt;/code&gt; (or index route): This route renders the entry point to the app, and presents the user with a web form to fill in their information. All fields are required. If any field is not completed, the app will re-route the user to the same page to try again. If all input has been entered and is valid, the user will be directed to a confirmation page where a message will indicate that their rsvp was successful.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/registered&lt;/code&gt;: This route uses the HTTP &lt;code&gt;POST&lt;/code&gt; method (as indicated in the route decorator). It captures information from the user via Bottle&amp;rsquo;s &lt;code&gt;request&lt;/code&gt; object, loads that information to our database, and sends the information to the &lt;code&gt;registered.tpl&lt;/code&gt; template to display a message signaling the user&amp;rsquo;s successful rsvp for the event (e.g. &amp;lsquo;Mario party of 4 will bring beer&amp;rsquo;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/going&lt;/code&gt; (list of people attending): This route displays a list of the people who have rsvp&amp;rsquo;ed, together with the number of people coming with them and what will they bring&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/&amp;lt;food&amp;gt;&lt;/code&gt;: This is a dynamic route that displays an unordered list of people who have commited to bringing the particular food listed in the URL. The way Bottle works allows this part of the URL to be passed as an argument to the function and then to the templates. This route shares a template with the &lt;code&gt;/going&lt;/code&gt; route.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;database&#34;&gt;Database&lt;/h2&gt;
+&lt;p&gt;The app uses a SQLite database to store the information. The database is accessed from the app via connections, as needed. The two main operations are: add a user to the database (&lt;code&gt;INSERT&lt;/code&gt;), and retrieve (&lt;code&gt;SELECT&lt;/code&gt;) users for display in the attendees list, or list of attendees bringing a particular food. Before the database can be used it needs to be created (in this case &lt;code&gt;rsvp.db&lt;/code&gt;) and initialized with a table (which we named &lt;code&gt;reserved&lt;/code&gt;). To create our database and our table, we run the following command once: &lt;code&gt;python3 create_db.py&lt;/code&gt; prior to running our app.&lt;/p&gt;
+&lt;h2 id=&#34;templates&#34;&gt;Templates&lt;/h2&gt;
+&lt;p&gt;The app uses Bottle&amp;rsquo;s default Simple Template Engine. The &lt;code&gt;header&lt;/code&gt; and the &lt;code&gt;footer&lt;/code&gt; are stored in their own templates, which can be called by any other template. That way, if there are any changes to the header or footer we only have to change those pages instead of every page of our site.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;index.tpl&lt;/code&gt; displays the main page of our application, containing an HTML form to capture information from the user. The form implements three types of input: text input, drop down menu and radio buttons. We capture information and send it to the app via Bottle&amp;rsquo;s &lt;code&gt;request&lt;/code&gt; object.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;registered.tpl&lt;/code&gt; displays a confirmation message after users successfully rsvp for the event.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;going.tpl&lt;/code&gt; template shows an implementation of a python &lt;code&gt;for&lt;/code&gt; loop and &lt;code&gt;if&lt;/code&gt; statements, to generate the &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; elements on a list of attendees. &lt;code&gt;for&lt;/code&gt; loops, as well as &lt;code&gt;while&lt;/code&gt; loops and &lt;code&gt;if-else&lt;/code&gt; statements, need to be preceded by &lt;code&gt;%&lt;/code&gt; and closed with &lt;code&gt;% end&lt;/code&gt; in order to work. &lt;strong&gt;Important note&lt;/strong&gt;: you don&amp;rsquo;t need to use curly brackets around the variables in loops and conditional statements, only in the HTML.&lt;/p&gt;
+&lt;p&gt;Note that we are using the &lt;code&gt;going.tpl&lt;/code&gt; template for two different views: the attendee list, and the different food specific pages listing the people bringing that food. We implemented this using &lt;code&gt;if-else&lt;/code&gt; conditions that evaluate the length of the arguments passed to the template: if length is 3, we can assume we need to display the list of attendees. If we only pass the name of the person and the food type, we can asume we need to display the contents of the food specific view. Notice also that we print a specific message when nobody is bringing a particular food (e.g. &amp;ldquo;So far, nobody is bringing salad :&amp;quot;).&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Pynt: A Static Site Generator Made with Python</title>
       <link>https://mariosanchez.org/code/pynt/</link>
