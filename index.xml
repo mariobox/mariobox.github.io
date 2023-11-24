@@ -6,7 +6,23 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Photo Gallery</title>
+      <link>https://mariosanchez.org/photos/</link>
+      <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/photos/</guid>
+      <description>&lt;div&gt;
+    &lt;p&gt;I have been experimenting with location independence since 2022, staying for periods of several weeks to several months in different places. I usually take pictures of the places I go and post a few of them here.&lt;/p&gt;    
+    &lt;p&gt;All pictures were taken by me using my phone. The picture gallery is made with JavaScript and some CSS. If you want to build a similar gallery for your site here&#39;s &lt;a href=&#34;https://mariosanchez.org/project/photos/&#34;&gt;how to do it&lt;/a&gt;.&lt;/p&gt;
+    &lt;br /&gt;
+    &lt;p id=&#34;pix&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;script src=&#34;https://mariosanchez.org/js/pix.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
     <item>
       <title>About Me</title>
       <link>https://mariosanchez.org/about/</link>
@@ -31,7 +47,7 @@
       <guid>https://mariosanchez.org/coding/</guid>
       <description>&lt;p&gt;These are some of my programming projects. They have been developed with HTML, CSS, JavaScript, Python, and some of the most popular libraries and frameworks: ReactJS, Express, Flask and Django. Some of them are personal projects and others are final projects of courses and certifications.&lt;/p&gt;
 &lt;h2&gt;💻 Projects&lt;/h2&gt;
-    &lt;p class=&#34;list&#34;&gt;
+    &lt;p class=&#34;list bullet&#34;&gt;
       &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/bottle-sql/&#34;&gt;RSVP App with Bottle and SQLite&lt;/a&gt;&lt;br /&gt;
       &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/pynt/&#34;&gt;Pynt: Static Site Generator with Python&lt;/a&gt;&lt;br /&gt;
       &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/commerce/&#34;&gt;Auction Site With Django&lt;/a&gt;&lt;br /&gt;
@@ -41,17 +57,18 @@
       &lt;i class=&#34;fab fa-react&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/micro-blog/&#34;&gt;Twitter Clone with React&lt;/a&gt;&lt;br /&gt; 
       &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://mariosanchez.org/code/rei/&#34;&gt;Bootstrap Real Estate Website&lt;/a&gt;&lt;br /&gt;
       &lt;/p&gt;
+      &lt;p&gt;&lt;a href=&#34;https://mariosanchez.org/code/&#34;&gt;All Projects&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;certifications&#34;&gt;🎓 Certifications&lt;/h2&gt;
-&lt;p class=&#34;list&#34;&gt;
+&lt;p class=&#34;list bullet&#34;&gt;
   &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/f66eedcb-f7d7-4d59-93e1-3170943b6108.pdf?size=letter&#34;&gt;CS50SQL Introduction to Databases with SQL&lt;/a&gt;&lt;br /&gt;
   &lt;i class=&#34;fa-solid fa-gear&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/foundational-c-sharp-with-microsoft&#34;&gt;Foundational C# with Microsoft&lt;/a&gt;&lt;br /&gt;
   &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/relational-database-v8&#34;&gt;Relational Databases and SQL&lt;/a&gt;&lt;br /&gt;
   &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/javascript-algorithms-and-data-structures&#34;&gt;JavaScript Algorithms and Data Structures&lt;/a&gt;&lt;br /&gt;
   &lt;i class=&#34;fa-solid fa-gear&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://coursera.org/share/0168b3865fa7c7107114726e339d71a6&#34;&gt;Django Certification - U of Michigan&lt;/a&gt;&lt;br /&gt;
   &lt;i class=&#34;far fa-chart-bar&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://freecodecamp.org/certification/mariobox/data-analysis-with-python-v7&#34;&gt;Data Analysis with Python&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/scientific-computing-with-python-v7&#34;&gt;Scientific Computing with Python&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/scientific-computing-with-python-v7&#34;&gt;Scientific Computing with Python]&lt;/a&gt;&lt;br /&gt;
   &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/bc8a572e-b437-4d8a-afc3-6494a43d071a&#34;&gt;CS50P Introduction to Programming in Python&lt;/a&gt;&lt;br /&gt;
-  &lt;i class=&#34;far fa-lightbulb&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/abafad49-e763-4717-bd13-b476b8ca9e68.pdf?size=letter&#34;&gt;CS50X Introduction to Computer Science&lt;/a&gt;&lt;br /&gt;
+  &lt;i class=&#34;far fa-lightbulb&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://certificates.cs50.io/abafad49-e763-4717-bd13-b476b8ca9e68.pdf?size=letter&#34;&gt;CS50X Introduction to Computer Science and the Art of Programming]&lt;/a&gt;&lt;br /&gt;
   &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://drive.google.com/file/d/19JRfNwXkCyZfpyccF2Ol1QaXqsk4jXeA/view?usp=sharing&#34;&gt;WebDev - Front End Web Development&lt;/a&gt;&lt;br /&gt;
   &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.coursera.org/account/accomplishments/specialization/certificate/FCRCG62QHYBN&#34;&gt;Google IT Support&lt;/a&gt;&lt;br /&gt;
 &lt;/p&gt;
@@ -72,7 +89,7 @@
       
       <guid>https://mariosanchez.org/code/bottle-sql/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python and &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; SQLite&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/bottle-sql&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mysterious-temple-24688-9fdd99ca6559.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt; &lt;hr class=&#34;art&#34;&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/bottle-sql&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mysterious-temple-24688-9fdd99ca6559.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;This is a simple web application that let&amp;rsquo;s users rsvp for a party, indicating their name, number of people coming with them, and what will they bring.&lt;/p&gt;
 &lt;p&gt;The app implements routes using the &lt;a href=&#34;https://bottlepy.org&#34;&gt;Bottle&lt;/a&gt; web framework, following the &lt;a href=&#34;https://www.geeksforgeeks.org/mvc-design-pattern/#&#34;&gt;MVC design pattern&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;routes&#34;&gt;Routes&lt;/h2&gt;
@@ -273,7 +290,7 @@ and the RSS reader will display their updated content in a neatly organized dash
 &lt;p&gt;&lt;strong&gt;Text Editor&lt;/strong&gt;: &lt;a href=&#34;https://vim.org&#34;&gt;Vim&lt;/a&gt;. I had been using &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;Visual Studio Code&lt;/a&gt;, which is a great text editor, but I&amp;rsquo;m now using (and still learning) Vim, due to a personal choice to move away from tools made by large corporations and embracing open source alternatives. The learning curve is steep, but like with anything worthwhile practice makes perfect.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: I alternate between &lt;a href=&#34;https://digitalocean&#34;&gt;Digital Ocean&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;. I am currently using Github Pages, but I&amp;rsquo;m also operating a VPS for some project demos that require back end functionality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: I alternate between &lt;a href=&#34;https://heroku.com&#34;&gt;Heroku&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;. I am currently using Github Pages for this site, but I&amp;rsquo;m using Heroku for some project demos that require back end functionality.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;SSL/TLS Certificate&lt;/strong&gt;: &lt;a href=&#34;https://letsencrypt.org&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;. That lets me serve this site through &lt;a href=&#34;../https/&#34;&gt;HTTPS&lt;/a&gt;. With &lt;a href=&#34;https://pages.github.com&#34;&gt;Github Pages&lt;/a&gt; you now get SSL by default.
@@ -523,8 +540,7 @@ By kicking the can, our elected officials are not only not solving the problem: 
       
       <guid>https://mariosanchez.org/code/commerce/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/cs50w-commerce&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;http://mariosanchezcarrion.com:8000&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
+&lt;p class=&#34;bullet list&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/cs50w-commerce&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;http://mariosanchezcarrion.com:8000&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;This app was my implementation of &lt;a href=&#34;https://cs50.harvard.edu/web/2020/projects/2/commerce/&#34;&gt;CS50W&lt;/a&gt;&amp;lsquo;s Project 2, which involves Django, SQL, Models and Migrations.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/8TZa5IB4Q-g&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;Here are the specs:&lt;/p&gt;
@@ -565,22 +581,6 @@ By kicking the can, our elected officials are not only not solving the problem: 
 &lt;li&gt;&lt;a href=&#34;http://mariosanchezcarrion.com:8000&#34;&gt;Working Demo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/8TZa5IB4Q-g&#34;&gt;Youtube Video&lt;/a&gt; of the site in action&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Photo Gallery</title>
-      <link>https://mariosanchez.org/photos/</link>
-      <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/photos/</guid>
-      <description>&lt;div&gt;
-    &lt;p&gt;I have been experimenting with location independence since 2022, staying for periods of several weeks to several months in different places. I usually take pictures of the places I go and post a few of them here.&lt;/p&gt;    
-    &lt;p&gt;All pictures were taken by me using my phone. The picture gallery is made with JavaScript and some CSS. If you want to build a similar gallery for your site here&#39;s &lt;a href=&#34;https://mariosanchez.org/project/photos/&#34;&gt;how to do it&lt;/a&gt;.&lt;/p&gt;
-    &lt;br /&gt;
-    &lt;p id=&#34;pix&#34;&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;script src=&#34;https://mariosanchez.org/js/pix.js&#34;&gt;&lt;/script&gt;
 </description>
     </item>
     
@@ -662,8 +662,7 @@ By kicking the can, our elected officials are not only not solving the problem: 
       
       <guid>https://mariosanchez.org/code/moon/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/moon-phases/&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/moon-phases/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
-&lt;hr class=&#34;art&#34; /&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/moon-phases/&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/moon-phases/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;I wanted a simple web page to show today&amp;rsquo;s date, moon phase and percentage illumination, plus a nice picture of the moon.&lt;/p&gt;
 &lt;img src=&#34;https://mariosanchez.org/img/moon.jpg&#34; class=&#34;gallery medium&#34;&gt;
 &lt;p&gt;My first step was to find an API that I could call to retrieve today&amp;rsquo;s moon phase and illumination. After some research I found the &lt;a href=&#34;https://farmsense.net&#34;&gt;Farmsense&lt;/a&gt; moon phase API. The API accepts a date as a parameter, formatted in milliseconds (&lt;a href=&#34;https://currentmillis.com/&#34;&gt;Unix Time&lt;/a&gt;), but only takes the first ten digits.&lt;/p&gt;
@@ -684,7 +683,7 @@ By kicking the can, our elected officials are not only not solving the problem: 
       <guid>https://mariosanchez.org/code/covid19/</guid>
       <description>&lt;img src=&#34;https://mariosanchez.org/img/covid.png&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/covid-dashboard&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;http://mariosanchezcarrion.com:1313&#34;&gt;Live Demo&lt;/a&gt; &lt;hr class=&#34;art&#34;&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet list&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/covid-dashboard&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;http://mariosanchezcarrion.com:1313&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;This is a practice project in Python using the Covid package, which lets us retrieve information about Covid-19 from John Hopkins API.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;application.py&lt;/code&gt; file contains our program logic.&lt;/p&gt;
 &lt;p&gt;We start by importing the package that will provide us with the data:&lt;/p&gt;
@@ -721,7 +720,7 @@ By kicking the can, our elected officials are not only not solving the problem: 
       
       <guid>https://mariosanchez.org/code/csvlist/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-node&#34;&gt;&lt;/i&gt; Node and Express&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/add-to-mailing-list&#34;&gt;Source Files&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/add-to-mailing-list&#34;&gt;Source Files&lt;/a&gt;&lt;/p&gt;
 &lt;hr class=&#34;art&#34; /&gt;
 &lt;p&gt;This is a simple server-side application made with Node and Express.&lt;/p&gt;
 &lt;img src=&#34;https://mariosanchez.org/img/csvlist.png&#34;&gt;
@@ -970,6 +969,7 @@ Password: BmWWp#S4
       
       <guid>https://mariosanchez.org/code/express/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-node&#34;&gt;&lt;/i&gt; Node and Express&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/express-demo&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mjq48.sse.codesandbox.io/&#34;&gt;Live Demo&lt;/a&gt; &lt;hr class=&#34;art&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/express-demo&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mjq48.sse.codesandbox.io/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
 &lt;hr class=&#34;art&#34; /&gt;
 &lt;p&gt;Before we go to our example site, let&amp;rsquo;s talk about Express:&lt;/p&gt;
@@ -1041,8 +1041,7 @@ Password: BmWWp#S4
       
       <guid>https://mariosanchez.org/code/dark/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/dark&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/dark&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;
-&lt;hr class=&#34;art&#34; /&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/dark&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/dark&#34;&gt;Live Demo&lt;/a&gt; &lt;hr class=&#34;art&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We will implement a dark theme selector for our site that visitors can activate by clicking on an icon. We will discuss what we have to do to the HTML, CSS and JavaScript files that make up our site to make that happen.&lt;/p&gt;
 &lt;h2 id=&#34;the-html&#34;&gt;The HTML&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--DOCTYPE--&amp;gt;&lt;/span&gt;
@@ -1144,7 +1143,7 @@ Password: BmWWp#S4
       
       <guid>https://mariosanchez.org/code/fx/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/fx-watcher&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/fx-watcher&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/fx-watcher&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/fx-watcher&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: The API I was using for this project is not in business any more, so the demo will not work. I am looking for a new API to adapt this project and make it work again.&lt;/p&gt;
 &lt;hr class=&#34;art&#34; /&gt;
 &lt;p&gt;We will create a mobile web app that will display the current exchange of a basket of currencies versus the US dollar. Besides the current rate we also want to display the &lt;strong&gt;YTD % devaluation&lt;/strong&gt; (or revaluation) for each of the currencies.&lt;/p&gt;
@@ -1225,7 +1224,7 @@ document.getElementById&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span clas
       
       <guid>https://mariosanchez.org/code/airlines/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/airlines&#34;&gt;Source Files&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/airlines&#34;&gt;Source Files&lt;/a&gt;&lt;/p&gt;  
 &lt;hr class=&#34;art&#34; /&gt;
 &lt;p&gt;With this simple app we can type the name (or part of the name) of an airline in a form, and upon &lt;em&gt;Submit&lt;/em&gt; we get a list of airlines that match our input followed by its IATA symbol. For example, you can type “american” in the search box:&lt;/p&gt;
 &lt;img src=&#34;https://mariobox.github.io/airlines/iata-search.jpg&#34;&gt;
@@ -1472,8 +1471,7 @@ document.getElementById&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span clas
       
       <guid>https://mariosanchez.org/code/flaskecomm/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/flask-ecomm&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://murmuring-sea-57778-80e8191256cd.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/flask-ecomm&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://murmuring-sea-57778-80e8191256cd.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;This app was my &lt;a href=&#34;https://www.edx.org/course/cs50s-introduction-to-computer-science&#34;&gt;CS50x&lt;/a&gt; final project.&lt;/p&gt;
 &lt;p&gt;The app loads a gallery of soccer shirts that includes: image, description, price, and a small form to add item to cart. The shirt info is stored in a SQLite database and is displayed using Bootstrap&amp;rsquo;s card class.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://66.media.tumblr.com/186f34c7243200b24693260946874509/tumblr_pkaxbfmFxT1qz7ur9o1_1280.png&#34; /&gt;&lt;/p&gt;
@@ -1507,7 +1505,7 @@ flask run
       <guid>https://mariosanchez.org/code/micro-blog/</guid>
       <description>&lt;img src=&#34;https://mariosanchez.org/img/micro-blog.png&#34; class=&#34;profile&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-react&#34;&gt;&lt;/i&gt; ReactJS&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/react-micro-blog&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/react-micro-blog&#34;&gt;Live Demo&lt;/a&gt;&lt;hr class=&#34;art&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/react-micro-blog&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/react-micro-blog&#34;&gt;Live Demo&lt;/a&gt; &lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;This front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax.&lt;/p&gt;
 &lt;p&gt;We start by running &lt;a href=&#34;https://create-react-app.dev/&#34;&gt;Create React App&lt;/a&gt;, which provides the scaffolding for our site and performs all the lifting so that we can focus on the code.&lt;/p&gt;
 &lt;p&gt;Our app has six components:&lt;/p&gt;
@@ -1540,7 +1538,7 @@ flask run
       <guid>https://mariosanchez.org/code/rei/</guid>
       <description>&lt;img src=&#34;https://mariosanchez.org/img/rei.jpg&#34; class=&#34;profile&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; HTML | &lt;i class=&#34;fab fa-css3&#34;&gt;&lt;/i&gt; CSS | &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/rlo555/rlo555.github.io&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://habitatinvestors.com&#34;&gt;Live Demo&lt;/a&gt;&lt;hr class=&#34;art&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/rlo555/rlo555.github.io&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://habitatinvestors.com&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;The objective was to design a clean, efficient, and fully responsive website for a real estate investments business. It needed to clearly describe what the company did, and include easy to follow call-to-actions throughout the site.&lt;/p&gt;
 &lt;p&gt;It was made using the &lt;a href=&#34;https://startbootstrap.com/template-overviews/agency/&#34;&gt;Agency&lt;/a&gt; template for Bootstrap, a fully functional form by &lt;a href=&#34;http://formspree.io&#34;&gt;Formspree&lt;/a&gt;, and several jQuery plugins for smooth transitions and a carrousel of testimonials.&lt;/p&gt;
 &lt;p&gt;Feel free to check the &lt;a href=&#34;https://habitatinvestors.com&#34;&gt;live demo&lt;/a&gt;.&lt;/p&gt;
@@ -1635,7 +1633,7 @@ flask run
       <guid>https://mariosanchez.org/code/calc/</guid>
       <description>&lt;img src=&#34;https://mariosanchez.org/img/calc.png&#34; class=&#34;profile&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; HTML | &lt;i class=&#34;fab fa-css3&#34;&gt;&lt;/i&gt; CSS &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/the-odin-project/tree/master/calculator&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/the-odin-project/calculator/&#34;&gt;Live Demo&lt;/a&gt;&lt;hr class=&#34;art&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet list&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/the-odin-project/tree/master/calculator&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/the-odin-project/calculator//&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;Project involved creating the calculator interface with HTML and CSS and then adding fuctionality through event handlers and callback functions. It works fine, with some improvements yet to be made, like limiting the display to a certain number of digits so that they fit in the calculator window when the number is too large.&lt;/p&gt;
 &lt;p&gt;You can try it out here:&lt;/p&gt;
 &lt;div style=&#34;text-align: center&#34;&gt;
@@ -1770,8 +1768,7 @@ flask run
       <guid>https://mariosanchez.org/code/angular/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/angularjs.png&#34; class=&#34;gallery medium&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-angular&#34;&gt;&lt;/i&gt; Angular&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/angulartestsite&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/angulartestsite&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;
-&lt;hr class=&#34;art&#34; /&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/angulartestsite&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/angulartestsite&#34;&gt;Live Demo&lt;/a&gt; &lt;hr class=&#34;art&#34;&gt;&lt;/p&gt;
 &lt;p&gt;A few weeks ago I came across the concept of &lt;abbr title=&#34;Single Page Application&#34;&gt;SPA&lt;/abbr&gt;, or &lt;a href=&#34;https://en.wikipedia.org/wiki/Single-page_application&#34;&gt;Single Page Application&lt;/a&gt;, and learned that they can be created with &lt;a href=&#34;https://angularjs.org/&#34;&gt;Angular.js&lt;/a&gt;, a JavaScript library supported by Google.&lt;/p&gt;
 &lt;p&gt;Most definitions of SPA you can find online are very technical and full of jargon, so perhaps the best way a newbie web developer like me can understand it is with an example:&lt;/p&gt;
 &lt;p&gt;Suppose you have an &lt;code&gt;index.html&lt;/code&gt; web page with three different sections:&lt;/p&gt;

@@ -32,7 +32,8 @@ html.light {
 
 html.dark {
   --bck-color: #282923;
-  --box-shadow: inset 0 -0.2em rgb(255 255 255 / 40%);
+  --box-shadow: inset 0 -0.15em rgb(255 255 0 / 100%);
+  --nav-color: #34D399;
   --ft-color: #DDD;
   --link-color: #6F0; 
   --header-color: #414141; 
@@ -64,7 +65,8 @@ a:visited,
 a:active {
   text-decoration: none;
   box-shadow: var(--box-shadow);
-  color: var(--ft-color)
+  color: var(--ft-color);
+  padding-bottom: 0.3em;
 }
 	  
 a:hover,
@@ -94,7 +96,7 @@ nav {
 nav a:link,
 nav a:visited, 
 nav a:active {
-  color: var(--ft-color); 
+  color: var(--nav-color); 
   text-decoration: none; 
   box-shadow: none;
 }
@@ -102,7 +104,7 @@ nav a:active {
 nav a:hover,
     a:focus {
   color: #999;
-  text-decoration: underline;
+  text-decoration: none;
   box-shadow: none;
 }
 
@@ -199,6 +201,29 @@ figcaption {
   margin-bottom: 1.5rem;
 }
 
+.bullet a:link,
+.bullet a:visited,
+.bullet a:active {
+  content: "]";
+  color: var(--nav-color);
+  text-decoration: none; 
+  box-shadow: none;
+}
+
+.bullet a:after {
+  content: ']'
+}
+.bullet a:before {
+  content: '['
+}
+
+.bullet a:hover,
+        a:focus {
+  color: #999;
+  text-decoration: none;
+  box-shadow: none;
+}
+
 .logo a:link, 
 .logo a:visited,
 .logo a:active {
@@ -270,7 +295,6 @@ i a:active {
 
 .social a:link, a:visited, a:active {
   box-shadow: none;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -298,6 +322,48 @@ i a:active {
   border-radius: 50px;
 }
 
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+  
+  /* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #999;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box; }
 
 /* Media Queries */
 
