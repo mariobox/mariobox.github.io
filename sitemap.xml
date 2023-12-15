@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mariosanchez.org/posts/react1223/</loc>
+    <lastmod>2023-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/posts/</loc>
+    <lastmod>2023-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/tags/</loc>
+    <lastmod>2023-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/tags/tech/</loc>
+    <lastmod>2023-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mariosanchez.org/tags/life/</loc>
     <lastmod>2023-11-22T00:00:00+00:00</lastmod>
   </url>
@@ -14,11 +34,6 @@
   
   <url>
     <loc>https://mariosanchez.org/photos/</loc>
-    <lastmod>2023-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/tags/</loc>
     <lastmod>2023-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -44,16 +59,6 @@
   
   <url>
     <loc>https://mariosanchez.org/posts/coding1123/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/posts/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/tags/tech/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url>
   
