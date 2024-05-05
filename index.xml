@@ -6,7 +6,20 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now</title>
+      <link>https://mariosanchez.org/now/</link>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/now/</guid>
+      <description>&lt;p&gt;I am currently learning &lt;a href=&#34;https://www.r-project.org/about.html&#34;&gt;R&lt;/a&gt;, a programming language and environment for statistical computing and graphics.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/coding-and-mate.png&#34;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;I am also experimenting with drinking yerba mate. I like the subtle boost of energy you get from slowly going through a liter or more of water poured into a gourd of yerba. I am also attracted by the ritual itself: the very detailed steps you need to follow to brew the perfect mate.&lt;/p&gt;
+&lt;p&gt;Finally, I am getting ready for my next trip to Europe, following our tradition of escaping from the hot and humid Miami summer months.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>December of React</title>
       <link>https://mariosanchez.org/posts/react1223/</link>
@@ -555,17 +568,6 @@ By kicking the can, our elected officials are not only not solving the problem: 
 &lt;p&gt;Please feel free to contact me at:&lt;/p&gt;
 &lt;p&gt;📧 &lt;a href=&#34;mailto:mario@mariosanchez.org&#34;&gt;mario@mariosanchez.org&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;📱 (954) 309-1077&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Now</title>
-      <link>https://mariosanchez.org/now/</link>
-      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/now/</guid>
-      <description>&lt;p&gt;I am currently taking &lt;a href=&#34;https://cs50.harvard.edu/python/2022&#34;&gt;CS50P&lt;/a&gt;, Harvard&amp;rsquo;s Introduction to Programming with Python.&lt;/p&gt;
-&lt;p&gt;I am also helping students with SAT and GMAT math preparation.&lt;/p&gt;
 </description>
     </item>
     

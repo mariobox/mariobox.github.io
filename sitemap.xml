@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mariosanchez.org/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mariosanchez.org/now/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mariosanchez.org/posts/react1223/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
   </url>
@@ -24,11 +34,6 @@
   
   <url>
     <loc>https://mariosanchez.org/tags/life/</loc>
-    <lastmod>2023-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/</loc>
     <lastmod>2023-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -110,11 +115,6 @@
   <url>
     <loc>https://mariosanchez.org/tutor/</loc>
     <lastmod>2022-06-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mariosanchez.org/now/</loc>
-    <lastmod>2022-05-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
