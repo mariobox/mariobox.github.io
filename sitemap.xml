@@ -1,284 +1,172 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://mariosanchez.org/about/</loc>
     <lastmod>2024-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/</loc>
     <lastmod>2024-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/now/</loc>
     <lastmod>2024-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/react1223/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/tags/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/tags/tech/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/tags/life/</loc>
     <lastmod>2023-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/photos/</loc>
     <lastmod>2023-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/coding/</loc>
     <lastmod>2023-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/bottle-sql/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/coding1123/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/ai/</loc>
     <lastmod>2023-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/3words/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/rss/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/tags/money/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/uses/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/debt/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/vim/</loc>
     <lastmod>2022-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/posts/reboot/</loc>
     <lastmod>2022-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/pynt/</loc>
     <lastmod>2022-06-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/tutor/</loc>
     <lastmod>2022-06-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/commerce/</loc>
     <lastmod>2021-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/wiki/</loc>
     <lastmod>2021-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/shorten/</loc>
     <lastmod>2021-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/moon/</loc>
     <lastmod>2021-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/covid19/</loc>
     <lastmod>2020-12-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/csvlist/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/</loc>
     <lastmod>2020-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/pom/</loc>
     <lastmod>2020-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/pizza/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/ppl/</loc>
     <lastmod>2020-05-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/writingwell/</loc>
     <lastmod>2020-05-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/express/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/dark/</loc>
     <lastmod>2020-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/fx/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/airlines/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/photos/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/mnd/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/stocksreact/</loc>
     <lastmod>2019-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/progresscircle/</loc>
     <lastmod>2019-07-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/flaskecomm/</loc>
     <lastmod>2018-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/micro-blog/</loc>
     <lastmod>2018-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/rei/</loc>
     <lastmod>2017-06-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/ego/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/calc/</loc>
     <lastmod>2017-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/compound/</loc>
     <lastmod>2017-01-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/talkliketed/</loc>
     <lastmod>2016-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/code/angular/</loc>
     <lastmod>2016-08-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/stoic/</loc>
     <lastmod>2016-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/ayw/</loc>
     <lastmod>2016-05-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/systems/</loc>
     <lastmod>2015-09-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/ikigai/</loc>
     <lastmod>2014-10-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/booknotes/rework/</loc>
     <lastmod>2011-10-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mariosanchez.org/categories/</loc>
   </url>
-  
 </urlset>

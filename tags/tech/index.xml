@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tech on Mario Sanchez Carrion</title>
+    <title>Tech on Mario Sanchez Carrion</title>
     <link>https://mariosanchez.org/tags/tech/</link>
-    <description>Recent content in tech on Mario Sanchez Carrion</description>
+    <description>Recent content in Tech on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
@@ -137,7 +137,7 @@ Usually, you can find it by typing an URL such as these in your browser:&lt;/p&g
 &lt;li&gt;somesite.com/index.xml&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you find it, it probably looks like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/xml.jpg&#34; alt=&#34;image of an XML page&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/xml.jpg&#34; alt=&#34;image of an XML page&#34; /&gt;
 &lt;p&gt;Just for fun, follow this link: &lt;a href=&#34;https://mariosanchez.org/posts/index.xml&#34;&gt;https://mariosanchez.org/posts/index.xml&lt;/a&gt;.
 That&amp;rsquo;s the RSS feed for this site.
 In fact, try grabbing a few feeds from different sites and you&amp;rsquo;ll be ready for your next step: adding those feeds to an RSS reader.&lt;/p&gt;
@@ -146,8 +146,8 @@ In fact, try grabbing a few feeds from different sites and you&amp;rsquo;ll be r
 Three popular ones are &lt;a href=&#34;&#34;&gt;Feedly&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;Inoreader&lt;/a&gt; and &lt;a href=&#34;&#34;&gt;Newsblur&lt;/a&gt;, but there are &lt;a href=&#34;https://indieweb.org/feed_reader&#34;&gt;many others&lt;/a&gt;.
 Most of them offer a free tier that you can sign up for if you want to give RSS a try. Just add all the feeds you want to follow,
 and the RSS reader will display their updated content in a neatly organized dashboard that you can customize to your liking.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/inoreader.png&#34; alt=&#34;inoreader screen shot&#34; /&gt;
-&lt;span class=&#34;small date&#34;&gt;Inoreader Screen Shot&lt;/span&gt;&lt;/p&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/inoreader.png&#34; alt=&#34;inoreader screen shot&#34; /&gt;
+&lt;span class=&#34;small date&#34;&gt;Inoreader Screen Shot&lt;/span&gt;
 &lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.businessinsider.com/guides/tech/what-is-rss-feed&#34;&gt;What is an RSS Feed&lt;/a&gt;: A good primer on RSS. ~Business Insider&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://indieweb.org/feed_reader&#34;&gt;RSS Reader List&lt;/a&gt;: Comprehensive list of different RSS Readers. ~Indieweb&lt;/p&gt;

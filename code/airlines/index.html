@@ -74,76 +74,76 @@
 <p>If you&rsquo;re more specific and type only “american airlines”, you&rsquo;ll get just American Arilines and its symbol: AA.</p>
 <p>The program uses Flask, a light-weight web framework made in Python, and the templating engine Jinja. The airline information is in a JSON file.</p>
 <p>Let&rsquo;s first take a look at the templates. We will create a generic <code>layouts.html</code> template:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;initial-scale=1, width=device-width&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span><span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Airline Symbol Lookup Tool<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        {% block body %}{% endblock %}
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div><p>The code in curly brackets is a place holder, where the specific code of any other template that call on the <code>layouts.html</code> template will be placed.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;initial-scale=1, width=device-width&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Airline Symbol Lookup Tool<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {% block body %}{% endblock %}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>The code in curly brackets is a place holder, where the specific code of any other template that call on the <code>layouts.html</code> template will be placed.</p>
 <p>In this example we only have one page, called <code>index.html</code>. This is how its template looks:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{% extends &#34;layout.html&#34; %}
-
-{% block body %}
-<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Find the IATA symbol of an airline<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Input an airline name:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;/iata&#34;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;post&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;airline&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;airline&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span><span class="p">/&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Submit&#34;</span><span class="p">/&gt;</span>
-<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Results<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-    {% for airline in results %}
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>{{ airline }}<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    {% endfor %}
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-{% endblock %}
-</code></pre></div><p>This is what happens in the <code>index.html</code> page:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{% extends &#34;layout.html&#34; %}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{% block body %}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Find the IATA symbol of an airline<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Input an airline name:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;/iata&#34;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;post&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;airline&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;airline&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Submit&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Results<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {% for airline in results %}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>{{ airline }}<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {% endfor %}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">{% endblock %}
+</span></span></code></pre></div><p>This is what happens in the <code>index.html</code> page:</p>
 <p>First, it &ldquo;calls&rdquo; the <code>layout.html</code> template and inserts the HTML code where the place holders in the <code>layouts.html</code> are. Then it displays a form where the visitor can type the name (or part of the name) of an airline. Upon submit, a list of airlines that match the input will be displayed under the headline <em>Results</em>, followed by their symbol.</p>
 <p><strong>Let&rsquo;s see how this all works.</strong></p>
 <p>First we need to create an <code>application.py</code> file where the business logic of our app will live. We start by importing the modules we need, and defining a variable called <code>app</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">request</span>
-
-<span class="c1"># Configure app</span>
-<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-</code></pre></div><p>Next, the program takes a JSON file with all airline/symbol combinations and transforms it into a python list of objects:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="o">...</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;airlines.json&#39;</span><span class="p">)</span>
-<span class="c1"># turn json array of objects into an python list </span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>  
-<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="o">...</span>
-</code></pre></div><p>Next, we iterate over all the airlines on the list, convert each airline&rsquo;s information into a tupple, and append those tupples to a new list. Each tupple will be in the form of (<em>Airline Symbol</em>, <em>Airline Name</em>):</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="c1"># create an empty list to store airline (symbol, name) tuples</span>
-<span class="n">symbol_airline</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="c1"># create airline (symbol, name) tuples and append to symbol_airline</span>
-<span class="k">for</span> <span class="n">airline</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-  <span class="n">symbol_airline</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">tuple</span><span class="p">(</span><span class="n">airline</span><span class="o">.</span><span class="n">values</span><span class="p">())))</span>
-</code></pre></div><p>Finally, we&rsquo;re ready to process user input and display the results via routes.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">request</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Configure app</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span></span></code></pre></div><p>Next, the program takes a JSON file with all airline/symbol combinations and transforms it into a python list of objects:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;airlines.json&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># turn json array of objects into an python list </span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span></code></pre></div><p>Next, we iterate over all the airlines on the list, convert each airline&rsquo;s information into a tupple, and append those tupples to a new list. Each tupple will be in the form of (<em>Airline Symbol</em>, <em>Airline Name</em>):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># create an empty list to store airline (symbol, name) tuples</span>
+</span></span><span class="line"><span class="cl"><span class="n">symbol_airline</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create airline (symbol, name) tuples and append to symbol_airline</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">airline</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">symbol_airline</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">tuple</span><span class="p">(</span><span class="n">airline</span><span class="o">.</span><span class="n">values</span><span class="p">())))</span>
+</span></span></code></pre></div><p>Finally, we&rsquo;re ready to process user input and display the results via routes.</p>
 <p>Our first route is <code>/</code> that takes us to the index page:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">)</span>
-</code></pre></div><p>This is pretty straight forward: it just takes us to the home page where our form is located.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>This is pretty straight forward: it just takes us to the home page where our form is located.</p>
 <p>Then, once the visitor fills and submits the form, they are taken to the <code>/iata</code> route, where our app will process the user input, store the results in a variable called <code>results</code>, and finally pass that variable to the Jinja <code>index.html</code> template so that it can plug those results in the HTML code of our results page:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/iata&#34;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;POST&#34;</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">iata</span><span class="p">():</span>
-    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">user_input</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;airline&#34;</span><span class="p">)</span>
-    <span class="n">user_input_lower</span> <span class="o">=</span> <span class="n">user_input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">airline</span> <span class="ow">in</span> <span class="n">symbol_airline</span><span class="p">:</span>
-      <span class="n">airline_lower</span> <span class="o">=</span> <span class="n">airline</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-      <span class="k">if</span> <span class="n">user_input_lower</span> <span class="ow">in</span> <span class="n">airline_lower</span><span class="p">:</span>
-        <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{airline[1]} ({airline[0]})&#39;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">,</span> <span class="n">results</span><span class="o">=</span><span class="n">results</span><span class="p">)</span>
-</code></pre></div><p>To run this code on your computer you need to access the FLASK_APP enviroment variable by typing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/iata&#34;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;POST&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">iata</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">user_input</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;airline&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">user_input_lower</span> <span class="o">=</span> <span class="n">user_input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">airline</span> <span class="ow">in</span> <span class="n">symbol_airline</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">airline_lower</span> <span class="o">=</span> <span class="n">airline</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="n">user_input_lower</span> <span class="ow">in</span> <span class="n">airline_lower</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">airline</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1"> (</span><span class="si">{</span><span class="n">airline</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;index.html&#34;</span><span class="p">,</span> <span class="n">results</span><span class="o">=</span><span class="n">results</span><span class="p">)</span>
+</span></span></code></pre></div><p>To run this code on your computer you need to access the FLASK_APP enviroment variable by typing:</p>
 <p><code>export FLASK_APP=application.py</code></p>
 <p>from the command line, followed by:</p>
 <p><code>flask run</code></p>
