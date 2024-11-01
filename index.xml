@@ -6,37 +6,68 @@
     <description>Recent content on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
       <link>https://mariosanchez.org/about/</link>
-      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/about/</guid>
       <description>&lt;div class=&#34;picbox&#34;&gt;&lt;figure&gt;&lt;img src=&#34;https://mariosanchez.org/img/ire4.jpg&#34; class=&#34;gallery&#34;&gt;&lt;/figure&gt;&lt;/div&gt;
-&lt;p&gt;My name is &lt;strong&gt;Mario Sanchez Carrion&lt;/strong&gt; and I&amp;rsquo;m a math tutor and junior software developer.&lt;/p&gt;
+&lt;p&gt;My name is &lt;strong&gt;Mario Sanchez Carrion&lt;/strong&gt; and I&amp;rsquo;m a math tutor and junior computer programmer.&lt;/p&gt;
 &lt;p&gt;Since retiring from the &lt;a href=&#34;https://linkedin.com/in/mariobox&#34;&gt;corporate world&lt;/a&gt; in 2022 I&amp;rsquo;ve been experimenting with location independence, maintaining a base in Miami, FL, but living in different cities for several weeks to several months. The cities where I feel most at home are Paris (FR), Raleigh, NC and Lima (PE). I have posted a few pictures &lt;a href=&#34;https://mariosanchez.org/photos&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Although I had been building static web pages with HTML and CSS since the Geocities era, I started learning real programming languages a few years ago, and immediately discovered that I had a passion for everything related to coding and computers. Since then, I am constantly striving to learn more every day.&lt;/p&gt;
-&lt;p&gt;I have  completed several &lt;a href=&#34;https://mariosanchez.org/coding#certifications&#34;&gt;certifications&lt;/a&gt;, mainly from the &lt;a href=&#34;https://www.edx.org/cs50&#34;&gt;CS50&lt;/a&gt; suite of courses (offered online by Harvard University) and &lt;a href=&#34;https://freecodecamp.org&#34;&gt;freeCodeCamp&lt;/a&gt;. I also engage in a daily coding practice, to better remember what I learn and to discover new learning opportunities.&lt;/p&gt;
-&lt;p&gt;I have developed &lt;a href=&#34;https://mariosanchez.org/code&#34;&gt;projects&lt;/a&gt; in both the front end and the back end, using HTML, CSS, JavaScript, Python and SQL, most of which you can see in my &lt;a href=&#34;https://github.com/mariobox&#34;&gt;Github repositories&lt;/a&gt;. I have also deployed web applications to servers in the cloud, among them Digital Ocean and Heroku (where I keep live demos of some of my projects).&lt;/p&gt;
-&lt;p&gt;Aside from my coding activities, I am available for &lt;a href=&#34;https://mariosanchez.org/tutor&#34;&gt;tutoring&lt;/a&gt; math and test preparation. I help high school students with Algebra, Geometry, Trigonometry and other math related topics, as well as test preparation for the SAT, ACT and ASVAB math sections.&lt;/p&gt;
-&lt;p&gt;Finally, I am also open to business opportunities that match my values and fit my location-independent lifestyle.&lt;/p&gt;
+&lt;p&gt;I am now &lt;a href=&#34;https://mariosanchez.org/tutor&#34;&gt;tutoring&lt;/a&gt; students on math and test preparation. I help middle and high school students with Algebra, Geometry, Trigonometry and other math related topics, as well as test preparation for the SAT, ACT and ASVAB math sections.&lt;/p&gt;
+&lt;p&gt;I have also completed several programming &lt;a href=&#34;https://mariosanchez.org/coding#certifications&#34;&gt;certifications&lt;/a&gt;, mainly from the &lt;a href=&#34;https://www.edx.org/cs50&#34;&gt;CS50&lt;/a&gt; suite of courses (offered online by Harvard University) and &lt;a href=&#34;https://freecodecamp.org&#34;&gt;freeCodeCamp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I have developed &lt;a href=&#34;https://mariosanchez.org/code&#34;&gt;projects&lt;/a&gt; using HTML, CSS, JavaScript, Python, SQL, and R, mostly for personal use, which you can see in my &lt;a href=&#34;https://github.com/mariobox&#34;&gt;Github repositories&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can contact me by email at mario (at) mariosanchez (dot) org, or find me in &lt;a href=&#34;https://linkedin.com/in/mariobox&#34;&gt;LinkedIn&lt;/a&gt; or &lt;a href=&#34;https://github.com/mariobox&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Math Tutoring</title>
+      <link>https://mariosanchez.org/tutor/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/tutor/</guid>
+      <description>&lt;p class=&#34;centered&#34;&gt;&lt;img src=&#34;https://mariosanchez.org/img/msc-li.jpg&#34; class=&#34;profile small round&#34;&gt;&lt;/p&gt;
+&lt;p&gt;👋 Hi, I’m Mario. After 30 years in the corporate world, I am now pursuing my passion for math and teaching by helping students understand the basic concepts of algebra, geometry, trigonometry and other common math topics. I am also working with students who want to prepare for the math section of the &lt;strong&gt;SAT&lt;/strong&gt;, &lt;strong&gt;ACT&lt;/strong&gt;, and &lt;strong&gt;ASVAB&lt;/strong&gt; tests.&lt;/p&gt;
+&lt;p&gt;My experience in teaching comes not from a traditional education background, but from the corporate world. As an Industrial Engineer and MBA, one of my most important tasks was to give presentations that required me to distill and simplify complex concepts, while keeping my audience engaged. I am now using those same skills in my math tutoring sessions.🌱&lt;/p&gt;
+&lt;p&gt;I firmly believe that math is not difficult: it is just poorly taught. During my tutoring sessions I make sure that my students master the basics first. I also use examples to make the concepts less abstract and easier to understand. My goal is to help students overcome their fear of math, enjoy the learning process, and do well in class and tests.&lt;/p&gt;
+&lt;h3 class=&#34;centered&#34;&gt;📱 (954) 309-1077&lt;/h3&gt;
+&lt;h3 id=&#34;areas-of-expertise&#34;&gt;Areas of Expertise&lt;/h3&gt;
+&lt;p&gt;🎯 Arithmetic&lt;/p&gt;
+&lt;p&gt;🎯 Pre-Algebra&lt;/p&gt;
+&lt;p&gt;🎯 Algebra I&lt;/p&gt;
+&lt;p&gt;🎯 Algebra II&lt;/p&gt;
+&lt;p&gt;🎯 Geometry&lt;/p&gt;
+&lt;p&gt;🎯 Trigonometry&lt;/p&gt;
+&lt;h3 id=&#34;how-this-works&#34;&gt;How This Works&lt;/h3&gt;
+&lt;p&gt;I am available for online and in-person classes. Online classes are conducted via Zoom. Ideally, students will contact me before the class to let me know what subjects they need help with (either the general topics or the specific exercises they want us to review together).&lt;/p&gt;
+&lt;p&gt;During our lessons I ensure that students understand the concepts behind the solutions to problems, so that they can later apply them themselves.&lt;/p&gt;
+&lt;h3 class=&#34;centered&#34;&gt;📱 (954) 309-1077&lt;/h3&gt;
+&lt;h3 id=&#34;rates&#34;&gt;Rates&lt;/h3&gt;
+&lt;p&gt;🙋‍♂️&lt;strong&gt;In Person&lt;/strong&gt;: $45/hr (no more than 5 miles from zip code 33155)&lt;/p&gt;
+&lt;p&gt;👨‍💻&lt;strong&gt;Online&lt;/strong&gt;: $30/hr&lt;/p&gt;
+&lt;h3 id=&#34;about-me&#34;&gt;About Me&lt;/h3&gt;
+&lt;p&gt;I am originally from Peru and have been living in the US since 1989. I am an Industrial Engineer and MBA by trade. I am also fully bilingual and can conduct my classes in English or Spanish. Before tutoring, I worked for 30 years in international marketing for large consumer goods companies. Besides math, my passions are &lt;strong&gt;computer programming&lt;/strong&gt;, &lt;strong&gt;birding&lt;/strong&gt; and &lt;strong&gt;soccer&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h3&gt;
+&lt;p&gt;Please feel free to contact me at:&lt;/p&gt;
+&lt;p&gt;📧 &lt;a href=&#34;mailto:mario@mariosanchez.org&#34;&gt;mario@mariosanchez.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;📱 (954) 309-1077&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Now</title>
       <link>https://mariosanchez.org/now/</link>
-      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/now/</guid>
-      <description>&lt;p&gt;I am currently learning &lt;a href=&#34;https://www.r-project.org/about.html&#34;&gt;R&lt;/a&gt;, a programming language and environment for statistical computing and graphics.&lt;/p&gt;
-&lt;p&gt;I am also focusing on my Math tutoring practice, helping students with Algebra, Geometry, Trigonometry and SAT/ACT Math preparation. Visit my &lt;a href=&#34;https://mariosanchez.org/tutor&#34;&gt;tutor page&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;I am now focusing on my Math tutoring practice, helping students with Algebra, Geometry, Trigonometry and SAT/ACT Math preparation. Visit my &lt;a href=&#34;https://mariosanchez.org/tutor&#34;&gt;tutor page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I am also working with &lt;a href=&#34;https://www.r-project.org/about.html&#34;&gt;R&lt;/a&gt;, a programming language and environment for statistical computing and graphics.&lt;/p&gt;
 &lt;p&gt;This year I also took on birding as a hobby. I became a member of the &lt;a href=&#34;https://tropicalaudubon.org/&#34;&gt;Tropical Audubon Society&lt;/a&gt; and participated in several birding expeditions around the South Florida area. I&amp;rsquo;m keeping a checklist of the species I see in &lt;a href=&#34;https://ebird.org&#34;&gt;eBird&lt;/a&gt;. I am planning a birding trip to Peru for 2025.&lt;/p&gt;
-&lt;p&gt;I am also experimenting with drinking yerba mate. I like the subtle boost of energy you get from slowly going through a liter or more of water poured into a gourd of yerba. I am also attracted by the ritual itself: the very detailed steps you need to follow to brew the perfect mate.&lt;/p&gt;
+&lt;p&gt;I also started drinking yerba mate. I like the ritual of preparing the perfect gourd of mate, and the subtle boost of energy you get from it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://mariosanchez.org/img/coding-and-mate.png&#34;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Finally, I am getting ready for my next trip to Europe, following our tradition of escaping from the hot and humid Miami summer months.&lt;/p&gt;
 </description>
     </item>
     
@@ -597,42 +628,6 @@ By kicking the can, our elected officials are not only not solving the problem: 
 &lt;p&gt;Take all the HTML files in the &lt;code&gt;html&lt;/code&gt; folder and upload them to any web server, like Heroku or Github Pages&lt;/p&gt;
 &lt;h2 id=&#34;video-demo&#34;&gt;Video Demo&lt;/h2&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/iSyWYh9aZYk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mariosanchez.org/tutor/</link>
-      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/tutor/</guid>
-      <description>&lt;h1 class=&#34;centered&#34;&gt;Engaging Math Tutor&lt;/h1&gt;
-&lt;p class=&#34;centered&#34;&gt;&lt;img src=&#34;https://mariosanchez.org/img/msc-li.jpg&#34; class=&#34;profile small round&#34;&gt;&lt;/p&gt;
-&lt;h2 class=&#34;centered&#34;&gt;Mario Sanchez Carrion&lt;/h2&gt;
-&lt;p&gt;👋 Hi, I’m Mario. After 30 years in the corporate world, I am now pursuing my passion for math and teaching by helping students understand the basic concepts of algebra, geometry, trigonometry and other common math topics. I am also working with students who want to prepare for the math section of the &lt;strong&gt;SAT&lt;/strong&gt;, &lt;strong&gt;ACT&lt;/strong&gt;, and &lt;strong&gt;ASVAB&lt;/strong&gt; tests.&lt;/p&gt;
-&lt;p&gt;My experience in teaching comes not from a traditional education background, but from the corporate world. As an Industrial Engineer and MBA, one of my most important tasks was to give presentations that required me to distill and simplify complex concepts, while keeping my audience engaged. I am now using those same skills in my math tutoring sessions.🌱&lt;/p&gt;
-&lt;p&gt;I firmly believe that math is not difficult: it is just poorly taught. During my tutoring sessions I make sure that my students master the basics first. I also use examples to make the concepts less abstract and easier to understand. My goal is to help students overcome their fear of math, enjoy the learning process, and do well in class and tests.&lt;/p&gt;
-&lt;h3 class=&#34;centered&#34;&gt;📱 (954) 309-1077&lt;/h3&gt;
-&lt;h3 id=&#34;areas-of-expertise&#34;&gt;Areas of Expertise&lt;/h3&gt;
-&lt;p&gt;🎯 Arithmetic&lt;/p&gt;
-&lt;p&gt;🎯 Pre-Algebra&lt;/p&gt;
-&lt;p&gt;🎯 Algebra I&lt;/p&gt;
-&lt;p&gt;🎯 Algebra II&lt;/p&gt;
-&lt;p&gt;🎯 Geometry&lt;/p&gt;
-&lt;p&gt;🎯 Trigonometry&lt;/p&gt;
-&lt;h3 id=&#34;how-this-works&#34;&gt;How This Works&lt;/h3&gt;
-&lt;p&gt;I am available for online and in-person classes. Online classes are conducted via Zoom. Ideally, students will contact me before the class to let me know what subjects they need help with (either the general topics or the specific exercises they want us to review together).&lt;/p&gt;
-&lt;p&gt;During our lessons I ensure that students understand the concepts behind the solutions to problems, so that they can later apply them themselves.&lt;/p&gt;
-&lt;h3 class=&#34;centered&#34;&gt;📱 (954) 309-1077&lt;/h3&gt;
-&lt;h3 id=&#34;rates&#34;&gt;Rates&lt;/h3&gt;
-&lt;p&gt;🙋‍♂️&lt;strong&gt;In Person&lt;/strong&gt;: $40/hr (no more than 5 miles from zip code 33155)&lt;/p&gt;
-&lt;p&gt;👨‍💻&lt;strong&gt;Online&lt;/strong&gt;: $25/hr&lt;/p&gt;
-&lt;h3 id=&#34;about-me&#34;&gt;About Me&lt;/h3&gt;
-&lt;p&gt;I am originally from Peru and have been living in the US since 1989. I am an Industrial Engineer and MBA by trade. I am also fully bilingual and can conduct my classes in English or Spanish. Before tutoring, I worked for 30 years in international marketing for large consumer goods companies. Besides math, my passions are &lt;strong&gt;computer programming&lt;/strong&gt; and &lt;strong&gt;soccer&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h3&gt;
-&lt;p&gt;Please feel free to contact me at:&lt;/p&gt;
-&lt;p&gt;📧 &lt;a href=&#34;mailto:mario@mariosanchez.org&#34;&gt;mario@mariosanchez.org&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;📱 (954) 309-1077&lt;/p&gt;
-</description>
     </item>
     
     <item>
