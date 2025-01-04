@@ -13,11 +13,11 @@
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/code/bottle-sql/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python and &lt;i class=&#34;fa-solid fa-database&#34;&gt;&lt;/i&gt; SQLite&lt;/p&gt;
-&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/bottle-sql&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mysterious-temple-24688-9fdd99ca6559.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python and &lt;i class=&#34;fas fa-database&#34;&gt;&lt;/i&gt; SQLite&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/bottle-sql&#34;&gt;Source Files&lt;/a&gt;&lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;This is a simple web application that let&amp;rsquo;s users rsvp for a party, indicating their name, number of people coming with them, and what will they bring.&lt;/p&gt;
 &lt;p&gt;The app implements routes using the &lt;a href=&#34;https://bottlepy.org&#34;&gt;Bottle&lt;/a&gt; web framework, following the &lt;a href=&#34;https://www.geeksforgeeks.org/mvc-design-pattern/#&#34;&gt;MVC design pattern&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;routes&#34;&gt;Routes&lt;/h2&gt;
+&lt;h5 id=&#34;routes&#34;&gt;Routes&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;/&lt;/code&gt; (or index route): This route renders the entry point to the app, and presents the user with a web form to fill in their information. All fields are required. If any field is not completed, the app will re-route the user to the same page to try again. If all input has been entered and is valid, the user will be directed to a confirmation page where a message will indicate that their rsvp was successful.&lt;/p&gt;
@@ -32,9 +32,9 @@
 &lt;p&gt;&lt;code&gt;/&amp;lt;food&amp;gt;&lt;/code&gt;: This is a dynamic route that displays an unordered list of people who have commited to bringing the particular food listed in the URL. The way Bottle works allows this part of the URL to be passed as an argument to the function and then to the templates. This route shares a template with the &lt;code&gt;/going&lt;/code&gt; route.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;database&#34;&gt;Database&lt;/h2&gt;
+&lt;h5 id=&#34;database&#34;&gt;Database&lt;/h5&gt;
 &lt;p&gt;The app uses a SQLite database to store the information. The database is accessed from the app via connections, as needed. The two main operations are: add a user to the database (&lt;code&gt;INSERT&lt;/code&gt;), and retrieve (&lt;code&gt;SELECT&lt;/code&gt;) users for display in the attendees list, or list of attendees bringing a particular food. Before the database can be used it needs to be created (in this case &lt;code&gt;rsvp.db&lt;/code&gt;) and initialized with a table (which we named &lt;code&gt;reserved&lt;/code&gt;). To create our database and our table, we run the following command once: &lt;code&gt;python3 create_db.py&lt;/code&gt; prior to running our app.&lt;/p&gt;
-&lt;h2 id=&#34;templates&#34;&gt;Templates&lt;/h2&gt;
+&lt;h5 id=&#34;templates&#34;&gt;Templates&lt;/h5&gt;
 &lt;p&gt;The app uses Bottle&amp;rsquo;s default Simple Template Engine. The &lt;code&gt;header&lt;/code&gt; and the &lt;code&gt;footer&lt;/code&gt; are stored in their own templates, which can be called by any other template. That way, if there are any changes to the header or footer we only have to change those pages instead of every page of our site.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;index.tpl&lt;/code&gt; displays the main page of our application, containing an HTML form to capture information from the user. The form implements three types of input: text input, drop down menu and radio buttons. We capture information and send it to the app via Bottle&amp;rsquo;s &lt;code&gt;request&lt;/code&gt; object.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;registered.tpl&lt;/code&gt; displays a confirmation message after users successfully rsvp for the event.&lt;/p&gt;
@@ -53,52 +53,52 @@
 &lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/pynt-ssg&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariosanchez.org/pynt-ssg/html/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;img-srcimgpynt-grpng&#34;&gt;&lt;img src=&#34;https://mariosanchez.org/img/pynt-gr.png&#34;&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;description&#34;&gt;Description:&lt;/h2&gt;
+&lt;h5 id=&#34;description&#34;&gt;Description:&lt;/h5&gt;
 &lt;p&gt;Pynt is a pint-sized static site generator with basic blog capabilities written in Python in less than 100 lines of code. It doesn&amp;rsquo;t use any web framework, just pure Python functionality.&lt;/p&gt;
-&lt;h2 id=&#34;why&#34;&gt;Why&lt;/h2&gt;
+&lt;h5 id=&#34;why&#34;&gt;Why&lt;/h5&gt;
 &lt;p&gt;A few years back I became familiar with static site generators (there are &lt;a href=&#34;https://staticsitegenerators.net/&#34;&gt;many of them&lt;/a&gt;). I tried several: Jekyll, Metalsmith, Hugo, etc. I was always fascinated by the way they worked and how a user could create a working static website with minimal effort at a click of a button. I always wondered if one day I would be able to write one, so I took the opportunity of CS50P&amp;rsquo;s final project to build one.&lt;/p&gt;
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;h5 id=&#34;summary&#34;&gt;Summary&lt;/h5&gt;
 &lt;p&gt;Pynt takes the Markdown located in the &lt;code&gt;md&lt;/code&gt; directory and converts them to HTML. The generated HTML files are placed in an &lt;code&gt;html&lt;/code&gt; folder that can then be deployed to the web.&lt;/p&gt;
-&lt;h2 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h2&gt;
+&lt;h5 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h5&gt;
 &lt;p&gt;a. Pynt opens each Markdown file and convert the contents to HTML&lt;/p&gt;
 &lt;p&gt;b. Pynt saves the HTML files in the &lt;code&gt;html&lt;/code&gt; directory&lt;/p&gt;
 &lt;p&gt;c. Pynt generates a blog posts list page that displays links to all posts, organized in reverse chronological order (newer post first). By default, this is the home page of our site.&lt;/p&gt;
-&lt;h2 id=&#34;content-types&#34;&gt;Content Types&lt;/h2&gt;
+&lt;h5 id=&#34;content-types&#34;&gt;Content Types&lt;/h5&gt;
 &lt;p&gt;The program accomodates two types of content: blog posts and pages. Blog posts are entries that contain a date. Pages, on the other hand, don&amp;rsquo;t contain a date, since they are static in nature (e.g. About and Contact pages).  The program is smart enough to differentiate between blog posts and pages when it&amp;rsquo;s time to generate the blog posts list page: it filters out pages and only parses blog posts.&lt;/p&gt;
-&lt;h2 id=&#34;views&#34;&gt;Views&lt;/h2&gt;
+&lt;h5 id=&#34;views&#34;&gt;Views&lt;/h5&gt;
 &lt;p&gt;Since we are not using a web framework, the HTML files are built using string concatenation. We have defined four global variables at the top of the file that represent the common areas in all pages in the site: &lt;code&gt;header&lt;/code&gt;, &lt;code&gt;nav&lt;/code&gt; and &lt;code&gt;footer&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;In the process, we use regular expressions to extract information like dates and titles from the Markdown files, so that we can then use them for tasks like sorting blog posts and retrieving post and page titles.&lt;/p&gt;
 &lt;p&gt;Pynt uses the &lt;a href=&#34;https://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt; framework for styling.&lt;/p&gt;
-&lt;h2 id=&#34;functions&#34;&gt;Functions&lt;/h2&gt;
+&lt;h5 id=&#34;functions&#34;&gt;Functions&lt;/h5&gt;
 &lt;p&gt;We have separated our main function from several other auxiliary functions that in turn return a value to main. The functions we declared, in order of invocation, are:&lt;/p&gt;
-&lt;h3 id=&#34;extract_md_content&#34;&gt;&lt;code&gt;extract_md_content&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;extract_md_content&#34;&gt;&lt;code&gt;extract_md_content&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;Takes a file name as argument, opens a Markdown file, reads the content of the file and sends it to the &lt;code&gt;validate_docs&lt;/code&gt; function for date format validation. If the validation comes back OK the function converts the list of lines into a string by using the &lt;code&gt;join()&lt;/code&gt; method and returns it to &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;create_html-file&#34;&gt;&lt;code&gt;create_html-file&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;create_html-file&#34;&gt;&lt;code&gt;create_html-file&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;This function takes the string returned by the &lt;code&gt;extract_md_content&lt;/code&gt; function and with the help of the &lt;code&gt;markdown2&lt;/code&gt; module that we have previously imported converts it to HTML. Then, the function writes the HTML into files located in the &lt;code&gt;html&lt;/code&gt; directory. These files can later be deployed to any web server on the Internet for the site to be live.&lt;/p&gt;
-&lt;h3 id=&#34;build_post_links&#34;&gt;&lt;code&gt;build_post_links&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;build_post_links&#34;&gt;&lt;code&gt;build_post_links&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;This function creates the blog post links to be displayed in the post list page. For this, it opens each Markdown file and selects only those that are posts (i.e. those that have a date as part of the content). If so, it then uses regular expressions to extract the title of the post, and together with the file name and date create the actual HTML link to the post page and return the HTML string to &lt;code&gt;main&lt;/code&gt;. We repeat the operation for all blog posts.&lt;/p&gt;
-&lt;h3 id=&#34;build_index_page&#34;&gt;&lt;code&gt;build_index_page&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;build_index_page&#34;&gt;&lt;code&gt;build_index_page&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;After the &lt;code&gt;main&lt;/code&gt; function has sorted all the links in reverse chronological order (extracting the date via regular expressions) it will pass the HTML string with all the links to &lt;code&gt;build_index_page&lt;/code&gt;. Here, the function will concatenate the header, the list of links, and the footer to create the HTML for the lists page.&lt;/p&gt;
-&lt;h3 id=&#34;validate_docs&#34;&gt;&lt;code&gt;validate_docs&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;validate_docs&#34;&gt;&lt;code&gt;validate_docs&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;Helper function invoqued by &lt;code&gt;extract_md_content&lt;/code&gt;, with the purpose of determining if the document is either a page or a post.&lt;/p&gt;
-&lt;h3 id=&#34;validate_date&#34;&gt;&lt;code&gt;validate_date&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;validate_date&#34;&gt;&lt;code&gt;validate_date&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;Helper function invoqued by &lt;code&gt;validate_docs&lt;/code&gt; to check that the date included with the post is in a valid format: YYYY-MM-DD&lt;/p&gt;
-&lt;h3 id=&#34;run_server&#34;&gt;&lt;code&gt;run_server()&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;run_server&#34;&gt;&lt;code&gt;run_server()&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;Function created to open up a web server on &lt;code&gt;localhost:8000&lt;/code&gt; to be able to see our website during development&lt;/p&gt;
-&lt;h2 id=&#34;modules&#34;&gt;Modules&lt;/h2&gt;
+&lt;h5 id=&#34;modules&#34;&gt;Modules&lt;/h5&gt;
 &lt;p&gt;We imported a few modules and libraries to help us implement the site:&lt;/p&gt;
-&lt;h3 id=&#34;markdown2&#34;&gt;&lt;code&gt;markdown2&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;markdown2&#34;&gt;&lt;code&gt;markdown2&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;To help us convert markdown files into HTML&lt;/p&gt;
-&lt;h3 id=&#34;re&#34;&gt;&lt;code&gt;re&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;re&#34;&gt;&lt;code&gt;re&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;For regular expressions capabilities&lt;/p&gt;
-&lt;h3 id=&#34;os&#34;&gt;&lt;code&gt;os&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;os&#34;&gt;&lt;code&gt;os&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;Used to call the &lt;code&gt;os.listdir()&lt;/code&gt; function to generate a list of markdown files&lt;/p&gt;
-&lt;h3 id=&#34;validator-collection&#34;&gt;&lt;code&gt;validator-collection&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;validator-collection&#34;&gt;&lt;code&gt;validator-collection&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;To validate our dates&lt;/p&gt;
-&lt;h3 id=&#34;http-server-and-socketserver&#34;&gt;&lt;code&gt;http-server&lt;/code&gt; and &lt;code&gt;socketserver&lt;/code&gt;&lt;/h3&gt;
+&lt;h5 id=&#34;http-server-and-socketserver&#34;&gt;&lt;code&gt;http-server&lt;/code&gt; and &lt;code&gt;socketserver&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;To open a web server for development&lt;/p&gt;
-&lt;h2 id=&#34;img-srcimgpynt_sspng&#34;&gt;&lt;img src=&#34;https://mariosanchez.org/img/pynt_ss.png&#34;&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://mariosanchez.org/img/pynt_ss.png&#34; /&gt;&lt;img src=&#34;https://mariosanchez.org/img/pynt_ss.png&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h5 id=&#34;usage&#34;&gt;Usage&lt;/h5&gt;
 &lt;p&gt;This is the process a user would follow to add a new blog post or create a new page for the site:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -123,9 +123,9 @@
 &lt;p&gt;Follow the link displayed in the terminal, and if everything went right the site should be visible in the browser window.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;deployment&#34;&gt;Deployment&lt;/h2&gt;
+&lt;h5 id=&#34;deployment&#34;&gt;Deployment&lt;/h5&gt;
 &lt;p&gt;Take all the HTML files in the &lt;code&gt;html&lt;/code&gt; folder and upload them to any web server, like Heroku or Github Pages&lt;/p&gt;
-&lt;h2 id=&#34;video-demo&#34;&gt;Video Demo&lt;/h2&gt;
+&lt;h5 id=&#34;video-demo&#34;&gt;Video Demo&lt;/h5&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/iSyWYh9aZYk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
     </item>
     
@@ -258,9 +258,9 @@
       
       <guid>https://mariosanchez.org/code/moon/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
-&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/moon-phases/&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/moon-phases/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/moon-phases/&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/moon-phases/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;I wanted a simple web page to show today&amp;rsquo;s date, moon phase and percentage illumination, plus a nice picture of the moon.&lt;/p&gt;
-&lt;img src=&#34;https://mariosanchez.org/img/moon.jpg&#34; class=&#34;gallery medium&#34;&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/moon.jpg&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em &#34;&gt;
 &lt;p&gt;My first step was to find an API that I could call to retrieve today&amp;rsquo;s moon phase and illumination. After some research I found the &lt;a href=&#34;https://farmsense.net&#34;&gt;Farmsense&lt;/a&gt; moon phase API. The API accepts a date as a parameter, formatted in milliseconds (&lt;a href=&#34;https://currentmillis.com/&#34;&gt;Unix Time&lt;/a&gt;), but only takes the first ten digits.&lt;/p&gt;
 &lt;p&gt;One problem with Unix time is that it&amp;rsquo;s in &lt;a href=&#34;https://www.timeanddate.com/time/aboututc.html&#34;&gt;UTC-Coordinated Universal Time&lt;/a&gt;. To change it to Eastern Standard Time I had to subtract five hours in milliseconds from the current UTC time. I then pass the first ten digits of that value to the API&amp;rsquo;s end point url.&lt;/p&gt;
 &lt;p&gt;Next, I made an AJAX call using the &lt;code&gt;fetch&lt;/code&gt; API and transformed the response to JSON format to be able to use it.&lt;/p&gt;
@@ -470,9 +470,9 @@ You can either copy the files one by one, or push your app to a Github repositor
       
       <guid>https://mariosanchez.org/code/dark/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
-&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/dark&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/dark&#34;&gt;Live Demo&lt;/a&gt; &lt;hr class=&#34;art&#34;&gt;&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/dark&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/dark&#34;&gt;Live Demo&lt;/a&gt; &lt;hr class=&#34;art&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We will implement a dark theme selector for our site that visitors can activate by clicking on an icon. We will discuss what we have to do to the HTML, CSS and JavaScript files that make up our site to make that happen.&lt;/p&gt;
-&lt;h2 id=&#34;the-html&#34;&gt;The HTML&lt;/h2&gt;
+&lt;h5 id=&#34;the-html&#34;&gt;The HTML&lt;/h5&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--DOCTYPE--&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -497,7 +497,7 @@ You can either copy the files one by one, or push your app to a Github repositor
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For this example, we will create three simple HTML pages: &lt;code&gt;index.html&lt;/code&gt;, &lt;code&gt;about.html&lt;/code&gt; and &lt;code&gt;contact.html&lt;/code&gt;. The code above is the &lt;code&gt;index.html&lt;/code&gt; page. At the top of each page, we will include a simple navigation menu next to which we will place a moon-shaped icon that users can click to turn on dark mode. Once in dark mode, the moon icon will switch to a sun icon, indicating that by clicking it the visitor can go back to the default light mode. Both the moon and the sun icons can be found in &lt;a href=&#34;https://fontawesome.com&#34;&gt;Fontawesome&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;the-css&#34;&gt;The CSS&lt;/h2&gt;
+&lt;h5 id=&#34;the-css&#34;&gt;The CSS&lt;/h5&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;--bck-color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mh&#34;&gt;#FFF&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;--ft-color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mh&#34;&gt;#000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -524,7 +524,7 @@ You can either copy the files one by one, or push your app to a Github repositor
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We will define some variables for the colors we want to use in our dark and light themes. To keep it simple, we will just focus on the background, the font and the link colors. We will define our variables in the &lt;code&gt;html&lt;/code&gt; element and we&amp;rsquo;ll then reference them in the &lt;code&gt;body&lt;/code&gt; and &lt;code&gt;link&lt;/code&gt; elements. We will also create a &lt;code&gt;dark&lt;/code&gt; class for the &lt;code&gt;html&lt;/code&gt; element that we will activate via JavaScript once a visitor clicks on the moon icon.&lt;/p&gt;
-&lt;h2 id=&#34;the-javascript&#34;&gt;The JavaScript&lt;/h2&gt;
+&lt;h5 id=&#34;the-javascript&#34;&gt;The JavaScript&lt;/h5&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;DARK_MODE&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;dark&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;LIGHT_MODE&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;light&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;THEME&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;mode&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -852,21 +852,21 @@ You can either copy the files one by one, or push your app to a Github repositor
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/code/flaskecomm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python&lt;/p&gt;
-&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/flask-ecomm&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://murmuring-sea-57778-80e8191256cd.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python, &lt;i class=&#34;fas fa-database&#34;&gt;&lt;/i&gt; SQLite and &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/flask-ecomm&#34;&gt;Source Files&lt;/a&gt;&lt;/p&gt; &lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;This app was my &lt;a href=&#34;https://www.edx.org/course/cs50s-introduction-to-computer-science&#34;&gt;CS50x&lt;/a&gt; final project.&lt;/p&gt;
 &lt;p&gt;The app loads a gallery of soccer shirts that includes: image, description, price, and a small form to add item to cart. The shirt info is stored in a SQLite database and is displayed using Bootstrap&amp;rsquo;s card class.&lt;/p&gt;
-&lt;img src=&#34;https://66.media.tumblr.com/186f34c7243200b24693260946874509/tumblr_pkaxbfmFxT1qz7ur9o1_1280.png&#34; /&gt;
+&lt;img src=&#34;https://66.media.tumblr.com/186f34c7243200b24693260946874509/tumblr_pkaxbfmFxT1qz7ur9o1_1280.png&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em&#34; /&gt;
 &lt;p&gt;The app includes a series of filters implemented using SQLite queries so you can see only shirts that match a certain filter: shirts by region, clubs vs. national teams, shirts on sale, etc.&lt;/p&gt;
-&lt;img src=&#34;https://66.media.tumblr.com/967710ad3afc4d4d42666525e7fa82b4/tumblr_pkaxbfmFxT1qz7ur9o3_1280.png&#34; /&gt;
+&lt;img src=&#34;https://66.media.tumblr.com/967710ad3afc4d4d42666525e7fa82b4/tumblr_pkaxbfmFxT1qz7ur9o3_1280.png&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em&#34; /&gt;
 &lt;p&gt;If a user is not logged in and tries to add something to the shopping cart she will see a warning message (implemented with jQuery) asking her to log in.&lt;/p&gt;
 &lt;p&gt;Once registered and logged in, the user can add shirts to the shopping cart. A link to the shopping cart can be found at the top right of the screen, showing the amount of items in the cart as well as the sub-total in dollars. Clicking the shopping cart link opens a Bootstrap modal window showing the shopping cart in more detail.&lt;/p&gt;
-&lt;img src=&#34;https://66.media.tumblr.com/9fa9dd37719e34daf368927164e07827/tumblr_pkaxbfmFxT1qz7ur9o4_1280.png&#34; /&gt;
+&lt;img src=&#34;https://66.media.tumblr.com/9fa9dd37719e34daf368927164e07827/tumblr_pkaxbfmFxT1qz7ur9o4_1280.png&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em&#34; /&gt;
 &lt;p&gt;If you want to make changes, like add one more shirt or remove a shirt, you can click on the Make Changes button and you will be taken to the full version of the shopping cart.&lt;/p&gt;
-&lt;img src=&#34;https://66.media.tumblr.com/9789a8543b36eccdf47235a676835c03/tumblr_pkaxbfmFxT1qz7ur9o5_r1_1280.png&#34; /&gt;
+&lt;img src=&#34;https://66.media.tumblr.com/9789a8543b36eccdf47235a676835c03/tumblr_pkaxbfmFxT1qz7ur9o5_r1_1280.png&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em&#34; /&gt;
 &lt;p&gt;Once you check out, the idea is to be sent to a payment processor. However, that part is not implemented yet.&lt;/p&gt;
 &lt;p&gt;If you want to see your purchase history, just click on the You Bought link and you will see all the shirts you have ever bought. You will also find a Buy Again link that will direct you to the product page in case you want to buy it again.&lt;/p&gt;
-&lt;img src=&#34;https://66.media.tumblr.com/9fd4c95ccd60cb229d97366b66098986/tumblr_pkaxbfmFxT1qz7ur9o2_1280.png&#34; /&gt;
+&lt;img src=&#34;https://66.media.tumblr.com/9fd4c95ccd60cb229d97366b66098986/tumblr_pkaxbfmFxT1qz7ur9o2_1280.png&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em &#34; /&gt;
 &lt;p&gt;Once you&amp;rsquo;re finished, you can just log out.&lt;/p&gt;
 &lt;p&gt;If you want to see the app in action, fork the repository to your own computer and perform the following commands from the command line in your project folder:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export FLASK_APP=application.py
@@ -885,9 +885,9 @@ You can either copy the files one by one, or push your app to a Github repositor
       <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/code/micro-blog/</guid>
-      <description>&lt;img src=&#34;https://mariosanchez.org/img/micro-blog.png&#34; class=&#34;profile&#34;&gt;
+      <description>&lt;img src=&#34;https://mariosanchez.org/img/micro-blog.png&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-react&#34;&gt;&lt;/i&gt; ReactJS&lt;/p&gt;
-&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/react-micro-blog&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://mariobox.github.io/react-micro-blog&#34;&gt;Live Demo&lt;/a&gt; &lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/mariobox/react-micro-blog&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariobox.github.io/react-micro-blog&#34;&gt;Live Demo&lt;/a&gt; &lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;This front end project is inspired in a minimal version of Twitter. We use React components and JavaScript ES6 classes, and put into practice the concept of state. It also uses JSX syntax.&lt;/p&gt;
 &lt;p&gt;We start by running &lt;a href=&#34;https://create-react-app.dev/&#34;&gt;Create React App&lt;/a&gt;, which provides the scaffolding for our site and performs all the lifting so that we can focus on the code.&lt;/p&gt;
 &lt;p&gt;Our app has six components:&lt;/p&gt;
@@ -918,9 +918,11 @@ You can either copy the files one by one, or push your app to a Github repositor
       <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mariosanchez.org/code/rei/</guid>
-      <description>&lt;img src=&#34;https://mariosanchez.org/img/rei.jpg&#34; class=&#34;profile&#34;&gt;
+      <description>&lt;p&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/rei.jpg&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em&#34;&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-html5&#34;&gt;&lt;/i&gt; HTML | &lt;i class=&#34;fab fa-css3&#34;&gt;&lt;/i&gt; CSS | &lt;i class=&#34;fab fa-js&#34;&gt;&lt;/i&gt; JavaScript&lt;/p&gt;
-&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/rlo555/rlo555.github.io&#34;&gt;Source Files&lt;/a&gt;  &lt;a href=&#34;https://habitatinvestors.com&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
+&lt;p class=&#34;bullet&#34;&gt;&lt;a href=&#34;https://github.com/rlo555/rlo555.github.io&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://habitatinvestors.com&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;&lt;hr class=&#34;art&#34;&gt;
 &lt;p&gt;The objective was to design a clean, efficient, and fully responsive website for a real estate investments business. It needed to clearly describe what the company did, and include easy to follow call-to-actions throughout the site.&lt;/p&gt;
 &lt;p&gt;It was made using the &lt;a href=&#34;https://startbootstrap.com/template-overviews/agency/&#34;&gt;Agency&lt;/a&gt; template for Bootstrap, a fully functional form by &lt;a href=&#34;http://formspree.io&#34;&gt;Formspree&lt;/a&gt;, and several jQuery plugins for smooth transitions and a carrousel of testimonials.&lt;/p&gt;
 &lt;p&gt;Feel free to check the &lt;a href=&#34;https://habitatinvestors.com&#34;&gt;live demo&lt;/a&gt;.&lt;/p&gt;
