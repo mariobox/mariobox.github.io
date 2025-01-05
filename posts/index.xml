@@ -2,286 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mario Sanchez Carrion</title>
-    <link>https://mariosanchez.org/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>December of React</title>
-      <link>https://mariosanchez.org/posts/react1223/</link>
-      <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
+      <title>Solving Equations with Python</title>
+      <link>http://localhost:1313/posts/reboot/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://mariosanchez.org/posts/react1223/</guid>
-      <description>&lt;p&gt;I had been focusing on web development and back-end projects since the beginning of 2023, so I decided to shift focus in December and practice &lt;strong&gt;ReactJS&lt;/strong&gt;, the pouplar JS library to build user interfaces. It took me a while to get acquainted with concepts like &lt;code&gt;props&lt;/code&gt; and &lt;code&gt;state&lt;/code&gt;, but after developing several practice projects I feel much more comfortable.  Following are the apps I developed during these last few weeks of intense and deliberate React practice:&lt;/p&gt;
-&lt;h2 id=&#34;random-quote-generator&#34;&gt;Random Quote Generator&lt;/h2&gt;
-&lt;p&gt;Certification project from &lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/&#34;&gt;freeCodecamp&lt;/a&gt;. This app shows you a random quote and it&amp;rsquo;s author. You can request a new quote by clicking a button. It also features a button that lets you tweet the quote.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine&#34;&gt;Specs&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://codepen.io/mariobox/pen/abXgEJR&#34;&gt;View and try out the project in Codepen&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;markdown-previewer&#34;&gt;Markdown Previewer&lt;/h2&gt;
-&lt;p&gt;Certification project from &lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/&#34;&gt;freeCodecamp&lt;/a&gt;. Use React to build an app that let&amp;rsquo;s you input raw markdown text and and output the text as you would see it on the browser, with all the proper styling.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer&#34;&gt;Specs&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://codepen.io/mariobox/pen/QWYeKKK&#34;&gt;View and try out the project in Codepen&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;drum-machine&#34;&gt;Drum Machine&lt;/h2&gt;
-&lt;p&gt;Certification project from &lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/&#34;&gt;freeCodecamp&lt;/a&gt;. Build a user interface with React that outputs different drum sounds when the user clicks on drum pad elements displayed on the screen. Each drum pad is marked with a letter. The sound must also be triggered and the name of the sound displayed when the user presses the key on the keyboard that corresponds to the letter on the drum pad.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-drum-machine&#34;&gt;Specs&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://codepen.io/mariobox/pen/ExMawXL&#34;&gt;View and try out the project in Codepen&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;javascript-calculator&#34;&gt;JavaScript Calculator&lt;/h2&gt;
-&lt;p&gt;Certification project from &lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/&#34;&gt;freeCodecamp&lt;/a&gt;. Build a basic calculator that adds, subtracts, multiply and divides. Use React to keep track of state. The calculator must handle several corner cases like the user typing several operands together, or starts a number with a zero.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator&#34;&gt;Specs&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://codepen.io/mariobox/pen/YzBmBBN&#34;&gt;View and try out the project in Codepen&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;build-a-25-5-clock&#34;&gt;Build a 25-5 Clock&lt;/h2&gt;
-&lt;p&gt;Certification project from &lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/&#34;&gt;freeCodecamp&lt;/a&gt;. This one was quite a challenge, and took me several days to complete. Build a 25-5 clock for those who want to follow the Pomodoro technique of time management (25 minutes of work followed by a 5 minute break). The project also supports modifying the session and break times to make them more or less than 25 or 5 minutes. You need to use React to keep track of state and props and also use some React life cycle methods.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-25--5-clock&#34;&gt;Specs&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://codepen.io/mariobox/pen/NWJPagr&#34;&gt;View and try out the project in Codepen&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;to-do-list&#34;&gt;To Do List&lt;/h2&gt;
-&lt;p&gt;Challenge project from &lt;a href=&#34;https://cs50.harvard.edu/beyond/2019/&#34;&gt;CS50 Beyond&lt;/a&gt;.This is the canonical app to develop when you start learning React concepts. This app let&amp;rsquo;s you add and delete tasks, and summarizes how many tasks are on your task list at all times.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/react-todo-2023&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://mariosanchez.org/react-todo-2023/&#34;&gt;Live Demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;flashcard-app&#34;&gt;Flashcard App&lt;/h2&gt;
-&lt;p&gt;Challenge project from &lt;a href=&#34;https://cs50.harvard.edu/beyond/2019/&#34;&gt;CS50 Beyond&lt;/a&gt;. This app is slightly more elaborate than the To Do app. It features two main views: Card Editor and Card Viewer. You can toggle from one to the other by pressing a button. Similarly, in the Viewer mode, you can click on a question to reveal the answer (like turning around a real flashcard). You can also click a button to go to another card. In the Editor mode, you can add new cards via two input fields (one for the question and one for the answer), or delete a card by pressing a button.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/flashcards&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://mariosanchez.org/flashcards/&#34;&gt;Live Demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;currency-exchange-app&#34;&gt;Currency Exchange App&lt;/h2&gt;
-&lt;p&gt;Challenge project from &lt;a href=&#34;https://cs50.harvard.edu/beyond/2019/&#34;&gt;CS50 Beyond&lt;/a&gt;. As the other two, this app makes extensive use of &lt;code&gt;props&lt;/code&gt; and &lt;code&gt;state&lt;/code&gt;, and also makes an API call to an external website that serves currency exchange information. The user interface shows two input fields: one, where you input the quantity of the base currency, and the other where the app shows you automatically the conversion to any currency found in a drop down menu. Since this app uses my own API key and I have removed it before pushing to Github, the Live Demo will not work (it will only show you how the user interface looks). You will need to add your own key if you want to make it work.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/react-exchange&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;http://mariosanchez.org/react-exchange/&#34;&gt;Live Demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>November of Code</title>
-      <link>https://mariosanchez.org/posts/coding1123/</link>
-      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/coding1123/</guid>
-      <description>&lt;p&gt;For the last two weeks I have been focusing on practice projects. I had been spending most of my time in online coding courses, but I noticed that I was forgetting what I learned because I didn&amp;rsquo;t practice.&lt;/p&gt;
-&lt;p&gt;I have recently completed several practice projects, encompassing Python, JavaScript and SQL. I am summarizing the projects below, and including a link to their Github repositories:&lt;/p&gt;
-&lt;h2 id=&#34;quiz-app&#34;&gt;Quiz App&lt;/h2&gt;
-&lt;p&gt;Console app that prompts the user for answers to different questions. It tallies the total correct answers vs. total answers submitted, and displays the final score once the quiz is over. It is implemented with Python object oriented programming.
-&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/python-oop-quiz&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;probability-calculator&#34;&gt;Probability Calculator&lt;/h2&gt;
-&lt;p&gt;Object oriented programming project implemented in Python. It assumes a container with a variable number of different color balls. The program calculates the probability that a set of balls, for example &lt;code&gt;red: 2, blue:5&lt;/code&gt; will be extracted from the total pool of balls after a random number of draws.
-&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/random-balls&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;rgb-to-hex-converter&#34;&gt;RGB to Hex Converter&lt;/h2&gt;
-&lt;p&gt;Web app that displays the hex value for a provided RGB value. For example, a RGB value of &lt;code&gt;RGB(234,58,100)&lt;/code&gt; will give you a hex value of &lt;code&gt;#EA3A64&lt;/code&gt;.
-The app is developed in JavaScript, using different DOM manipulation and event listening functions.
-&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/rgb-to-hex&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;http://mariosanchez.org/rgb-to-hex/&#34;&gt;Live Demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;web-scraping-for-database-analysis&#34;&gt;Web Scraping for Database Analysis&lt;/h2&gt;
-&lt;p&gt;Console app that uses Python&amp;rsquo;s web scraping package &lt;a href=&#34;https://beautiful-soup-4.readthedocs.io/en/latest/&#34;&gt;BeautifulSoup&lt;/a&gt; to extract information from a soccer database site, and then cleans and formats the data so that in can be imported into a &lt;code&gt;SQLite&lt;/code&gt; database where we can perform analysis by running different queries. It uses Python regular expressions and string manipulation functions to clean up the data.
-&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/bs4-and-sql&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;web-app-with-bottle-and-sqlite&#34;&gt;Web App with Bottle and SQLite&lt;/h2&gt;
-&lt;p&gt;Web app that combines Python-based web framework &lt;a href=&#34;https://bottlepy.org&#34;&gt;Bottle&lt;/a&gt; with SQLite. The app lets users register for a party, submitting their name, how many people will come with them, and what they will bring. The HTML form includes a text field, a drop-down menu and radio buttons. The app connects to SQLite so that we can update and retrieve information from the database.
-&lt;strong&gt;&lt;a href=&#34;https://github.com/mariobox/bottle-sql&#34;&gt;Github Repository&lt;/a&gt;&lt;/strong&gt; | &lt;strong&gt;&lt;a href=&#34;https://mysterious-temple-24688-9fdd99ca6559.herokuapp.com/&#34;&gt;Live Demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Quick Thoughts on AI</title>
-      <link>https://mariosanchez.org/posts/ai/</link>
-      <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/ai/</guid>
-      <description>&lt;p&gt;A few weeks ago I asked &lt;a href=&#34;https://openai.com/blog/chatgpt/&#34;&gt;ChatGPT&lt;/a&gt; to write a 500-word article about the different types of batteries used in power tools. Since I&amp;rsquo;m very familiar with the topic, I was curious to see how ChatGPT would do. In a matter of seconds, ChatGPT generated a surprisingly good article, accurate and very well written (and not one word longer than 500).&lt;/p&gt;
-&lt;p&gt;My first thought was: those poor chaps writing website copy and search engine fodder at Fiverr for 10 dollars a piece better find another line of work. However, the implications of this technology go beyond just low-level copywriters. Highly paid professionals, like computer programmers or doctors, are also in the path of this disruptive technology.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s not hard to imagine a near future in which you can ask an AI to write a program in Python to tell you when to sell a certain stock, or to use an AI trained with the knowledge and experience of every doctor who ever lived to diagnose an illness based on a list of symptoms.&lt;/p&gt;
-&lt;p&gt;All this begs the question:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;if getting answers to common questions is becoming a commodity at near-zero cost, what will become valuable?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Perhaps the best answer I&amp;rsquo;ve found comes from &lt;strong&gt;Kevin Kelly&lt;/strong&gt; in his prophetic book &lt;a href=&#34;https://kk.org/books/the-inevitable&#34;&gt;The Inevitable&lt;/a&gt;, written in 2016. &lt;strong&gt;KK&lt;/strong&gt; says: &lt;em&gt;&amp;ldquo;When answers are free or easy, what becomes valuable are good questions&amp;rdquo;&lt;/em&gt;. He goes on to define what a good question is:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;A good question&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Is not concerned with a correct answer.&lt;/li&gt;
-&lt;li&gt;Cannot be answered immediately.&lt;/li&gt;
-&lt;li&gt;Challenges existing answers.&lt;/li&gt;
-&lt;li&gt;Is one you badly want answered once you hear it, but had no inkling you cared before it was asked.&lt;/li&gt;
-&lt;li&gt;Creates a new territory of thinking.&lt;/li&gt;
-&lt;li&gt;Reframes its own answers.&lt;/li&gt;
-&lt;li&gt;Is a seed for innovation in science, technology, art, politics and business.&lt;/li&gt;
-&lt;li&gt;Is a probe, a what-if scenario.&lt;/li&gt;
-&lt;li&gt;Skirts on the edges of what is known and not known, neither silly nor obvious.&lt;/li&gt;
-&lt;li&gt;Cannot be predicted.&lt;/li&gt;
-&lt;li&gt;Generates many other good questions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Finally, &lt;strong&gt;KK&lt;/strong&gt; concludes, asking good questions will be the sign of an educated mind. It will also be the last job a machine will learn how to do, and ultimately what humans are here for.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Three Words for 2023</title>
-      <link>https://mariosanchez.org/posts/3words/</link>
-      <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/3words/</guid>
-      <description>&lt;p&gt;The &lt;strong&gt;Three Words&lt;/strong&gt; for the year is an excercise created by &lt;a href=&#34;https://chrisbrogan.com://chrisbrogan.com/stories/community/3Words2022/&#34;&gt;Chris Brogan&lt;/a&gt; in 2006 to guide his actions for the year ahead.
-It somehow took off, and every year since, Chris has shared his Three Words with his readers.
-I&amp;rsquo;ve tried it for several years and it has helped me focus on my priorities, guided my efforts and helped me live more intentionally.&lt;/p&gt;
-&lt;p&gt;The Three Words are not goals or resolutions, which are more specific, but just guideposts to help you move in the right direction.
-To make an analogy, goals (and new years resolutions) are a like a GPS. Your Three Words are like a compass.&lt;/p&gt;
-&lt;p&gt;My Three Words for 2023 are: &lt;strong&gt;Kaizen&lt;/strong&gt;, &lt;strong&gt;Hobby&lt;/strong&gt; and &lt;strong&gt;People&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;kaizen&#34;&gt;Kaizen&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.investopedia.com/terms/k/kaizen.asp&#34;&gt;Kaizen&lt;/a&gt; refers to the Japanese philosophy of continuous improvement.
-In my case it means being more organized (and keeping at it), and taking my minimalist practice to the next level. Why am I focusing on this? Because I tend to fly off the seat of my pants and that has sometimes lead to time wasted and sub optimal results, and while I am pretty good at living with few, essential things there is still some room for improvement in the minimalist front.&lt;/p&gt;
-&lt;h2 id=&#34;hobby&#34;&gt;Hobby&lt;/h2&gt;
-&lt;p&gt;I chose this word to remind me not to let the money motive get in the way of enjoyment and learning.
-I recently retired from the corporate world and noticed a tendency to stop doing things that don&amp;rsquo;t generate me money (perhaps out of fear of not having a regular paycheck).
-As a result, I was jumping from one thing to another feeling stressed and frustrated.
-I&amp;rsquo;ve made the decision to approach every new endevour as a hobby, and not let the fact of not making money from it become an excuse for not doing what I enjoy.&lt;/p&gt;
-&lt;h2 id=&#34;people&#34;&gt;People&lt;/h2&gt;
-&lt;p&gt;As an introvert who focused mostly on work for the past 30 years, I&amp;rsquo;ve neglected many personal relationships and have grown distant from most of my friends from the past.
-I&amp;rsquo;ve made it a point to reconnect with old friends and to go out with them &lt;abbr title=&#34;In Real Life&#34;&gt;IRL&lt;/abbr&gt; at least once a year.
-I&amp;rsquo;ve also decided to be more diligent at keeping in touch with friends who don&amp;rsquo;t live in my city.
-So far, everybody I&amp;rsquo;ve reconnected with has been trully happy that I reached out after so long.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What are your Three Words?&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://chrisbrogan.com/stories/community/3words2022/&#34;&gt;Chris Brogan&amp;rsquo;s 3 Words for 2022&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://sive.rs/balance&#34;&gt;How To Do What You Love and Make Good Money&lt;/a&gt;. ~Derek Sivers&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>RSS: Everything Old is New Again</title>
-      <link>https://mariosanchez.org/posts/rss/</link>
-      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/rss/</guid>
-      <description>&lt;p&gt;I recently wrote about &lt;a href=&#34;https://mariosanchez.org/posts/vim/&#34;&gt;Vim&lt;/a&gt;, a powerful old-school text editor.
-Today, I want to talk about another old but extremely useful technology: &lt;abbr title=&#34;Really Simple Syndication&#34;&gt;RSS&lt;/abbr&gt;, and why it&amp;rsquo;s making a comeback.&lt;/p&gt;
-&lt;p&gt;RSS stands for &lt;strong&gt;Really Simple Syndication&lt;/strong&gt;, and many websites still use it to publish updates to their content.
-RSS feeds allow users to subscribe to a website&amp;rsquo;s updates and receive notifications when new content is published.
-RSS feeds can be accessed using an RSS reader or aggegator, which lets users view and manage all their subscriptions in one place.&lt;/p&gt;
-&lt;p&gt;The popularity of RSS feeds peaked about 15 years ago, and has declined in recent years due to the rise of social media.
-Social media feeds work pretty much like RSS feed readers in the sense that users can follow the sites they want, and read all their updates in one place.
-An important difference, though, is that social media introduced two features not present in RSS readers:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The ability to post comments&lt;/li&gt;
-&lt;li&gt;A proprietary algorithm that heavily influences what you see on your feed&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;These two features are partially responsible not only for the rise of social media, but also for the stress fractures that we begin to see today:
-since algorithms optimize for the profitability of the platform, and profitability is tied to &amp;ldquo;engagement&amp;rdquo;, they are designed to make you stick around as much as possible (some would say that they are designed to make you addicted to the platform).
-They do so by making you angry or by feeding you content that reinforces your biases.
-Social media platforms also censor information, sometimes in &lt;a href=&#34;https://www.thefp.com/p/how-twitter-rigged-the-covid-debate&#34;&gt;collusion&lt;/a&gt; with the state.&lt;/p&gt;
-&lt;p&gt;When you ponder the state of social media today, it comes as no surprise that more people are deciding to give RSS a try.
-RSS offers a much quieter reading experience, allowing you to enjoy content on your own terms.&lt;/p&gt;
-&lt;h2 id=&#34;how-does-rss-work&#34;&gt;How does RSS work?&lt;/h2&gt;
-&lt;p&gt;An RSS feed is basically a text file written in a format called XML (very similar to HTML).
-The content management systems that power websites generate this file automatically, and update it every time new content is added.&lt;/p&gt;
-&lt;p&gt;Users grab the feed&amp;rsquo;s URL and add it to an RSS reader, a program that regularly crawls the site and displays any new content in an easy-to-read interface similar to a web page (although there are a few text-only RSS readers as well).&lt;/p&gt;
-&lt;p&gt;In the past, media sites would prominently display an &lt;a href=&#34;https://duckduckgo.com/?q=rss+icon&amp;amp;t=h_&amp;amp;ia=web&#34;&gt;RSS icon&lt;/a&gt; that linked to their feed&amp;rsquo;s URL.
-These days, however, it is much more common to find their social media icons instead.
-That doesn&amp;rsquo;t mean that their RSS feed doesn&amp;rsquo;t exist, though.
-You just have to look harder.
-Usually, you can find it by typing an URL such as these in your browser:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;somesite.com/feed&lt;/li&gt;
-&lt;li&gt;somesite.com/feed.xml&lt;/li&gt;
-&lt;li&gt;somesite.com/index.xml&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you find it, it probably looks like this:&lt;/p&gt;
-&lt;img src=&#34;https://mariosanchez.org/img/xml.jpg&#34; alt=&#34;image of an XML page&#34; /&gt;
-&lt;p&gt;Just for fun, follow this link: &lt;a href=&#34;https://mariosanchez.org/posts/index.xml&#34;&gt;https://mariosanchez.org/posts/index.xml&lt;/a&gt;.
-That&amp;rsquo;s the RSS feed for this site.
-In fact, try grabbing a few feeds from different sites and you&amp;rsquo;ll be ready for your next step: adding those feeds to an RSS reader.&lt;/p&gt;
-&lt;h2 id=&#34;rss-readers&#34;&gt;RSS Readers&lt;/h2&gt;
-&lt;p&gt;As far as RSS readers go you have many options.
-Three popular ones are &lt;a href=&#34;&#34;&gt;Feedly&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;Inoreader&lt;/a&gt; and &lt;a href=&#34;&#34;&gt;Newsblur&lt;/a&gt;, but there are &lt;a href=&#34;https://indieweb.org/feed_reader&#34;&gt;many others&lt;/a&gt;.
-Most of them offer a free tier that you can sign up for if you want to give RSS a try. Just add all the feeds you want to follow,
-and the RSS reader will display their updated content in a neatly organized dashboard that you can customize to your liking.&lt;/p&gt;
-&lt;img src=&#34;https://mariosanchez.org/img/inoreader.png&#34; alt=&#34;inoreader screen shot&#34; /&gt;
-&lt;span class=&#34;small date&#34;&gt;Inoreader Screen Shot&lt;/span&gt;
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.businessinsider.com/guides/tech/what-is-rss-feed&#34;&gt;What is an RSS Feed&lt;/a&gt;: A good primer on RSS. ~Business Insider&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://indieweb.org/feed_reader&#34;&gt;RSS Reader List&lt;/a&gt;: Comprehensive list of different RSS Readers. ~Indieweb&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.vice.com/en/article/a3mm4z/the-rise-and-demise-of-rss&#34;&gt;The Rise and Demise of RSS&lt;/a&gt; A detailed account of the history of RSS. ~Vice&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Debt Ceiling Conundrum</title>
-      <link>https://mariosanchez.org/posts/debt/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/debt/</guid>
-      <description>&lt;p&gt;The US will run a federal budget deficit of &lt;strong&gt;$1.1 Trillion dollars&lt;/strong&gt; in 2023, product of &lt;strong&gt;$4.7T&lt;/strong&gt; in tax revenues minus &lt;strong&gt;$5.8T&lt;/strong&gt; in expenses.
-At the same time, experts estimate that the federally mandated debt ceiling of &lt;strong&gt;$31.4T&lt;/strong&gt; (the maximum level of national debt allowed by Congress) will most likely be &lt;a href=&#34;https://www.forbes.com/sites/simonmoore/2022/11/17/debt-ceiling-crash-risk-increases-for-financial-markets-into-2023/?sh=441faccc5f33&#34;&gt;breached&lt;/a&gt; in Q1 or Q2 of 2023.&lt;/p&gt;
-&lt;p&gt;Before the government can sell Treasury bonds to cover the deficit, Congress would need to raise the debt ceiling. Democrats and Republicans will argue about it, but in the end both sides will make concessions and the debt ceiling will be raised, again.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Now let&amp;rsquo;s talk about the debt.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Our $31.4T national debt is the result of years of accumulating budget deficits.
-That debt has been financed by selling Treasury bonds.
-Currently, &lt;strong&gt;interest payments&lt;/strong&gt; on the debt are roughly &lt;strong&gt;$0.5T&lt;/strong&gt; per year, one of the largest expenses in the federal budget, behind &lt;strong&gt;Medicare/Medicare&lt;/strong&gt; ($1.5T), &lt;strong&gt;Social Security&lt;/strong&gt; ($1.2T), and the &lt;strong&gt;Military&lt;/strong&gt; ($0.7M).&lt;/p&gt;
-&lt;p&gt;Furthermore, the average maturity of our national debt is about &lt;strong&gt;6.1&lt;/strong&gt; years, which means that approximately 1/6 of our $31.4T debt, or &lt;strong&gt;$5.2T&lt;/strong&gt;, will come due every year.
-The money to pay back maturing bonds is NOT part of the federal budget, so the US government will need to sell $5.2T of &lt;strong&gt;new&lt;/strong&gt; bonds to pay back bondholders.
-Those bonds will carry a much higher interest rate (for example, the &lt;a href=&#34;https://www.marketwatch.com/investing/bond/tmubmusd10y/charts&#34;&gt;yield of the benchmark 10-Year T-note&lt;/a&gt; is &lt;abbr title=&#34;January 1st 2023&#34;&gt;now&lt;/abbr&gt; fluctuating between &lt;strong&gt;3.5%&lt;/strong&gt; and &lt;strong&gt;4%&lt;/strong&gt;, the highest level in 10 years).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Now, what would happen if nobody wants to buy our bonds?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Well, the $4.7T we collect in tax revenue wouldn&amp;rsquo;t be enough to pay for the $5.7T needed to service our debt, and the US would be in &lt;strong&gt;default&lt;/strong&gt;.
-Also, there wouldn&amp;rsquo;t be a single penny left to run the federal government: no Medicare, no Social Security, no Military, nothing.
-The country would slip into a &lt;strong&gt;depression&lt;/strong&gt; and possibly a &lt;strong&gt;revolution&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;But fortunately, people and institutions still want to buy our bonds.
-After all, the US has never defaulted, and Treasury bonds are considered the safest investment.
-What &lt;em&gt;could&lt;/em&gt; happen, though, is that bond buyers could demand a &lt;strong&gt;higher interest&lt;/strong&gt; rate if we don&amp;rsquo;t put our fiscal house in order.&lt;/p&gt;
-&lt;p&gt;Higher interest means higher deficits, and higher deficits require more debt, feeding a &lt;strong&gt;vicious cycle&lt;/strong&gt; that has to break at some point.
-The sensible thing to do would be to start reducing our federal expenditures until we achieve a &lt;a href=&#34;https://www.investopedia.com/terms/b/balanced-budget.asp&#34;&gt;balanced budget&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Unfortunately, neither the government nor Congress are showing any inclination towards fiscal restrain.
-By kicking the can, our elected officials are not only not solving the problem: they are making it worse and passing the buck to future generations.&lt;/p&gt;
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.thebalancemoney.com/current-u-s-federal-government-tax-revenue-3305762&#34;&gt;U.S. Federal Government Tax Revenue 2023&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.usdebtclock.org/&#34;&gt;U.S. Debt Dashboard in Real Time&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.crfb.org/blogs/breaking-down-proposals-presidents-fy-2023-budget&#34;&gt;Breaking Down the Proposals in the President&amp;rsquo;s FY 2023 Budget&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why I&#39;m Learning to Use Vim</title>
-      <link>https://mariosanchez.org/posts/vim/</link>
-      <pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/vim/</guid>
-      <description>&lt;p&gt;The world is becoming a very complicated place.&lt;/p&gt;
-&lt;p&gt;The rush to make everything bigger and better is creating unnecessarily complicated products. Product managers build feature after feature into products (&lt;a href=&#34;https://en.wikipedia.org/wiki/Feature_creep&#34;&gt;feature creep&lt;/a&gt;) until something that started simple and did something limited extremely well, morphs into a bloated monstrosity that aims to please everybody (or an entirely new user base) leaving the core user base frustrated and yearning for the simplicity of the original product.&lt;/p&gt;
-&lt;p&gt;Take the following pictures of the dashboard of the Ford Bronco, the first one of the 1975 model, and the second one of 2022.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&#34;https://mariosanchez.org/img/bronco75.png&#34; alt=&#34;picture of 1975 bronco&#34; class=&#34;gallery&#34; /&gt;
-&lt;figcaption class=&#34;small&#34;&gt;Dashboard of 1975 Ford Bronco&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br /&gt;
-&lt;figure&gt;
-&lt;img src=&#34;https://mariosanchez.org/img/bronco22.png&#34; alt=&#34;picture of 2022 bronco&#34; class=&#34;gallery&#34; /&gt;
-&lt;figcaption class=&#34;small&#34;&gt;Dashboard of 2022 Ford Bronco&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The only thing these two vehicles have in common is the name, and perhaps some subtle exterior design cues.&lt;/p&gt;
-&lt;p&gt;I think I wouldn&amp;rsquo;t be lying if I said that drivers back in 1975 found more enjoyment in their Bronco than drivers of the 2022 model, which, if the demographics of drivers of similar vehicles is any indication, will mostly be relegated to hauling groceries and picking up the kids from school.&lt;/p&gt;
-&lt;p&gt;Ford is now designing with a different user base in mind, and those who appreciated the basic qualities and ruggedness of the early Bronco will have to settle for something different.&lt;/p&gt;
-&lt;p&gt;But I&amp;rsquo;m not here to talk about cars but about &lt;strong&gt;text editors&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;my-use-case-for-a-text-editor&#34;&gt;My Use Case for a Text Editor&lt;/h2&gt;
-&lt;p&gt;I use a text editor for coding and writing on my website. These two applications don&amp;rsquo;t require any fancy formatting: code can&amp;rsquo;t be written in anything other than a plain text editor, and I write my articles and blog posts in &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;Markdown&lt;/a&gt; (which is a variation of plain text that can easily be converted into fully formatted HTML for publication on the web).&lt;/p&gt;
-&lt;p&gt;I had been using &lt;strong&gt;Microsoft Visual Studio Code&lt;/strong&gt; (or simply MS VS Code), which is a great text editor, but as any software made by a large corporation it can be bloated and slow. Also, as I hinted in my &lt;a href=&#34;https://mariosanchez.org/posts/reboot/&#34;&gt;first post&lt;/a&gt;, I am trying to wean myself away from technology developed by large corporations, and opting instead for open source alternatives. The time was right to give &lt;strong&gt;Vim&lt;/strong&gt; a try.&lt;/p&gt;
-&lt;h2 id=&#34;vim-vs-vs-code&#34;&gt;Vim vs. VS Code&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.vim.org/&#34;&gt;Vim&lt;/a&gt; is an old but powerful text editor that comes with your Linux installation. You can access it directly from the command line and toggle back and forth from Vim to the command line and viceversa.&lt;/p&gt;
-&lt;p&gt;Since Vim was developed before the mouse was invented, and before you could have several windows open on your screen at the same time, you have to use different key bindings to navigate and edit your document. In fact, what makes Vim so popular among experienced programmers is that your hands never have to leave the keyboard.&lt;/p&gt;
-&lt;p&gt;The drawback is that you have to learn the key bindings and alternate between three different &lt;a href=&#34;https://linuxhandbook.com/vim-modes/&#34;&gt;modes&lt;/a&gt; (Normal, Visual and Insert). I won&amp;rsquo;t be talking about the specifics of Vim here, since it is outside the scope of this article, but I will link to a few good resources at the bottom of this post.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VS Code&lt;/strong&gt;, on the other hand, is a modern &lt;strong&gt;IDE&lt;/strong&gt; (Integrated Development Environment). Your screen is usually divided in three parts: folders, document and terminal. Since it works as a &lt;strong&gt;GUI&lt;/strong&gt; (Graphical User Interfase) you can use your mouse and a bunch of menu commands to make your life easier.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&#34;https://mariosanchez.org/img/vim.png&#34; alt=&#34;screenshot of Vim text editor&#34; width=&#34;640px&#34; class=&#34;gallery&#34; /&gt;
-&lt;figcaption class=&#34;small&#34;&gt;Vim Text Editor&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br /&gt;
-&lt;figure&gt;
-&lt;img src=&#34;https://mariosanchez.org/img/vscode.png&#34; alt=&#34;screenshot of VS Code text editor&#34; width=&#34;640px&#34; class=&#34;gallery&#34; /&gt;
-&lt;figcaption class=&#34;small&#34;&gt;VS Code Text Editor&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The main difference, though, is the amount of &lt;strong&gt;RAM&lt;/strong&gt; they use. If you want to edit a code file, or write an article in plain text, just having VS Code open will consume &lt;strong&gt;343.5MB&lt;/strong&gt; of RAM. On the other hand, Vim will only use &lt;strong&gt;3.8MB&lt;/strong&gt; (both tested in my own computer). This means that VS Code uses &lt;strong&gt;90 times&lt;/strong&gt; (!) more memory than Vim to work on a plain text file.&lt;/p&gt;
-&lt;h2 id=&#34;what-about-microsoft-word&#34;&gt;What About Microsoft Word?&lt;/h2&gt;
-&lt;p&gt;You can&amp;rsquo;t use &lt;strong&gt;Microsoft Word&lt;/strong&gt; for coding, since it is not a plain text editor. However, it is worth comparing &lt;strong&gt;MS Word vs. Vim&lt;/strong&gt; for my second use case: writing articles and blog posts in plain text.&lt;/p&gt;
-&lt;p&gt;The amount of RAM you need to keep a copy of MS Word open is a &lt;a href=&#34;https://bit.ly/3FYIeHx&#34;&gt;hotly contested topic&lt;/a&gt;. It seems that it depends on what hardware you are using and what version of MS Word you are running, In any case, I&amp;rsquo;ve seen figures that fluctuate between &lt;strong&gt;250MB&lt;/strong&gt; and &lt;strong&gt;several Gigabytes&lt;/strong&gt; (!), totally insane for working with a simple text file.&lt;/p&gt;
-&lt;p&gt;If you use MS Word because you need to format your text, remember that you can always write in Markdown on a simple plain text editor, and then easily transform your files to HTML to publish your articles on the web.&lt;/p&gt;
-&lt;h2 id=&#34;in-summary&#34;&gt;In Summary&lt;/h2&gt;
-&lt;p&gt;I am still learning Vim and forcing myself to write my posts with it instead of VS Code. Even if the learning curve is steep, I find that by learning two or three new commands every day I am getting much better. I am finally beginning to understand why those experienced coders rave so much about Vim.&lt;/p&gt;
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.linuxfoundation.org/blog/blog/classic-sysadmin-vim-101-a-beginners-guide-to-vim&#34;&gt;Vim 101: A Beginners Guide To Vim&lt;/a&gt;: By the Linux Foundation&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://sive.rs/plaintext&#34;&gt;Write Plain Text Files&lt;/a&gt;: By Derek Sivers&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reboot</title>
-      <link>https://mariosanchez.org/posts/reboot/</link>
-      <pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://mariosanchez.org/posts/reboot/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve decided to start blogging again.&lt;/p&gt;
-&lt;p&gt;The &amp;ldquo;social&amp;rdquo; web has become a toxic and unhospitable place. Although I quit Facebook years ago, I was still using Twitter. Even before Elon took over, Twitter was already a wasteland with the nuance and civility of a South American soccer stadium, where the extreme left and the extreme right hurl quips and insults to each other 24 hours a day, while everybody else is ignored. Why would somebody want to spend time in such a place?&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s time to bring back the pre-Web 2.0 idea of running our own website: a place where we can share our thoughts without fear of censorship or surveillance, a digital home made of text files that we can take with us wherever we want, mold it to our liking, and let it evolve with us. Let the reboot begin!&lt;/p&gt;
+      <guid>http://localhost:1313/posts/reboot/</guid>
+      <description>&lt;p&gt;In high school algebra you will regularly need to solve linear equations, quadriatic equations, or equations of a higher power, as well as systems of equations. While it is important for you to learn how to solve them algebraically, you can also use the power of computers, and in particular Python (a high-level, general-purpose programming language) to solve the most complex equations in a matter of miliseconds.&lt;/p&gt;
+&lt;p&gt;To solve equations with Python, you need to install a library called &lt;code&gt;sympy&lt;/code&gt;, which handles all the behind-the-scenes &amp;ldquo;magic&amp;rdquo; to generate the answers.&lt;/p&gt;
+&lt;p&gt;To install &lt;code&gt;sympy&lt;/code&gt; (or any Python package) system-wide, you need to run the following command from the command prompt: &lt;code&gt;sudo apt install python3-xyz&lt;/code&gt;, where &lt;code&gt;xyz&lt;/code&gt; is the name of the package you are trying to install.In this case we will run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt install python3-sympy&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We will be using &lt;code&gt;sympy&lt;/code&gt; to create two extremely brief snippets (just two lines of code each!), one of them to solve equations with one variable, and the other one to solve systems of equations. The equations can be linear, quadratic, cubic, etc. and the solutions can be real or complex numbers.&lt;/p&gt;
+&lt;p&gt;Important note: for the programs to work, the equations must be input in Python format: for example, x to the power of two is &lt;code&gt;x**2&lt;/code&gt;, the square root of 4 is &lt;code&gt;sqrt(4)&lt;/code&gt;, and 5 times x is &lt;code&gt;5*x&lt;/code&gt;.&lt;/p&gt;
+&lt;h5 id=&#34;solving-equations-with-one-variable&#34;&gt;Solving equations with one variable&lt;/h5&gt;
+&lt;p&gt;This is the code to solve equations with one variable (in this case, we are solving a quadratic equation: &lt;code&gt;x**2 - 5*x + 6&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;
+import sympy
+from sympy.abc import x
+from sympy.solvers import solve
+
+
+# Put the equation here:
+eq = (x**2 - 5*x + 6)
+
+print(&#34;x = &#34;, solve(eq, x))
+&lt;/pre&gt;
+&lt;p&gt;The solution will be presented in the following form:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;x = [2, 3]&lt;/code&gt;&lt;/p&gt;
+&lt;h5 id=&#34;solving-systems-of-equations&#34;&gt;Solving systems of equations&lt;/h5&gt;
+&lt;p&gt;This is the code to solve systems of equations (in this case we want to find the solution of a pair of linear equations: &lt;code&gt;x + y = 2&lt;/code&gt; and &lt;code&gt;x + y = 0&lt;/code&gt;). For the program to work, we should write our expressions putting all our variables and costants together, like this: &lt;code&gt;x + y - 2&lt;/code&gt; and &lt;code&gt;x - y&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;
+import sympy
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+
+# Put the equation here:
+eq = ([x + y - 2, x - y])
+
+print(&#34;x = &#34;, solve(eq, [x, y]))
+&lt;/pre&gt;
+&lt;p&gt;The solution will be presented in the following form:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;x =  {x: 1, y: 1}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To run the programs you need to type the following command: &lt;code&gt;python3 &amp;lt;snippet.py&amp;gt;&lt;/code&gt; replacing &lt;code&gt;snippet&lt;/code&gt; with the name you assigned to your program.&lt;/p&gt;
+&lt;p&gt;While the equations used in this example are very simple, the programs also work for more complicated expressions.&lt;/p&gt;
+&lt;p&gt;This is just one example of how you can leverage the power of computers to solve equations quickly and reliably.&lt;/p&gt;
 </description>
     </item>
     
