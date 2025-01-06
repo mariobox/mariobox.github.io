@@ -137,7 +137,7 @@ print(&#34;x = &#34;, solve(eq, x))
 &lt;p&gt;The solution will be presented in the following form:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;x = [2, 3]&lt;/code&gt;&lt;/p&gt;
 &lt;h5 id=&#34;solving-systems-of-equations&#34;&gt;Solving systems of equations&lt;/h5&gt;
-&lt;p&gt;This is the code to solve systems of equations (in this case we want to find the solution of a pair of linear equations: &lt;code&gt;x + y = 2&lt;/code&gt; and &lt;code&gt;x + y = 0&lt;/code&gt;). For the program to work, we should write our expressions putting all our variables and costants together, like this: &lt;code&gt;x + y - 2&lt;/code&gt; and &lt;code&gt;x - y&lt;/code&gt;.  Again, you can cut and paste this code into a Python &lt;code&gt;.py&lt;/code&gt; file to be able to run it:&lt;/p&gt;
+&lt;p&gt;This is the code to solve systems of equations (in this case we want to find the solution of a pair of linear equations: &lt;code&gt;x + y = 2&lt;/code&gt; and &lt;code&gt;x = y&lt;/code&gt;). For the program to work, we should write our expressions putting all our variables and costants together, like this: &lt;code&gt;x + y - 2&lt;/code&gt; and &lt;code&gt;x - y&lt;/code&gt;.  Again, you can cut and paste this code into a Python &lt;code&gt;.py&lt;/code&gt; file to be able to run it:&lt;/p&gt;
 &lt;pre&gt;
 import sympy
 from sympy.abc import x, y
