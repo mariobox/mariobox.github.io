@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <script src="https://kit.fontawesome.com/36b4b9bdc4.js" crossorigin="anonymous"></script>
+  <title>Store Sales and Inventory System with SQL | mariosanchez.org</title>
+  <meta name="author" content="Mario Sanchez Carrion">
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    a {
+      color: #212539;
+    }
+
+    .nav-link:hover {
+      color: #555;
+    }
+
+    .bold {
+      font-weight: 600;
+      color: #212539;
+    }
+
+    .icon {
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: grey;
+    }
+
+    a:hover {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    pre {
+      color: var(--bs-code-color);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-lg">
+    <div class="row" style="margin-top: 5rem;">
+      <div class="col-md-3 gx-5">
+        <img alt="Mario Sanchez Carrion profile picture" class="img-fluid mb-4"
+          src="https://mariosanchez.org/img/msc-li.jpg" style="border-radius: 50%;" width="125" height="125">
+      </div>
+      <div class="col-md-6 gx-5">
+        <div class="row mb-4">
+          <div class="col">
+            <h2 style="font-weight: 600">Mario Sanchez Carrion</h2>
+            <p class="tagline">I am a math tutor currently helping middle and high school students master
+              common math concepts, and getting them prepared for the SAT and ACT tests.</p>
+            <p class="tagline"> I am also a computer programming enthusiast, especially interested in data
+              analytics using Python, SQL and R.</p>
+
+            <p class="tagline">I previously worked in international marketing and product development for <a
+                href="https://www.stanleyblackanddecker.com/">Stanley Black & Decker</a>, for more than
+              25 years.</p>
+
+            <p class="d-inline tagline">👋 Contact me at <a
+                href="mailto:mario@mariosanchez.org">mario@mariosanchez.org</a>.</p>
+            <a href="https://www.linkedin.com/in/mariobox" class="icon" target="_blank"><span
+                class="fa-brands fa-linkedin" style="font-family:'FontAwesome'"></span></a>
+            <a href="https://github.com/mariobox" class="icon" target="_blank"><span class="fa-brands fa-github"
+                style="font-family:'FontAwesome'"></span></a>
+
+          </div>
+        </div>
+        
+
+<div class="row mb-4">
+  <div class="col">
+    <ul class="nav nav-tabs" role="tablist">
+
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/">
+          Tutoring
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/coding/">
+          Coding
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/blog/">
+          Blog
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="course mb-4">
+      <h4 class="mb-1" style="font-weight: 600">Store Sales and Inventory System with SQL</h4>
+  <p class="description"></p>  
+  
+      
+      <p><strong>Made with</strong>:  <i class="fas fa-database"></i> SQLite</p>
+<p>Video overview: (<a href="https://youtu.be/0tICUfe6Nbg">https://youtu.be/0tICUfe6Nbg</a>)</p>
+<h4 id="scope">Scope</h4>
+<p>The database for the Soccer Shirt Store includes all entities necessary to facilitate the process of tracking customer orders and inventory available for a chain of sports retail stores that for now only sells soccer shirts. It also enables the generation of useful reports to run the business, as detailed in the <code>queries.sql</code> file. As such, included in the database&rsquo;s scope is:</p>
+<ul>
+<li>Stores, including basic identifying information</li>
+<li>Salespersons, including basic identifying information</li>
+<li>Customers, including basic identifying information</li>
+<li>Shirts, including basic information</li>
+<li>Orders, including a field for <strong>type</strong> which enables a return</li>
+</ul>
+<p>As a result of many-to-many relationships between the Stores and Shirts, and Orders and Shirts entities, the following junction tables will be created:</p>
+<ul>
+<li>Carried, which details the inventory of shirts in each store</li>
+<li>Ordered, which details the shirts ordered in each order</li>
+</ul>
+<h4 id="functional-requirements">Functional Requirements</h4>
+<p>This database will support:</p>
+<ul>
+<li>CRUD operations for orders</li>
+<li>Automatic update of inventory available after an order is completed</li>
+<li>Tracking lifetime purchases by customers and sales by salespeople</li>
+</ul>
+<p>Note that in this iteration, the system will not support automatic replenishment of shirts once inventory reaches 0.</p>
+<h4 id="representation">Representation</h4>
+<p>Entities are captured in SQLite tables with the following schema.</p>
+<h5 id="entities">Entities</h5>
+<p>The database includes the following entities:</p>
+<h5 id="stores">Stores</h5>
+<p>The <code>stores</code> table includes:</p>
+<ul>
+<li><code>id</code>, which specifies the unique ID for the store as an <code>INTEGER</code>. This column thus has the <code>PRIMARY KEY</code> constraint applied.</li>
+<li><code>location</code>, which specifies the city or region where the store is located as <code>TEXT</code>, given <code>TEXT</code> is appropriate for city fields.</li>
+</ul>
+<h5 id="shirts">Shirts</h5>
+<p>The <code>shirts</code> table includes:</p>
+<ul>
+<li><code>id</code>, which specifies the unique ID for the shirt as an <code>INTEGER</code>. This column thus has the <code>PRIMARY KEY</code> constraint applied.</li>
+<li><code>team</code>, which specifies the shirt&rsquo;s team as <code>TEXT</code>.</li>
+<li><code>size</code>, which specifies the shirt size (S, M or L) as <code>TEXT</code>.</li>
+<li><code>price</code>, which specifies the shirt price as <code>NUMERIC</code>.</li>
+</ul>
+<p>All columns in the <code>shirts</code> table are required and hence should have the <code>NOT NULL</code> constraint applied. No other constraints are necessary.</p>
+<h5 id="customers">Customers</h5>
+<p>The <code>customer</code> table includes:</p>
+<ul>
+<li><code>id</code>, which specifies the unique ID for the customer as an <code>INTEGER</code>. This column thus has the <code>PRIMARY KEY</code> constraint applied.</li>
+<li><code>first_name</code>, which specifies the customer&rsquo;s first name as <code>TEXT</code>, given <code>TEXT</code> is appropriate for name fields.</li>
+<li><code>last_name</code>, which specifies the customer&rsquo;s last name as <code>TEXT</code>, given <code>TEXT</code> is appropriate for name fields.</li>
+</ul>
+<p>All columns that are not primary keys or foreign keys in the <code>customers</code> table are required, and hence should have the <code>NOT NULL</code> constraint applied. No other constraints are necessary.</p>
+<h5 id="salespersons">Salespersons</h5>
+<p>The <code>salespersons</code> table includes:</p>
+<ul>
+<li><code>id</code>, which specifies the unique ID for the salesperson as an <code>INTEGER</code>. This column thus has the <code>PRIMARY KEY</code> constraint applied.</li>
+<li><code>first_name</code>, which specifies the salesperson&rsquo;s first name as <code>TEXT</code>, given <code>TEXT</code> is appropriate for name fields.</li>
+<li><code>last_name</code>, which specifies the salesperson&rsquo;s last name as <code>TEXT</code>, given <code>TEXT</code> is appropriate for name fields.</li>
+<li><code>store_id</code>, which specifies the store the salesperson works at, as <code>INTEGER</code>.</li>
+</ul>
+<p>All columns that are not primary keys or foreign keys in the <code>salespersons</code> table are required, and hence should have the <code>NOT NULL</code> constraint applied. This column <code>store_id</code> has the <code>FOREIGN KEY</code> constraint applied, referencing the <code>id</code> column in the <code>stores</code> table, which reflects and ensures that each salesperson works in a particular store.</p>
+<h5 id="orders">Orders</h5>
+<p>The <code>orders</code> table includes:</p>
+<ul>
+<li><code>id</code>, which specifies the unique ID for the order as an <code>INTEGER</code>. This column thus has the <code>PRIMARY KEY</code> constraint applied.</li>
+<li><code>customer_id</code>, which specifies the ID of the customer who placed the order as an <code>INTEGER</code>. This column thus has the <code>FOREIGN KEY</code> constraint applied, referencing the <code>id</code> column in the <code>customers</code> table, which ensures that each order be referenced back to a customer.</li>
+<li><code>salesperson_id</code>, which specifies the ID of the salesperson who sold the order as an <code>INTEGER</code>. This column thus has the <code>FOREIGN KEY</code> constraint applied, referencing the <code>id</code> column in the <code>salespersons</code> table, which ensures that each order be referenced back to a salesperson.</li>
+<li><code>store_id</code>, which specifies the ID of the store where the shirt was sold, as an <code>INTEGER</code>. This column thus has the <code>FOREIGN KEY</code> constraint applied, referencing the <code>id</code> column in the <code>stores</code> table, which ensures that each order be referenced back to a store.</li>
+<li><code>type</code>, which specifies the type of order (P or R, for &ldquo;purchase&rdquo; or &ldquo;return&rdquo;) as <code>TEXT</code>.</li>
+<li><code>date</code>, which specifies the date of the order, as <code>NUMERIC</code>. If no value is provided, it will default to the CURRENT_TIMESTAMP.</li>
+</ul>
+<p>All columns that are not primary keys or foreign keys in the <code>orders</code> table are required and hence have the <code>NOT NULL</code> constraint applied.</p>
+<h5 id="ordered">Ordered</h5>
+<p>The <code>ordered</code> table includes:</p>
+<ul>
+<li><code>order_id</code>, which specifies the ID of the order where the shirt was included, as an <code>INTEGER</code>. This column thus has the <code>FOREIGN KEY</code> constraint applied, referencing the <code>id</code> column in the <code>orders</code> table.</li>
+<li><code>shirt_id</code>, which specifies the ID of a shirt in an order, as an <code>INTEGER</code>. This column thus has the <code>FOREIGN KEY</code> constraint applied, referencing the <code>id</code> column in the <code>shirts</code> table.</li>
+<li><code>quantity</code>, which specifies quantity of shirts of each kind ordered, as an <code>INTEGER</code>. Since an order can be created for a purchase or for a return, <code>quantity</code> accepts negative values.</li>
+</ul>
+<p>The <code>PRIMARY KEY</code> will be the combination of (<code>order_id</code>, <code>shirt_id</code>).</p>
+<h5 id="carried">Carried</h5>
+<p>The <code>carried</code> table includes:</p>
+<ul>
+<li><code>store_id</code>, which specifies the ID of the store where the order originates, as an <code>INTEGER</code>. This column thus has the <code>FOREIGN KEY</code> constraint applied, referencing the <code>id</code> column in the <code>stores</code> table.</li>
+<li><code>shirt_id</code>, which specifies the ID of a shirt carried in the store, as an <code>INTEGER</code>. This column thus has the <code>FOREIGN KEY</code> constraint applied, referencing the <code>id</code> column in the <code>shirts</code> table.</li>
+<li><code>quantity</code>, which specifies quantity of shirts of each kind ordered, as an <code>INTEGER</code>. Since an order can be created for a purchase or for a return, <code>quantity</code> accepts negative values.</li>
+</ul>
+<p>The <code>PRIMARY KEY</code> will be the combination of (<code>store_id</code>, <code>shirt_id</code>).</p>
+<h4 id="relationships">Relationships</h4>
+<p>The below entity relationship diagram describes the relationships among the entities in the database.</p>
+<p><img src="/img/er.jpg" alt="ER Diagram"></p>
+<p>As detailed by the diagram:</p>
+<ul>
+<li>One store may employ many salespersons, but a salesperson can only work with one store. A store may have a minimum of 0 salespersons (like when everybody quits) but a salesperson needs to be assigned to one store in order to be considered a salesperson.</li>
+<li>One store can carry many shirts (a minimum of 0 if they are out of stock) and any shirt can be sold in many stores (minimum of 1 to be set up in the system).</li>
+<li>One order can include many shirts (with a minimum of 1, otherwise there won&rsquo;t be an order) and each shirt can be purchased in many different orders (with a minimum of 0 if nobody orders that shirt).</li>
+<li>One customer can place many orders (minimum of 1 to be considered a customer) but any order can only be associated to one customer (minimum of 1, otherwise there won&rsquo;t be an order).</li>
+<li>One salesperson can sell many orders (minimum of 0 if it is a new salesperson or one that hasn&rsquo;t sold anything yet) but an order can be sold by only one salesperson (minimum of 1, otherwise there won&rsquo;t be an order).</li>
+<li>A shirt can be sold in many stores (minimum of 1 to be set up in the system), and one store can carry many shirts (a minimum of 0 if they are out of stock).</li>
+<li>A shirt can be purchased in many different orders (with a minimum of 0 if nobody orders that shirt), and one order can include many shirts (with a minimum of 1, otherwise there won&rsquo;t be an order).</li>
+</ul>
+<h4 id="optimizations">Optimizations</h4>
+<p>Per the typical queries in <code>queries.sql</code>, it is common for users of the database to want to obtain reports based on a certain shirt being ordered. For that reason, indexes are created on the <code>order_id</code> and <code>shirt_id</code> on the <code>ordered</code> table so that those reports are obtained faster.</p>
+<p>Similarly, it is also common practice for a user of the database to concerned with viewing orders and sales per customer, or orders and sales to one particular customer. As such, an index is created on the <code>customer_id</code> column in the <code>orders</code> table to speed the identification of customers.</p>
+<h4 id="limitations">Limitations</h4>
+<p>The current schema includes a trigger to automatically update inventory every time a shirt is sold. In order to avoid out-of-stock situations, our trigger uses a CASE statement that automatically replenishes the stock to 5 if a customer orders a quantity of shirts larger than the inventory on hand. In other words, if a store has 3 shirts in stock but the customer wants to buy 5, the store automatically orders 8 shirts: 3 to send to the customer (so the order is honored) and 5 to keep in inventory. We assume instant delivery of those 8 shirts, which in real life probably won&rsquo;t be possible: a real life scenario would probably involve notifying the customer of the out-of-stock situation, asking them to come back after a few days to allow for delivery time of the replenishment order.</p>
+   
+
+
+<br />
+      <br />
+      <p class="centered">
+        <span class="social">
+          <a href="https://mariosanchez.org/posts/index.xml" title="RSS"><i class="fa ft fa-rss"
+              aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/mariobox/" title="Linkedin"><i class="fab ft fa-linkedin fa-lg"></i></a>
+          <a href="https://github.com/mariobox" title="Github"><i class="fab ft fa-github fa-lg"></i></a>
+          <a href="mailto:mario@mariosanchez.org" title="Email"><i class="fas ft fa-envelope fa-lg"></i></a>
+        </span>
+      </p>
+      <p class="centered small">
+        &copy; 2025 Mario Sanchez Carrion
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</html>
