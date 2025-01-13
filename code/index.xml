@@ -6,7 +6,76 @@
     <description>Recent content in Code on Mario Sanchez Carrion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plotting Bird Observations on a Map with R</title>
+      <link>https://mariosanchez.org/code/birdwatch/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://mariosanchez.org/code/birdwatch/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;:  &lt;strong&gt;R&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Video overview: (&lt;a href=&#34;https://youtu.be/XwbC2oFqorQ&#34;&gt;https://youtu.be/XwbC2oFqorQ&lt;/a&gt;)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;img src=&#34;https://mariosanchez.org/img/norcar-hab.png&#34; style=&#34;width: 100%; margin-bottom: 3em; margin-top: 2em&#34; /&gt;
+&lt;p&gt;This is a program that makes use of the &lt;code&gt;tidiverse&lt;/code&gt;, &lt;code&gt;dplyr&lt;/code&gt;, &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;maps&lt;/code&gt; and &lt;code&gt;sf&lt;/code&gt; &lt;strong&gt;R&lt;/strong&gt; packages to build a visualization tool that shows the observations of a particular bird species in a US map.&lt;/p&gt;
+&lt;p&gt;These are the functions that were created:&lt;/p&gt;
+&lt;h4 id=&#34;bd_dot_file&#34;&gt;bd_dot_file&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;: &lt;code&gt;bd_dot_file&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;: Prepares a file for input to the &lt;code&gt;bd_dot_plot&lt;/code&gt; function&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;: &lt;code&gt;bd_dot_file(species, state)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arguments&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;species&lt;/code&gt;: a character vector of one or several bird species as denominated by their &lt;code&gt;SPECIES_CODE&lt;/code&gt;, e.g. c(&amp;ldquo;norcar&amp;rdquo;, &amp;ldquo;rebwoo&amp;rdquo;)` for the northern cardinal and red belly woodpecker.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;state&lt;/code&gt;: a string with the state code where we want to see bird observations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;A tibble including the &lt;code&gt;LATITUDE&lt;/code&gt; and &lt;code&gt;LONGITUDE&lt;/code&gt; where the species passed as an argument have been located in the state passed as an argument.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bd_dot_file(c(&amp;quot;norcar&amp;quot;, &amp;quot;rebwoo&amp;quot;), &amp;quot;FL&amp;quot;)&lt;/code&gt; will return a tibble with the &lt;code&gt;LATITUDE&lt;/code&gt; and &lt;code&gt;LONGITUDE&lt;/code&gt; where northern cardinals and red belly woodpeckers have been spotted in Florida.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bd_dot_file(c(&amp;quot;norcar&amp;quot;, &amp;quot;rebwoo&amp;quot;), &amp;quot;XX&amp;quot;)&lt;/code&gt; will return a warning message since &amp;ldquo;XX&amp;rdquo; is not a valid state.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bd_dot_file(c(&amp;quot;norcar&amp;quot;, &amp;quot;rebwoo&amp;quot;))&lt;/code&gt; will return a tibble with the &lt;code&gt;LATITUDE&lt;/code&gt; and &lt;code&gt;LONGITUDE&lt;/code&gt; where northern cardinals and red belly woodpeckers have been spotted in all contiguous US states, since no particular state is provided.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bd_dot_file(c(&amp;quot;nonexistingspecies&amp;quot;), &amp;quot;FL&amp;quot;)&lt;/code&gt; will return a warning message since the species argument provided doesn&amp;rsquo;t include any valid species&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bd_dot_file(&amp;quot;&amp;quot;, &amp;quot;FL&amp;quot;)&lt;/code&gt; will return a warning message since the species argument wasn&amp;rsquo;t provided and one is needed&lt;/p&gt;
+&lt;h4 id=&#34;bd_dot_plot&#34;&gt;bd_dot_plot&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;: &lt;code&gt;bd_dot_plot&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;: Bird Observations Geographical Plot&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;: bd_dot_plot(locs, title)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arguments&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;locs&lt;/code&gt;: a tibble displaying the &lt;code&gt;LATITUDE&lt;/code&gt; and &lt;code&gt;LONGITUDE&lt;/code&gt; of all observations for a selected group of bird species, previously provided to the &lt;code&gt;bd_dot_file&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;title&lt;/code&gt;: a character string with the title we want to give to our chart.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;ggplot&lt;/code&gt; showing a the locations in the US map where the selected group of bird species has been spotted, in the state provided to the &lt;code&gt;bd_dot_file&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bd_dot_plot(locs, &amp;quot;Northern Cardinal observations in FL&amp;quot;)&lt;/code&gt; will return a &lt;code&gt;geom_jitter&lt;/code&gt; &lt;code&gt;ggplot&lt;/code&gt; over a US map showing spots where the northern cardinal has been spotted in FL (if the user selected FL as state argument in &lt;code&gt;bd_dot_file&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bd_dot_plot(&amp;quot;&amp;quot;)&lt;/code&gt; will result in a warning explaining that the argument needs to be a data frame.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bd_dot_plot(locs)&lt;/code&gt; will return a &lt;code&gt;geom_jitter&lt;/code&gt; &lt;code&gt;ggplot&lt;/code&gt; over a US map showing spots where the Northern Cardinal has been spotted in the state provided by the user in &lt;code&gt;bd_dot_file&lt;/code&gt;. If no state was provided it will show all observations in the continental US. Since no title is provided, the default title of &amp;ldquo;Scatterplot&amp;rdquo; will be used.&lt;/p&gt;
+&lt;h4 id=&#34;validate_species&#34;&gt;validate_species&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;: &lt;code&gt;validate_species&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;: a helper function to determine if the value of a species entered by the user corresponds to a valid bird species.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;: &lt;code&gt;validate_state(species)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arguments&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;species&lt;/code&gt;: a character vector, e.g. &lt;code&gt;c(&amp;quot;norcar&amp;quot;, &amp;quot;baleag&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;:
+If input contains an invalid species: a warning message will alert user and stop program.
+If input contains all valid species codes: return to the function that called it without returning a value, as through a pass.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;validate_species(c(&amp;quot;norcar&amp;quot;, &amp;quot;xxxxxx&amp;quot;))&lt;/code&gt; will warn the user that &lt;code&gt;xxxxxx&lt;/code&gt; is not a valid species.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;validate_state(&amp;quot;norcar&amp;quot;, &amp;quot;baleag&amp;quot;)&lt;/code&gt; will pass and go back to the calling function, since values provided are valid bird species.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;validate_state(&amp;quot;&amp;quot;)&lt;/code&gt; will warn the user that &lt;code&gt; &lt;/code&gt; is not a valid species.&lt;/p&gt;
+&lt;h4 id=&#34;validate_state&#34;&gt;validate_state&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;: &lt;code&gt;validate_state&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;: a helper function to determine if the value of a state entered by the user corresponds to a valid state in the continental US.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;: &lt;code&gt;validate_state(state)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arguments&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;state&lt;/code&gt;: a character string of length 2, e.g. &amp;ldquo;FL&amp;rdquo; for Florida&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;If input is an invalid string: a warning message stopping the program.&lt;/p&gt;
+&lt;p&gt;If input is a valid string: returns to the function that called it without returning a value, as through a pass.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;validate_state(&amp;quot;FL&amp;quot;)&lt;/code&gt; will return to the function that called it without a warning message, since &amp;ldquo;FL&amp;rdquo; is a valid state.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;validate_state(&amp;quot;XX&amp;quot;)&lt;/code&gt; will return a warning message and stop the program, since the state &amp;ldquo;XX&amp;rdquo; is invalid.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;validate_state(&amp;quot;&amp;quot;)&lt;/code&gt; will return to the function that called it without a warning message, and the function that called it will consider data for all states, without filtering for any state in particular, since none was provided.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Sales and Inventory System with SQL</title>
       <link>https://mariosanchez.org/code/store-sql/</link>
