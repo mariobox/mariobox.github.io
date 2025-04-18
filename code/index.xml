@@ -235,7 +235,7 @@ If input contains all valid species codes: return to the function that called it
       <description>&lt;p&gt;&lt;strong&gt;Made with&lt;/strong&gt;: &lt;i class=&#34;fab fa-python&#34;&gt;&lt;/i&gt; Python&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/mariobox/pynt-ssg&#34;&gt;Source Files&lt;/a&gt; | &lt;a href=&#34;https://mariosanchez.org/pynt-ssg/html/&#34;&gt;Live Demo&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id=&#34;img-srcimgpynt-grpng&#34;&gt;&lt;img src=&#34;https://mariosanchez.org/img/pynt-gr.png&#34;&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;img src=&#34;https://mariosanchez.org/img/pynt-gr.png&#34;&gt;&lt;/h2&gt;
 &lt;h5 id=&#34;description&#34;&gt;Description:&lt;/h5&gt;
 &lt;p&gt;Pynt is a pint-sized static site generator with basic blog capabilities written in Python in less than 100 lines of code. It doesn&amp;rsquo;t use any web framework, just pure Python functionality.&lt;/p&gt;
 &lt;h5 id=&#34;why&#34;&gt;Why&lt;/h5&gt;
