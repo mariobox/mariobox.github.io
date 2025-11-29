@@ -210,20 +210,18 @@ If input contains all valid species codes: return to the function that called it
       &lt;li&gt;&lt;a href=&#34;https://mariosanchez.org/code/rei/&#34;&gt;Bootstrap Real Estate Website&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;h5 style=&#34;font-weight: 600&#34;&gt;Certifications&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://certificates.cs50.io/0914e00c-1834-4d92-8f82-4c383537804e.pdf?size=letter&#34;&gt;Introduction to Programming with R (CS50R)&lt;/a&gt;, Harvard University&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://certificates.cs50.io/f66eedcb-f7d7-4d59-93e1-3170943b6108.pdf?size=letter&#34;&gt;Introduction to Databases with SQL (CS50SQL)&lt;/a&gt;, Harvard University&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://certificates.cs50.io/bc8a572e-b437-4d8a-afc3-6494a43d071a&#34;&gt;Introduction to Programming in Python (CS50P)&lt;/a&gt;, Harvard University&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://certificates.cs50.io/abafad49-e763-4717-bd13-b476b8ca9e68.pdf?size=letter&#34;&gt;Introduction to Computer Science and the Art of Programming (CS50x)&lt;/a&gt;, Harvard University&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/front-end-development-libraries&#34;&gt;Front End Development Libraries (ReactJS)&lt;/a&gt;, freeCodeCamp&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/foundational-c-sharp-with-microsoft&#34;&gt;Foundational C# with Microsoft&lt;/a&gt;, freeCodeCamp&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/relational-database-v8&#34;&gt;Relational Databases and SQL&lt;/a&gt;, freeCodeCamp&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/javascript-algorithms-and-data-structures&#34;&gt;JavaScript Algorithms and Data Structures&lt;/a&gt;, freeCodeCamp&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://coursera.org/share/0168b3865fa7c7107114726e339d71a6&#34;&gt;Django Certification&lt;/a&gt;, University of Michigan&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://freecodecamp.org/certification/mariobox/data-analysis-with-python-v7&#34;&gt;Data Analysis with Python&lt;/a&gt;, freeCodeCamp&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/scientific-computing-with-python-v7&#34;&gt;Scientific Computing with Python&lt;/a&gt;, freeCodeCamp&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/19JRfNwXkCyZfpyccF2Ol1QaXqsk4jXeA/view?usp=sharing&#34;&gt;Front End Web Development&lt;/a&gt;, Miami Dade College&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;📊 &lt;a href=&#34;https://certificates.cs50.io/0914e00c-1834-4d92-8f82-4c383537804e.pdf?size=letter&#34;&gt;Introduction to Programming with R (CS50R)&lt;/a&gt;, Harvard University&lt;/p&gt;
+&lt;p&gt;🗄️ &lt;a href=&#34;https://certificates.cs50.io/f66eedcb-f7d7-4d59-93e1-3170943b6108.pdf?size=letter&#34;&gt;Introduction to Databases with SQL (CS50SQL)&lt;/a&gt;, Harvard University&lt;/p&gt;
+&lt;p&gt;🐍 &lt;a href=&#34;https://certificates.cs50.io/bc8a572e-b437-4d8a-afc3-6494a43d071a&#34;&gt;Introduction to Programming in Python (CS50P)&lt;/a&gt;, Harvard University&lt;/p&gt;
+&lt;p&gt;💻 &lt;a href=&#34;https://certificates.cs50.io/abafad49-e763-4717-bd13-b476b8ca9e68.pdf?size=letter&#34;&gt;Introduction to Computer Science and the Art of Programming (CS50x)&lt;/a&gt;, Harvard University&lt;/p&gt;
+  &lt;p&gt;📲 &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/front-end-development-libraries&#34;&gt;Front End Development Libraries (ReactJS)&lt;/a&gt;, freeCodeCamp&lt;/p&gt;
+  &lt;p&gt;💡 &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/foundational-c-sharp-with-microsoft&#34;&gt;Foundational C# with Microsoft&lt;/a&gt;, freeCodeCamp&lt;/p&gt;
+  &lt;p&gt;💾 &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/relational-database-v8&#34;&gt;Relational Databases and SQL&lt;/a&gt;, freeCodeCamp&lt;/p&gt;
+  &lt;p&gt;⚙️ &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/javascript-algorithms-and-data-structures&#34;&gt;JavaScript Algorithms and Data Structures&lt;/a&gt;, freeCodeCamp&lt;/p&gt;
+  &lt;p&gt;📰 &lt;a href=&#34;https://coursera.org/share/0168b3865fa7c7107114726e339d71a6&#34;&gt;Django Certification&lt;/a&gt;, University of Michigan&lt;/p&gt;
+  &lt;p&gt;📈 &lt;a href=&#34;https://freecodecamp.org/certification/mariobox/data-analysis-with-python-v7&#34;&gt;Data Analysis with Python&lt;/a&gt;, freeCodeCamp&lt;/p&gt;
+  &lt;p&gt;🧮 &lt;a href=&#34;https://www.freecodecamp.org/certification/mariobox/scientific-computing-with-python-v7&#34;&gt;Scientific Computing with Python&lt;/a&gt;, freeCodeCamp&lt;/p&gt;
+  &lt;p&gt;🌐 &lt;a href=&#34;https://drive.google.com/file/d/19JRfNwXkCyZfpyccF2Ol1QaXqsk4jXeA/view?usp=sharing&#34;&gt;Front End Web Development&lt;/a&gt;, Miami Dade College&lt;/p&gt;
 </description>
     </item>
     
