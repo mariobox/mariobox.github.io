@@ -4,59 +4,16 @@
     <title>Tech on Mario Sanchez Carrion</title>
     <link>https://mariosanchez.org/tags/tech/</link>
     <description>Recent content in Tech on Mario Sanchez Carrion</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solving Equations with Python</title>
       <link>https://mariosanchez.org/blog/python-eq/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://mariosanchez.org/blog/python-eq/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: This article assumes that you are already familiar with the basics of programming with Python.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;In high school algebra you will regularly need to solve linear equations, quadriatic equations, or equations of a higher power, as well as systems of equations.&lt;/p&gt;
-&lt;p&gt;While it is important for you to learn how to solve them algebraically, you can also use the power of computers, and in particular Python (a high-level, general-purpose programming language) to solve the most complex equations in a matter of miliseconds.&lt;/p&gt;
-&lt;p&gt;To solve equations with Python, you need to install a library called &lt;code&gt;sympy&lt;/code&gt;, which handles all the behind-the-scenes &amp;ldquo;magic&amp;rdquo; that generates the answers.&lt;/p&gt;
-&lt;p&gt;To install &lt;code&gt;sympy&lt;/code&gt; (or any Python package) system-wide, you need to run the following command from the command prompt: &lt;code&gt;sudo apt install python3-xyz&lt;/code&gt;, where &lt;code&gt;xyz&lt;/code&gt; is the name of the package you are trying to install. In this case we will run:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo apt install python3-sympy&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;We will be using &lt;code&gt;sympy&lt;/code&gt; to create two extremely brief snippets (just two lines of code each!). One of them will allow us to solve equations with one variable, and the other one systems of equations. The equations can be linear, quadratic, cubic, etc. and the solutions can be real or complex numbers.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Important note&lt;/strong&gt;: for the programs to work, the equations must be input in Python format: for example, x to the power of two is &lt;code&gt;x**2&lt;/code&gt;, the square root of 4 is &lt;code&gt;sqrt(4)&lt;/code&gt;, and 5 times x is &lt;code&gt;5*x&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;solving-equations-with-one-variable&#34;&gt;Solving equations with one variable&lt;/h5&gt;
-&lt;p&gt;This is the code to solve equations with one variable (in this case, we are solving a quadratic equation: &lt;code&gt;x**2 - 5*x + 6&lt;/code&gt;). You can cut and paste this code into a Python &lt;code&gt;.py&lt;/code&gt; file to be able to run it:&lt;/p&gt;
-&lt;pre&gt;
-import sympy
-from sympy.abc import x
-from sympy.solvers import solve
-
-
-# Put the equation here:
-eq = (x**2 - 5*x + 6)
-
-print(&#34;x = &#34;, solve(eq, x))
-&lt;/pre&gt;
-&lt;p&gt;The solution will be presented in the following form:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;x = [2, 3]&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;solving-systems-of-equations&#34;&gt;Solving systems of equations&lt;/h5&gt;
-&lt;p&gt;This is the code to solve systems of equations (in this case we want to find the solution of a pair of linear equations: &lt;code&gt;x + y = 2&lt;/code&gt; and &lt;code&gt;x = y&lt;/code&gt;). For the program to work, we should write our expressions putting all our variables and costants together, like this: &lt;code&gt;x + y - 2&lt;/code&gt; and &lt;code&gt;x - y&lt;/code&gt;.  Again, you can cut and paste this code into a Python &lt;code&gt;.py&lt;/code&gt; file to be able to run it:&lt;/p&gt;
-&lt;pre&gt;
-import sympy
-from sympy.abc import x, y
-from sympy.solvers import solve
-
-
-# Put the equations here:
-eq = ([x + y - 2, x - y])
-
-print(&#34;x = &#34;, solve(eq, [x, y]))
-&lt;/pre&gt;
-&lt;p&gt;The solution will be presented in the following form:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;x =  {x: 1, y: 1}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;To run the programs you need to type the following command: &lt;code&gt;python3 &amp;lt;snippet.py&amp;gt;&lt;/code&gt; replacing &lt;code&gt;snippet&lt;/code&gt; with the name you assigned to your particular program.&lt;/p&gt;
-&lt;p&gt;While the equations used in this example are very simple, the programs also work for more complicated expressions.&lt;/p&gt;
-&lt;p&gt;This is just one example of how you can leverage the power of computers to solve equations quickly and reliably.&lt;/p&gt;
-</description>
+      <description>&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: This article assumes that you are already familiar with the basics of programming with Python.&lt;/p&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;In high school algebra you will regularly need to solve linear equations, quadriatic equations, or equations of a higher power, as well as systems of equations.&lt;/p&gt;&#xA;&lt;p&gt;While it is important for you to learn how to solve them algebraically, you can also use the power of computers, and in particular Python (a high-level, general-purpose programming language) to solve the most complex equations in a matter of miliseconds.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
