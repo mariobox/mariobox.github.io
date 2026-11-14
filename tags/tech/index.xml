@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tech on Mario Sanchez Carrion</title>
-    <link>https://mariosanchez.org/tags/tech/</link>
-    <description>Recent content in Tech on Mario Sanchez Carrion</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Solving Equations with Python</title>
-      <link>https://mariosanchez.org/blog/python-eq/</link>
-      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://mariosanchez.org/blog/python-eq/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: This article assumes that you are already familiar with the basics of programming with Python.&lt;/p&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;In high school algebra you will regularly need to solve linear equations, quadriatic equations, or equations of a higher power, as well as systems of equations.&lt;/p&gt;&#xA;&lt;p&gt;While it is important for you to learn how to solve them algebraically, you can also use the power of computers, and in particular Python (a high-level, general-purpose programming language) to solve the most complex equations in a matter of miliseconds.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tech on Mario Sanchez Carrion</title>
+		<link>https://mariosanchez.org/tags/tech/</link>
+		<description>Recent content in Tech on Mario Sanchez Carrion</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://mariosanchez.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Solving Equations with Python</title>
+				<link>https://mariosanchez.org/blog/python-eq/</link>
+				<pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>https://mariosanchez.org/blog/python-eq/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: This article assumes that you are already familiar with the basics of programming with Python.&lt;/p&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;In high school algebra you will regularly need to solve linear equations, quadriatic equations, or equations of a higher power, as well as systems of equations.&lt;/p&gt;&#xA;&lt;p&gt;While it is important for you to learn how to solve them algebraically, you can also use the power of computers, and in particular Python (a high-level, general-purpose programming language) to solve the most complex equations in a matter of miliseconds.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
